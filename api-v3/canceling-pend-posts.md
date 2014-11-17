@@ -2,9 +2,8 @@
 <p>You use the ids passed back during the posting process to identify which posts you want to delete. Depending on the results of the posting, you&#39;ll get either queue ids (If the posting was completely successful) or posting ids (If there was a not critical error, and the posting configuration allows for the PCP to be generated.</p>
 <p>Take into account that queued posts are usually processed within 5 minutes, if the user is allowed to post directly - this depends on the posting authorization policies in idibu - so they&#39;re more likely to result in a failed attempt to cancel. Job postings do not get deleted until the consultant completes the posting (By accessing the <a href="/docs/posting-completion-page">PCP</a>).</p>
 <p>This is an example payload for the cancel request:</p>
-<pre>
-<code>
-<?xml version="1.0" encoding="UTF-8"?>
+<pre><code>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;idibu&gt;
 &nbsp;&lt;method&gt;cancel&lt;/method&gt;
 &nbsp;&lt;postqueue&gt;
