@@ -20,7 +20,7 @@
 <h1>
 	<strong>Country codes</strong></h1>
 <p>To make a correct call, you will have to call a location within a country represented by one of the following country codes: 
-
+<br /><br />
 GB - United Kingdom<br />
 US - United States<br />
 AD - Andorra<br />
