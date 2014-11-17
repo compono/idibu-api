@@ -1,4 +1,4 @@
-<p>You may send in requests to delete the adverts for a particular job. In order to delete adverts, a valid <a href="/docs/job-id-vs-client-ref">Job ID or Client Reference</a> needs to be provided.</p>
+<p>You may send in requests to delete the adverts for a particular job. In order to delete adverts, a valid <a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/jobidvsjobref.md">Job ID or Client Reference</a> needs to be provided.</p>
 <h1>
 	Deleting all posts for a job</h1>
 <p>This is an example XML file for a delete request:</p>
