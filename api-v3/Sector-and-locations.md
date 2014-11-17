@@ -19,7 +19,8 @@
 	- Some locations may have up to 15 legitimate duplicates all over the country. Make sure your program is ready for that.</p>
 <h1>
 	<strong>Country codes</strong></h1>
-<p>To make a correct call, you will have to call a location within a country represented by one of the following country codes: <code>
+<p>To make a correct call, you will have to call a location within a country represented by one of the following country codes: 
+
 GB - United Kingdom<br />
 US - United States<br />
 AD - Andorra<br />
@@ -82,7 +83,7 @@ VI - Virgin Islands (U.S.)<br />
 YT - Mayotte<br />
 ZA - South Africa<br />
 ZZ - Rest of the wold (Other countries)<br />
-</code></p>
+</p>
 <h2>
 	<strong>Request</strong></h2>
 <pre>
