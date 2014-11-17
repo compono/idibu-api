@@ -197,41 +197,42 @@
 <p>&nbsp;</p>
 <p>An example of this is:</p>
 <pre>
-<code>
-<sender>
-	<!-- below is the list of mandatory fields -->
-	<name>John</name>
-	<lastname>Doe</lastname>
-	<email>john@doe.com</email>
-	<company>One World Market</company>
-	<phone>044424345324</phone>
-	<www>http://some.website.com</www>
-	<country>UK</country>
-	<postcode>XXX111</postcode>
-	<!-- below is the list of non-mandatory fields. -->
-	<expiryemails>No</expiryemails><title></title>
-	<address1>Some address</address1>
-	<address2>Some address2</address2>
-	<address3>Some address3</address3>
-	<fax>044424345325</fax>
-</sender>
-</code></pre>
+
+&lt;sender&gt;
+&nbsp;&nbsp;&lt;!-- below is the list of mandatory fields --&gt;
+&nbsp;&nbsp;&lt;name&gt;John&lt;/name&gt;
+&nbsp;&nbsp;&lt;lastname&gt;Doe&lt;/lastname&gt;
+&nbsp;&nbsp;&lt;email&gt;john@doe.com&lt;/email&gt;
+&nbsp;&nbsp;&lt;company&gt;One World Market&lt;/company&gt;
+&nbsp;&nbsp;&lt;phone&gt;044424345324&lt;/phone&gt;
+&nbsp;&nbsp;&lt;www&gt;http://some.website.com&lt;/www&gt;
+&nbsp;&nbsp;&lt;country&gt;UK&lt;/country&gt;
+&nbsp;&nbsp;&lt;postcode&gt;XXX111&lt;/postcode&gt;
+&nbsp;&nbsp;&lt;!-- below is the list of non-mandatory fields. --&gt;
+&nbsp;&nbsp;&lt;expiryemails&gt;No&lt;/expiryemails&gt;&lt;title&gt;&lt;/title&gt;
+&nbsp;&nbsp;&lt;address1&gt;Some address&lt;/address1&gt;
+&nbsp;&nbsp;&lt;address2&gt;Some address2&lt;/address2&gt;
+&nbsp;&nbsp;&lt;address3&gt;Some address3&lt;/address3&gt;
+&nbsp;&nbsp;&lt;fax&gt;044424345325&lt;/fax&gt;
+&lt;/sender&gt;
+</pre>
 <p>Unless the posting system is tightly integrated into idibu (i.e., all sender ids have been fetched from idibu using the discovery service, and those ids are used when posting) it&#39;s advisable to always send the complete sender information, rather than the sender id. Our system will always try to match the name, last name and email to data already in our system before creating a new profile.</p>
 <h2>
 	Team Tag</h2>
 <p>You can also send the team id to the sender part of the payload.</p>
 <p>In that case, you&#39;ll need to add a TEAM tag with an id parameter specifying the team to which to assign the sender:</p>
 <pre>
-<code><sender>
-	<!-- below is the list of mandatory fields -->
-	<name>John</name>
-	<lastname>Doe</lastname>
-	<team id="10000">
-	<email>john@doe.com</email>
-	<!-- rest of the sender profile tags -->
-	...
-</team></sender>
-</code></pre>
+&lt;sender&gt;
+&nbsp;&nbsp;&lt;!-- below is the list of mandatory fields --&gt;
+&nbsp;&nbsp;&lt;name&gt;John&lt;/name&gt;
+&nbsp;&nbsp;&lt;lastname&gt;Doe&lt;/lastname&gt;
+&nbsp;&nbsp;&lt;team id=&quot;10000&quot;&gt;
+&nbsp;&nbsp;&lt;email&gt;john@doe.com&lt;/email&gt;
+&nbsp;&nbsp;&lt;!-- rest of the sender profile tags --&gt;
+&nbsp;&nbsp;...
+&nbsp;&nbsp;&lt;/team&gt;
+&lt;/sender&gt;
+</pre>
 <p>The list of teams, offices and its IDs are available in the&nbsp;<a href="/docs/sender-profile-listing">discovery service</a>.</p>
 <p>A couple of points when sending sender details.</p>
 <ul>
