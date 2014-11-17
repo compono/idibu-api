@@ -1,6 +1,6 @@
 <p><strong>Different posting destinations require unique data to be sent through to them, for example their own specific sector list or qualification levels.</strong></p>
-<p>API v3 works to understand what extra field data you have sent through, and if anything is missing it will request it via the <a href="/docs/posting-completion-page">PCP</a>.</p>
-<p>Use the <a href="/docs/job-board-data">discovery service</a> to find out the extra field data for a particular board.</p>
+<p>API v3 works to understand what extra field data you have sent through, and if anything is missing it will request it via the <a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/pcp.md">PCP</a>.</p>
+<p>Use the <a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/spec-data.md">discovery service</a> to find out the extra field data for a particular board.</p>
 <p>The extra field data is contained within the &lt;board&gt; tag which also contains the id of the board you are posting to (again, refer to Web Services section to find the id&#39;s for your boards).</p>
 <p>A simple extra field section for a job board would look like this:</p>
 <pre>
