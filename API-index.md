@@ -37,6 +37,7 @@ The description and usage of each group and its tags are explained below, with s
 
 <a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/methods.md">1. Available methods.</a><br>
 <a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/vars.md">2. API Variables.</a><br>
+<a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/Sector-and-locations.md">2a. Sectors & Locations.</a><br>
 <a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/dyn-vars.md">3. Dynamic Variables.</a><br>
 <a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/jobidvsjobref.md">4. Job ID Vs. Client Ref.</a><br>
 <a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/pcp.md">5. Post Completion Page.</a><br>
