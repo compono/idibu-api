@@ -20,11 +20,37 @@
 	Response</h2>
 <pre wrap="">
 <code type="xml">
-<?xml version="1.0" encoding="utf-8"?>
-<idibu generator="idibu" version="1.0"><response><portal><id>10</id><url>www.reed.co.uk</url><logo>reed3.jpg</logo><name>Reed</name></portal><post><start>2013-06-17 10:44:06</start><stop>2013-06-24 00:00:00</stop><type>post</type><status>fail</status><deletable>no</deletable><errordetails><errordetail><description>The job board server sent us a message to say that the username or password connected to the ad are incorrect.</description><solution>1. Contact Reed to check the config details entered in idibu.&lt;br /&gt;
-2. Once confirmed: &lt;br /&gt;
-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;a) login to  &lt;a href=&quot;?class=Client&amp;action=PortalConfig&quot;&gt;here&lt;/a&gt;&lt;br /&gt;
-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;b) click &amp;quot;Job boards and quotas&amp;quot; &lt;br /&gt;
-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;c) click &amp;quot;Settings&amp;quot; next to the Reed and amend the details&lt;br /&gt;
-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;d) click &amp;quot;Save settings&amp;quot;</solution></errordetail></errordetails></post><expired>no</expired><applicants></applicants><link /></response><status>success</status></idibu>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;idibu generator=&quot;idibu&quot; version=&quot;1.0&quot;&gt;
+&lt;response&gt;
+	&lt;portal&gt;
+	&lt;id&gt;10&lt;/id&gt;
+	&lt;url&gt;www.reed.co.uk&lt;/url&gt;
+	&lt;logo&gt;reed3.jpg&lt;/logo&gt;
+	&lt;name&gt;Reed&lt;/name&gt;
+	&lt;/portal&gt;
+		&lt;post&gt;
+		&lt;start&gt;2013-06-17 10:44:06&lt;/start&gt;
+		&lt;stop&gt;2013-06-24 00:00:00&lt;/stop&gt;
+		&lt;type&gt;post&lt;/type&gt;
+		&lt;status&gt;fail&lt;/status&gt;
+		&lt;deletable&gt;no&lt;/deletable&gt;
+		&lt;errordetails&gt;
+			&lt;errordetail&gt;
+			&lt;description&gt;The job board server sent us a message to say that the username or password connected to the ad are incorrect.&lt;/description&gt;
+			&lt;solution&gt;1. Contact Reed to check the config details entered in idibu.&lt;br /&gt;
+			2. Once confirmed: &lt;br /&gt;
+				a) login to  &lt;a href=&quot;?class=Client&amp;action=PortalConfig&quot;&gt;here&lt;/a&gt;&lt;br /&gt;
+				b) click &amp;quot;Job boards and quotas&amp;quot; &lt;br /&gt;
+				c) click &amp;quot;Settings&amp;quot; next to the Reed and amend the details&lt;br /&gt;
+				d) click &amp;quot;Save settings&amp;quot;&lt;/solution&gt;
+			&lt;/errordetail&gt;
+		&lt;/errordetails&gt;
+		&lt;/post&gt;
+	&lt;expired&gt;no&lt;/expired&gt;
+	&lt;applicants&gt;&lt;/applicants&gt;
+	&lt;link /&gt;
+&lt;/response&gt;
+&lt;status&gt;success&lt;/status&gt;
+&lt;/idibu&gt;
 </code></pre>
