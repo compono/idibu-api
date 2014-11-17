@@ -95,59 +95,59 @@
 POST http://ws.idibu.com/ws/rest/v1/search/local?hash=<your hash>
 </code>
 <code type="xml">
-<?xml version="1.0"?>
-<idibu>
-  <query>manager</query>
-  <location>UK</location>
-  <region></region>
-  <postcode></postcode>
-  <query_mode>OR</query_mode>
-  <salarymin></salarymin>
-  <salarymax></salarymax>
-  <salaryper></salaryper>
-  <jobtype></jobtype>
-  <last_updated></last_updated>
-  <max_results>25</max_results>
-  <sector></sector>
-</idibu>
+&lt;?xml version=&quot;1.0&quot;?&gt;
+&lt;idibu&gt;
+  &lt;query&gt;manager&lt;/query&gt;
+  &lt;location&gt;UK&lt;/location&gt;
+  &lt;region&gt;&lt;/region&gt;
+  &lt;postcode&gt;&lt;/postcode&gt;
+  &lt;query_mode&gt;OR&lt;/query_mode&gt;
+  &lt;salarymin&gt;&lt;/salarymin&gt;
+  &lt;salarymax&gt;&lt;/salarymax&gt;
+  &lt;salaryper&gt;&lt;/salaryper&gt;
+  &lt;jobtype&gt;&lt;/jobtype&gt;
+  &lt;last_updated&gt;&lt;/last_updated&gt;
+  &lt;max_results&gt;25&lt;/max_results&gt;
+  &lt;sector&gt;&lt;/sector&gt;
+&lt;/idibu&gt;
 </code>
 </pre>
 <h2>
 	Response</h2>
 <pre>
 <code type="xml">
-<?xml version="1.0" encoding="utf8"?>
-<idibu generator="idibu" version="1.0">
-  <response>
-    <cv-entries>
-      <cv-entry>
-        <entry.info>
-          <type>j</type>
-          <src>LOCAL</src>
-          <score>1</score>
-          <fn>Firstname</fn>
-          <ln>Lastname</ln>
-          <id>LOCAL_12345678</id>
-          <dist></dist>
-          <avail></avail>
-          <update>2012-01-27</update>
-          <last_pos>HEAD OF MARKETING</last_pos>
-          <loc>Guildford, UK</loc>
-          <name>Firstname Lastname</name>
-          <salary></salary>
-        </entry.info>
-        <doc>
-          <snippets>
-            <snippet>Skills: Branding, Direct marketing, Procurement, Marketing, Customer Relationship Management, Adobe Photoshop, Office support, Managed deliveries, Managed all campaigns, Managed a wide range of banners and microsites</snippet>
-            <snippet>Current position: HEAD OF MARKETING</snippet>
-            <snippet>Past: DEMAND CREATION SUPPORT at eCOMMERCE</snippet>
-          </snippets>
-        </doc>
-        <aptrack-id>12345678</aptrack-id>
-      </cv-entry>
-    </cv-entries>
-  </response>
-  <status>success</status>
-</idibu>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf8&quot;?&gt;
+&lt;idibu generator=&quot;idibu&quot; version=&quot;1.0&quot;&gt;
+  &lt;response&gt;
+    &lt;cv-entries&gt;
+      &lt;cv-entry&gt;
+        &lt;entry.info&gt;
+          &lt;type&gt;j&lt;/type&gt;
+          &lt;src&gt;LOCAL&lt;/src&gt;
+          &lt;score&gt;1&lt;/score&gt;
+          &lt;fn&gt;Firstname&lt;/fn&gt;
+          &lt;ln&gt;Lastname&lt;/ln&gt;
+          &lt;id&gt;LOCAL_12345678&lt;/id&gt;
+          &lt;dist&gt;&lt;/dist&gt;
+          &lt;avail&gt;&lt;/avail&gt;
+          &lt;update&gt;2012-01-27&lt;/update&gt;
+          &lt;last_pos&gt;HEAD OF MARKETING&lt;/last_pos&gt;
+          &lt;loc&gt;Guildford, UK&lt;/loc&gt;
+          &lt;name&gt;Firstname Lastname&lt;/name&gt;
+          &lt;salary&gt;&lt;/salary&gt;
+        &lt;/entry.info&gt;
+        &lt;doc&gt;
+          &lt;snippets&gt;
+            &lt;snippet&gt;Skills: Branding, Direct marketing, Procurement, Marketing, Customer Relationship Management, Adobe Photoshop, Office support, Managed deliveries, Managed all campaigns, Managed a wide range of banners and microsites&lt;/snippet&gt;
+            &lt;snippet&gt;Current position: HEAD OF MARKETING&lt;/snippet&gt;
+            &lt;snippet&gt;Past: DEMAND CREATION SUPPORT at eCOMMERCE&lt;/snippet&gt;
+          &lt;/snippets&gt;
+        &lt;/doc&gt;
+        &lt;aptrack-id&gt;12345678&lt;/aptrack-id&gt;
+      &lt;/cv-entry&gt;
+    &lt;/cv-entries&gt;
+  &lt;/response&gt;
+  &lt;status&gt;success&lt;/status&gt;
+&lt;/idibu&gt;
 </code>
 </pre>
