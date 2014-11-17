@@ -32,7 +32,7 @@
 	Succesful delete request message</h2>
 <pre>
 <code>
-<?xml version="1.0" encoding="UTF-8"?>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;IDIBU&gt;
 &lt;JOB ID=&quot;31002847&quot;&gt;
 &lt;POST STATUS=&quot;PENDING&quot; TYPE=&quot;Del&quot; BOARDID=&quot;54&quot; REMOTEID=&quot;something&quot; QUEUEID=&quot;847&quot;&gt;Job was posted for deletion to this board.&lt;/POST&gt;&lt;/JOB&gt;
