@@ -235,7 +235,11 @@ http://ws.idibu.com/clients/api/enum.php?enum=Sender&source=mine&hash=[INSERT LO
 &nbsp;&nbsp;&lt;/team&gt;
 &lt;/sender&gt;
 </pre>
-<p>The list of teams, offices and its IDs are available in the&nbsp;<a href="/docs/sender-profile-listing">discovery service</a>.</p>
+<p>The list of teams, offices and its IDs are available in:
+<code>
+http://ws.idibu.com/clients/api/enum.php?enum=Sender&source=mine&hash=[INSERT LOGIN HASH HERE]
+<code>
+</p>
 <p>A couple of points when sending sender details.</p>
 <ul>
 	<li>
