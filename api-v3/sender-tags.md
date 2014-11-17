@@ -19,7 +19,9 @@
 			<td>
 				sender</td>
 			<td>
-				<a href="/docs/sender-profile-listing">See discovery service</a></td>
+				To get a list of the sender profile in your account including the unique ids use:
+
+http://ws.idibu.com/clients/api/enum.php?enum=Sender&source=mine&hash=[INSERT LOGIN HASH HERE]</td>
 			<td>
 				Identifies the sender profile to be used with this post<br />
 				&nbsp;</td>
