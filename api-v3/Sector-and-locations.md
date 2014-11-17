@@ -20,68 +20,68 @@
 <h1>
 	<strong>Country codes</strong></h1>
 <p>To make a correct call, you will have to call a location within a country represented by one of the following country codes: <code>
-GB - United Kingdom
-US - United States
-AD - Andorra
-AN - Angola
-AR - Argentina
-AT - Austria
-AU - Australia
-BB - Barbados
-BE - Belgium
-BG - Bulgaria
-BR - Brazil
-CA - Canada
-CH - Switzerland
-CN - China
-DE - Germany
-DM - Denmark
-EG - Egypt
-ES - Spain
-FO - Faroe Islands
-FR - France
-GG - Channel Islands
-GP - Guadeloupe
-GU - Guam
-HG - Hong Kong
-HR - Croatia
-ID - Indonesia
-IE - Ireland
-IM - Isle of Man
-IN - India
-IT - Italy
-JE - Jersey
-JP - Japan
-LI - Liechtenstein
-LK - Sri Lanka
-LU - Luxembourg
-MA - Malta
-MC - Monaco
-MD - Moldova
-MH - Marshall Islands
-MK - Macedonia
-MP - Northern Mariana Islands
-MQ - Martinique
-MX - Mexico
-MY - Malaysia
-NL - Netherlands
-NO - Norway
-NZ - New Zealand
-PK - Pakistan
-PM - St. Pierre and Miquelon
-PR - Puerto Rico
-PT - Portugal
-QA - Qatar
-SI - Singapore
-SM - San Marino
-TH - Thailand
-TR - Turkey
-UE - United Arab Emirates
-VA - Vatican City
-VI - Virgin Islands (U.S.)
-YT - Mayotte
-ZA - South Africa
-ZZ - Rest of the wold (Other countries)
+GB - United Kingdom<br />
+US - United States<br />
+AD - Andorra<br />
+AN - Angola<br />
+AR - Argentina<br />
+AT - Austria<br />
+AU - Australia<br />
+BB - Barbados<br />
+BE - Belgium<br />
+BG - Bulgaria<br />
+BR - Brazil<br />
+CA - Canada<br />
+CH - Switzerland<br />
+CN - China<br />
+DE - Germany<br />
+DM - Denmark<br />
+EG - Egypt<br />
+ES - Spain<br />
+FO - Faroe Islands<br />
+FR - France<br />
+GG - Channel Islands<br />
+GP - Guadeloupe<br />
+GU - Guam<br />
+HG - Hong Kong<br />
+HR - Croatia<br />
+ID - Indonesia<br />
+IE - Ireland<br />
+IM - Isle of Man<br />
+IN - India<br />
+IT - Italy<br />
+JE - Jersey<br />
+JP - Japan<br />
+LI - Liechtenstein<br />
+LK - Sri Lanka<br />
+LU - Luxembourg<br />
+MA - Malta<br />
+MC - Monaco<br />
+MD - Moldova<br />
+MH - Marshall Islands<br />
+MK - Macedonia<br />
+MP - Northern Mariana Islands<br />
+MQ - Martinique<br />
+MX - Mexico<br />
+MY - Malaysia<br />
+NL - Netherlands<br />
+NO - Norway<br />
+NZ - New Zealand<br />
+PK - Pakistan<br />
+PM - St. Pierre and Miquelon<br />
+PR - Puerto Rico<br />
+PT - Portugal<br />
+QA - Qatar<br />
+SI - Singapore<br />
+SM - San Marino<br />
+TH - Thailand<br />
+TR - Turkey<br />
+UE - United Arab Emirates<br />
+VA - Vatican City<br />
+VI - Virgin Islands (U.S.)<br />
+YT - Mayotte<br />
+ZA - South Africa<br />
+ZZ - Rest of the wold (Other countries)<br />
 </code></p>
 <h2>
 	<strong>Request</strong></h2>
