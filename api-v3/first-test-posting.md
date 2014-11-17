@@ -3,7 +3,7 @@
 	<li>
 		Add these boards to your idibu account: a) idibu Developer Board (id 517), b) Supply Chain Online (id 214), c) Jobsite (id 41) and d) CV-Library (id 39) - just add test/test login credentials for the boards, if you do post a adverts they will fail to be accepted by the boards, though posts should work to our developer board.</li>
 	<li>
-		You will find an XML test page at <a href="http://uk.idibu.com/get_xml_jobs.php" target="_blank">http://uk.idibu.com/get_xml_jobs.php</a> - ensure it is in &#39;V3&#39; mode, add your HASH code and the XML to post into the system</li>
+		You will find an XML test page at <a href="http://www.idibu.com/get_xml_jobs.php" target="_blank">http://www.idibu.com/get_xml_jobs.php</a> - ensure it is in &#39;V3&#39; mode, add your HASH code and the XML to post into the system</li>
 	<li>
 		You will need to find the Team ID of your sender profile, check for the ID inside idibu when you hover over the Team to edit it</li>
 	<li>
