@@ -25,27 +25,27 @@ GET http://ws.idibu.com/ws/rest/v1/portals/517/set-user-login?hash=<your hash>
 	Response</h2>
 <pre>
 <code type="xml">
-<?xml version="1.0" encoding="utf8"?>
-<idibu generator="idibu" version="1.0">
-    <response>
-        <help></help>
-        <fields>
-            <field>
-                <element>text</element>
-                <name>userName</name><title></title>
-                <maxchars></maxchars>
-                <type>login</type>
-            </field>
-            <field>
-                <element>text</element>
-                <name>userPassword</name><title></title>
-                <maxchars></maxchars>
-                <type>login</type>
-            </field>
-        </fields>
-    </response>
-    <status>success</status>
-</idibu>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf8&quot;?&gt;
+&lt;idibu generator=&quot;idibu&quot; version=&quot;1.0&quot;&gt;
+    &lt;response&gt;
+        &lt;help&gt;&lt;/help&gt;
+        &lt;fields&gt;
+            &lt;field&gt;
+                &lt;element&gt;text&lt;/element&gt;
+                &lt;name&gt;userName&lt;/name&gt;&lt;title&gt;&lt;/title&gt;
+                &lt;maxchars&gt;&lt;/maxchars&gt;
+                &lt;type&gt;login&lt;/type&gt;
+            &lt;/field&gt;
+            &lt;field&gt;
+                &lt;element&gt;text&lt;/element&gt;
+                &lt;name&gt;userPassword&lt;/name&gt;&lt;title&gt;&lt;/title&gt;
+                &lt;maxchars&gt;&lt;/maxchars&gt;
+                &lt;type&gt;login&lt;/type&gt;
+            &lt;/field&gt;
+        &lt;/fields&gt;
+    &lt;/response&gt;
+    &lt;status&gt;success&lt;/status&gt;
+&lt;/idibu&gt;
 </code></pre>
 <h1>
 	Add/update user login</h1>
