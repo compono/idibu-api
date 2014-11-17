@@ -3,9 +3,9 @@ You can also delete repost your clients ads based on reference alone - sending a
 **POST** clients/api/REMOTE/V3?hash=&lt;client_hash&gt;
 
 <code> 
-&lt;idibu&gt;<br>
-&nbsp; &nbsp;&lt;method&gt;delete&lt;/method&gt;<br>
-&nbsp; &nbsp;&lt;job ref=&quot;job_reference&quot;&gt;&lt;/job&gt;<br>
+&lt;idibu&gt;
+&nbsp; &nbsp;&lt;method&gt;delete&lt;/method&gt;
+&nbsp; &nbsp;&lt;job ref=&quot;job_reference&quot;&gt;&lt;/job&gt;
 &lt;/idibu&gt;<br>
 </code>
 
