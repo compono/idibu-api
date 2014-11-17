@@ -3,10 +3,10 @@ You can also delete repost your clients ads based on reference alone - sending a
 **POST** clients/api/REMOTE/V3?hash=&lt;client_hash&gt;
 
 <code> 
-&lt;idibu&gt;
-&nbsp; &nbsp;&lt;method&gt;delete&lt;/method&gt;
-&nbsp; &nbsp;&lt;job ref=&quot;job_reference&quot;&gt;&lt;/job&gt;
-&lt;/idibu&gt;<br>
+<idibu>
+     <method>delete</method>
+     <job ref="job_reference"></job>
+</idibu>
 </code>
 
 This method by default has a failsafe that will throw down an error in case a particular reference is connected to more then one job id. However this failsafe can be avoided by adding the All=yes parameter. Please mind that it is partners responsibility to build a system that won't accidentally delete any posts that should not be deleted using this method.
