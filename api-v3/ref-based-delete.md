@@ -11,9 +11,7 @@ This method by default has a failsafe that will throw down an error in case a pa
 
 **POST** clients/api/REMOTE/V3?hash=&lt;client_hash&gt;
 
-<code>
 &lt;idibu&gt;<br>
 &nbsp;&nbsp;&lt;method&gt;delete&lt;/method&gt;<br>
 &nbsp;&nbsp;&lt;job ref=&quot;job_reference&quot; all=&quot;yes&quot;&gt;&lt;/job&gt;<br>
 &lt;/idibu&gt;
-</code>
