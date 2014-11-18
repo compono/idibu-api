@@ -94,7 +94,12 @@ POST http://ws.idibu.com/ws/rest/v1/users/485?hash=<your hash>
 <h3>
 	Response</h3>
 <?xml version="1.0" encoding="utf8"?>
-<p><idibu generator="idibu" version="1.0"> <response> <message>User updated</message> </response> <status>success</status> </idibu></p>
+<p>&lt;idibu generator=&quot;idibu&quot; version=&quot;1.0&quot;&gt;
+&lt;response&gt;
+&lt;message&gt;User updated&lt;/message&gt;
+&lt;/response&gt;
+&lt;status&gt;success&lt;/status&gt;
+&lt;/idibu&gt;</p>
 <h1>
 	Deleting user</h1>
 <p>To delete user you need to use a DELETE request</p>
