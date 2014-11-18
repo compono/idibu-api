@@ -59,8 +59,13 @@ xxxxx&lt;/address&gt;
 <code>
 POST http://ws.idibu.com/ws/rest/v1/offices/33000170?hash=<your hash>
 </code></pre>
-<?xml version="1.0"?>
-<p><idibu> <name> new office name </name> <contacts> <email>test@example.com</email> </contacts> </idibu></p>
+&lt;?xml version=&quot;1.0&quot;?&gt;
+&lt;idibu&gt;
+&lt;name&gt; new office name &lt;/name&gt;
+&lt;contacts&gt;
+&lt;email&gt;test@example.com&lt;/email&gt;
+&lt;/contacts&gt;
+&lt;/idibu&gt;
 <h3>
 	Response</h3>
 <pre>
