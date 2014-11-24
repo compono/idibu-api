@@ -325,3 +325,5 @@
 	Editable core fields</h1>
 <p>Some of the core fields (title, reference &amp; description) are editable.</p>
 <p>When marked as such in the request by using the edit parameter (check the examples) all the fields that are marked as &#39;editables&#39; will have a corresponding text box or text area in the PCP, with the contents sent in the request, and the consultant can change this content prior to completing the post. Take into account that setting any of these fields to editable will force the PCP to always be returned .</p>
+
+<a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/Sector-and-locations.md">Continue reading</a>...
