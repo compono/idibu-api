@@ -81,3 +81,4 @@
 <h1>
 	Hidden Fields</h1>
 <p>Those fields should be ignored by the developers linking their applications to idibu&#39;s API. Those &quot;hidden&quot; fields are fed with data from the dynamic core fields.</p>
+<a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/dyn-vars.md">Continue reading here to learn about dynamic core fields</a>
