@@ -9,3 +9,5 @@ The remote system is in charge of generating these references, and sending that 
 It is possible to use the API referencing jobs only with the client reference in the way stated above; it is possible as well to use the API referencing jobs only with the ids provided by idibu, and a mixture of both is possible as well.
 
 It's the entirely responsibility of the posting party to manage and administer the client references used.
+
+<a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/pcp.md">Click here to continue reading about Post Completion Page - the PCP.</a>
