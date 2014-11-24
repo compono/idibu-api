@@ -1,9 +1,9 @@
 idibu integration's APIs
 =========
 
-idibu provides you with means of using our funtionality precisely how you would like it to run with your software! We provide you a variety of integration options that can either quickly introduce multiposting for you clients (our current record holder took 2 days to roll-out a working integration!) or rebuild almost whole idibu has to offer.
+idibu provides you with means of using our funtionality precisely how you would like it to run with your software! One can choose from a variety of integration options. Those can either quickly introduce multiposting for you clients (our current record holder took 2 days to roll-out a working integration!) or you rebuild almost the whole of idibu inside your product.
 
-Not only that, we also give you options to whitelabel our page and fit it into your page - so you can have your own private idibu almost instantly.
+Not only that, we also give you options to whitelabel our website and fit it into yours - so you can have your own private idibu almost instantly.
 
 The documentation is divided in the following options:
 
