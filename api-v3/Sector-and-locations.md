@@ -118,16 +118,4 @@ POST http://ws.idibu.com/ws/rest/v1/locations/<COUNTRY CODE HERE>/find?hash=<CLI
 &lt;/idibu&gt;
 </code>
 </pre>
-<p>Alternately, you can use a fixed list for few countries we have prepared, like below:</p>
-<ul>
-	<li>
-		<a href="/attachments/GB.rar">United Kingdom (GB)</a></li>
-	<li>
-		<a href="/attachments/AU.rar">Australia (AU)</a></li>
-</ul>
-<p>You can also use our old legacy location list which has a thorough UK breakdown, and reasonable global coverage. However we recommend to use the options above.</p>
-<p>To get a list of these locations then please use the discovery service:</p>
-<pre>
-<code>
-http://ws.idibu.com/clients/api/enum.php?enum=Location&source=idibu&hash=[INSERT HASH VALUE HERE]
-</code></pre>
+<a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/spec-data.md"> Click here to find about board specific tags</a>
