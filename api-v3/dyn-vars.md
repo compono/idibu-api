@@ -48,4 +48,5 @@
 		</tr>
 	</tbody>
 </table>
+<a href = "https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/jobidvsjobref.md">Next article tells you about the difference between idibu id and client reference.</a>
 <p>&nbsp;</p>
