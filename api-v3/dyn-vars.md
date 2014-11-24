@@ -15,15 +15,6 @@
 		</tr>
 		<tr valign="top">
 			<td>
-				job_time</td>
-			<td>
-				numeric (Values: 1 for part time,<br />
-				2 for full time)</td>
-			<td>
-				Job Time/Type. Idetifies the corresponding field whenever it&#39;s not possible to map the Board extra field to the corresponding idibu core field. You need to enter <job_time>2</job_time> among the <job> tags. In example after the <description> tag.</description></job></td>
-		</tr>
-		<tr valign="top">
-			<td>
 				startDateOverride</td>
 			<td>
 				text</td>
