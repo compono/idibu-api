@@ -48,3 +48,4 @@
 		</tr>
 	</tbody>
 </table>
+Now click <a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/sender-tags.md">here</a> to learn how to specify your ad's sender.
