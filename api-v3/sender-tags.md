@@ -251,4 +251,5 @@ http://ws.idibu.com/clients/api/enum.php?enum=Sender&source=mine&hash=[INSERT LO
 	<li>
 		All quota assignments are honored after a profiles is created, loaded or if it&#39;s team is changed.</li>
 </ul>
+<a href = "https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/jobidvsjobref.md">Next article tells you about the difference between idibu id and client reference.</a>
 <p>&nbsp;</p>
