@@ -30,7 +30,6 @@ The description and usage of each group and its tags are explained below, with s
 <a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/sender-tags.md">2d. Sender Tags.</a><br>
 <a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/jobidvsjobref.md">3. Job ID Vs. Client Ref.</a><br>
 <a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/pcp.md">4. Post Completion Page.</a><br>
-
 <a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/sub-and-resp.md">5. Submitting and Responses.</a><br>
 <a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/quick-rep-job.md">6. Quick Re-posting Data.</a><br>
 <a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/canceling-pend-posts.md">7. Cancelling Pending Posts.</a><br>
