@@ -5,7 +5,7 @@ idibu provides you with means of using our funtionality precisely how you would 
 
 Not only that, we also give you options to whitelabel our website and fit it into yours - so you can have your own private idibu almost instantly.
 
-Before you choose the prefered integration type, make sure to read <a href="https://github.com/oneworldmarket/idibu-api/blob/master/before-you-begin">this</a> article.
+Before you choose the prefered integration type, make sure to read <a href="https://github.com/oneworldmarket/idibu-api/blob/master/before-you-begin.md">this</a> article.
 
 The documentation is divided in the following options:
 
