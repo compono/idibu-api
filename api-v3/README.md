@@ -1,14 +1,15 @@
 ### **Overview of the Adpost XML v3 API**
 
-Adpost XML v3 allows third parties to access the idibu posting engine by posting XML to the system.
-that allows not only for complete management of your job posting, but allows excellent flexibility when it comes to the XML data package that you send.
+idibu API allows third parties to access the idibu posting engine by posting XML to our system.
+That allows not only for a complete management of your job posting, but also allows excellent flexibility when it comes to the XML data package that you send.
 
-Depending on the method employed - the API implements what we call the "Posting Completion Page", a page accessed through a secure URL, where the consultant can complete the posting process by filling the data that was missing from the initial posting, IF our system finds that the XML data package is missing critical data - or the remote system forces this page. It uses the same business intelligence that drives idibu to map the data sent to the different board requirements.
+Depending on the method employed you can either make a quick posting in a single XML or split this into two steps: Sending core field and completing the process by providing missing information using a Post Completion Page - PCP.  
 
-The "Posting Completion Page" (PCP) is a regular web page where users provide any additional information required to complete a post and is:
+The "Posting Completion Page" a regular web page where users provide any additional information required to complete a post and is:
 
 - So simple that no training is required
 - Designed to be completely re-branded and customized for partners including:
+- 
 1. the posting url, allowing for fully brand-embedded posting to be integrated into third party systems.
 2. the email box used for notifications, that can be configured so any standard SMTP email account can be used
 
