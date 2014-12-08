@@ -41,3 +41,4 @@
 </code></pre>
 <p>All the different values for the type parameter are in the example XML.</p>
 <p>When there&#39;s a critical error either with the account or the job, any combination of the 3 errors can be generated.</p>
+You can also <a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/canceling-pend-posts.md">cancel a pending job</a>.
