@@ -1,0 +1,1 @@
+Create users or delete them or organize them into teams and offices. You can use this on a functionality-focused webservices or in a <a href="https://github.com/oneworldmarket/idibu-api/blob/master/webservices/user-management/batch-or-create-or-edit-or-delete-Offices-Teams-Users.md">batch one</a>. 
