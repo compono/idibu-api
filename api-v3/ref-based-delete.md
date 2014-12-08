@@ -15,4 +15,5 @@ This method by default has a failsafe that will throw down an error in case a pa
 &nbsp;&nbsp;&lt;method&gt;delete&lt;/method&gt;<br>
 &nbsp;&nbsp;&lt;job ref=&quot;job_reference&quot; all=&quot;yes&quot;&gt;&lt;/job&gt;<br>
 &lt;/idibu&gt;
+
 Now, it's about time to try your <a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/first-test-posting.md">first post</a>.
