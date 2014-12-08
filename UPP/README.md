@@ -1,11 +1,11 @@
-<p><span style="font-size: xx-large;">1. What is UPP?</span></p>
-<p>&nbsp;</p>
-<p><span style="font-size: xx-large;">2. How do partners use it?</span></p>
-<p>&nbsp;</p>
-<p><span style="font-size: xx-large;">3. URL parameters:</span></p>
+<h1>What is UPP?</h1>
+<p>UPP stands for Uninersal Posting Page. Essentially it's all ready PHP page with idibu multiposting functionality giving you all the options you need to use with your system. All needed to be done here is to style up the page, so it looks like it was developed by you, but you can have posting working in your system withing minutes!</p>
+<h1>How to use it?</h1></p>
+<p>Simply make a call to a link below with required paramaters. To make it super smooth you will need to map a few idibu parameters with your own vaiables.</p>
+<h1>Posting URL</h1>
 <p><br />All parameters can be provided in either a traditional HTTP GET or POST fashion and must be URL encoded. POST is recommended to get pass any character count limits typical for GET method. For example, in order to provide the hash, sender ID and job title into the system located at partners.idibu.com, you should use the following URL:</p>
 <p><br /><a class="linkification-ext" title="Linkification: http://www.idibu.com/clients/upp/?/index.php?hash=yourhash&amp;senderId=123&amp;jobTitle=test%20title" href="http://www.idibu.com/clients/upp/?/index.php?hash=yourhash&amp;senderId=123&amp;jobTitle=test%20title">http://www.idibu.com/clients/upp/?/index.php?hash=yourhash&amp;senderId=123&amp;jobTitle=test%20title</a></p>
-<p><br /><span style="font-size: xx-large;">4. Available parameters:</span></p>
+<h1>Available parameters</h1></p>
 <p><br />Here&rsquo;s the list of available parameters, their description and usage examples - - * denotes a parameter that is required.</p>
 <p><br /><span style="font-size: large;">Account parameters:</span></p>
 <ul>
