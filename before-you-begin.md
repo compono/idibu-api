@@ -5,8 +5,8 @@ We're more than happy to provide you with multiposting services, however all man
 
 How about you <a href="mailto:good@idibu.com">contact us</a> first so we can introduce ourselves, hear you out and suggest the integration type that will best match your needs? 
 
-We can then also offer some support, see how you'd like to manage our (future?) common clients and provide you with a test account. With this you can immediately test any work you develop once we find mutually beneficial way of working together.
+We can then also offer some support, see how you'd like to manage our (future?) common clients and provide you with an idibu test account. With this you can immediately test any work you develop once we find mutually beneficial way of working together.
 
 Looking forward to hearing from you!
 
--Bart Jaworski, Quality Control Manager in idibu.
+Bart Jaworski, Quality Control Manager in idibu.
