@@ -9,7 +9,7 @@ The "Posting Completion Page" a regular web page where users provide any additio
 
 - So simple that no training is required
 - Designed to be completely re-branded and customized for partners including:
-- 
+
 1. the posting url, allowing for fully brand-embedded posting to be integrated into third party systems.
 2. the email box used for notifications, that can be configured so any standard SMTP email account can be used
 
