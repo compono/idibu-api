@@ -14,5 +14,5 @@
         &lt;button id=&quot;idibu_submit&quot;&gt;Login&lt;/button&gt;
     &lt;/p&gt;
 &lt;/form&gt;
-<script type="text/javascript" src="http://www.idibu.com/clients/libs/js/idibu-whitelabel.js"></script>
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://www.idibu.com/clients/libs/js/idibu-whitelabel.js&quot;&gt;&lt;/script&gt;
 </code></pre>
