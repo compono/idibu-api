@@ -16,7 +16,10 @@
 	- Your location program should call the webservice with a location string and return a list of locations to choose from before posting. <strong>The country code will be your location id </strong>and <strong>the id returned by the web-service should be used as sublocation id</strong>. The list of county codes can be found below.<br />
 	- One location can have duplicate entries in the same county/state due to different post codes. It is worth to display only one entry for specific county/state<br />
 	- To correctly identify duplicates that are different locations (towns) please take the state/county tag for consideration. County tag can be found in UK and Ireland, while state is an additional tag for USA.<br />
-	- Some locations may have up to 15 legitimate duplicates all over the country. Make sure your program is ready for that.</p>
+	- Some locations may have up to 15 legitimate duplicates all over the country. Make sure your program is ready for that.<br />
+	- We suggest you build a location look-up field in your application that emulates idibu's behaviour: <br><br>
+<img src = "http://www.idibu.com/images/stories/Portal_logos/lookup_graphic.png" /><br /><br />
+The top dropdown is a static country list, whereas the other field is a look-up field that queries idibu location API after each typed in letter.</p><br /><br />
 <h1>
 	<strong>Country codes</strong></h1>
 <p>To make a correct call, you will have to call a location within a country represented by one of the following country codes: 
