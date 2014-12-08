@@ -59,3 +59,4 @@
 &lt;POST STATUS=&quot;PENDING&quot; TYPE=&quot;Del&quot; BOARDID=&quot;54&quot; REMOTEID=&quot;something&quot; QUEUEID=&quot;853&quot;&gt;Job was posted for deletion to this board.&lt;/POST&gt;&lt;/JOB&gt;
 &lt;/IDIBU&gt;
 </code></pre>
+You can also delete based on <a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/ref-based-delete.md">Client reference</a>,
