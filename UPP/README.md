@@ -5,6 +5,10 @@
 <h1>Posting URL</h1>
 <p><br />All parameters can be provided in either a traditional HTTP GET or POST fashion and must be URL encoded. POST is recommended to get pass any character count limits typical for GET method. For example, in order to provide the hash, sender ID and job title into the system located at partners.idibu.com, you should use the following URL:</p>
 <p><br /><a class="linkification-ext" title="Linkification: http://www.idibu.com/clients/upp/index.php?hash=yourhash&amp;senderId=123&amp;jobTitle=test%20title" href="http://www.idibu.com/clients/upp/index.php?hash=yourhash&senderId=123&jobTitle=test%20title">http://www.idibu.com/clients/upp/index.php?hash=yourhash&amp;senderId=123&amp;jobTitle=test%20title</a></p>
+<h1>Styling</h1>
+Here is how this can be looked when styling is applied:
+<a href="http://www.idibu.com/clients/upp/index.php?hash=hash&partnerId=bond">http://www.idibu.com/clients/upp/index.php?hash=hash&partnerId=bond</a>
+Just <a href="mailto:good@idibu.com">contact us</a> to become a partner and we'll help you getting this done.
 <h1>Available parameters</h1></p>
 <p><br />Here&rsquo;s the list of available parameters, their description and usage examples - - * denotes a parameter that is required.</p>
 <p><br /><span style="font-size: large;">Account parameters:</span></p>
