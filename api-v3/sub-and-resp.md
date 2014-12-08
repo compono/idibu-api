@@ -105,3 +105,4 @@ __posts__&lt;/JOB&gt;
 	<li>
 		The system can send out a branded confirmation email to let users know the post was successful.</li>
 </ul>
+Click <a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/quick-rep-job.md">here</a> to learn about quick reposting.
