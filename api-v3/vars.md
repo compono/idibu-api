@@ -52,7 +52,7 @@
 				<td>
 					text (Values: Yes / No)</td>
 				<td>
-					Indicated if you are sending data in the UTF-8 encoding.</td>
+					Indicated if you are sending data in the UTF-8 encoding. <b>Recommended to set to "yes"</b></td>
 			</tr>
 			<tr valign="TOP">
 				<td>
