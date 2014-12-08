@@ -30,3 +30,4 @@
 &nbsp;&nbsp;&lt;posting status=&quot;failed&quot; id=&quot;235&quot;&gt;No record with the stated ID was found&lt;/posting&gt;
 &lt;/idibu&gt;
 </code></pre>
+Wherever job board give such opportunity, one can also <a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/delet-jobs.md">delete a job</a>.
