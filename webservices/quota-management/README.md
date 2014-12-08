@@ -1,0 +1,1 @@
+Manage your quotas on a per user/team or office basis!. You can use this on a functionality-focused webservices or in a <a href="https://github.com/oneworldmarket/idibu-api/tree/master/webservices/quota-management">batch one</a>. 
