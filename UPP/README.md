@@ -62,3 +62,139 @@ Just <a href="mailto:good@idibu.com">contact us</a> to become a partner and we'l
 <li>overrideRepost - Set to true if parameters from URL have higher priority than repost data (if findJob is set to true)</li>
 <li>allowNewUsers - set to true if you like UPP to create a new idibu user if an unknown email appears in the email field. Set true as default.</li>
 </ul>
+<h1>Field values</h1>
+<b>Category:</b>
+2 - Accountancy (Qualified)
+3 - Admin & Secretarial
+2778 - Advertising & PR
+2776 - Aerospace
+2780 - Agriculture Fishing & Forestry
+2782 - Arts
+4 - Automotive
+5 - Banking
+7 - Building & Construction
+8 - Call Centre & Customer Service
+6 - Charity & Voluntary
+2784 - Consultancy
+2786 - Defence & Military
+2788 - Design & Creative
+9 - Education & Training
+2790 - Electronics
+10 - Engineering
+2816 - Executive and Management
+2792 - Fashion
+11 - Financial Services
+12 - FMCG
+14 - Graduate Roles
+15 - Health & Safety
+16 - Hospitality & Catering
+17 - HR & Personnel
+13 - Insurance
+2802 - Internet & New Media
+18 - IT
+19 - Legal
+20 - Leisure & Sport
+2794 - Logistics Distribution & Supply Chain
+2808 - Manufacturing & Production
+21 - Marketing
+22 - Media
+2796 - Medical & Nursing
+2804 - Pharmaceuticals
+2806 - Property & Housing
+23 - Public Sector & Government
+24 - Purchasing & Procurement
+25 - Recruitment Consultancy
+26 - Retail
+27 - Sales
+28 - Science & Research
+29 - Social Care
+2798 - Telecommunications
+30 - Transport & Rail
+2810 - Travel & Tourism
+2812 - Utilities
+
+Location:
+GB - United Kingdom
+AD - Andorra
+AN - Angola
+AR - Argentina
+AU - Australia
+AT - Austria
+BB - Barbados
+BE - Belgium
+BR - Brazil
+BG - Bulgaria
+CA - Canada
+GG - Channel Islands
+CN - China
+HR - Croatia
+DM - Denmark
+EG - Egypt
+FO - Faroe Islands
+FR - France
+DE - Germany
+GP - Guadeloupe
+GU - Guam
+HG - Hong Kong
+IN - India
+ID - Indonesia
+IE - Ireland
+IM - Isle of Man
+IT - Italy
+JP - Japan
+JE - Jersey
+LI - Liechtenstein
+LU - Luxembourg
+MK - Macedonia
+MY - Malaysia
+MA - Malta
+MH - Marshall Islands
+MQ - Martinique
+YT - Mayotte
+MX - Mexico
+MD - Moldova
+MC - Monaco
+NL - Netherlands
+NZ - New Zealand
+MP - Northern Mariana Islands
+NO - Norway
+PK - Pakistan
+PL - Poland
+PT - Portugal
+PR - Puerto Rico
+QA - Qatar
+SM - San Marino
+SI - Singapore
+ZA - South Africa
+ES - Spain
+LK - Sri Lanka
+PM - St. Pierre and Miquelon
+CH - Switzerland
+TH - Thailand
+TR - Turkey
+UE - United Arab Emirates
+US - United States
+VA - Vatican City (Holy See)
+VI - Virgin Islands (U.S.)
+ZZ - Rest of the World
+
+Employment term:
+2 – Permanent
+1 – Contract
+4 – Temporary
+
+Salaries:
+USD - US Dollars 
+($) EU – Euro
+(€) GBP – British Pound
+
+Working hours:
+2 – Full-time
+1 – Part-time
+
+Salary payment interval (per):
+annum – Annum
+month – Month
+week – Week
+day – Day
+hour - Hour
