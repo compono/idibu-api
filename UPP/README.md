@@ -62,139 +62,139 @@ Just <a href="mailto:good@idibu.com">contact us</a> to become a partner and we'l
 <li>overrideRepost - Set to true if parameters from URL have higher priority than repost data (if findJob is set to true)</li>
 <li>allowNewUsers - set to true if you like UPP to create a new idibu user if an unknown email appears in the email field. Set true as default.</li>
 </ul>
-<h1>Field values</h1>
-<b>Category:</b>
-2 - Accountancy (Qualified)
-3 - Admin & Secretarial
-2778 - Advertising & PR
-2776 - Aerospace
-2780 - Agriculture Fishing & Forestry
-2782 - Arts
-4 - Automotive
-5 - Banking
-7 - Building & Construction
-8 - Call Centre & Customer Service
-6 - Charity & Voluntary
-2784 - Consultancy
-2786 - Defence & Military
-2788 - Design & Creative
-9 - Education & Training
-2790 - Electronics
-10 - Engineering
-2816 - Executive and Management
-2792 - Fashion
-11 - Financial Services
-12 - FMCG
-14 - Graduate Roles
-15 - Health & Safety
-16 - Hospitality & Catering
-17 - HR & Personnel
-13 - Insurance
-2802 - Internet & New Media
-18 - IT
-19 - Legal
-20 - Leisure & Sport
-2794 - Logistics Distribution & Supply Chain
-2808 - Manufacturing & Production
-21 - Marketing
-22 - Media
-2796 - Medical & Nursing
-2804 - Pharmaceuticals
-2806 - Property & Housing
-23 - Public Sector & Government
-24 - Purchasing & Procurement
-25 - Recruitment Consultancy
-26 - Retail
-27 - Sales
-28 - Science & Research
-29 - Social Care
-2798 - Telecommunications
-30 - Transport & Rail
-2810 - Travel & Tourism
-2812 - Utilities
-
-Location:
-GB - United Kingdom
-AD - Andorra
-AN - Angola
-AR - Argentina
-AU - Australia
-AT - Austria
-BB - Barbados
-BE - Belgium
-BR - Brazil
-BG - Bulgaria
-CA - Canada
-GG - Channel Islands
-CN - China
-HR - Croatia
-DM - Denmark
-EG - Egypt
-FO - Faroe Islands
-FR - France
-DE - Germany
-GP - Guadeloupe
-GU - Guam
-HG - Hong Kong
-IN - India
-ID - Indonesia
-IE - Ireland
-IM - Isle of Man
-IT - Italy
-JP - Japan
-JE - Jersey
-LI - Liechtenstein
-LU - Luxembourg
-MK - Macedonia
-MY - Malaysia
-MA - Malta
-MH - Marshall Islands
-MQ - Martinique
-YT - Mayotte
-MX - Mexico
-MD - Moldova
-MC - Monaco
-NL - Netherlands
-NZ - New Zealand
-MP - Northern Mariana Islands
-NO - Norway
-PK - Pakistan
-PL - Poland
-PT - Portugal
-PR - Puerto Rico
-QA - Qatar
-SM - San Marino
-SI - Singapore
-ZA - South Africa
-ES - Spain
-LK - Sri Lanka
-PM - St. Pierre and Miquelon
-CH - Switzerland
-TH - Thailand
-TR - Turkey
-UE - United Arab Emirates
-US - United States
-VA - Vatican City (Holy See)
-VI - Virgin Islands (U.S.)
-ZZ - Rest of the World
-
-Employment term:
-2 – Permanent
-1 – Contract
-4 – Temporary
-
-Salaries:
-USD - US Dollars 
-($) EU – Euro
-(€) GBP – British Pound
-
-Working hours:
-2 – Full-time
-1 – Part-time
-
-Salary payment interval (per):
-annum – Annum
-month – Month
-week – Week
-day – Day
-hour - Hour
+<h1>Field values</h1><br />
+<b>Category:</b><br /><br />
+2 - Accountancy (Qualified)<br />
+3 - Admin & Secretarial<br />
+2778 - Advertising & PR<br />
+2776 - Aerospace<br />
+2780 - Agriculture Fishing & Forestry<br />
+2782 - Arts<br />
+4 - Automotive<br />
+5 - Banking<br />
+7 - Building & Construction<br />
+8 - Call Centre & Customer Service<br />
+6 - Charity & Voluntary<br />
+2784 - Consultancy<br />
+2786 - Defence & Military<br />
+2788 - Design & Creative<br />
+9 - Education & Training<br />
+2790 - Electronics<br />
+10 - Engineering<br />
+2816 - Executive and Management<br />
+2792 - Fashion<br />
+11 - Financial Services<br />
+12 - FMCG<br />
+14 - Graduate Roles<br />
+15 - Health & Safety<br />
+16 - Hospitality & Catering<br />
+17 - HR & Personnel<br />
+13 - Insurance<br />
+2802 - Internet & New Media<br />
+18 - IT<br />
+19 - Legal<br />
+20 - Leisure & Sport<br />
+2794 - Logistics Distribution & Supply Chain<br />
+2808 - Manufacturing & Production<br />
+21 - Marketing<br />
+22 - Media<br />
+2796 - Medical & Nursing<br />
+2804 - Pharmaceuticals<br />
+2806 - Property & Housing<br />
+23 - Public Sector & Government<br />
+24 - Purchasing & Procurement<br />
+25 - Recruitment Consultancy<br />
+26 - Retail<br />
+27 - Sales<br />
+28 - Science & Research<br />
+29 - Social Care<br />
+2798 - Telecommunications<br />
+30 - Transport & Rail<br />
+2810 - Travel & Tourism<br />
+2812 - Utilities<br />
+<br /><br />
+Location:<br /><br />
+GB - United Kingdom<br />
+AD - Andorra<br />
+AN - Angola<br />
+AR - Argentina<br />
+AU - Australia<br />
+AT - Austria<br />
+BB - Barbados<br />
+BE - Belgium<br />
+BR - Brazil<br />
+BG - Bulgaria<br />
+CA - Canada<br />
+GG - Channel Islands<br />
+CN - China<br />
+HR - Croatia<br />
+DM - Denmark<br />
+EG - Egypt<br />
+FO - Faroe Islands<br />
+FR - France<br />
+DE - Germany<br />
+GP - Guadeloupe<br />
+GU - Guam<br />
+HG - Hong Kong<br />
+IN - India<br />
+ID - Indonesia<br />
+IE - Ireland<br />
+IM - Isle of Man<br />
+IT - Italy<br />
+JP - Japan<br />
+JE - Jersey<br />
+LI - Liechtenstein<br />
+LU - Luxembourg<br />
+MK - Macedonia<br />
+MY - Malaysia<br />
+MA - Malta<br />
+MH - Marshall Islands<br />
+MQ - Martinique<br />
+YT - Mayotte<br />
+MX - Mexico<br />
+MD - Moldova<br />
+MC - Monaco<br />
+NL - Netherlands<br />
+NZ - New Zealand<br />
+MP - Northern Mariana Islands<br />
+NO - Norway<br />
+PK - Pakistan<br />
+PL - Poland<br />
+PT - Portugal<br />
+PR - Puerto Rico<br />
+QA - Qatar<br />
+SM - San Marino<br />
+SI - Singapore<br />
+ZA - South Africa<br />
+ES - Spain<br />
+LK - Sri Lanka<br />
+PM - St. Pierre and Miquelon<br />
+CH - Switzerland<br />
+TH - Thailand<br />
+TR - Turkey<br />
+UE - United Arab Emirates<br />
+US - United States<br />
+VA - Vatican City (Holy See)<br />
+VI - Virgin Islands (U.S.)<br />
+ZZ - Rest of the World<br />
+<br /><br />
+Employment term:<br />
+2 – Permanent<br />
+1 – Contract<br />
+4 – Temporary<br />
+<br />
+Salaries:<br /><br />
+USD - US Dollars <br />
+($) EU – Euro<br />
+(€) GBP – British Pound<br />
+<br /><br />
+Working hours:<br /><br />
+2 – Full-time<br />
+1 – Part-time<br />
+<br />
+Salary payment interval (per):<br /><br />
+annum – Annum<br />
+month – Month<br />
+week – Week<br />
+day – Day<br />
+hour - Hour<br />
