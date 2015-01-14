@@ -13,6 +13,7 @@ Just <a href="mailto:good@idibu.com">contact us</a> to become a partner and we'l
 <p><br />Here&rsquo;s the list of available parameters, their description and usage examples - - * denotes a parameter that is required.</p>
 <p><br /><span style="font-size: large;">Account parameters:</span></p>
 <ul>
+<li>method - please specify as "post" if you are proving parameters using POST method. Otherwise GET will be accepted.</li>
 <li>hash* - idibu account hash</li>
 <li>partnerId - idibu partner ID, used for applying custom CSS and options on posting. Please contact us to obtain one.</li>
 <li>Sender parameters:</li>
