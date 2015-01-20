@@ -1,5 +1,5 @@
 <h1>What is UPP?</h1>
-<p>UPP stands for Uninersal Posting Page. Essentially it's all ready PHP page with idibu multiposting functionality giving you all the options you need to use with your system. All needed to be done here is to style up the page, so it looks like it was developed by you, but you can have posting working in your system withing minutes!</p>
+<p>UPP stands for Uninersal Posting Page. Essentially it's all ready PHP page with idibu multiposting functionality giving you all the options you need to use with your system. All needed to be done here is to style up the page, so it looks like it was developed by you, but you can have posting working in your system withing minutes! We try to make it as easy and as functional as possible by including our <a href="http://support.idibu.com/default_import/Knowledgebase/Article/View/24/0/quotas-set-up---period-based">quota</a> and <a href="http://support.idibu.com/default_import/Knowledgebase/Article/View/15/0/force-posting">force posting</a> functionalities in the provided posting page.</p>
 <h1>How to use it?</h1></p>
 <p>Simply make a call to a link below with required paramaters. To make it super smooth you will need to map a few idibu parameters with your own vaiables.</p>
 <h1>Posting URL</h1>
