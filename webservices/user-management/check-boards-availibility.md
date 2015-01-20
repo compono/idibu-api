@@ -5,7 +5,7 @@ no - board should not be preselected and selectable<br>
 select - board should be preselected with an un-select option<br>
 force - board should be preselected with no un-select option<br>
 <br>
-We request that you incorporate those options into your integration if you are using this webservice.
+This corresponds to the <a href="http://support.idibu.com/default_import/Knowledgebase/Article/View/15/0/force-posting">follwing</a> idibu option. We request that you incorporate those options into your integration if you are using this webservice.
 </p>
 <h1>
 	Example</h1>
