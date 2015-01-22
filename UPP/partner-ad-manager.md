@@ -21,5 +21,20 @@ c) Full Repost: you can repost the position and amend some details on the way, j
 d) Delete Advert: It allows you to delete a particular post off the job board (provided the board supports such functionality)<br />
 e) Delete All Adverts: Same as above, but for all applicable posts.
 <h1>Time for the link?</h1>
-<b>http://uk.idibu.com/clients/easyweb/index.php?h=f4349dfa614d8aba86acc51cba329f29&l=en_US&lang=en_US&ins=http://www.easywebrecruitment.com/&ref=003101</b>
+<b>http://uk.idibu.com/clients/easyweb/index.php?</b>
 <h1>What are the possible parameters?</h1>
+h* - posting account hash
+ins* - repost link (URL encoded). By default it will add two parameter to the provided request: J (with job id) and M with value R which stads for "method=repost". You can use this in your software to call your posting page to generate step1 identical as when posting a new ad, but that will use repost <a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/methods.md">API method</a> and the jobid from the J parameter. So the XML (selected fragment) should look like:<br>
+<br>
+<code><?xml version="1.0" encoding="UTF-8"?>
+<idibu>
+<method>repost</method>
+ <config>
+...
+ </config>
+<job id="12345678">
+....
+</job>
+</idibu>
+</code>
+</br>
