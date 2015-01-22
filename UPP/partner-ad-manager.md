@@ -4,7 +4,7 @@ Along the universal posting page idibu provides also ad oriented ad manager (in 
 <img src="http://www.idibu.com/images/stories/Portal_logos/aoadmanager.png" /><br />
 <br />
 This is a iframe-ready version of idibu`s ad manager that allows you to manage the posting status of your selected job. Thus this version won't show you status of all of your ads, but will show you te status one selected ad. This job will show you one entry per job board as long as you will keep a scenario where you only once make a new posting under specific job reference and then make sure you only use the repost method with the same job.
-<h1>What does it all mea buttons mean?</h1>
+<h1>What does it all mean?</h1>
 As you can see each post is described with a few parameters:<br />
 <br />
 a) Status: Live (post is safe on the board and provides applications - there will be a redirect "view" link to see the ad on the job board where possible.), Failed (Something went wrong when posting the ad, but no worries - we'll send some helpful guidelines on how to fix the problem once it occurs), Expired (When the expected live span of a post is completed) and Deleted (when you remove the post off job board from external boards).<br />
