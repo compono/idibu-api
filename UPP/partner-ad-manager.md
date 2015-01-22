@@ -23,8 +23,10 @@ e) Delete All Adverts: Same as above, but for all applicable posts.
 <h1>Time for the link?</h1>
 <b>http://uk.idibu.com/clients/easyweb/index.php?</b>
 <h1>What are the possible parameters?</h1>
-h* - posting account hash
-ins* - repost link (URL encoded). By default it will add two parameter to the provided request: J (with job id) and M with value R which stads for "method=repost". You can use this in your software to call your posting page to generate step1 identical as when posting a new ad, but that will use repost <a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/methods.md">API method</a> and the jobid from the J parameter. So the XML (selected fragment) should look like:<br>
+h* - posting account hash<br />
+ins* - repost link (URL encoded). <br />
+<br />
+By default it will add two parameter to the provided request: J (with job id) and M with value R which stads for "method=repost". You can use this in your software to call your posting page to generate step1 identical as when posting a new ad, but that will use repost <a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/methods.md">API method</a> and the jobid from the J parameter. So the XML (selected fragment) should look like:<br>
 <br>
 <pre>
 <code type="xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
@@ -40,4 +42,9 @@ ins* - repost link (URL encoded). By default it will add two parameter to the pr
 </code>
 </pre>
 
-You can use <a href="https://github.com/oneworldmarket/idibu-api/blob/master/webservices/advert-management/get-list-of-all-ads.md">idibu webservices</a> to download original posting`s details (like title, description, etc) and fill in the repost form of your software! 
+You can use <a href="https://github.com/oneworldmarket/idibu-api/blob/master/webservices/advert-management/get-list-of-all-ads.md">idibu webservices</a> to download original posting`s details (like title, description, etc) and fill in the repost form of your software! <br><br>
+It's even easier with UPP! Just provie this as your repost url:<br>
+
+http://www.idibu.com/clients/easyweb/index.php?h=<b>(posting account hash)</b>2&ins=http%3A%2F%2Fwww.idibu.com%2Fclients%2Fupp%2Findex.php%3Fhash%3D<b>(posting account hash)</b>%26partnerid%3D<b>(your partner ID)</b>%26jobRef%3D<b>(job reference</b>&email=<b>(ad sender`s email)</b>
+
+So esentially you just need to give UPP hash, job reference and sender and UPP will prepare a page ready to make the repost, already filled with original posting's details!
