@@ -26,15 +26,15 @@ e) Delete All Adverts: Same as above, but for all applicable posts.
 h* - posting account hash
 ins* - repost link (URL encoded). By default it will add two parameter to the provided request: J (with job id) and M with value R which stads for "method=repost". You can use this in your software to call your posting page to generate step1 identical as when posting a new ad, but that will use repost <a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/methods.md">API method</a> and the jobid from the J parameter. So the XML (selected fragment) should look like:<br>
 <br>
-<code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;<br>
-&lt;idibu&gt;<br>
-&lt;method&gt;repost&lt;/method&gt;<br>
- &lt;config&gt;<br>
-...<br>
- &lt;/config&gt;<br>
-&lt;job id=&quot;12345678&quot;&gt;<br>
-....<br>
-&lt;/job&gt;<br>
-&lt;/idibu&gt;<br>
+<code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;<br />
+&lt;idibu&gt;<br />
+&lt;method&gt;repost&lt;/method&gt;<br />
+ &lt;config&gt;<br />
+...<br />
+ &lt;/config&gt;<br />
+&lt;job id=&quot;12345678&quot;&gt;<br />
+...<br />
+&lt;/job&gt;<br />
+&lt;/idibu&gt;<br />
 </code>
 </br>
