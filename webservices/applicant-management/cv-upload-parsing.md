@@ -5,7 +5,8 @@ This is useful if you want legacy applicant data to be available via our local s
 <p>Method imports CV into the idibu&nbsp;local search database.</p>
 <p>Use the job id and reference to define which job the applicant will be attached to, these are required fields.</p>
 <p>Don&#39;t worry if you can&#39;t supply email or first/last names, we&#39;ll try to grab those from the CV itself.</p>
-<p>Please note that CV contents should be base64 encoded, file name shouldn&#39;t contain any extra symbols</p>
+<p>Please note that CV contents should be base64 encoded, file name shouldn&#39;t contain any extra symbols. <br />
+You can also specify application`s source, subject and body of what would normally be applicant's incoming email.</p>
 <div>
 	<h1 class="p3">
 		Example</h1>
@@ -13,25 +14,22 @@ This is useful if you want legacy applicant data to be available via our local s
 		Request</h2>
 	<pre>
 <code type="xml">
-&lt;idibu&gt; 
-&lt;job&gt; 
-&lt;id&gt; 33028649 &lt;/id&gt; 
-&lt;reference&gt; TSTJOBREF &lt;/reference&gt; 
-&lt;/job&gt; 
-&lt;cv&gt; 
-&lt;contents&gt; cv contents base64 encoded here &lt;/contents&gt; 
-&lt;name&gt; some_file.txt &lt;/name&gt; 
-&lt;/cv&gt; 
-&lt;/idibu&gt;
-&lt;/code&gt;
-&lt;/pre&gt;
-	&lt;h2&gt;
-		Response&lt;/h2&gt;
-	&lt;pre&gt;
-&lt;code type=&quot;xml&quot;&gt;
-&lt;idibu generator=&quot;idibu&quot; version=&quot;1.0&quot;&gt; 
-&lt;response&gt; CV uploaded &lt;/response&gt; 
-&lt;status&gt; success &lt;/status&gt; 
+&lt;idibu&gt;
+    &lt;job&gt;
+        &lt;id&gt;123&lt;/id&gt;
+        &lt;!-- &lt;reference&gt;ABC123&lt;/reference&gt; -- job reference is no longer required (it is always fetched from db) --&gt;
+        &lt;portal&gt;aeo&lt;/portal&gt; &lt;!-- portal BID or id can be provided --&gt;
+        &lt;!-- if there is a portal id, latest postlog id will be fetched from db --&gt;
+    &lt;/job&gt;
+    &lt;cv&gt;
+        &lt;name&gt;cv.doc&lt;/name&gt;
+        &lt;contents&gt;BASE64+ENCODED+FILE+CONTENT&lt;/contents&gt;
+    &lt;/cv&gt;
+    &lt;email&gt;
+        &lt;from&gt;darek@idibu.com&lt;/from&gt; &lt;!-- ability to specify email from address --&gt;
+        &lt;subject&gt;Application from me&lt;/subject&gt; &lt;!-- ability to specify email subject --&gt;
+        &lt;body&gt;Accept me, pretty please&lt;/body&gt; &lt;!-- ability to specify email body --&gt;
+    &lt;/email&gt;
 &lt;/idibu&gt;
 </code></pre>
 </div>
