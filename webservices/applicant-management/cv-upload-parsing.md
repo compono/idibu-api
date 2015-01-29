@@ -8,6 +8,9 @@ This is useful if you want legacy applicant data to be available via our local s
 <p>Please note that CV contents should be base64 encoded, file name shouldn&#39;t contain any extra symbols. <br />
 You can also specify application`s source, subject and body of what would normally be applicant's incoming email.</p>
 <div>
+<h1 class="p3">Link:</h1>
+http://ws.idibu.com/ws/rest/v1/applicants/add-cv?hash=(account`s hash)
+
 	<h1 class="p3">
 		Example</h1>
 	<h2>
