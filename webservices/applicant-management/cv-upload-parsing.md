@@ -19,7 +19,7 @@ http://ws.idibu.com/ws/rest/v1/applicants/add-cv?hash=(account`s hash)
 <code type="xml">
 &lt;idibu&gt;
     &lt;job&gt;
-        &lt;id&gt;123&lt;/id&gt;
+        &lt;id&gt;(direct or base64 encoded idibu job id)&lt;/id&gt;
         &lt;!-- &lt;reference&gt;ABC123&lt;/reference&gt; -- job reference is no longer required (it is always fetched from db) --&gt;
         &lt;portal&gt;aeo&lt;/portal&gt; &lt;!-- portal BID or id can be provided --&gt;
         &lt;!-- if there is a portal id, latest postlog id will be fetched from db --&gt;
