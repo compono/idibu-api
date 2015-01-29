@@ -42,6 +42,7 @@ Just <a href="mailto:good@idibu.com">contact us</a> to become a partner and we'l
 <li>sublocation &ndash; sublocation&rsquo;s name (e.g. London)</li>
 <li>sublocationId &ndash; sublocation&rsquo;s ID (e.g. 1024195)</li>
 <li>mapPostCode &ndash; rather then provide an ID or text value of the location, you can provide a post code as a location source. idibu will use google location API to figure out the indented location based on it. By default we will try to map to UK post code, but if you will provide location variable (country code as above), we'll look for a location within the provided post code in the specified country.</li>
+<li>hours - job time ID (available options listed below, e.g. 1)</li>
 <li>term - employment term ID (available options listed below, e.g. 1)</li>
 <li>duration - contract duration (only if employment term is set to "Contract" (ID: 1), e.g. Two%20months)</li>
 <li>currency - salary currency ID (available options listed below, e.g. GBP)</li>
