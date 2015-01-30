@@ -46,4 +46,6 @@ It's even easier with UPP! Just provie this as your repost url:<br>
 
 http://www.idibu.com/clients/easyweb/index.php?h=<b>(posting account hash)</b>2&ins=http%3A%2F%2Fwww.idibu.com%2Fclients%2Fupp%2Findex.php%3Fhash%3D<b>(posting account hash)</b>%26partnerid%3D<b>(your partner ID)</b>%26jobRef%3D<b>(job reference</b>&email=<b>(ad sender`s email)</b>
 
+You can also provide useOriginalSender=true rather then email parameter. The repost will then reuse the original sender on the repost page.
+
 So esentially you just need to give UPP hash, job reference and sender and UPP will prepare a page ready to make the repost, already filled with original posting's details!
