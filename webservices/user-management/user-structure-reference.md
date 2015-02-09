@@ -1,4 +1,8 @@
 <p>Method returns the list of users in office/team|Unassigned structure</p>
+<p>It can also show you the list of users that a user can post on behalf or authorise job for. To do that please user the following parameters:<br><br>
+postable-by=[USER ID]<br>
+authorized-by=[USER ID]<br>
+<br>
 <h1>
 	Example</h1>
 <h2>
