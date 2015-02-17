@@ -21,7 +21,7 @@ c) Full Repost: you can repost the position and amend some details on the way, j
 d) Delete Advert: It allows you to delete a particular post off the job board (provided the board supports such functionality)<br />
 e) Delete All Adverts: Same as above, but for all applicable posts.
 <h1>Time for the link?</h1>
-<b>http://uk.idibu.com/clients/easyweb/index.php?</b>
+<b>http://uk.idibu.com/clients/pam/index.php?</b>
 <h1>What are the possible parameters?</h1>
 h* - posting account hash<br />
 ref* - reference of the job you wish to manage<br />
@@ -44,7 +44,7 @@ ins* - repost link (URL encoded). By default it will add two parameter to the pr
 You can use <a href="https://github.com/oneworldmarket/idibu-api/blob/master/webservices/advert-management/get-list-of-all-ads.md">idibu webservices</a> to download original posting`s details (like title, description, etc) and fill in the repost form of your software! <br><br>
 It's even easier with UPP! Just provie this as your repost url:<br>
 
-http://www.idibu.com/clients/easyweb/index.php?h=<b>(posting account hash)</b>2&ins=http%3A%2F%2Fwww.idibu.com%2Fclients%2Fupp%2Findex.php%3Fhash%3D<b>(posting account hash)</b>%26partnerid%3D<b>(your partner ID)</b>%26jobRef%3D<b>(job reference</b>&email=<b>(ad sender`s email)</b>
+http://www.idibu.com/clients/pam/index.php?h=<b>(posting account hash)</b>2&ins=http%3A%2F%2Fwww.idibu.com%2Fclients%2Fupp%2Findex.php%3Fhash%3D<b>(posting account hash)</b>%26partnerid%3D<b>(your partner ID)</b>%26jobRef%3D<b>(job reference</b>&email=<b>(ad sender`s email)</b>
 
 You can also provide useOriginalSender=true rather then email parameter. The repost will then reuse the original sender on the repost page.
 
