@@ -81,6 +81,4 @@ You can also provide multiple references for many jobs with one call usin ;!; se
 &lt;/idibu&gt;
 </code></pre>
 
-<?xml version="1.0" encoding="UTF-8"?><idibu><method>delete</method><job ref="JO-1404-7731" all="yes"></job></idibu>
-</pre>
 You can also delete based on <a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/ref-based-delete.md">Client reference</a>,
