@@ -107,6 +107,28 @@
 				<p class="p2">filter applicants by Adverts live since at least X days. For example if you select 7, then you will get a list of all applicants for jobs currently live and jobs that expired no longer then 7 days ago. Additional filters will also be considered.</p>
 			</td>
 		</tr>
+		<tr>
+			<td class="td1" valign="middle">
+				<p class="p2">after_date</p>
+			</td>
+			<td class="td2" valign="middle">
+				<p class="p2">No</p>
+			</td>
+			<td class="td3" valign="middle">
+				<p class="p2">to filter webservice to show applicants that appied after specified date. Please use YYYY-MM-DD format.</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="td1" valign="middle">
+				<p class="p2">before_date</p>
+			</td>
+			<td class="td2" valign="middle">
+				<p class="p2">No</p>
+			</td>
+			<td class="td3" valign="middle">
+				<p class="p2">to filter webservice to show applicants that appied before specified date. Please use YYYY-MM-DD format.</p>
+			</td>
+		</tr>
 	</tbody>
 </table>
 <h1>
