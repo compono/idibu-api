@@ -58,5 +58,28 @@
 &lt;POST BOARDID=&quot;10&quot; STATUS=&quot;FAILED&quot;&gt;No posts suitable for deletion were found for this board&lt;/POST&gt;
 &lt;POST STATUS=&quot;PENDING&quot; TYPE=&quot;Del&quot; BOARDID=&quot;54&quot; REMOTEID=&quot;something&quot; QUEUEID=&quot;853&quot;&gt;Job was posted for deletion to this board.&lt;/POST&gt;&lt;/JOB&gt;
 &lt;/IDIBU&gt;
+</code>
+You can also delete all posts from a single reference:
+<h2>
+	Reference based delete</h2>
+<pre>
+<code>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;idibu&gt;
+	&lt;method&gt;delete&lt;/method&gt;
+	&lt;job ref=&quot;JO-1404-7731&quot; all=&quot;yes&quot;&gt;&lt;/job&gt;
+&lt;/idibu&gt;
 </code></pre>
+You can also provide multiple references for many jobs with one call usin ;!; sepator
+<pre>
+<code>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;idibu&gt;
+	&lt;method&gt;delete&lt;/method&gt;
+	&lt;job ref=&quot;JO-1404-7731;!;JO-1404-7732;!;JO-1404-7733&quot; all=&quot;yes&quot;&gt;&lt;/job&gt;
+&lt;/idibu&gt;
+</code></pre>
+
+<?xml version="1.0" encoding="UTF-8"?><idibu><method>delete</method><job ref="JO-1404-7731" all="yes"></job></idibu>
+</pre>
 You can also delete based on <a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/ref-based-delete.md">Client reference</a>,
