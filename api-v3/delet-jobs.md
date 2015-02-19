@@ -58,10 +58,10 @@
 &lt;POST BOARDID=&quot;10&quot; STATUS=&quot;FAILED&quot;&gt;No posts suitable for deletion were found for this board&lt;/POST&gt;
 &lt;POST STATUS=&quot;PENDING&quot; TYPE=&quot;Del&quot; BOARDID=&quot;54&quot; REMOTEID=&quot;something&quot; QUEUEID=&quot;853&quot;&gt;Job was posted for deletion to this board.&lt;/POST&gt;&lt;/JOB&gt;
 &lt;/IDIBU&gt;
-</code>
+</code></pre>
+
+<h1>	Reference based delete</h1>
 You can also delete all posts from a single reference:
-<h2>
-	Reference based delete</h2>
 <pre>
 <code>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
