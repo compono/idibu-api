@@ -70,6 +70,7 @@ You can also delete all posts from a single reference:
 	&lt;job ref=&quot;JO-1404-7731&quot; all=&quot;yes&quot;&gt;&lt;/job&gt;
 &lt;/idibu&gt;
 </code></pre>
+
 You can also provide multiple references for many jobs with one call usin ;!; sepator
 <pre>
 <code>
