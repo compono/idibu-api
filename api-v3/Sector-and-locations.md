@@ -1,6 +1,6 @@
 <h1>
 	Sectors</h1>
-<p>The sectors for idibu are fixed to this current list - <a href="/attachments/idibu_sector_list.xls">download the idibu sector list in XLS format</a>.</p>
+<p>The sectors for idibu are fixed to this current list - <a href="www.idibu.com/images/stories/Portal_logos/idibu_sector_list.xls">download the idibu sector list in XLS format</a>.</p>
 <h1>
 	Locations</h1>
 <p>idibu now has a global location system which means the amount of location possibilities are huge.</p>
@@ -121,4 +121,12 @@ POST http://ws.idibu.com/ws/rest/v1/locations/<COUNTRY CODE HERE>/find?hash=<CLI
 &lt;/idibu&gt;
 </code>
 </pre>
+
+Worst case scenario, you can use a fixed list locations for specific country. We have prepared list for:<br />
+<br />
+<a href = "www.idibu.com/images/stories/Portal_logos/GB.rar">UK - United Kingdome</a><br />
+<a href = "www.idibu.com/images/stories/Portal_logos/AU.rar">AU - Australia</a><br />
+<br />
+that should speed up your developement, but we stress that dynamic location webservice usage is the best way to go!
+<br /><br />
 <a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/spec-data.md"> Click here to find about board specific tags</a>
