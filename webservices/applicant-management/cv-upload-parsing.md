@@ -35,5 +35,10 @@ http://ws.idibu.com/ws/rest/v1/applicants/add-cv?hash=(account`s hash)
     &lt;/email&gt;
 &lt;/idibu&gt;
 </code></pre>
+
+idibu board tracking codes can be found here:
+
+http://www.idibu.com/clients/?user=<b>[Your idibu username]</b>&password=<b>[Your idibu password]</b>&class=Portal&action=ListBIDs
+
 </div>
 <p>&nbsp;</p>
