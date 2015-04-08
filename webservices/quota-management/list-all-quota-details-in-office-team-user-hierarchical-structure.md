@@ -3,7 +3,7 @@
 	Request</h3>
 <pre>
 <code>
-http://www.idibu.com/ws/rest/v1/quotas/<board id>/all?hash=<your hash>
+http://www.idibu.com/ws/rest/v1/quotas/(board id)/all?hash=<your hash>
 </code></pre>
 <h3>
 	Response</h3>
