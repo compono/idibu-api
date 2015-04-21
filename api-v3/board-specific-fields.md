@@ -29,6 +29,41 @@ The list of data returned by this XML contains:<ul>
 <li>Board duration options</li>
 </ul>
 <h1>
+List of possible field validators</h1>
+<ul>
+Field Length validators
+<li>fieldMaxLength - Maximum Field Length.</li>
+<li>fieldMinLength - Minimum Field Length.</li>
+<li>fieldMaxWords - Maximum Field Words Count.</li>
+<li>fieldMinWords - Minimum Field Words Count.</li>
+<li>fieldLengthIs - Exact Field Length.</li>
+<li>listHasMinChoices - Minimum choice count (for multiselect fields).</li>
+<li>listHasMaxChoices - Maximum choice count (for multiselect fields).</li>
+<li>fieldWithoutLinks - Can't contain links.</li>
+<li>fieldWithoutEmails - Can't contain emails.</li>
+<br>
+Numberic Validators<br>
+<li>intMaxSize - Integer Value Less Than.</li>
+<li>intMinSize - Integer Value Greater Than.</li>
+<br>Data Type Validators<br>
+<li>onlyNumbers - Only Allow Numbers.</li>
+<li>fieldHasProperLink - Only allow urls.</li>
+</ul>
+
+<h1>
+Extra field attributes</h1>
+<ul>
+Field Length validators
+<li>name - Field name as it should be passed to idibu.</li>
+<li>description - Field name as it should be displayed to a user.</li>
+<li>type - Text/select/hidden.</li>
+<li>multi - If true, possible to select multiple values.</li>
+<li>validated - If true, has a validator that is assigned to this field and present in the same XML.</li>
+<li>required - If true, has be provided in the XML in order to complete the posting. Without it idibu will ask to complete the PCP link.</li>
+<li>order - Figure that symbolises the order of the field between other extra fields (as it is in idibu).</li>
+</ul>
+
+<h1>
 Board data example XML</h1>
 <pre>
 <code type="xml">
