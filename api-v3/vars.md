@@ -157,7 +157,7 @@
 			<td>
 				title</td>
 			<td>
-				Yes</td>
+				Yes - minimum 5 characters</td>
 			<td>
 				text</td>
 			<td>
@@ -165,9 +165,9 @@
 		</tr>
 		<tr valign="TOP">
 			<td>
-				description</td>
+				description </td>
 			<td>
-				Yes</td>
+				Yes - minimum 5 characters</td>
 			<td>
 				longtext</td>
 			<td>
@@ -217,7 +217,7 @@
 			<td>
 				salarymax</td>
 			<td>
-				Yes</td>
+				Yes - must be greater then salary minimum</td>
 			<td>
 				numeric Default: 0</td>
 			<td>
