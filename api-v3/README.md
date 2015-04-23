@@ -37,3 +37,4 @@ The description and usage of each group and its tags are explained below, with s
 <a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/delet-jobs.md">8. Deleting Posts.</a><br>
 <a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/ref-based-delete.md">8a. Reference based delete.</a><br>
 <a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/first-test-posting.md">9. First Posting.</a><br>
+<a href="https://github.com/oneworldmarket/idibu-api/blob/master/webservices/code-library/.net-basic-interaction.md" target="_blank">10. Code library.</a><br>
