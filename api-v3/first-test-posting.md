@@ -86,3 +86,7 @@
 <p>A: When you add a job board inside idibu you give the admin details there - when you post a job the system uses these fields to post the job to the board. You can optionally send these extra fields in the XML instead. If you do so they will override the board login details already loaded inside your account for that board.</p>
 
 Be sure to check our <a href="https://github.com/oneworldmarket/idibu-api/tree/master/api-v3/examples">XML examples to help you developing</a>.
+
+Before you begin coding, perphas worth to check <a href="https://github.com/oneworldmarket/idibu-api/blob/master/webservices/code-library/.net-basic-interaction.md" target="_blank">our code library</a> in case there's something you can re-use and save time?
+
+Good luck and happy postin!
