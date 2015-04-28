@@ -48,6 +48,7 @@ Numberic Validators<br>
 <br>Data Type Validators<br>
 <li>onlyNumbers - Only Allow Numbers.</li>
 <li>fieldHasProperLink - Only allow urls.</li>
+<li>validUKPostCode - Checking if the provided field is filled with valid UK post code. Only applies to vacancies being posted to UK.</li>
 </ul>
 
 <h1>
