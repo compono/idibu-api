@@ -54,7 +54,6 @@ Numberic Validators<br>
 <h1>
 Extra field attributes</h1>
 <ul>
-Field Length validators
 <li>name - Field name as it should be passed to idibu.</li>
 <li>description - Field name as it should be displayed to a user.</li>
 <li>type - Text/select/hidden.</li>
