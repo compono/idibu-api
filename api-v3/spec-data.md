@@ -82,4 +82,11 @@ profileID is the jobs' sender ID which is used rarely in case different users ha
 <h1>
 	Hidden Fields</h1>
 <p>Those fields should be ignored by the developers linking their applications to idibu&#39;s API. Those &quot;hidden&quot; fields are fed with data from the dynamic core fields.</p>
+
+<h1>Duration Fields</h1>
+Most of your boards will have an additional, duration field, among other extra fields. Possible values can be found in the webservice and the field is required if you'd like to post without PCP. You just need to provide the amount of days your post should be live from the selection available on a per board basis. 
+<pre>
+&lt;duration days=&quot;7&quot; /&gt;
+</pre>
 <a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/dyn-vars.md">Continue reading here to learn about dynamic core fields</a>
+
