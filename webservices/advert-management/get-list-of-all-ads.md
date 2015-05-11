@@ -112,7 +112,7 @@
 
 
 <code>
-http://ws.idibu.com/ws/rest/v1/adverts/all/?hash=<your hash>&sender=529&offset=10&count=1&from_date=2011-09-14&to_date=2011-10-22
+http://ws.idibu.com/ws/rest/v1/adverts/all/?hash=[your hash]&sender=529&offset=10&count=1&from_date=2011-09-14&to_date=2011-10-22
 </code></pre>
 <h2>
 	Response</h2>
