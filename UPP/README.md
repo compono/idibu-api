@@ -8,7 +8,9 @@
 In theory with the link above you could have an almost <b>instant integration</b> with little dev work required. Once that is live you'd just need to work on styling and parameter mapping and you have a fully functioning multiposting system on your ATS!</p>
 <h1>Styling</h1>
 Here is how this can look/could look when styling is applied:
-<a href="http://www.idibu.com/clients/upp/index.php?hash=yourhash&senderId=123&jobTitle=test%20title&partnerId=bond">http://www.idibu.com/clients/upp/index.php?hash=yourhash&senderId=123&jobTitle=test%20title&partnerId=bond</a>
+
+![illustration](https://www.evernote.com/shard/s383/sh/282b25e9-2780-49ea-acf7-7575a496a640/1cc19af67c2f681f365f633470598ac8/res/5ba5bfaa-a032-4a40-b5aa-77ca48aa5a5e/skitch.png)
+
 Just <a href="mailto:good@idibu.com">contact us</a> to become a partner and we'll help you getting this done.
 <h1>Available parameters</h1></p>
 <p><br />Here&rsquo;s the list of available parameters, their description and usage examples - - * denotes a parameter that is required.</p>
