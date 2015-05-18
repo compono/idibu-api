@@ -44,7 +44,7 @@ ins* - repost link (URL encoded). By default it will add two parameter to the pr
 You can use <a href="https://github.com/oneworldmarket/idibu-api/blob/master/webservices/advert-management/get-list-of-all-ads.md">idibu webservices</a> to download original posting`s details (like title, description, etc) and fill in the repost form of your software! <br><br>
 It's even easier with UPP! Just provie this as your repost url:<br>
 
-http://www.idibu.com/clients/pam/index.php?h=<b>(posting account hash)</b>2&ins=http%3A%2F%2Fwww.idibu.com%2Fclients%2Fupp%2Findex.php%3Fhash%3D<b>(posting account hash)</b>%26partnerid%3D<b>(your partner ID)</b>%26jobRef%3D<b>(job reference</b>&email=<b>(ad sender`s email)</b>
+http://www.idibu.com/clients/pam/index.php?h=<b>(posting account hash)</b>2&ins=http%3A%2F%2Fwww.idibu.com%2Fclients%2Fupp%2Findex.php%3Fhash%3D<b>(posting account hash)</b>%26partnerid%3D<b>your_partner_ID</b>%26jobRef%3D<b>(job reference</b>&email=<b>(ad sender`s email)</b>
 
 You can also provide useOriginalSender=true rather then email parameter. The repost will then reuse the original sender on the repost page.
 
