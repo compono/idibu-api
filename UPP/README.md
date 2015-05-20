@@ -4,7 +4,7 @@
 <p>Simply make a call to a link below with required parameters. To make it super smooth you will need to map a few idibu parameters with your own variables.</p>
 <h1>Posting URL</h1>
 <p><br />All parameters can be provided in either a traditional HTTP GET or POST fashion and must be URL encoded. POST is recommended to get past any character count limits typical for GET method. For example, in order to provide the hash, sender ID and job title into the system located at partners.idibu.com, you should use the following URL:
-<br /><a class="linkification-ext" title="Linkification: http://www.idibu.com/clients/upp/index.php?hash=<b>yourhash</b>&amp;<b>email=sender_email</b>&amp;jobTitle=test%20title" href="http://www.idibu.com/clients/upp/index.php?hash=1c6ce766d9d7c297ca77dda753f7e2a2&email=bart@idibu.com&jobTitle=test%20title">http://www.idibu.com/clients/upp/index.php?hash=yourhash&amp;senderId=123&amp;jobTitle=test%20title</a><br>
+<br /><br /><a class="linkification-ext" title="Linkification: http://www.idibu.com/clients/upp/index.php?hash=<b>yourhash</b>&amp;<b>email=sender_email</b>&amp;jobTitle=test%20title" href="http://www.idibu.com/clients/upp/index.php?hash=1c6ce766d9d7c297ca77dda753f7e2a2&email=bart@idibu.com&jobTitle=test%20title">http://www.idibu.com/clients/upp/index.php?hash=yourhash&amp;senderId=123&amp;jobTitle=test%20title</a><br /><br />
 In theory with the link above you could have an almost <b>instant integration</b> with little dev work required. Once that is live you'd just need to work on styling and parameter mapping and you have a fully functioning multiposting system on your ATS!</p>
 <h1>Styling</h1>
 Here is how this can look/could look when styling is applied:
