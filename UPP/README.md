@@ -9,7 +9,7 @@ In theory with the link above you could have an almost <b>instant integration</b
 <h1>Styling</h1>
 Here is how this can look/could look when styling is applied:
 
-![illustration](https://www.evernote.com/shard/s383/sh/282b25e9-2780-49ea-acf7-7575a496a640/1cc19af67c2f681f365f633470598ac8/res/5ba5bfaa-a032-4a40-b5aa-77ca48aa5a5e/skitch.png)
+<img src="https://www.evernote.com/shard/s383/sh/282b25e9-2780-49ea-acf7-7575a496a640/1cc19af67c2f681f365f633470598ac8/res/5ba5bfaa-a032-4a40-b5aa-77ca48aa5a5e/skitch.png")
 
 Just <a href="mailto:good@idibu.com">contact us</a> to become a partner and we'll help you getting this done.
 <h1>Available parameters</h1></p>
