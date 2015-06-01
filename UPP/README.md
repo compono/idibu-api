@@ -96,9 +96,9 @@ also in this format a comma after each, even single, child value is required.
 You can provide values for multiple boards and fields. Each field has to be sameparated with non-url encoded semicolon, for example:
 <ul>
 <li>extrafields=118%7CLoctest%7C08;118%7Cparam%7Cedit;118%7Creqmultisel%7C1,2,;118%7Creqdmutli,1%7C1,2,;</li>
-
+<br />
 which translates to:
-
+<br />
 <li>extrafields=118|Loctest|08;118|param|edit;118|reqmultisel|1,2,;118|reqdmutli,1|1,2,;</li>
 </ul>
 
