@@ -1,9 +1,10 @@
 <h1>What is UPP?</h1>
-<p>UPP stands for Universal Posting Page. Essentially it's all ready PHP page with idibu multiposting functionality giving you all the options you need to use with your system. All needed to be done here is to style up the page, so it looks like it was developed by you, but you can have posting working in your system within minutes! We try to make it as easy and as functional as possible by including our <a href="http://support.idibu.com/default_import/Knowledgebase/Article/View/24/0/quotas-set-up---period-based">quota</a> and <a href="http://support.idibu.com/default_import/Knowledgebase/Article/View/15/0/force-posting">force posting</a> functionalities in the provided posting page.</p>
+<p>UPP stands for Universal Posting Page. Essentially it's all ready PHP page with idibu multiposting functionality giving you all the options you need to use with your system. All needed to be done here is to style up the page, so it looks like it was developed by you, but you can have posting working in your system within minutes! We try to make it as easy and as functional as possible by including our <a href="http://support.idibu.com/default_import/Knowledgebase/Article/View/24/0/quotas-set-up---period-based">quota</a> and <a href="http://support.idibu.com/default_import/Knowledgebase/Article/View/15/0/force-posting">force posting</a> functionalities in the provided posting page.<br><br>
+Once the field in UPP page will be filled, the user will be asked to complete the posting by providing fields specific to chosen boards using <a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/pcp.md" target="_blank" >post completion page.</a></p>
 <h1>How to use it?</h1></p>
 <p>Simply make a call to a link below with required parameters. To make it super smooth you will need to map a few idibu parameters with your own variables.</p>
 <h1>Posting URL</h1>
-<p><br />All parameters can be provided in either a traditional HTTP GET or POST fashion and must be URL encoded. POST is recommended to get past any character count limits typical for GET method. For example, in order to provide the hash, sender ID and job title into the system located at partners.idibu.com, you should use the following URL:
+<p><br />All parameters can be provided in either a traditional HTTP GET or POST fashion and must be URL encoded. POST is recommended to get past any character count limits typical for GET method. For example, in order to provide the hash, sender ID and job title into the our system, you should use the following URL:
 <br /><br /><a class="linkification-ext" title="Linkification: http://www.idibu.com/clients/upp/index.php?hash=<b>yourhash</b>&amp;<b>email=sender_email</b>&amp;jobTitle=test%20title" href="http://www.idibu.com/clients/upp/index.php?hash=1c6ce766d9d7c297ca77dda753f7e2a2&email=bart@idibu.com&jobTitle=test%20title">http://www.idibu.com/clients/upp/index.php?hash=yourhash&amp;senderId=123&amp;jobTitle=test%20title</a><br /><br />
 In theory with the link above you could have an almost <b>instant integration</b> with little dev work required. Once that is live you'd just need to work on styling and parameter mapping and you have a fully functioning multiposting system on your ATS!</p>
 <h1>Styling</h1>
@@ -69,6 +70,31 @@ Just <a href="mailto:good@idibu.com">contact us</a> to become a partner and we'l
 <li>overrideRepost - Set to true if parameters from URL have higher priority than repost data (if findJob is set to true)</li>
 <li>allowNewUsers - set to true if you like UPP to create a new idibu user if an unknown email appears in the email field. Set true as default.</li>
 </ul>
+<h1>Providing board specific field values</h1><br />
+If you need, you can provide board specific values, that will be included on step2 of the posting process, the page we call PCP. To do that, please use the "extrafields" paramter with the following, URL encoded format.
+
+for text and single select fields please use the following format:
+
+extrafields=(numeric board id)|(field name)|(field value)
+
+for multiselect fields:
+
+extrafields=(numeric board id)|(field name)|(field value 1),(field value 2),
+
+please mind that in this format value is always closed with a comma, even if you have provided a single value.
+
+for double select fields:
+
+extrafields=(numeric board id)|(field name),(parent value)|(child value 1)
+
+for double multiselect fields:
+
+extrafields=(numeric board id)|(field name),(parent value)|(child value 1),(child value 2),
+
+also in this format a comma after each, even single, child value is required.
+
+<b>work on article pening, more details on this subject soon!</b>
+
 <h1>Field values</h1><br />
 <b>Category:</b><br /><br />
 2 - Accountancy (Qualified)<br />
