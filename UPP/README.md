@@ -74,23 +74,23 @@ Just <a href="mailto:good@idibu.com">contact us</a> to become a partner and we'l
 If you need, you can provide board specific values, that will be included on step2 of the posting process, the page we call PCP. To do that, please use the "extrafields" paramter with the following, URL encoded format.
 
 for text and single select fields please use the following format:
-
-extrafields=(numeric board id)|(field name)|(field value)
-
+<ul>
+<li>extrafields=(numeric board id)|(field name)|(field value)</li>
+</ul>
 for multiselect fields:
-
-extrafields=(numeric board id)|(field name)|(field value 1),(field value 2),
-
+<ul>
+<li>extrafields=(numeric board id)|(field name)|(field value 1),(field value 2),</li>
+</ul>
 please mind that in this format value is always closed with a comma, even if you have provided a single value.
 
 for double select fields:
-
-extrafields=(numeric board id)|(field name),(parent value)|(child value 1)
-
+<ul>
+<li>extrafields=(numeric board id)|(field name),(parent value)|(child value 1)</li>
+</ul>
 for double multiselect fields:
-
-extrafields=(numeric board id)|(field name),(parent value)|(child value 1),(child value 2),
-
+<ul>
+<li>extrafields=(numeric board id)|(field name),(parent value)|(child value 1),(child value 2),</li>
+</ul>
 also in this format a comma after each, even single, child value is required.
 
 <b>work on article pening, more details on this subject soon!</b>
