@@ -102,7 +102,9 @@ which translates to:
 <li>extrafields=118|Loctest|08;118|param|edit;118|reqmultisel|1,2,;118|reqdmutli,1|1,2,;</li>
 </ul>
 
-<b>work on article pening, more details on this subject soon!</b>
+You can find more info on how to obtain fields name, type and value <a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/board-specific-fields.md" target="_blank">here<a>.
+
+Click <a href="http://www.idibu.com/clients/upp/index.php?hash=1c6ce766d9d7c297ca77dda753f7e2a2&email=bart@idibu.com&jobTitle=test%20title&extrafields=517%7Cidibudts_cat%7C6%3B253%7CMonster2_CatOpp%2C5623%7C11775%2C;" >here</a> to see a working example of posting to idibu developer board and monster test with extra fields preselected.
 
 <h1>Field values</h1><br />
 <b>Category:</b><br /><br />
