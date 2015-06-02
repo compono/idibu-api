@@ -71,9 +71,9 @@ Just <a href="mailto:good@idibu.com">contact us</a> to become a partner and we'l
 <li>allowNewUsers - set to true if you like UPP to create a new idibu user if an unknown email appears in the email field. Set true as default.</li>
 </ul>
 <h1>Providing board specific field values</h1><br />
-If you need, you can provide board specific values, that will be included on step2 of the posting process, the page we call PCP. To do that, please use the "extrafields" paramter with the following, URL encoded format.
+The posting process is split into two steps. On step 1 you provide basic job fields, While on step 2 you provide board specific values. Those are unique, job portal specific fields, that can not be mapped by data from step1. However you can provide values for those fields if you need to do so via the UPP. To do that, you need to call the page with an additional "extrafields" parameter. It's content needs to be different for different boards and fields. You can find more info on how to obtain fields name, type and value and board data <a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/board-specific-fields.md" target="_blank">here<a>.
 
-for text and single select fields please use the following format:
+So, for text and single select fields please use the following format:
 <ul>
 <li>extrafields=(numeric board id)|(field name)|(field value)</li>
 </ul>
@@ -102,7 +102,6 @@ which translates to:
 <li>extrafields=118|Loctest|08;118|param|edit;118|reqmultisel|1,2,;118|reqdmutli,1|1,2,;</li>
 </ul>
 <br />
-You can find more info on how to obtain fields name, type and value <a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/board-specific-fields.md" target="_blank">here<a>.
 
 Click <a href="http://www.idibu.com/clients/upp/index.php?hash=1c6ce766d9d7c297ca77dda753f7e2a2&email=bart@idibu.com&jobTitle=test%20title&boards=517;253&extrafields=517%7Cidibudts_cat%7C6%3B253%7CMonster2_CatOpp%2C5623%7C11775%2C;" target="_blank" >here</a> to see a working example of posting to idibu developer board and monster test with extra fields preselected.
 
