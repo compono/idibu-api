@@ -227,9 +227,9 @@ Employment term:<br />
 4 – Temporary<br />
 <br />
 Salaries:<br /><br />
-USD - US Dollars <br />
-($) EU – Euro<br />
-(€) GBP – British Pound<br />
+($)USD - US Dollars <br />
+(€) EU – Euro<br />
+(£) GBP – British Pound<br />
 <br /><br />
 Working hours:<br /><br />
 2 – Full-time<br />
