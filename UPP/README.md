@@ -36,7 +36,7 @@ Just <a href="mailto:good@idibu.com">contact us</a> to become a partner and we'l
 </ul>
 <p><br /><span style="font-size: large;">Job parameters:</span></p>
 <ul>
-<li>boards - list of board ID's to publish to, separated by commas (e.g. 37,151,123)</li>
+<li>boards - list of board ID's to publish to, separated by semi colons (e.g. 37;151;123)</li>
 <li>jobTitle - job title (e.g. A%20test%20title)</li>
 <li>jobRef - job reference (e.g. REF123)</li>
 <li>startDate &ndash; job start date in yyyy-mm-dd format with leading zeroes (e.g. 2013-06-25)</li>
@@ -104,7 +104,7 @@ which translates to:
 <br />
 You can find more info on how to obtain fields name, type and value <a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/board-specific-fields.md" target="_blank">here<a>.
 
-Click <a href="http://www.idibu.com/clients/upp/index.php?hash=1c6ce766d9d7c297ca77dda753f7e2a2&email=bart@idibu.com&jobTitle=test%20title&boards=517,253&extrafields=517%7Cidibudts_cat%7C6%3B253%7CMonster2_CatOpp%2C5623%7C11775%2C;" target="_blank" >here</a> to see a working example of posting to idibu developer board and monster test with extra fields preselected.
+Click <a href="http://www.idibu.com/clients/upp/index.php?hash=1c6ce766d9d7c297ca77dda753f7e2a2&email=bart@idibu.com&jobTitle=test%20title&boards=517;253&extrafields=517%7Cidibudts_cat%7C6%3B253%7CMonster2_CatOpp%2C5623%7C11775%2C;" target="_blank" >here</a> to see a working example of posting to idibu developer board and monster test with extra fields preselected.
 
 <h1>Field values</h1><br />
 <b>Category:</b><br /><br />
