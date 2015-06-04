@@ -127,9 +127,9 @@
 <pre>
 <code>
 <code type="xml">
-POST http://ws.idibu.com/ws/rest/v1/reports/(REPORT_NAME)?hash=
+<b>POST http://ws.idibu.com/ws/rest/v1/reports/(REPORT_NAME)?hash=
 
-BASIC:
+BASIC:</b>
 
 &lt;idibu&gt;
     &lt;date-range&gt;
@@ -145,7 +145,7 @@ BASIC:
     &lt;email&gt;yourclient@hisserver.com&lt;/email&gt;
 &lt;/idibu&gt;
 
-WITH MORE PARAMETERS:
+<b>WITH MORE PARAMETERS:</b>
 
 &lt;idibu&gt;
     &lt;date-range&gt;
