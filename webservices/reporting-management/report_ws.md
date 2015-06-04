@@ -114,7 +114,7 @@
 				<p class="p2">No</p>
 			</td>
 			<td class="td3" valign="middle">
-				<p class="p2">When generating a report, you may wish to set it, so the very same report will be sent to the same person periodically. You need to name your watchdog, choose how often will it be sent and the period it will include (the original from to dates will be ignored once the watchdog report will be ready).</p>
+				<p class="p2">When generating a report, you may wish to set it, so the very same report will be sent to the same person periodically. You need to name your watchdog, choose how often will it be sent and the period it will include (the original from to dates will be ignored once the watchdog report will be ready). The original report (that is triggering the watchdog) will respect the provided period.</p>
 			</td>
 		</tr>
 	</tbody>
@@ -126,17 +126,56 @@
 	Request</h2>
 <pre>
 <code>
-http://ws.idibu.com/ws/rest/v1/applicants/123/set-status?hash=<your hash>&status=Keep%20on%20file&responder=Yes
-</code></pre>
-<h2>
-	Response</h2>
-<pre>
 <code type="xml">
-&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf8&quot;?&gt;
-&lt;idibu generator=&quot;idibu&quot; version=&quot;1.0&quot;&gt;
-  &lt;response&gt;
-    &lt;messsage&gt;Status updated&lt;/messsage&gt;
-  &lt;/response&gt;
-  &lt;status&gt;success&lt;/status&gt;
+POST http://ws.idibu.com/ws/rest/v1/reports/(REPORT NAME)?hash=
+
+BASIC:
+
+&lt;idibu&gt;
+    &lt;date-range&gt;
+        &lt;from&gt;2015-05-01&lt;/from&gt;
+        &lt;to&gt;2015-05-28&lt;/to&gt;
+    &lt;/date-range&gt;
+    &lt;profiles&gt;
+        &lt;offices /&gt;
+        &lt;teams /&gt;
+        &lt;profiles /&gt;
+    &lt;/profiles&gt;
+    &lt;boards /&gt;
+    &lt;email&gt;yourclient@hisserver.com&lt;/email&gt;
+&lt;/idibu&gt;
+
+WITH MORE PARAMETERS:
+
+&lt;idibu&gt;
+    &lt;date-range&gt;
+        &lt;from&gt;2015-05-01&lt;/from&gt;
+        &lt;to&gt;2015-05-28&lt;/to&gt;
+    &lt;/date-range&gt;
+    &lt;profiles&gt;
+        &lt;offices&gt;
+			&lt;office&gt;1000&lt;/office&gt;	
+		&lt;/offices&gt;
+        &lt;teams&gt;
+			&lt;team&gt;1001&lt;/team&gt;
+			&lt;team&gt;1002&lt;/team&gt;
+			&lt;team&gt;1003&lt;/team&gt;	
+		&lt;/teams&gt;
+        &lt;profiles&gt;
+			&lt;profile&gt;1004&lt;/profile&gt;
+			&lt;profile&gt;1005&lt;/profile&gt;
+			&lt;profile&gt;1006&lt;/profile&gt;
+		&lt;/profiles&gt;
+        &lt;include-inactive&gt;no&lt;/include-inactive&gt;
+    &lt;/profiles&gt;
+    &lt;boards&gt;
+        &lt;board&gt;1599&lt;/board&gt;
+    &lt;/boards&gt;
+    &lt;email&gt;yourclient@hisserver.com&lt;/email&gt;
+    &lt;watchdog&gt;
+         &lt;name&gt;new_watchdog&lt;/name&gt;
+         &lt;frequency&gt;monthly&lt;/frequency&gt;
+         &lt;range&gt;month&lt;/range&gt;
+    &lt;/watchdog&gt;
 &lt;/idibu&gt;
 </code></pre>
