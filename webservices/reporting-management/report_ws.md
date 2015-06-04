@@ -127,7 +127,7 @@
 <pre>
 <code>
 <code type="xml">
-POST http://ws.idibu.com/ws/rest/v1/reports/(REPORT NAME)?hash=
+POST http://ws.idibu.com/ws/rest/v1/reports/(REPORT_NAME)?hash=
 
 BASIC:
 
