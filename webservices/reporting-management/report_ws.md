@@ -73,6 +73,50 @@
 				<p class="p2">Numeric IDs of the users to be included in the report. If no offices, teams or profiles specified, report will be generated for all users with sorted under their respective offices and teams</p>
 			</td>
 		</tr>
+						<tr>
+			<td class="td1" valign="middle">
+				<p class="p2">include-inactive</p>
+			</td>
+			<td class="td2" valign="middle">
+				<p class="p2">No</p>
+			</td>
+			<td class="td3" valign="middle">
+				<p class="p2">Yes or No with No as default. If set to yes, will include data from users that did not make any posting in the specified reporting period.</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="td1" valign="middle">
+				<p class="p2">boards</p>
+			</td>
+			<td class="td2" valign="middle">
+				<p class="p2">No</p>
+			</td>
+			<td class="td3" valign="middle">
+				<p class="p2">Numeric IDs of the portals to be included in the report. If no portal ids specified, report will be generated for all portals subscribed on the specified account</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="td1" valign="middle">
+				<p class="p2">email</p>
+			</td>
+			<td class="td2" valign="middle">
+				<p class="p2">Yes</p>
+			</td>
+			<td class="td3" valign="middle">
+				<p class="p2">Email where the requested report should be emailed to.</p>
+			</td>
+		</tr>
+				<tr>
+			<td class="td1" valign="middle">
+				<p class="p2">watchdog</p>
+			</td>
+			<td class="td2" valign="middle">
+				<p class="p2">No</p>
+			</td>
+			<td class="td3" valign="middle">
+				<p class="p2">When generating a report, you may wish to set it, so the very same report will be sent to the same person periodically. You need to name your watchdog, choose how often will it be sent and the period it will include (the original from to dates will be ignored once the watchdog report will be ready).</p>
+			</td>
+		</tr>
 	</tbody>
 </table>
 <!--break-->
