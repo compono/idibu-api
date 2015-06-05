@@ -179,3 +179,12 @@ BASIC:</b>
     &lt;/watchdog&gt;
 &lt;/idibu&gt;
 </code></pre>
+</p>
+<h2>
+	Response</h2>
+<pre>
+
+
+<code type="xml">
+
+</code></pre>
