@@ -186,5 +186,12 @@ BASIC:</b>
 
 
 <code type="xml">
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;idibu generator=&quot;idibu&quot; version=&quot;1.0&quot;&gt;
+  &lt;response&gt;
+    &lt;message&gt;Report queued for processing&lt;/message&gt;
+  &lt;/response&gt;
+  &lt;status&gt;success&lt;/status&gt;
+&lt;/idibu&gt;
 
 </code></pre>
