@@ -1,6 +1,6 @@
 This set of webservices will allow you to remotely trigger idibu reports from your own system. You can:
 
-- Trigger a report with parameters and set a watchdog
+- <a href="https://github.com/oneworldmarket/idibu-api/blob/master/webservices/reporting-management/report_ws.md">Trigger a report with parameters and set a watchdog</a>
 - List available reports
 - List set reporting watchdogs
 - Remove selected reporting watchdog.
