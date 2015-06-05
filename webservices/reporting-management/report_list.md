@@ -1,7 +1,7 @@
 This service allows you to view all available reports.
 <pre>
 <code>
-GET: ws.idibu.com/ws/rest/v1/reports?hash=be607c665e298ce5daf1ea4ee5712afa
+GET: ws.idibu.com/ws/rest/v1/reports?hash=CLIENTS_HASH
 </code></pre>
 <h2>
 	Response</h2>
