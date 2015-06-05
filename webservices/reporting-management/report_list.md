@@ -1,8 +1,8 @@
 This service allows you to view all available reports.
-
-	<code>
+<pre>
+<code>
 GET: ws.idibu.com/ws/rest/v1/reports?hash=be607c665e298ce5daf1ea4ee5712afa
-</code></p>
+</code></pre>
 <h2>
 	Response</h2>
 <pre>
