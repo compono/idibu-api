@@ -1,4 +1,4 @@
-<h1>How to check if speciic job is live?</h1>
+<h1>How to check if specific job is live?</h1>
 <br>
 To check whether a specific job is live (as in live on any board previously posted to), you have to determine any advert_id of the job reference you have posted previously. To begin you need to call the <a href="https://github.com/oneworldmarket/idibu-api/blob/master/webservices/advert-management/get-list-of-all-ads.md" target ="_blank"> all adverts webservice </a> with specific job reference:
 
