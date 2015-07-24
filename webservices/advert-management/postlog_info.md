@@ -1,4 +1,4 @@
-<p>Method returns detailed advert posting logs information for given post id. The information is not unified and is unique per job board. Post Id can be obtained via ad details ws.</p>
+<p>Method returns detailed advert posting logs information for given post id. The information is not unified and is unique per job board. Post Id can be obtained via <a href="https://github.com/oneworldmarket/idibu-api/blob/master/webservices/advert-management/get-individual-ad-details.md" target="_blank">ad details ws</a>.</p>
 <h2>
 	Request</h2>
 <pre>
@@ -8,7 +8,7 @@
 <h2>
 	Examples Responses</h2>
 <pre>
-Reed (Board ID: 10):
+<b>Reed (Board ID: 10)</b>:
 
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;idibu generator=&quot;idibu&quot; version=&quot;1.0&quot;&gt;
@@ -37,7 +37,7 @@ JobID=1234567
   &lt;status&gt;success&lt;/status&gt;
 &lt;/idibu&gt;
 
-Total Jobs (Board ID: 15):
+<b>Total Jobs (Board ID: 15)</b>:
 
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;idibu generator=&quot;idibu&quot; version=&quot;1.0&quot;&gt;
