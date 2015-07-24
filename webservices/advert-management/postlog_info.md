@@ -3,7 +3,7 @@
 	Request</h2>
 <pre>
 <code>
-/ws/rest/v1/posting-logs/[PostLogID]
+/ws/rest/v1/posting-logs/[Post ID]?hash=(your hash)
 </code></pre>
 <h2>
 	Examples Responses</h2>
