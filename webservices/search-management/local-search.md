@@ -38,6 +38,12 @@
 		</tr>
 		<tr>
 			<td>
+				radius</td>
+			<td>
+				Search radius in miles</td>
+		</tr>
+		<tr>
+			<td>
 				query_mode</td>
 			<td>
 				Grouping method of words in query. Can be one of these values: AND, OR</td>
