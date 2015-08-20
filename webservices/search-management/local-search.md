@@ -158,3 +158,14 @@ POST http://ws.idibu.com/ws/rest/v1/search/local?hash=<your hash>
 &lt;/idibu&gt;
 </code>
 </pre>
+
+You can check the total number of candidates in the selected account:
+
+<h1>
+	Example of searching</h1>
+<h2>
+	Request</h2>
+<pre>
+<code>
+POST http://ws.idibu.com/ws/rest/v1/search/local-cvs-count?hash=<your hash>
+</code>
