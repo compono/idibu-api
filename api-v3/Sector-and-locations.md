@@ -91,7 +91,7 @@ ZZ - Rest of the wold (Other countries)<br />
 	<strong>Request</strong></h2>
 <pre>
 <code>
-POST http://ws.idibu.com/ws/rest/v1/locations/<COUNTRY CODE HERE>/find?hash=<CLIENT HASH HERE>&filter_name=<LOCATION STRING YOU ARE LOOKING FOR>&count=<MAXIMAL NUMBER OF RESULTS>
+POST http://ws.idibu.com/ws/rest/v1/locations/[COUNTRY CODE HERE]/find?hash=<CLIENT HASH HERE>&filter_name=<LOCATION STRING YOU ARE LOOKING FOR>&count=<MAXIMAL NUMBER OF RESULTS>
 </code>
 
 
