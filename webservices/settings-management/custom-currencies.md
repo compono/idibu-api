@@ -18,6 +18,24 @@
 &lt;/response&gt;
 &lt;/idibu&gt;</code>
 </pre>
-<p>At the moment those currencies can be only set by idibu&#39;s staff on support@idibu.com; Once requested currencies are enabled, they can be listed using the following:</p>
 <pre>
 <code>http://ws.idibu.com/ws/rest/v1/currencies/available?hash=<hash></code></pre>
+
+<div id="ember3852" class="ember-view js-task-list-container">  <p>You can also set anyavailable currencies:</p>
+
+<pre><code>POST ws/rest/v1/currencies/available
+</code></pre>
+
+<div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">idibu</span>&gt;
+    &lt;<span class="pl-ent">currencies</span>&gt;
+        &lt;<span class="pl-ent">currency</span>&gt;USD&lt;/<span class="pl-ent">currency</span>&gt;
+        &lt;<span class="pl-ent">currency</span>&gt;ZWD&lt;/<span class="pl-ent">currency</span>&gt;
+    &lt;/<span class="pl-ent">currencies</span>&gt;
+&lt;/<span class="pl-ent">idibu</span>&gt;</pre></div>
+
+<p>And revert to default:</p>
+
+<pre><code>DELETE ws/rest/v1/currencies/available
+</code></pre>
+  <textarea id="ember3853" class="js-task-list-field ember-view ember-text-area"><!----></textarea>
+</div>
