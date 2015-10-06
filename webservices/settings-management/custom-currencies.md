@@ -37,5 +37,5 @@
 
 <pre><code>DELETE ws/rest/v1/currencies/available
 </code></pre>
-  <textarea id="ember3853" class="js-task-list-field ember-view ember-text-area"><!----></textarea>
+  <textarea id="ember3853" class="js-task-list-field ember-view ember-text-area"></textarea>
 </div>
