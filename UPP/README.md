@@ -66,6 +66,7 @@ Just <a href="mailto:good@idibu.com">contact us</a> to become a partner and we'l
 <li>hideAppUrl - Set to true to hide job application URL field</li>
 <li>findUser - Set to true if you want to get a user ID by his e-mail from idibu</li>
 <li>findJob - Set to false if you don't want to fetch job field values from old jobs based on reference</li>
+<li>enablePreview - Setting this to true triggers preview option on the step 2 of the posting process. Please use only with non-default styling.</li>
 <li>useOriginalSender - Comes together with findjob parameter. Tells the UPP to reuse the original sender of the ad.</li>
 <li>overrideRepost - Set to true if parameters from URL have higher priority than repost data (if findJob is set to true)</li>
 <li>allowNewUsers - set to true if you like UPP to create a new idibu user if an unknown email appears in the email field. Set true as default.</li>
