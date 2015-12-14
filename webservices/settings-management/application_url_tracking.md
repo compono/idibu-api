@@ -5,7 +5,7 @@
 	Request</h2>
 <pre>
 <code>
-http://ws.idibu.com/ws/rest/v1/tracking?hash=<your hash>
+POST http://ws.idibu.com/ws/rest/v1/tracking?hash=<your hash>
 </code></pre>
 <h2>
 	Response</h2>
