@@ -69,6 +69,7 @@
       </board>
       <board id="517">
         <duration days="7"/>
+        <extrafield name="idibudts_cat">1</extrafield>
       </board>
       <board id="41">
         <duration days="1"/>
