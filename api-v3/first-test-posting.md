@@ -92,6 +92,6 @@
 
 Be sure to check our [XML examples to help you developing](https://github.com/oneworldmarket/idibu-api/tree/master/api-v3/examples).
 
-Before you begin coding, perphas worth to check [our code library](https://github.com/oneworldmarket/idibu-api/blob/master/webservices/code-library/.net-basic-interaction.md) in case there's something you can re-use and save time?
+Before you begin coding, perhaps worth to check [our code library](https://github.com/oneworldmarket/idibu-api/blob/master/webservices/code-library/.net-basic-interaction.md) in case there's something you can re-use and save time?
 
 Good luck and happy postin!
