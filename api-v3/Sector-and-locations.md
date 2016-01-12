@@ -124,7 +124,7 @@ POST http://ws.idibu.com/ws/rest/v1/locations/[COUNTRY CODE HERE]/find?hash=<CLI
 
 Worst case scenario, you can use a fixed list locations for specific country. We have prepared list for:<br />
 <br />
-<a href = "http://www.idibu.com/images/stories/Portal_logos/GB.rar">UK - United Kingdome</a><br />
+<a href = "http://www.idibu.com/images/stories/Portal_logos/GB.rar">UK - United Kingdom</a><br />
 <a href = "http://www.idibu.com/images/stories/Portal_logos/AU.rar">AU - Australia</a><br />
 <br />
 that should speed up your developement, but we stress that dynamic location webservice usage is the best way to go!
