@@ -22,105 +22,144 @@
 The top dropdown is a static country list, whereas the other field is a look-up field that queries idibu location API after each typed in letter.</p><br /><br />
 <h1>
 	<strong>Country codes</strong></h1>
-<p>To make a correct call, you will have to call a location within a country represented by one of the following country codes: 
-<br /><br />
-GB - United Kingdom<br />
-US - United States<br />
-AD - Andorra<br />
-AN - Angola<br />
-AR - Argentina<br />
-AT - Austria<br />
-AU - Australia<br />
-BB - Barbados<br />
-BE - Belgium<br />
-BG - Bulgaria<br />
-BR - Brazil<br />
-CA - Canada<br />
-CH - Switzerland<br />
-CN - China<br />
-DE - Germany<br />
-DM - Denmark<br />
-EG - Egypt<br />
-ES - Spain<br />
-FO - Faroe Islands<br />
-FR - France<br />
-GG - Channel Islands<br />
-GP - Guadeloupe<br />
-GU - Guam<br />
-HG - Hong Kong<br />
-HR - Croatia<br />
-ID - Indonesia<br />
-IE - Ireland<br />
-IM - Isle of Man<br />
-IN - India<br />
-IT - Italy<br />
-JE - Jersey<br />
-JP - Japan<br />
-LI - Liechtenstein<br />
-LK - Sri Lanka<br />
-LU - Luxembourg<br />
-MA - Malta<br />
-MC - Monaco<br />
-MD - Moldova<br />
-MH - Marshall Islands<br />
-MK - Macedonia<br />
-MP - Northern Mariana Islands<br />
-MQ - Martinique<br />
-MX - Mexico<br />
-MY - Malaysia<br />
-NL - Netherlands<br />
-NO - Norway<br />
-NZ - New Zealand<br />
-PK - Pakistan<br />
-PM - St. Pierre and Miquelon<br />
-PR - Puerto Rico<br />
-PT - Portugal<br />
-QA - Qatar<br />
-SI - Singapore<br />
-SM - San Marino<br />
-TH - Thailand<br />
-TR - Turkey<br />
-UE - United Arab Emirates<br />
-VA - Vatican City<br />
-VI - Virgin Islands (U.S.)<br />
-YT - Mayotte<br />
-ZA - South Africa<br />
-ZZ - Rest of the wold (Other countries)<br />
-</p>
-<h2>
-	<strong>Request</strong></h2>
-<pre>
-<code>
-POST http://ws.idibu.com/ws/rest/v1/locations/[COUNTRY CODE HERE]/find?hash=<CLIENT HASH HERE>&filter_name=<LOCATION STRING YOU ARE LOOKING FOR>&count=<MAXIMAL NUMBER OF RESULTS>
-</code>
+<h3>To make a correct call, you will have to call a location within a country represented by one of the following country codes:</h3>
 
+| code | Country name |
+|---|---|
+| GB | United Kingdom |
+| GB | United Kingdom |
+| US | United States |
+| US | United States |
+| AD | Andorra |
+| AD | Andorra |
+| AN | Angola |
+| AN | Angola |
+| AR | Argentina |
+| AR | Argentina |
+| AT | Austria |
+| AT | Austria |
+| AU | Australia |
+| AU | Australia |
+| BB | Barbados |
+| BB | Barbados |
+| BE | Belgium |
+| BE | Belgium |
+| BG | Bulgaria |
+| BG | Bulgaria |
+| BR | Brazil |
+| BR | Brazil |
+| CA | Canada |
+| CA | Canada |
+| CH | Switzerland |
+| CH | Switzerland |
+| CN | China |
+| CN | China |
+| DE | Germany |
+| DE | Germany |
+| DM | Denmark |
+| DM | Denmark |
+| EG | Egypt |
+| EG | Egypt |
+| ES | Spain |
+| ES | Spain |
+| FO | Faroe Islands |
+| FO | Faroe Islands |
+| FR | France |
+| FR | France |
+| GG | Channel Islands |
+| GG | Channel Islands |
+| GP | Guadeloupe |
+| GP | Guadeloupe |
+| GU | Guam |
+| GU | Guam |
+| HG | Hong Kong |
+| HG | Hong Kong |
+| HR | Croatia |
+| HR | Croatia |
+| ID | Indonesia |
+| ID | Indonesia |
+| IE | Ireland |
+| IE | Ireland |
+| IM | Isle of Man |
+| IM | Isle of Man |
+| IN | India |
+| IN | India |
+| IT | Italy |
+| IT | Italy |
+| JE | Jersey |
+| JE | Jersey |
+| JP | Japan |
+| JP | Japan |
+| LI | Liechtenstein |
+| LI | Liechtenstein |
+| LK | Sri Lanka |
+| LK | Sri Lanka |
+| LU | Luxembourg |
+| LU | Luxembourg |
+| MA | Malta |
+| MA | Malta |
+| MC | Monaco |
+| MC | Monaco |
+| MD | Moldova |
+| MH | Marshall Islands |
+| MK | Macedonia |
+| MP | Northern Mariana Islands |
+| MQ | Martinique |
+| MX | Mexico |
+| MY | Malaysia |
+| NL | Netherlands |
+| NO | Norway |
+| NZ | New Zealand |
+| PK | Pakistan |
+| PM | St. Pierre and Miquelon |
+| PR | Puerto Rico |
+| PT | Portugal |
+| QA | Qatar |
+| SI | Singapore |
+| SM | San Marino |
+| TH | Thailand |
+| TR | Turkey |
+| UE | United Arab Emirates |
+| VA | Vatican City |
+| VI | Virgin Islands (U.S.) |
+| YT | Mayotte |
+| ZA | South Africa |
+| ZZ | Rest of the wold (Other countries) |
 
-</pre>
-<h2>
-	Response</h2>
-<pre>
-<code type="xml">
-&lt;idibu generator=&quot;idibu&quot; version=&quot;1.0&quot;&gt;
-&lt;response&gt;
-&lt;locations&gt;
-&nbsp;&lt;location&gt;
-&nbsp;&nbsp;&nbsp;&lt;id&gt;1024195&lt;/id&gt;
-&nbsp;&nbsp;&nbsp;&lt;place_name&gt;London&lt;/place_name&gt;
-&nbsp;&nbsp;&nbsp;&lt;country_code&gt;GB&lt;/country_code&gt;
-&nbsp;&nbsp;&nbsp;&lt;postal_code&gt;EC1A&lt;/postal_code&gt;
-&nbsp;&nbsp;&nbsp;&lt;latitude&gt;51.51&lt;/latitude&gt;
-&nbsp;&nbsp;&nbsp;&lt;longitude&gt;-0.13&lt;/longitude&gt;
-&nbsp;&nbsp;&nbsp;&lt;county&gt;Greater London&lt;/county&gt;
-&nbsp;&nbsp;&nbsp;&lt;region&gt;SouthEast&lt;/region&gt;
-&nbsp;&nbsp;&nbsp;&lt;country&gt;England&lt;/country&gt;
-&nbsp;&lt;/location&gt;
-&lt;/locations&gt;
-&lt;/response&gt;
+<h2><strong>Request</strong></h2>
 
-&lt;status&gt;success&lt;/status&gt;
-&lt;/idibu&gt;
-</code>
-</pre>
+```
+POST http://ws.idibu.com/ws/rest/v1/locations/<COUNTRY CODE HERE>/find?hash=<CLIENT HASH HERE>&filter_name=<LOCATION STRING YOU ARE LOOKING FOR>&count=<MAXIMAL NUMBER OF RESULTS>
+```
+
+<h3><strong>Example</strong></h3>
+```
+POST http://ws.idibu.com/ws/rest/v1/locations/GB/find?hash=<CLIENT HASH HERE>&filter_name=london&count=1
+```
+
+<h2>Response</h2>
+
+```xml
+<idibu generator="idibu" version="1.0">
+<response>
+<locations>
+ <location>
+   <id>1024195</id>
+   <place_name>London</place_name>
+   <country_code>GB</country_code>
+   <postal_code>EC1A</postal_code>
+   <latitude>51.51</latitude>
+   <longitude>-0.13</longitude>
+   <county>Greater London</county>
+   <region>SouthEast</region>
+   <country>England</country>
+ </location>
+</locations>
+</response>
+
+<status>success</status>
+</idibu>
+```
 
 Worst case scenario, you can use a fixed list locations for specific country. We have prepared list for:<br />
 <br />
