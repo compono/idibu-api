@@ -1,7 +1,6 @@
+Allows you to identify jobs with expiring posts in relation to current day.
 
-
-
-
+Call you should make:
 
 /rest/v1/adverts/n/days-expiring will show adverts expiring in n days, for example:
 
