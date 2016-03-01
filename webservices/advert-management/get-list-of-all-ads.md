@@ -102,6 +102,53 @@
 				<p class="p2">The reference of the job you wish to find records for</p>
 			</td>
 		</tr>
+
+		<tr>
+			<td class="td1" valign="middle">
+				<p class="p2">title</p>
+			</td>
+			<td class="td2" valign="middle">
+				<p class="p2">No</p>
+			</td>
+			<td class="td3" valign="middle">
+				<p class="p2">The title of the job you wish to find records for</p>
+			</td>
+		</tr>
+
+		<tr>
+			<td class="td1" valign="middle">
+				<p class="p2">title-or-reference</p>
+			</td>
+			<td class="td2" valign="middle">
+				<p class="p2">No</p>
+			</td>
+			<td class="td3" valign="middle">
+				<p class="p2">The title or reference of the job you wish to find records for</p>
+			</td>
+		</tr>
+
+		<tr>
+			<td class="td1" valign="middle">order</p>
+			</td>
+			<td class="td2" valign="middle">
+				<p class="p2">No</p>
+			</td>
+			<td class="td3" valign="middle">
+				<p class="p2">date-asc or date-desc options available</p>
+			</td>
+		</tr>
+
+		<tr>
+			<td class="td1" valign="middle">format</p>
+			</td>
+			<td class="td2" valign="middle">
+				<p class="p2">No</p>
+			</td>
+			<td class="td3" valign="middle">
+				<p class="p2">possible value: count-jobs - shows just the number of the jobs matching query criteria without any additional tags</p>
+			</td>
+		</tr>
+		
 	</tbody>
 </table>
 <h1 class="p3">
