@@ -129,12 +129,12 @@ The top dropdown is a static country list, whereas the other field is a look-up 
 <h2><strong>Request</strong></h2>
 
 ```
-POST http://ws.idibu.com/ws/rest/v1/locations/<COUNTRY CODE HERE>/find?hash=<CLIENT HASH HERE>&filter_name=<LOCATION STRING YOU ARE LOOKING FOR>&count=<MAXIMAL NUMBER OF RESULTS>
+GET http://ws.idibu.com/ws/rest/v1/locations/<COUNTRY CODE HERE>/find?hash=<CLIENT HASH HERE>&filter_name=<LOCATION STRING YOU ARE LOOKING FOR>&count=<MAXIMAL NUMBER OF RESULTS>
 ```
 
 <h3><strong>Example</strong></h3>
 ```
-POST http://ws.idibu.com/ws/rest/v1/locations/GB/find?hash=<CLIENT HASH HERE>&filter_name=london&count=1
+GET http://ws.idibu.com/ws/rest/v1/locations/GB/find?hash=<CLIENT HASH HERE>&filter_name=london&count=1
 ```
 
 <h2>Response</h2>
