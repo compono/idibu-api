@@ -6,7 +6,8 @@ This is useful if you want legacy applicant data to be available via our local s
 <p>Use the job id and reference to define which job the applicant will be attached to, these are required fields.</p>
 <p>Don&#39;t worry if you can&#39;t supply email or first/last names, we&#39;ll try to grab those from the CV itself.</p>
 <p>Please note that CV contents should be base64 encoded, file name shouldn&#39;t contain any extra symbols. <br />
-You can also specify application`s source, subject and body of what would normally be applicant's incoming email.</p>
+You can also specify application`s source, subject and body of what would normally be applicant's incoming email.<br />
+Please note that this will upload the CV and trigger applicant forwarding as email as if this CV arrived directly from Job board. If you'd like to just upload the CV to idibu without emailing a copy to the consultants (provided your aptrack is set like this) please use add-cv-old call to webservice rather then add-cv.</p>
 <div>
 <h1 class="p3">Link:</h1>
 http://ws.idibu.com/ws/rest/v1/applicants/add-cv?hash=(account`s hash)
