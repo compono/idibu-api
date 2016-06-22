@@ -47,3 +47,23 @@ It's even easier with UPP! Just provie this as your repost url:<br>
 http://www.idibu.com/clients/pam/index.php?h=<b>(posting_account_hash)</b>&partnerid=<b>(your_partner_ID)</b>&ref=<b>(job_reference)</b>&ins=http%3A%2F%2Fwww.idibu.com%2Fclients%2Fupp%2Findex.php%3Fhash%3D<b>(posting_account_hash)</b>%26partnerId%3D<b>(your_partner_ID)</b>%26jobRef%3D<b>(job_reference)</b>%26useOriginalSender%3Dtrue%26findJob%3Dtrue%26%
 
 So esentially you just need to give UPP hash and job reference and UPP will prepare a page ready to make the repost, already filled with original posting's details!
+
+As an alternative one can use a special link we developed to log in directly into idibu with one click! No passwords needed!
+
+<code>
+http://www.idibu.com/clients/bond-login.php?key=(KEY_PROVIDED_BY_IDIBU)&hash=(ACCOUNTS_HASH)&email=(USER'S_EMAIL)&url=%2Fclients%2F%3Fclass%3DAdManager%26action%3DListAll
+</code>
+
+you can also open focused on specific job:
+
+<code>
+http://www.idibu.com/clients/bond-login.php?key=(KEY_PROVIDED_BY_IDIBU)&hash=(ACCOUNTS_HASH)&email=(USER`S_EMAIL)&url=%2Fclass%3DAdManager%26action%3DListAll%26datestart%3D%26dateend%3D%26titleref%3DEXAMPLE_REFERENCE%26sid%3D0%26officeid%3D0%26teamid%3D0
+</code>
+
+where job reference is EXAMPLE_REFERENCE.
+
+There are few requirements though:
+
+- User you wish to login as has to have an idibu sub-account set and live
+- You will need to contact us at support@idibu.com to obtain the key
+
