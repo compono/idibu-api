@@ -4,7 +4,7 @@ http://ws.idibu.com/ws/rest/v1/applicant-status/:applicant-id?hash=:hash
 </code><br><br>
 The request should contain an XML payload encapsulated in a x-www-form-urlencoded request, in a field called data, like so:
 <br><br>
-<code>
+<code type="xml">
 POST /ws/rest/v1/applicant-status/123?hash=456
 <br><br>
 Host: ws.idibu.com
