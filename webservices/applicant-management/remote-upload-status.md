@@ -138,7 +138,7 @@ Example of a correct request for an unsuccessfully processed application:
 &lt;/applicant&gt;
 </code>
 </br><br>
-Sending multiple requests for the same applicant will result in updating the information in idibu.
+Sending multiple requests for the same applicant will result in updating the information in idibu.<br><br>
 It is also possible to then remotely check the status of the candidate based on idibu’s candiate ID or based on the remote ID provided:
 <br><br>
 Option 1
