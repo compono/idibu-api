@@ -141,20 +141,20 @@ Example of a correct request for an unsuccessfully processed application:
 Sending multiple requests for the same applicant will result in updating the information in idibu.<br><br>
 It is also possible to then remotely check the status of the candidate based on idibu’s candiate ID or based on the remote ID provided:
 <br><br>
-Option 1
+<b>Option 1</b>
 <br><br>
 <code>GET /ws/rest/v1/applicant-status/:id?hash=:hash
 </code>
 <br><br>
 Returns data for a particular AppTrack id :id.
 <br><br>
-Option 2<br><br>
+<b>Option 2</b><br><br>
 <code>
 GET /ws/rest/v1/applicant-status?hash=:hash
 </code>
 <br><br>
 Returns all client applicants' statuses (as in all WSes limited to 10 by default, can be browsed with offset and limit params).<br><br>
-Option 3
+<b>Option 3</b><br><br>
 <code>GET /ws/rest/v1/applicant-status?hash=:hash&remote-id=:remote-id</code>
 <br><br>
 Returns applicants' statuses matching the :remote-id provided. Wildcard * can be used.
