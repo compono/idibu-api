@@ -23,9 +23,11 @@ The XML payload should follow the specified format:
 &lt;/applicant&gt;
 &lt;/code&gt;
 </code>
+</pre>
 <br><br>
 If the status is successfully stored, the endpoint will return a success status message (may also contain other information):
 <br>
+<pre>
 <code type="xml">
 &lt;idibu&gt;
 &lt;status&gt;success&lt;/status&gt;
