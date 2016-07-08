@@ -123,8 +123,8 @@ Example of a correct request for a successfully processed application:
 <br><br>
 <code type="xml">
 &lt;applicant&gt;
-	&lt;status&gt;success&lt;/status&gt;
-	&lt;date-processed&gt;2016-06-03 12:11:59&lt;/date-processed&gt;
+    &lt;status&gt;success&lt;/status&gt;
+    &lt;date-processed&gt;2016-06-03 12:11:59&lt;/date-processed&gt;
 &lt;/applicant&gt;
 </code>
 </br><br>
@@ -132,9 +132,9 @@ Example of a correct request for an unsuccessfully processed application:
 <br><br>
 <code type="xml">
 &lt;applicant&gt;
-	&lt;status&gt;fail&lt;/status&gt;
-	&lt;error-message&gt;Candidate application has been eaten by a stray dog&lt;/error-message&gt;
-	&lt;date-processed&gt;2016-06-03 13:07:34&lt;/date-processed&gt;
+    &lt;status&gt;fail&lt;/status&gt;
+    &lt;error-message&gt;Candidate application has been eaten by a stray dog&lt;/error-message&gt;
+    &lt;date-processed&gt;2016-06-03 13:07:34&lt;/date-processed&gt;
 &lt;/applicant&gt;
 </code>
 </br><br>
