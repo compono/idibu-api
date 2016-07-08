@@ -13,6 +13,7 @@ data=%3Cxml%3Epayload%3C%2Fxml%3E…
 <br><br>
 The XML payload should follow the specified format:
 <br>
+<pre>
 <code type="xml">
 &lt;applicant&gt;
 	&lt;status&gt;:status&lt;/status&gt;
@@ -29,7 +30,7 @@ If the status is successfully stored, the endpoint will return a success status 
 &lt;idibu&gt;
 &lt;status&gt;success&lt;/status&gt;
 &lt;/idibu&gt;
-</code><br>
+</code></pre><br>
 The fields used in the request are:<br><br>
 
 :hash	Client API hash
