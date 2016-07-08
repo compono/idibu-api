@@ -4,15 +4,14 @@ http://ws.idibu.com/ws/rest/v1/applicant-status/:applicant-id?hash=:hash
 </code><br><br>
 The request should contain an XML payload encapsulated in a x-www-form-urlencoded request, in a field called data, like so:
 <br><br>
+
 <code type="xml">
 POST /ws/rest/v1/applicant-status/123?hash=456
-
 Host: ws.idibu.com
-
 Content-Type: application/x-www-form-urlencoded
-
 data=%3Cxml%3Epayload%3C%2Fxml%3E…
 </code>
+
 <br><br>
 The XML payload should follow the specified format:
 <br>
@@ -121,16 +120,16 @@ The fields used in the request are:
 </table>
 <br>
 Example of a correct request for a successfully processed application:
-<br>
+<br><br>
 <code type="xml">
 &lt;applicant&gt;
 	&lt;status&gt;success&lt;/status&gt;
 	&lt;date-processed&gt;2016-06-03 12:11:59&lt;/date-processed&gt;
 &lt;/applicant&gt;
 </code>
-</br>
+</br><br>
 Example of a correct request for an unsuccessfully processed application:
-<br>
+<br><br>
 <code type="xml">
 &lt;applicant&gt;
 	&lt;status&gt;fail&lt;/status&gt;
@@ -138,7 +137,7 @@ Example of a correct request for an unsuccessfully processed application:
 	&lt;date-processed&gt;2016-06-03 13:07:34&lt;/date-processed&gt;
 &lt;/applicant&gt;
 </code>
-</br>
+</br><br>
 Sending multiple requests for the same applicant will result in updating the information in idibu.
 It is also possible to then remotely check the status of the candidate based on idibu’s candiate ID or based on the remote ID provided:
 <br><br>
