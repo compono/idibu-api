@@ -24,7 +24,7 @@ The XML payload should follow the specified format:
 &lt;/code&gt;
 </code>
 </pre>
-<br><br>
+<br>
 If the status is successfully stored, the endpoint will return a success status message (may also contain other information):
 <br>
 <pre>
@@ -33,15 +33,92 @@ If the status is successfully stored, the endpoint will return a success status 
 &lt;status&gt;success&lt;/status&gt;
 &lt;/idibu&gt;
 </code></pre><br>
-The fields used in the request are:<br><br>
+The fields used in the request are:<br>
 
-:hash	Client API hash
-:applicant-id	Applicant ID (X-iTrackID header in the AppTrack forwarded email)<br>
-:status	String describing the status of candidate processing, expected either success or fail<br>
-:remote-id	(optional) Any string to identify the applicant in remote system<br>
-:error-message	(optional) Error message detailing the problem that occurred while processing the application, expected on fail status<br>
-:date-processed	(optional) Date and time at which the application was processed, if empty current date is used, expected in YYYY-MM-DD hh:mm:ss format<br><br>
-
+<table cellpadding="2" cellspacing="0" class="t1" width="1084.0">
+	<thead>
+		<tr>
+			<th class="td1" scope="col" valign="middle">
+				<p class="p1"><b>Parameter Name</b></p>
+			</th>
+			<th class="td2" scope="col" valign="middle">
+				<p class="p1"><b>Required?</b></p>
+			</th>
+			<th class="td3" scope="col" valign="middle">
+				<p class="p1"><b>Notes</b></p>
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="td1" valign="middle">
+				<p class="p2">hash</p>
+			</td>
+			<td class="td2" valign="middle">
+				<p class="p2">Yes</p>
+			</td>
+			<td class="td3" valign="middle">
+				<p class="p2">Client API hash</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="td1" valign="middle">
+				<p class="p2">applicant-id</p>
+			</td>
+			<td class="td2" valign="middle">
+				<p class="p2">Yes</p>
+			</td>
+			<td class="td3" valign="middle">
+				<p class="p2">Applicant ID (X-iTrackID header in the AppTrack forwarded email)</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="td1" valign="middle">
+				<p class="p2">status</p>
+			</td>
+			<td class="td2" valign="middle">
+				<p class="p2">Yes</p>
+			</td>
+			<td class="td3" valign="middle">
+				<p class="p2">String describing the status of candidate processing, expected either success or fail</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="td1" valign="middle">
+				<p class="p2">remote-id</p>
+			</td>
+			<td class="td2" valign="middle">
+				<p class="p2">No</p>
+			</td>
+			<td class="td3" valign="middle">
+				<p class="p2">Any string to identify the applicant in remote system</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="td1" valign="middle">
+				<p class="p2">error-message</p>
+			</td>
+			<td class="td2" valign="middle">
+				<p class="p2">No</p>
+			</td>
+			<td class="td3" valign="middle">
+				<p class="p2">Error message detailing the problem that occurred while processing the application, expected on fail status</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="td1" valign="middle">
+				<p class="p2">date-processed</p>
+			</td>
+			<td class="td2" valign="middle">
+				<p class="p2">No</p>
+			</td>
+			<td class="td3" valign="middle">
+				<p class="p2">Date and time at which the application was processed, if empty current date is used, expected in YYYY-MM-DD hh:mm:ss format</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<br>
 Example of a correct request for a successfully processed application:
 <br>
 <code type="xml">
