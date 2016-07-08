@@ -4,12 +4,14 @@ http://ws.idibu.com/ws/rest/v1/applicant-status/:applicant-id?hash=:hash
 </code><br><br>
 The request should contain an XML payload encapsulated in a x-www-form-urlencoded request, in a field called data, like so:
 <br><br>
+<code>
 POST /ws/rest/v1/applicant-status/123?hash=456
 <br><br>
 Host: ws.idibu.com
 Content-Type: application/x-www-form-urlencoded
 <br>
 data=%3Cxml%3Epayload%3C%2Fxml%3E…
+</code>
 <br><br>
 The XML payload should follow the specified format:
 <br>
@@ -140,20 +142,21 @@ Example of a correct request for an unsuccessfully processed application:
 </br>
 Sending multiple requests for the same applicant will result in updating the information in idibu.
 It is also possible to then remotely check the status of the candidate based on idibu’s candiate ID or based on the remote ID provided:
-
+<br><br>
 Option 1
-
-GET /ws/rest/v1/applicant-status/:id?hash=:hash
-
+<br>
+<code>GET /ws/rest/v1/applicant-status/:id?hash=:hash
+</code>
+<br><br>
 Returns data for a particular AppTrack id :id.
-
-Option 2
+<br><br>
+Option 2<br>
+<code>
 GET /ws/rest/v1/applicant-status?hash=:hash
-
-
-Returns all client applicants' statuses (as in all WSes limited to 10 by default, can be browsed with offset and limit params).
+</code>
+<br><br>
+Returns all client applicants' statuses (as in all WSes limited to 10 by default, can be browsed with offset and limit params).<br><br>
 Option 3
-GET /ws/rest/v1/applicant-status?hash=:hash&remote-id=:remote-id
-
-
+<code>GET /ws/rest/v1/applicant-status?hash=:hash&remote-id=:remote-id</code>
+<br><br>
 Returns applicants' statuses matching the :remote-id provided. Wildcard * can be used.
