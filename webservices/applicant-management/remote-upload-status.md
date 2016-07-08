@@ -6,10 +6,11 @@ The request should contain an XML payload encapsulated in a x-www-form-urlencode
 <br><br>
 <code type="xml">
 POST /ws/rest/v1/applicant-status/123?hash=456
-<br><br>
+
 Host: ws.idibu.com
+
 Content-Type: application/x-www-form-urlencoded
-<br>
+
 data=%3Cxml%3Epayload%3C%2Fxml%3E…
 </code>
 <br><br>
@@ -142,13 +143,13 @@ Sending multiple requests for the same applicant will result in updating the inf
 It is also possible to then remotely check the status of the candidate based on idibu’s candiate ID or based on the remote ID provided:
 <br><br>
 Option 1
-<br>
+<br><br>
 <code>GET /ws/rest/v1/applicant-status/:id?hash=:hash
 </code>
 <br><br>
 Returns data for a particular AppTrack id :id.
 <br><br>
-Option 2<br>
+Option 2<br><br>
 <code>
 GET /ws/rest/v1/applicant-status?hash=:hash
 </code>
