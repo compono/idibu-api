@@ -28,15 +28,13 @@ The XML payload should follow the specified format:
 </pre>
 <br>
 If the status is successfully stored, the endpoint will return a success status message (may also contain other information):
-<br>
 <pre>
 <code type="xml">
 &lt;idibu&gt;
 &lt;status&gt;success&lt;/status&gt;
 &lt;/idibu&gt;
 </code></pre><br>
-The fields used in the request are:<br>
-
+The fields used in the request are:
 <table cellpadding="2" cellspacing="0" class="t1" width="1084.0">
 	<thead>
 		<tr>
