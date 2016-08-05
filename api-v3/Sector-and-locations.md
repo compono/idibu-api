@@ -27,78 +27,41 @@ The top dropdown is a static country list, whereas the other field is a look-up 
 | code | Country name |
 |---|---|
 | GB | United Kingdom |
-| GB | United Kingdom |
-| US | United States |
 | US | United States |
 | AD | Andorra |
-| AD | Andorra |
-| AN | Angola |
 | AN | Angola |
 | AR | Argentina |
-| AR | Argentina |
-| AT | Austria |
 | AT | Austria |
 | AU | Australia |
-| AU | Australia |
-| BB | Barbados |
 | BB | Barbados |
 | BE | Belgium |
-| BE | Belgium |
-| BG | Bulgaria |
 | BG | Bulgaria |
 | BR | Brazil |
-| BR | Brazil |
-| CA | Canada |
 | CA | Canada |
 | CH | Switzerland |
-| CH | Switzerland |
-| CN | China |
 | CN | China |
 | DE | Germany |
-| DE | Germany |
-| DM | Denmark |
 | DM | Denmark |
 | EG | Egypt |
-| EG | Egypt |
-| ES | Spain |
 | ES | Spain |
 | FO | Faroe Islands |
-| FO | Faroe Islands |
-| FR | France |
 | FR | France |
 | GG | Channel Islands |
-| GG | Channel Islands |
-| GP | Guadeloupe |
 | GP | Guadeloupe |
 | GU | Guam |
-| GU | Guam |
-| HG | Hong Kong |
 | HG | Hong Kong |
 | HR | Croatia |
-| HR | Croatia |
-| ID | Indonesia |
 | ID | Indonesia |
 | IE | Ireland |
-| IE | Ireland |
-| IM | Isle of Man |
 | IM | Isle of Man |
 | IN | India |
-| IN | India |
-| IT | Italy |
 | IT | Italy |
 | JE | Jersey |
-| JE | Jersey |
-| JP | Japan |
 | JP | Japan |
 | LI | Liechtenstein |
-| LI | Liechtenstein |
-| LK | Sri Lanka |
 | LK | Sri Lanka |
 | LU | Luxembourg |
-| LU | Luxembourg |
 | MA | Malta |
-| MA | Malta |
-| MC | Monaco |
 | MC | Monaco |
 | MD | Moldova |
 | MH | Marshall Islands |
