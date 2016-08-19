@@ -41,5 +41,9 @@ idibu board tracking codes can be found here:
 
 http://www.idibu.com/clients/?user=<b>[Your idibu username]</b>&password=<b>[Your idibu password]</b>&class=Portal&action=ListBIDs
 
+and here is a code snippet that can be used to quickly utilize this ws:
+
+https://github.com/oneworldmarket/idibu-api/blob/master/webservices/code-library/CV_upload_php.md
+
 </div>
 <p>&nbsp;</p>
