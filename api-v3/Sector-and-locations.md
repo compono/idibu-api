@@ -49,7 +49,7 @@ The top dropdown is a static country list, whereas the other field is a look-up 
 | GG | Channel Islands |
 | GP | Guadeloupe |
 | GU | Guam |
-| HG | Hong Kong |
+| HK | Hong Kong |
 | HR | Croatia |
 | ID | Indonesia |
 | IE | Ireland |
