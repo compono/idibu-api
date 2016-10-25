@@ -107,7 +107,7 @@ POST http://ws.idibu.com/ws/rest/v1/search/local?hash=<your hash>
   &lt;location&gt;UK&lt;/location&gt;
   &lt;region&gt;&lt;/region&gt;
   &lt;postcode&gt;&lt;/postcode&gt;
-  &lt;radius&gt;&lt;/postcode&gt;
+  &lt;radius&gt;&lt;/radius&gt;
   &lt;query_mode&gt;OR&lt;/query_mode&gt;
   &lt;salarymin&gt;&lt;/salarymin&gt;
   &lt;salarymax&gt;&lt;/salarymax&gt;
