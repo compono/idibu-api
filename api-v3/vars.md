@@ -171,7 +171,7 @@
 			<td>
 				longtext</td>
 			<td>
-				Job Description. Editable (see below). <b>It is very imporant, that you provide the text as one block of text and any character returns are encoded as &lt;br /&gt; . Otherwise there is a risk that your ads won&#39;t be formatted correctly when posted to job boards.</b></td>
+				Job Description. Editable (see below). <b>It is very imporant, that you provide the text as one block of text and any character returns are encoded as &lt;br /&gt; . Otherwise there is a risk that your ads won&#39;t be formatted correctly when posted to job boards.</b><br/>Please also refrain from using &lt;p&gt; and &lt;div&gt; tags - they will be accepted but are normally not supported by idibu, and many job boards reject them or lead to incorrect formatting.</td>
 		</tr>
 		<tr valign="TOP">
 			<td>
