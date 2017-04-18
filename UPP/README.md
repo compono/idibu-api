@@ -232,7 +232,7 @@ USD - US Dollars <br />
 EU – Euro<br />
 GBP – British Pound<br />
 <br />
-<br />Working hours:<b><br/>
+<b>Working hours:</b><br/>
 1 – Part-time<br />
 2 – Full-time<br />
 <br />
