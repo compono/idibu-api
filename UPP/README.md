@@ -236,7 +236,7 @@ GBP – British Pound<br />
 1 – Part-time<br />
 2 – Full-time<br />
 <br />
-<b>Salary payment interval (per):></b><br />
+<b>Salary payment interval (per):</b><br />
 annum – Annum<br />
 month – Month<br />
 week – Week<br />
