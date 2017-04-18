@@ -107,7 +107,7 @@ which translates to:
 Click <a href="http://www.idibu.com/clients/upp/index.php?hash=1c6ce766d9d7c297ca77dda753f7e2a2&email=bart@idibu.com&jobTitle=test%20title&boards=517;253&extrafields=517%7Cidibudts_cat%7C6%3B253%7CMonster2_CatOpp%2C5623%7C11775%2C;" target="_blank" >here</a> to see a working example of posting to idibu developer board and monster test with extra fields preselected.
 
 <h1>Field values</h1><br />
-<b>Category:</b><br /><br />
+<b>Category:</b><br />
 2 - Accountancy (Qualified)<br />
 3 - Admin & Secretarial<br />
 2778 - Advertising & PR<br />
@@ -156,8 +156,8 @@ Click <a href="http://www.idibu.com/clients/upp/index.php?hash=1c6ce766d9d7c297c
 30 - Transport & Rail<br />
 2810 - Travel & Tourism<br />
 2812 - Utilities<br />
-<br /><br />
-Location:<br /><br />
+<br />
+<b>Location:</b><br />
 GB - United Kingdom<br />
 AD - Andorra<br />
 AN - Angola<br />
@@ -221,22 +221,22 @@ US - United States<br />
 VA - Vatican City (Holy See)<br />
 VI - Virgin Islands (U.S.)<br />
 ZZ - Rest of the World<br />
-<br /><br />
-Employment term:<br />
-2 – Permanent<br />
+<br />
+<b>Employment term:</b><br />
 1 – Contract<br />
+2 – Permanent<br />
 4 – Temporary<br />
 <br />
-Salaries:<br /><br />
-($)USD - US Dollars <br />
-(€) EU – Euro<br />
-(£) GBP – British Pound<br />
-<br /><br />
-Working hours:<br /><br />
-2 – Full-time<br />
-1 – Part-time<br />
+<b>Salary currency:</b><br />
+USD - US Dollars <br />
+EU – Euro<br />
+GBP – British Pound<br />
 <br />
-Salary payment interval (per):<br /><br />
+<br />Working hours:<b><br/>
+1 – Part-time<br />
+2 – Full-time<br />
+<br />
+<b>Salary payment interval (per):<br />
 annum – Annum<br />
 month – Month<br />
 week – Week<br />
