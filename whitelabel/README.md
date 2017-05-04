@@ -1,5 +1,5 @@
 <p>If you have completed your integration with idibu&#39;s webservices and you wish to provide multiposting under your own branding, idibu provides you a set of configuration tool to do that.</p>
-<p>Once the arraignments for this are done, we will provide you with a custom idibu login script. Once put on your server, your clients will able to login to idibu without leaving your page - your url will always be present in the browser&#39;s URL. You can also use this page as &quot;system url&quot; that will be calling any idibu functionality from your website - making any action, even the ones called from an email, appear as if were executed on your website.</p>
+<p>Once the arrangements for this are done, we will provide you with a custom idibu login script. Once put on your server, your clients will able to login to idibu without leaving your page - your url will always be present in the browser&#39;s URL. You can also use this page as &quot;system url&quot; that will be calling any idibu functionality from your website - making any action, even the ones called from an email, appear as if were executed on your website.</p>
 <p>To complete the customization, we&#39;ll also require few additional details:</p>
 <ul>
 	<li>
