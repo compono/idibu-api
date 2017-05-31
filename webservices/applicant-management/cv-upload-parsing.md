@@ -10,12 +10,10 @@ You can also specify application`s source, subject and body of what would normal
 Please note that this will upload the CV and trigger applicant forwarding as email as if this CV arrived directly from Job board. If you'd like to just upload the CV to idibu without emailing a copy to the consultants (provided your aptrack is set like this) please use add-cv-old call to webservice rather then add-cv.</p>
 <div>
 <h1 class="p3">Link:</h1>
-http://ws.idibu.com/ws/rest/v1/applicants/add-cv?hash=(account's hash)
+http://ws.idibu.com/ws/rest/v1/applicants/add-cv?hash=(account's_hash)
 
-	<h1 class="p3">
-		Example Request</h1>
+	<h1 class="p3">Example Request</h1>
 	<pre>
-<code type="xml">
 &lt;idibu&gt;
     &lt;job&gt;
         &lt;id&gt;(direct or base64 encoded idibu job id)&lt;/id&gt;
@@ -33,7 +31,7 @@ http://ws.idibu.com/ws/rest/v1/applicants/add-cv?hash=(account's hash)
         &lt;body&gt;Accept me, pretty please&lt;/body&gt; &lt;!-- ability to specify email body --&gt;
     &lt;/email&gt;
 &lt;/idibu&gt;
-</code></pre>
+</pre>
 
 idibu board tracking codes can be found here:
 
