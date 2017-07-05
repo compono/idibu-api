@@ -6,14 +6,12 @@
 
 <code>POST http://ws.idibu.com/ws/rest/v1/tracking?hash=<your hash></code>
 
-<h2>Response</h2>
-
-<pre><code type="xml">
+<pre type="xml">
 &lt;parameters&gt;
   &lt;board&gt;board-parameter&lt;/board&gt;
   &lt;job&gt;job-parameter&lt;/job&gt;
 &lt;/parameters&gt;
-</code></pre>
+</pre>
 <br/>
 - The <code>board</code> parameter is used to set the name of the parameter used for tracking the source (job board). By default, this parameter will contain a code from <a href="http://www.idibu.com/clients/?class=Portal&action=ListBIDs" target="_blank">this list</a>.
 - The <code>job</code> parameter is used to set the name of the Job ID parameter. This parameter will contain a URL-safe-base64 encoded unique ID of the job.
