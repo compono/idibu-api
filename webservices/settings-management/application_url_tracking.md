@@ -1,6 +1,6 @@
-<p>Method used to set tracking parameters when using when using application URL method applying </p>
+<p>This method used to set tracking parameters when using application URL method applying. For more information about tracking parameters, please refer to <a href="http://v2-docs.idibu.com/article/52-application-url-source-tracking" target="_blank">this article.</a></p>
 
-</h1>Example of getting settings</h1>
+<h1>Setting the tracking parameters</h1>
 <h2>
 	Request</h2>
 <pre>
@@ -17,11 +17,13 @@ POST http://ws.idibu.com/ws/rest/v1/tracking?hash=<your hash>
 &lt;/parameters&gt;
 </code></pre>
 
+The <code>board</code> parameter is used to set the name of the parameter used for tracking the source (job board). By default, this parameter will contain a code from <a href="http://www.idibu.com/clients/?class=Portal&action=ListBIDs" target="_blank">this list</a>.
+The <code>job</code> parameter is used to set the name of the Job ID parameter. This parameter will contain a URL-safe-base64 encoded unique ID of the job.
 
-<p>	You can also check the tracking parameters set</p>
+<h1>Obtaining the tracking parameters</h1>
 <h2>
 	Request</h2>
 <pre>
 <code>
-GET http://ws.idibu.com/ws/rest/v1/tracking?hash=?hash=<your hash>
+GET http://ws.idibu.com/ws/rest/v1/tracking?hash=<your hash>
 </code>
