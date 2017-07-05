@@ -8,13 +8,13 @@
 
 <h2>Response</h2>
 
-<code type="xml">
+<pre><code type="xml">
 &lt;parameters&gt;
   &lt;board&gt;board-parameter&lt;/board&gt;
   &lt;job&gt;job-parameter&lt;/job&gt;
 &lt;/parameters&gt;
-</code>
-
+</code></pre>
+<br/>
 - The <code>board</code> parameter is used to set the name of the parameter used for tracking the source (job board). By default, this parameter will contain a code from <a href="http://www.idibu.com/clients/?class=Portal&action=ListBIDs" target="_blank">this list</a>.
 - The <code>job</code> parameter is used to set the name of the Job ID parameter. This parameter will contain a URL-safe-base64 encoded unique ID of the job.
 
