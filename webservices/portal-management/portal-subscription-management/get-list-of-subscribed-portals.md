@@ -149,3 +149,5 @@ http://ws.idibu.com/ws/rest/v1/portals/subscribed?hash=<your hash>&count=100&fil
     &lt;status&gt;success&lt;/status&gt;
 &lt;/idibu&gt;
 </code></pre>
+
+In order to get the board logo, append the value of its <logo> tag to the following path: http://www.idibu.com/images/stories/Portal_logos/.
