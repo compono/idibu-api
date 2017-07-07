@@ -50,3 +50,5 @@ http://ws.idibu.com/ws/rest/v1/users/new?hash=<your hash>
     &lt;status&gt;success&lt;/status&gt;
 &lt;/idibu&gt;
 </code></pre>
+
+Max length for username and password fields is 32 characters. Anything beyond that will be trimmed.
