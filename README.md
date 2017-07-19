@@ -14,4 +14,4 @@ The documentation is divided in the following options:
 3. [UPP](https://github.com/oneworldmarket/idibu-api/blob/master/UPP) - Universal Partner Page integration - basically a "plug and play" multiposting system.
 4. [idibu whitelabel](https://github.com/oneworldmarket/idibu-api/tree/master/whitelabel) - Provide your clients with multiposting services with no developement what so ever!
 
-Please note that these applets are designed for the clasic idibu platform (often refered as "idibu V2). The newest idibu version (also known as idibu V3) is compatible in some instances with those APIs, however the newest platform's API docs can be found [here](https://github.com/oneworldmarket/idibu-v3-api).
+Please note that these applets are designed for the clasic idibu platform (often refered as "idibu V2"). The newest idibu version (also known as "idibu V3") is compatible in some instances with those APIs. However the newest platform's API docs can be found [here](https://github.com/oneworldmarket/idibu-v3-api).
