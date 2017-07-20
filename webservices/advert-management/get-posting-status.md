@@ -16,8 +16,7 @@
 <h2>
 	Request</h2>
 <p>GET&nbsp;&nbsp; /ws/rest/v1/adverts/posting?<strong>pq-id=8734509</strong>&amp;hash=&lt;put your hash here&gt;</p>
-<h2>
-	Response</h2>
+<h2>Example Error Response</h2>
 <pre wrap="">
 <code type="xml">
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
@@ -50,6 +49,34 @@
 	&lt;expired&gt;no&lt;/expired&gt;
 	&lt;applicants&gt;&lt;/applicants&gt;
 	&lt;link /&gt;
+&lt;/response&gt;
+&lt;status&gt;success&lt;/status&gt;
+&lt;/idibu&gt;
+</code></pre>
+
+<h2>Example Success Response</h2>
+<pre wrap="">
+<code type="xml">
+&lt;idibu generator=&quot;idibu&quot; version=&quot;1.0&quot;&gt;
+&lt;response&gt;
+&lt;portal&gt;
+&lt;id&gt;338&lt;/id&gt;
+&lt;url&gt;www.seek.com.au&lt;/url&gt;
+&lt;logo&gt;seek2014.png&lt;/logo&gt;
+&lt;name&gt;Seek&lt;/name&gt;
+&lt;/portal&gt;
+&lt;post&gt;
+&lt;start&gt;2017-06-25 00:57:02&lt;/start&gt;
+&lt;stop&gt;2017-07-01 03:42:00&lt;/stop&gt;
+&lt;type&gt;update&lt;/type&gt;
+&lt;status&gt;success&lt;/status&gt;
+&lt;deletable&gt;no&lt;/deletable&gt;
+&lt;/post&gt;
+&lt;expired&gt;yes&lt;/expired&gt;
+&lt;applicants/&gt;
+&lt;link&gt;
+https://adposting.cloud.seek.com.au/advertisement/817d3231-2ab0-45d7-a623-a7ff2c023114/view
+&lt;/link&gt;
 &lt;/response&gt;
 &lt;status&gt;success&lt;/status&gt;
 &lt;/idibu&gt;
