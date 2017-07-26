@@ -24,7 +24,7 @@
 				<p class="p2">No</p>
 			</td>
 			<td class="td3" valign="middle">
-				<p class="p2"><b>live</b> is the only possible value; It displays job details in a breakdown describing status of each post. Rather then see all the reposting entries for one particular board, you will only be informed if the job is live, expired, deleted or has errored in any way. This can be used to show ad status for external/partner job interface rather than whole posting history, which displays without this parameter.</p>
+				<p class="p2"><b>live</b> is the only possible value; it displays job details instead of describing status of each post. Rather than seeing all the reposting entries for one particular board, you will only be informed if the job is live, expired, deleted or has errored in any way. This can be used to show ad status for external/partner job interface rather than whole posting history, which displays without this parameter.</p>
 			</td>
 		</tr>
 	</tbody>
