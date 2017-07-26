@@ -98,7 +98,6 @@ http://ws.idibu.com/ws/rest/v1/adverts/123?hash=<your hash>
                         &lt;/post&gt;
                         &lt;expired&gt;no&lt;/expired&gt;
                         &lt;applicants&gt;0&lt;/applicants&gt;&lt;link /&gt;
-                        
                     &lt;/detail&gt;
                     &lt;detail&gt;
                         &lt;portal&gt;
@@ -147,7 +146,6 @@ http://ws.idibu.com/ws/rest/v1/adverts/123?hash=<your hash>
                         &lt;/post&gt;
                         &lt;expired&gt;no&lt;/expired&gt;
                         &lt;applicants&gt;1&lt;/applicants&gt;&lt;link /&gt;
-                        
                     &lt;/detail&gt;
                     &lt;detail&gt;
                         &lt;portal&gt;
@@ -164,7 +162,6 @@ http://ws.idibu.com/ws/rest/v1/adverts/123?hash=<your hash>
                         &lt;/post&gt;
                         &lt;expired&gt;no&lt;/expired&gt;
                         &lt;applicants&gt;0&lt;/applicants&gt;&lt;link /&gt;
-                        
                     &lt;/detail&gt;&lt;/details&gt;
             &lt;/posting&gt;
         &lt;/advert&gt;
@@ -200,7 +197,6 @@ http://ws.idibu.com/ws/rest/v1/adverts/123?hash=<your hash>&format=live
 		&lt;id&gt;35000232&lt;/id&gt;&lt;title&gt;&lt;/title&gt;
 		&lt;reference&gt;char tesr&lt;/reference&gt;
 		&lt;description&gt;&amp;pound; &lt;strong&gt;Basic Te&lt;/strong&gt; &amp;pound; $ &amp;amp; % @ &amp;amp; ! ? .,=)(/ -:;_+ &amp;#39; &amp;quot; &amp;#39; &amp;euro; &amp;pound; &lt;span style=&quot;text-decoration: underline;&quot;&gt;Basic Te&lt;/span&gt; &amp;pound; $ &amp;amp; % @ &amp;amp; ! ? .,=)(/ -:;_+ &amp;#39; &amp;quot; &amp;#39; &amp;euro; &amp;pound; &lt;em&gt;Basic Te&lt;/em&gt; &amp;pound; $ &amp;amp; % @ &amp;amp; ! ? .,=)(/ -:;_+ &amp;#39; &amp;quot; &amp;#39; &amp;euro; &amp;pound;
-
 		&lt;/description&gt;
 		&lt;sector&gt;Accountancy&lt;/sector&gt;
 		&lt;location&gt;United Kingdom&lt;/location&gt;
