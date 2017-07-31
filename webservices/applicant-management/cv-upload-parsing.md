@@ -33,7 +33,7 @@ http://ws.idibu.com/ws/rest/v1/applicants/add-cv?hash=(account's_hash)
 &lt;/idibu&gt;
 </pre>
 
-idibu board tracking codes can be found here:
+idibu board tracking codes (used for the <code>&lt;portal&gt;</code> field) can be found here:
 
 http://www.idibu.com/clients/?user=<b>[Your idibu username]</b>&password=<b>[Your idibu password]</b>&class=Portal&action=ListBIDs
 
