@@ -26,7 +26,7 @@ http://ws.idibu.com/ws/rest/v1/applicants/add-cv?hash=(account's_hash)
         &lt;contents&gt;BASE64+ENCODED+FILE+CONTENT&lt;/contents&gt;
     &lt;/cv&gt;
     &lt;email&gt;
-        &lt;from&gt;darek@idibu.com&lt;/from&gt; &lt;!-- ability to specify email from address --&gt;
+        &lt;from&gt;email@example.com&lt;/from&gt; &lt;!-- ability to specify email from address --&gt;
         &lt;subject&gt;Application from me&lt;/subject&gt; &lt;!-- ability to specify email subject --&gt;
         &lt;body&gt;Accept me, pretty please&lt;/body&gt; &lt;!-- ability to specify email body --&gt;
     &lt;/email&gt;
