@@ -82,7 +82,7 @@
 				<p class="p2">No</p>
 			</td>
 			<td class="td3" valign="middle">
-				<p class="p2">filter applicants by job reference, multiple allowed, comma separated&nbsp;</p>
+				<p class="p2">filter applicants by job reference</p>
 			</td>
 		</tr>
 		<tr>
