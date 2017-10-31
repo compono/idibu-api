@@ -1,6 +1,6 @@
 <h1>
 	Sectors</h1>
-<p>The sectors for idibu are fixed to this current list - <a href="http://www.idibu.com/images/stories/Portal_logos/idibu_sector_list.xls">download the idibu sector list in XLS format</a>.</p>
+<p>The sectors for idibu are fixed to this current list - <a href="http://www.idibu.com/clients/api/idibu_sector_list.xls">download the idibu sector list in XLS format</a>.</p>
 <h1>
 	Locations</h1>
 <p>idibu now has a global location system which means the amount of location possibilities are huge.</p>
