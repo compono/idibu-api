@@ -60,9 +60,9 @@
 				<td>
 					No</td>
 				<td>
-					text (Values: Yes / No / &#39;yes_pcp - Defaults to &quot;Yes&quot;)</td>
+					text (Values: Yes / No / &#39;yes_pcp - Defaults to &quot;No&quot;)</td>
 				<td>
-					Controls whether the user is able to select and unselect boards on the Post Completion Page. PCP_yes blocks the board selection, but prevents direct posting when all required fields are present on the payload.</td>
+					Controls whether the user is able to select and unselect boards on the Post Completion Page.<br/><strong>Yes</strong> - blocks the board selection<br/><strong>No</strong> - allows to select and deselect boards<br/><strong>yes_pcp</strong> - blocks the board selection, but prevents direct posting when all required fields are present in the payload. The PCP page will therefore always be generated.</td>
 			</tr>
 			<tr valign="TOP">
 				<td>
