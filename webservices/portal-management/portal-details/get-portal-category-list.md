@@ -1,4 +1,4 @@
-<p>Method returns subscribed portals for client</p>
+<p>Method returns a list of Portal Categories (Tags) that can be used when filtering (see <a href="https://github.com/oneworldmarket/idibu-api/blob/master/webservices/portal-management/portal-details/get-portal-details.md" target="_blank">get-portal-details</a></p>
 <h1>
 	Parameters</h1>
 <p>No additional parameters</p>
