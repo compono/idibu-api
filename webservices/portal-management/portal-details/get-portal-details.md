@@ -57,7 +57,7 @@
 				<p class="p2">No</p>
 			</td>
 			<td class="td3" valign="middle">
-				<p class="p2">filter portals by tags</p>
+				<p class="p2">filter portals by tags (see <a href="https://github.com/oneworldmarket/idibu-api/blob/master/webservices/portal-management/portal-details/get-portal-category-list.md" target="_blank">get-portal-category-list</a>)</p>
 			</td>
 		</tr>
 	</tbody>
