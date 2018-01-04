@@ -42,7 +42,7 @@ Field Length validators
 <li>fieldWithoutLinks - Can't contain links.</li>
 <li>fieldWithoutEmails - Can't contain emails.</li>
 <br>
-Numberic Validators<br>
+Numeric Validators<br>
 <li>intMaxSize - Integer Value Less Than.</li>
 <li>intMinSize - Integer Value Greater Than.</li>
 <br>Data Type Validators<br>
