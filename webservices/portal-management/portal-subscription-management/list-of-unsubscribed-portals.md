@@ -136,9 +136,7 @@ http://ws.idibu.com/ws/rest/v1/portals/unsubscribed?hash=YOUR_HASH&count=5&filte
 				&lt;name&gt;UK Hire Jobs&lt;/name&gt;
 				&lt;url&gt;www.ukhirejobs.com&lt;/url&gt;
 				&lt;logo&gt;ukhirejobs33.jpg&lt;/logo&gt;
-				&lt;tags&gt;
-free, construction, engineering, sales-marketing,
-				&lt;/tags&gt;
+				&lt;tags&gt;free, construction, engineering, sales-marketing,&lt;/tags&gt;
 				&lt;supports-aptrack&gt;yes&lt;/supports-aptrack&gt;
 				&lt;supports-delete&gt;no&lt;/supports-delete&gt;
 				&lt;published&gt;yes&lt;/published&gt;
