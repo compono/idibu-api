@@ -57,7 +57,18 @@
 				<p class="p2">No</p>
 			</td>
 			<td class="td3" valign="middle">
-				<p class="p2">filter portals by tags</p>
+				<p class="p2">filter portals by categories (see <a href="https://github.com/oneworldmarket/idibu-api/blob/master/webservices/portal-management/portal-details/get-portal-category-list.md" target="_blank">get-portal-category-list</a>); multiple allowed (comma-separated)</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="td1" valign="middle">
+				<p class="p2">filter_country</p>
+			</td>
+			<td class="td2" valign="middle">
+				<p class="p2">No</p>
+			</td>
+			<td class="td3" valign="middle">
+				<p class="p2">filter portals by countries (see <a href="https://github.com/oneworldmarket/idibu-api/blob/master/webservices/portal-management/portal-details/get-portal-country-list.md" target="_blank">get-portal-country-list</a>); multiple allowed (comma-separated); you can use both full country names and 3-letter ISO codes</p>
 			</td>
 		</tr>
 	</tbody>
@@ -68,86 +79,76 @@
 	Request</h2>
 <pre>
 <code>
-http://ws.idibu.com/ws/rest/v1/portals/subscribed?hash=<your hash>&count=100&filter_name=defence
+http://ws.idibu.com/ws/rest/v1/portals/subscribed?hash=YOUR_HASH&count=5&filter_country=GBR,United+States&filter_tags=general
 </code></pre>
 <h2>
 	Response</h2>
 <pre>
-<code type="xml">
-&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf8&quot;?&gt;
-&lt;idibu generator=&quot;idibu&quot; version=&quot;1.0&quot;&gt;
-    &lt;response&gt;
-        &lt;portals&gt;
-            &lt;portal&gt;
-                &lt;id&gt;918&lt;/id&gt;
-                &lt;name&gt;3wJobs&lt;/name&gt;
-                &lt;url&gt;www.3wjobs.co.uk&lt;/url&gt;
-                &lt;logo&gt;3wjobs.jpg&lt;/logo&gt;
-                &lt;tags&gt;general,free,&lt;/tags&gt;
-            &lt;/portal&gt;
-            &lt;portal&gt;
-                &lt;id&gt;18&lt;/id&gt;
-                &lt;name&gt;4 Recruitment Jobs&lt;/name&gt;
-                &lt;url&gt;www.4recruitmentjobs.com&lt;/url&gt;
-                &lt;logo&gt;4recr.jpg&lt;/logo&gt;
-                &lt;tags&gt;general,free,&lt;/tags&gt;
-            &lt;/portal&gt;
-            &lt;portal&gt;
-                &lt;id&gt;448&lt;/id&gt;
-                &lt;name&gt;4 UK Jobs&lt;/name&gt;
-                &lt;url&gt;www.4ukjobs.net&lt;/url&gt;
-                &lt;logo&gt;4uk.jpg&lt;/logo&gt;
-                &lt;tags&gt;general,free,&lt;/tags&gt;
-            &lt;/portal&gt;
-            &lt;portal&gt;
-                &lt;id&gt;39&lt;/id&gt;
-                &lt;name&gt;CV - Library&lt;/name&gt;
-                &lt;url&gt;www.cv-library.co.uk&lt;/url&gt;
-                &lt;logo&gt;cvlibrarylogo_ibidu.gif&lt;/logo&gt;
-                &lt;tags&gt;general,all,&lt;/tags&gt;
-            &lt;/portal&gt;
-            &lt;portal&gt;
-                &lt;id&gt;517&lt;/id&gt;
-                &lt;name&gt;idibu Developer Board&lt;/name&gt;
-                &lt;url&gt;jobboardtest.idibu.com&lt;/url&gt;
-                &lt;logo&gt;idibu.jpg&lt;/logo&gt;
-                &lt;tags&gt;&lt;/tags&gt;
-            &lt;/portal&gt;
-            &lt;portal&gt;
-                &lt;id&gt;86&lt;/id&gt;
-                &lt;name&gt;Monster UK&lt;/name&gt;
-                &lt;url&gt;www.monster.co.uk&lt;/url&gt;
-                &lt;logo&gt;monster2.jpg&lt;/logo&gt;
-                &lt;tags&gt;general,all,&lt;/tags&gt;
-            &lt;/portal&gt;
-            &lt;portal&gt;
-                &lt;id&gt;146&lt;/id&gt;
-                &lt;name&gt;Oil and Gas Job Search&lt;/name&gt;
-                &lt;url&gt;www.oilandgasjobsearch.com&lt;/url&gt;
-                &lt;logo&gt;newoilandgas.jpg&lt;/logo&gt;
-                &lt;tags&gt;engineering,utilities,&lt;/tags&gt;
-            &lt;/portal&gt;
-            &lt;portal&gt;
-                &lt;id&gt;65&lt;/id&gt;
-                &lt;name&gt;Oil Careers&lt;/name&gt;
-                &lt;url&gt;www.oilcareers.com&lt;/url&gt;
-                &lt;logo&gt;oilcar2.jpg&lt;/logo&gt;
-                &lt;tags&gt;engineering,&lt;/tags&gt;
-            &lt;/portal&gt;
-            &lt;portal&gt;
-                &lt;id&gt;560&lt;/id&gt;
-                &lt;name&gt;STV jobs&lt;/name&gt;
-                &lt;url&gt;www.jobs.stv.tv&lt;/url&gt;
-                &lt;logo&gt;stvj.jpg&lt;/logo&gt;
-                &lt;tags&gt;regional,&lt;/tags&gt;
-            &lt;/portal&gt;
-        &lt;/portals&gt;
-        &lt;offset&gt;0&lt;/offset&gt;
-        &lt;count&gt;9&lt;/count&gt;
-        &lt;total&gt;9&lt;/total&gt;
-    &lt;/response&gt;
-    &lt;status&gt;success&lt;/status&gt;
+<code type="xml">&lt;idibu generator=&quot;idibu&quot; version=&quot;1.0&quot;&gt;
+	&lt;response&gt;
+		&lt;portals&gt;
+			&lt;portal&gt;
+				&lt;id&gt;39&lt;/id&gt;
+				&lt;name&gt;CV - Library&lt;/name&gt;
+				&lt;url&gt;www.cv-library.co.uk&lt;/url&gt;
+				&lt;logo&gt;cvlibrarylogo_ibidu.gif&lt;/logo&gt;
+				&lt;tags&gt;general, all,&lt;/tags&gt;
+				&lt;supports-aptrack&gt;yes&lt;/supports-aptrack&gt;
+				&lt;supports-delete&gt;yes&lt;/supports-delete&gt;
+				&lt;published&gt;yes&lt;/published&gt;
+				&lt;country&gt;GBR&lt;/country&gt;
+			&lt;/portal&gt;
+			&lt;portal&gt;
+				&lt;id&gt;1185&lt;/id&gt;
+				&lt;name&gt;Indeed&lt;/name&gt;
+				&lt;url&gt;www.indeed.com&lt;/url&gt;
+				&lt;logo&gt;indeed2.jpg&lt;/logo&gt;
+				&lt;tags&gt;general,&lt;/tags&gt;
+				&lt;supports-aptrack&gt;yes&lt;/supports-aptrack&gt;
+				&lt;supports-delete&gt;yes&lt;/supports-delete&gt;
+				&lt;published&gt;yes&lt;/published&gt;
+				&lt;country&gt;GBR&lt;/country&gt;
+			&lt;/portal&gt;
+			&lt;portal&gt;
+				&lt;id&gt;1185&lt;/id&gt;
+				&lt;name&gt;Indeed&lt;/name&gt;
+				&lt;url&gt;www.indeed.com&lt;/url&gt;
+				&lt;logo&gt;indeed2.jpg&lt;/logo&gt;
+				&lt;tags&gt;general,&lt;/tags&gt;
+				&lt;supports-aptrack&gt;yes&lt;/supports-aptrack&gt;
+				&lt;supports-delete&gt;yes&lt;/supports-delete&gt;
+				&lt;published&gt;yes&lt;/published&gt;
+				&lt;country&gt;USA&lt;/country&gt;
+			&lt;/portal&gt;
+			&lt;portal&gt;
+				&lt;id&gt;41&lt;/id&gt;
+				&lt;name&gt;JobSite.co.uk&lt;/name&gt;
+				&lt;url&gt;www.jobsite.co.uk&lt;/url&gt;
+				&lt;logo&gt;jobsite2.jpg&lt;/logo&gt;
+				&lt;tags&gt;general, all,&lt;/tags&gt;
+				&lt;supports-aptrack&gt;yes&lt;/supports-aptrack&gt;
+				&lt;supports-delete&gt;yes&lt;/supports-delete&gt;
+				&lt;published&gt;yes&lt;/published&gt;
+				&lt;country&gt;GBR&lt;/country&gt;
+			&lt;/portal&gt;
+			&lt;portal&gt;
+				&lt;id&gt;253&lt;/id&gt;
+				&lt;name&gt;Monster Test&lt;/name&gt;
+				&lt;url&gt;www.freespace.com&lt;/url&gt;
+				&lt;logo&gt;monstertest2014.png&lt;/logo&gt;
+				&lt;tags&gt;general, all,&lt;/tags&gt;
+				&lt;supports-aptrack&gt;yes&lt;/supports-aptrack&gt;
+				&lt;supports-delete&gt;yes&lt;/supports-delete&gt;
+				&lt;published&gt;yes&lt;/published&gt;
+				&lt;country&gt;GBR&lt;/country&gt;
+			&lt;/portal&gt;
+		&lt;/portals&gt;
+		&lt;offset&gt;0&lt;/offset&gt;
+		&lt;count&gt;5&lt;/count&gt;
+		&lt;total&gt;11&lt;/total&gt;
+	&lt;/response&gt;
+	&lt;status&gt;success&lt;/status&gt;
 &lt;/idibu&gt;
 </code></pre>
 
-In order to get the board logo, append the value of its <logo> tag to the following path: http://www.idibu.com/images/stories/Portal_logos/.
+In order to get the portal's logo image, append the value of its <logo> tag to the following path: http://www.idibu.com/images/stories/Portal_logos/
