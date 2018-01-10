@@ -150,3 +150,5 @@ http://ws.idibu.com/ws/rest/v1/portals/all?hash=YOUR_HASH&count=5&filter_country
 	&lt;status&gt;success&lt;/status&gt;
 &lt;/idibu&gt;
 </code></pre>
+
+In order to get the portal's logo image, append the value of its tag to the following path: http://www.idibu.com/images/stories/Portal_logos/
