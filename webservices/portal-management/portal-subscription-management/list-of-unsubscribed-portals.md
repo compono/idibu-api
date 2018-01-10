@@ -57,7 +57,18 @@
 				<p class="p2">No</p>
 			</td>
 			<td class="td3" valign="middle">
-				<p class="p2">filter portals by tags</p>
+				<p class="p2">filter portals by categories (see <a href="https://github.com/oneworldmarket/idibu-api/blob/master/webservices/portal-management/portal-details/get-portal-category-list.md" target="_blank">get-portal-category-list</a>); multiple allowed (comma-separated)</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="td1" valign="middle">
+				<p class="p2">filter_country</p>
+			</td>
+			<td class="td2" valign="middle">
+				<p class="p2">No</p>
+			</td>
+			<td class="td3" valign="middle">
+				<p class="p2">filter portals by countries (see <a href="https://github.com/oneworldmarket/idibu-api/blob/master/webservices/portal-management/portal-details/get-portal-country-list.md" target="_blank">get-portal-country-list</a>); multiple allowed (comma-separated); you can use both full country names and 3-letter ISO codes</p>
 			</td>
 		</tr>
 	</tbody>
@@ -68,91 +79,76 @@
 	Request</h2>
 <pre>
 <code>
-http://ws.idibu.com/ws/rest/v1/portals/unsubscribed?hash=<your hash>&offset=20&count=10&filter_name=defence
+http://ws.idibu.com/ws/rest/v1/portals/unsubscribed?hash=YOUR_HASH&count=5&filter_country=USA,United+Kingdom&filter_tags=engineering,free
 </code></pre>
 <h2>
 	Response</h2>
 <pre>
-&lt;code type=&quot;xml&quot;&gt;
-&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf8&quot;?&gt;
-&lt;idibu generator=&quot;idibu&quot; version=&quot;1.0&quot;&gt;
-    &lt;response&gt;
-        &lt;portals&gt;
-            &lt;portal&gt;
-                &lt;id&gt;500&lt;/id&gt;
-                &lt;name&gt;4 Teaching Jobs&lt;/name&gt;
-                &lt;url&gt;www.4teachingjobs.net&lt;/url&gt;
-                &lt;logo&gt;4te.jpg&lt;/logo&gt;
-                &lt;tags&gt;free,education,&lt;/tags&gt;
-            &lt;/portal&gt;
-            &lt;portal&gt;
-                &lt;id&gt;448&lt;/id&gt;
-                &lt;name&gt;4 UK Jobs&lt;/name&gt;
-                &lt;url&gt;www.4ukjobs.net&lt;/url&gt;
-                &lt;logo&gt;4uk.jpg&lt;/logo&gt;
-                &lt;tags&gt;general,free,&lt;/tags&gt;
-            &lt;/portal&gt;
-            &lt;portal&gt;
-                &lt;id&gt;1041&lt;/id&gt;
-                &lt;name&gt;4G Wireless Jobs&lt;/name&gt;
-                &lt;url&gt;www.4gwirelessjobs.com&lt;/url&gt;
-                &lt;logo&gt;4gw.jpg&lt;/logo&gt;
-                &lt;tags&gt;information_technology,&lt;/tags&gt;
-            &lt;/portal&gt;
-            &lt;portal&gt;
-                &lt;id&gt;204&lt;/id&gt;
-                &lt;name&gt;Aberdeen-Jobs&lt;/name&gt;
-                &lt;url&gt;www.aberdeen-jobs.com&lt;/url&gt;
-                &lt;logo&gt;aberdeenjobs2.jpg&lt;/logo&gt;
-                &lt;tags&gt;regional,&lt;/tags&gt;
-            &lt;/portal&gt;
-            &lt;portal&gt;
-                &lt;id&gt;190&lt;/id&gt;
-                &lt;name&gt;Access-Science Jobs&lt;/name&gt;
-                &lt;url&gt;www.access-sciencejobs.co.uk&lt;/url&gt;
-                &lt;logo&gt;accscie3.jpg&lt;/logo&gt;
-                &lt;tags&gt;science,&lt;/tags&gt;
-            &lt;/portal&gt;
-            &lt;portal&gt;
-                &lt;id&gt;64&lt;/id&gt;
-                &lt;name&gt;Accountancy Age Jobs&lt;/name&gt;
-                &lt;url&gt;www.accountancyagejobs.com&lt;/url&gt;
-                &lt;logo&gt;accountancyagejobs.jpg&lt;/logo&gt;
-                &lt;tags&gt;accountancy,&lt;/tags&gt;
-            &lt;/portal&gt;
-            &lt;portal&gt;
-                &lt;id&gt;393&lt;/id&gt;
-                &lt;name&gt;Accountancy Job Board&lt;/name&gt;
-                &lt;url&gt;www.accountancyjobboard.com&lt;/url&gt;
-                &lt;logo&gt;accjb2.jpg&lt;/logo&gt;
-                &lt;tags&gt;free,accountancy,&lt;/tags&gt;
-            &lt;/portal&gt;
-            &lt;portal&gt;
-                &lt;id&gt;1052&lt;/id&gt;
-                &lt;name&gt;Accountant Jobs.ie&lt;/name&gt;
-                &lt;url&gt;www.accountantjobs.ie&lt;/url&gt;
-                &lt;logo&gt;accountantjie.jpg&lt;/logo&gt;
-                &lt;tags&gt;accountancy,&lt;/tags&gt;
-            &lt;/portal&gt;
-            &lt;portal&gt;
-                &lt;id&gt;380&lt;/id&gt;
-                &lt;name&gt;Accounting jobs&lt;/name&gt;
-                &lt;url&gt;accountingjobs.co.uk&lt;/url&gt;
-                &lt;logo&gt;accountingjobs.jpg&lt;/logo&gt;
-                &lt;tags&gt;accountancy,&lt;/tags&gt;
-            &lt;/portal&gt;
-            &lt;portal&gt;
-                &lt;id&gt;588&lt;/id&gt;
-                &lt;name&gt;Actuary Jobs&lt;/name&gt;
-                &lt;url&gt;www.theactuaryjobs.co.uk&lt;/url&gt;
-                &lt;logo&gt;actuaryjobs.jpg&lt;/logo&gt;
-                &lt;tags&gt;general,&lt;/tags&gt;
-            &lt;/portal&gt;
-        &lt;/portals&gt;
-        &lt;offset&gt;20&lt;/offset&gt;
-        &lt;count&gt;10&lt;/count&gt;
-        &lt;total&gt;503&lt;/total&gt;
-    &lt;/response&gt;
-    &lt;status&gt;success&lt;/status&gt;
+<code type="xml">&lt;idibu generator=&quot;idibu&quot; version=&quot;1.0&quot;&gt;
+	&lt;response&gt;
+		&lt;portals&gt;
+			&lt;portal&gt;
+				&lt;id&gt;255&lt;/id&gt;
+				&lt;name&gt;4 Engineering Jobs&lt;/name&gt;
+				&lt;url&gt;www.4engineeringjobs.com&lt;/url&gt;
+				&lt;logo&gt;4engineeringjobs.jpg&lt;/logo&gt;
+				&lt;tags&gt;free, engineering,&lt;/tags&gt;
+				&lt;supports-aptrack&gt;yes&lt;/supports-aptrack&gt;
+				&lt;supports-delete&gt;no&lt;/supports-delete&gt;
+				&lt;published&gt;yes&lt;/published&gt;
+				&lt;country&gt;GBR&lt;/country&gt;
+			&lt;/portal&gt;
+			&lt;portal&gt;
+				&lt;id&gt;256&lt;/id&gt;
+				&lt;name&gt;4 Engineers&lt;/name&gt;
+				&lt;url&gt;www.4engineers.co.uk&lt;/url&gt;
+				&lt;logo&gt;4engineers.jpg&lt;/logo&gt;
+				&lt;tags&gt;free, engineering,&lt;/tags&gt;
+				&lt;supports-aptrack&gt;yes&lt;/supports-aptrack&gt;
+				&lt;supports-delete&gt;no&lt;/supports-delete&gt;
+				&lt;published&gt;yes&lt;/published&gt;
+				&lt;country&gt;GBR&lt;/country&gt;
+			&lt;/portal&gt;
+			&lt;portal&gt;
+				&lt;id&gt;445&lt;/id&gt;
+				&lt;name&gt;Jobs for UK Civil engineers&lt;/name&gt;
+				&lt;url&gt;www.ukcivilengineering.com&lt;/url&gt;
+				&lt;logo&gt;jfuce.jpg&lt;/logo&gt;
+				&lt;tags&gt;free, engineering,&lt;/tags&gt;
+				&lt;supports-aptrack&gt;yes&lt;/supports-aptrack&gt;
+				&lt;supports-delete&gt;no&lt;/supports-delete&gt;
+				&lt;published&gt;yes&lt;/published&gt;
+				&lt;country&gt;GBR&lt;/country&gt;
+			&lt;/portal&gt;
+			&lt;portal&gt;
+				&lt;id&gt;1074&lt;/id&gt;
+				&lt;name&gt;Telecoms Job Board&lt;/name&gt;
+				&lt;url&gt;www.telecomsjobboard.com&lt;/url&gt;
+				&lt;logo&gt;telecomjb.jpg&lt;/logo&gt;
+				&lt;tags&gt;free, engineering, information_technology,&lt;/tags&gt;
+				&lt;supports-aptrack&gt;yes&lt;/supports-aptrack&gt;
+				&lt;supports-delete&gt;yes&lt;/supports-delete&gt;
+				&lt;published&gt;yes&lt;/published&gt;
+				&lt;country&gt;GBR&lt;/country&gt;
+			&lt;/portal&gt;
+			&lt;portal&gt;
+				&lt;id&gt;504&lt;/id&gt;
+				&lt;name&gt;UK Hire Jobs&lt;/name&gt;
+				&lt;url&gt;www.ukhirejobs.com&lt;/url&gt;
+				&lt;logo&gt;ukhirejobs33.jpg&lt;/logo&gt;
+				&lt;tags&gt;
+free, construction, engineering, sales-marketing,
+				&lt;/tags&gt;
+				&lt;supports-aptrack&gt;yes&lt;/supports-aptrack&gt;
+				&lt;supports-delete&gt;no&lt;/supports-delete&gt;
+				&lt;published&gt;yes&lt;/published&gt;
+				&lt;country&gt;GBR&lt;/country&gt;
+			&lt;/portal&gt;
+		&lt;/portals&gt;
+		&lt;offset&gt;0&lt;/offset&gt;
+		&lt;count&gt;5&lt;/count&gt;
+		&lt;total&gt;5&lt;/total&gt;
+	&lt;/response&gt;
+	&lt;status&gt;success&lt;/status&gt;
 &lt;/idibu&gt;
 </code></pre>
