@@ -23,12 +23,9 @@
 <h2>
 	Posted data</h2>
 <pre>
-<code>
-POST http://ws.idibu.com/ws/rest/v1/quotas/517/new?hash=<your hash>
-</code></pre>
+<code>POST http://ws.idibu.com/ws/rest/v1/quotas/517/new?hash=YOUR_HASH</code></pre>
 <pre>
-<code type="xml">
-&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf8&quot;?&gt;
+<code type="xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf8&quot;?&gt;
 &lt;idibu&gt;
     &lt;type&gt;period&lt;/type&gt;
     &lt;period&gt;Year&lt;/period&gt;
@@ -40,8 +37,7 @@ POST http://ws.idibu.com/ws/rest/v1/quotas/517/new?hash=<your hash>
 <h2>
 	Response</h2>
 <pre>
-<code type="xml">
-&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf8&quot;?&gt;
+<code type="xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf8&quot;?&gt;
 &lt;idibu generator=&quot;idibu&quot; version=&quot;1.0&quot;&gt;
     &lt;response&gt;
         &lt;message&gt;Quotas set&lt;/message&gt;
