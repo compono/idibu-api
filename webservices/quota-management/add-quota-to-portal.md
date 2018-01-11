@@ -32,7 +32,8 @@ POST http://ws.idibu.com/ws/rest/v1/quotas/517/new?hash=<your hash>
 &lt;idibu&gt;
     &lt;type&gt;period&lt;/type&gt;
     &lt;period&gt;Year&lt;/period&gt;
-    &lt;year-renewal&gt;&lt;/year-renewal&gt;&lt;year-renewal&gt;&lt;/year-renewal&gt;&lt;year-renewal&gt;20-03&lt;/year-renewal&gt;&lt;base /&gt;Post
+    &lt;year-renewal&gt;20-03&lt;/year-renewal&gt;
+    &lt;base/&gt;Post&lt;/base/&gt;
     &lt;reset&gt;Ignore&lt;/reset&gt;
 &lt;/idibu&gt;
 &lt;/code&gt;&lt;/pre&gt;
