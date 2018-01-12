@@ -1,4 +1,6 @@
-<p>Method shows/sets team quotas</p>
+<p>Method shows/sets team quotas.<br/>
+	<code>quota</code> is the amount of quotas.<br/>
+	<code>limit</code> is the amount to which the quotas reset after the specified period (see <a href="https://github.com/oneworldmarket/idibu-api/blob/master/webservices/quota-management/add-quota-to-portal.md" target="_blank">add-quota-to-portal<a/>).</p>
 <h1>
 	Parameters</h1>
 <table cellpadding="2" cellspacing="0" class="t1" width="1084.0">
@@ -51,19 +53,11 @@
 		</tr>
 	</tbody>
 </table>
-<h1>
-	Example</h1>
-<h2>
-	Request</h2>
-<pre>
-<code>
-http://ws.idibu.com/ws/rest/v1/quotas/517/teams?hash=<your hash>
-</code></pre>
-<h2>
-	Response</h2>
-<pre>
-<code type="xml">
-&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf8&quot;?&gt;
+<h1>Example</h1>
+<h2>Request</h2>
+<pre><code>http://ws.idibu.com/ws/rest/v1/quotas/517/teams?hash=YOUR_HASH</code></pre>
+<h2>Response</h2>
+<pre><code type="xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf8&quot;?&gt;
 &lt;idibu generator=&quot;idibu&quot; version=&quot;1.0&quot;&gt;
     &lt;response&gt;
         &lt;quotas&gt;
@@ -88,21 +82,13 @@ http://ws.idibu.com/ws/rest/v1/quotas/517/teams?hash=<your hash>
     &lt;status&gt;success&lt;/status&gt;
 &lt;/idibu&gt;
 </code></pre>
-<h1>
-	Set team quotas</h1>
-<p>To set quotas we have to provide *data* parameter with xml as shown in example.</p>
-<p>For *slots* type of quotas *limit* parameter in xml can be omitted.</p>
-<h1>
-	Example</h1>
-<h2>
-	Data posted</h2>
-<pre>
-<code>
-POST http://ws.idibu.com/ws/rest/v1/quotas/517/teams?hash=<your hash>
-</code></pre>
-<pre>
-<code type="xml">
-&lt;?xml version=&quot;1.0&quot;?&gt;
+<h1>Set team quotas</h1>
+<p>To set quotas, please provide <code>data</code> parameter containig an xml as shown in the example below.</p>
+<p>For *slots* type of quotas, <code>limit</code> parameter in xml can be omitted.</p>
+<h1>Example</h1>
+<h2>Data posted</h2>
+<pre><code>POST http://ws.idibu.com/ws/rest/v1/quotas/517/teams?hash=YOUR_HASH</code></pre>
+<pre><code type="xml">&lt;?xml version=&quot;1.0&quot;?&gt;
 &lt;idibu&gt;
 &lt;quota&gt;
     &lt;team-id&gt;33000171&lt;/team-id&gt;
@@ -115,12 +101,9 @@ POST http://ws.idibu.com/ws/rest/v1/quotas/517/teams?hash=<your hash>
     &lt;limit&gt;3&lt;/limit&gt;
 &lt;/quota&gt;
 &lt;/idibu&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;
-	Response&lt;/h2&gt;
-&lt;pre&gt;
-&lt;code type=&quot;xml&quot;&gt;
-&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf8&quot;?&gt;
+</code></pre>
+<h2>Response</h2>
+<pre><code type="xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf8&quot;?&gt;
 &lt;idibu generator=&quot;idibu&quot; version=&quot;1.0&quot;&gt;
     &lt;response&gt;
         &lt;message&gt;Quota set&lt;/message&gt;
