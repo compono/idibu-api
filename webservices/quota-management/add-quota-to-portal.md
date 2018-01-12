@@ -9,7 +9,7 @@
 			<li><code>Week</code></li>
 			<li><code>Month</code></li>
 			<li><code>Quarter</code></li>
-			<li>Year</li>
+			<li><code>Year</code></li>
 		</ul></li>
 	<li><strong><code>base</code></strong> - How to deduct posting credits?. Possible values are:
 		<ul>
