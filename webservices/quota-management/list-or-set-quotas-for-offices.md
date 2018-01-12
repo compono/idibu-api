@@ -77,8 +77,8 @@
 &lt;/idibu&gt;
 </code></pre>
 <h1>Set office quotas</h1>
-<p>To set quotas, you have to provide <code>data</code> parameter with xml as shown in the example below.</p>
-<p>For *slots* type of quotas, <code>limit</code> parameter in xml can be omited.</p>
+<p>To set quotas, please provide <code>data</code> parameter containig an xml as shown in the example below.</p>
+<p>For *slots* type of quotas, <code>limit</code> parameter in xml can be omitted.</p>
 <h1>Example</h1>
 <h2>Data posted</h2>
 <pre><code>POST http://ws.idibu.com/ws/rest/v1/quotas/517/offices?hash=YOUR_HASH</code></pre>
