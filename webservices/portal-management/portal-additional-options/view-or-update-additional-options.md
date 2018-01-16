@@ -8,7 +8,7 @@
   <li><strong><code>SectorFilter</code></strong> - a comma-separated list of IDs identifying job categories that are allowed to post to the board.<br/>To obtain a list of categories, refer to <a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/Sector-and-locations.md" target="_blank">this article</a>.</li>
 </ul>
 <h1>Parameters</h1>
-<p>No additional parameters</p>
+<p>No additional parameters.</p>
 <h1>Example - obtaining current setup</h1>
 <p>To view the current settings, just fire a GET request to the webservice.</p>
 <h2>Request</h2>
@@ -47,7 +47,7 @@
 &lt;/idibu&gt;
 </code></pre>
 <h1>Example - editing the options</h1>
-<p>To edit or set the options, fire a POST request with an appropriate XML (see below) inside a <code>data</code> parameter.</p>
+<p>To edit or set the options, fire a POST request with an appropriate XML (see below) inside the <code>data</code> parameter.</p>
 <h2>Request</h2>
 <pre><code>POST https://ws.idibu.com/ws/rest/v1/portals/517/additional-options?hash=YOUR_HASH</code></pre>
 <pre><code type="xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf8&quot;?&gt;
