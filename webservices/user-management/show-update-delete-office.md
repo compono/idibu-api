@@ -30,7 +30,8 @@ http://ws.idibu.com/ws/rest/v1/offices/33000171?hash=<your hash>
     &lt;response&gt;
         &lt;id&gt;33000170&lt;/id&gt;
         &lt;name&gt;moldova&lt;/name&gt;
-        &lt;contacts&gt;&lt;address&gt;xxx
+        &lt;contacts&gt;
+	    &lt;address&gt;xxx
 xx
 xxx, xxx
 xxxxx&lt;/address&gt;
@@ -43,6 +44,8 @@ xxxxx&lt;/address&gt;
             &lt;phone&gt;345678&lt;/phone&gt;
             &lt;fax&gt;456789&lt;/fax&gt;
             &lt;www&gt;www.w.ww&lt;/www&gt;
+	    &lt;company-name&gt;Company Idibu&lt;/company-name&gt;
+	    &lt;need-authorization&gt;Yes&lt;/need-authorization&gt;	    
         &lt;/contacts&gt;
     &lt;/response&gt;
     &lt;status&gt;success&lt;/status&gt;
