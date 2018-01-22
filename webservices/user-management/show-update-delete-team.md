@@ -31,6 +31,9 @@ http://ws.idibu.com/ws/rest/v1/teams/33000171?hash=<your hash>
         &lt;id&gt;33000171&lt;/id&gt;
         &lt;name&gt;tiraspol&lt;/name&gt;
         &lt;office-id&gt;33000170&lt;/office-id&gt;
+	&lt;contacts&gt;
+		&lt;need-authorization&gt;Yes&lt;/need-authorization&gt;
+	&lt;/contacts&gt;
     &lt;/response&gt;
     &lt;status&gt;success&lt;/status&gt;
 &lt;/idibu&gt;
