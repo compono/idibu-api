@@ -1,4 +1,4 @@
-<p>Method returns subscribed portals for client</p>
+<p>Method returns a list of idibu portals (job boards).</p>
 <h1>
 	Parameters</h1>
 <table cellpadding="2" cellspacing="0" class="t1" width="1084.0">
