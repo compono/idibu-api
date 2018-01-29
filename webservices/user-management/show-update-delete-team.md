@@ -3,7 +3,7 @@
 	<li>
 		GET - view team information/settings</li>
 	<li>
-		POST - edit team settings</li>
+		PUT - edit team settings</li>
 	<li>
 		DELETE - remove team</li>
 </ul>
@@ -44,7 +44,7 @@ http://ws.idibu.com/ws/rest/v1/teams/33000171?hash=<your hash>
 	Posted data</h3>
 <pre>
 <code>
-POST http://ws.idibu.com/ws/rest/v1/teams/33000171?hash=<your hash>
+PUT http://ws.idibu.com/ws/rest/v1/teams/33000171?hash=<your hash>
 </code></pre>
 <pre>
 <code type="xml">
