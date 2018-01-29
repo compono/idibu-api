@@ -3,7 +3,7 @@
 	<li>
 		GET - view office information/settings</li>
 	<li>
-		POST - edit office settings</li>
+		PUT - edit office settings</li>
 	<li>
 		DELETE - remove office</li>
 </ul>
@@ -57,7 +57,7 @@ xxxxx&lt;/address&gt;
 	Posted data</h3>
 <pre>
 <code>
-POST http://ws.idibu.com/ws/rest/v1/offices/33000170?hash=<your hash>
+PUT http://ws.idibu.com/ws/rest/v1/offices/33000170?hash=<your hash>
 </code></pre>
 &lt;?xml version=&quot;1.0&quot;?&gt;
 &lt;idibu&gt;
