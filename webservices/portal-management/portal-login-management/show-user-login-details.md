@@ -57,7 +57,7 @@
 				<p class="p2">No</p>
 			</td>
 			<td class="td3" valign="middle">
-				<p class="p2">filter users by team (use 0 to display unordered profiles)</p>
+				<p class="p2">filter users by team (use 0 to display only unordered profiles)</p>
 			</td>
 		</tr>
 		<tr>
@@ -68,7 +68,7 @@
 				<p class="p2">No</p>
 			</td>
 			<td class="td3" valign="middle">
-				<p class="p2">filter users by office (use 0 to display unordered profiles)</p>
+				<p class="p2">filter users by office (use 0 to display only unordered profiles)</p>
 			</td>
 		</tr>
 	</tbody>
