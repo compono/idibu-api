@@ -90,7 +90,6 @@
 			<td class="td3" valign="middle">
 				numeric (job id). filter adverts by job id</td>
 		</tr>
-
 		<tr>
 			<td class="td1" valign="middle">
 				<p class="p2">reference</p>
@@ -102,7 +101,6 @@
 				<p class="p2">The reference of the job you wish to find records for</p>
 			</td>
 		</tr>
-		
 		<tr>
 			<td class="td1" valign="middle">
 				<p class="p2">title</p>
@@ -114,7 +112,6 @@
 				<p class="p2">The title of the job you wish to find records for</p>
 			</td>
 		</tr>
-
 		<tr>
 			<td class="td1" valign="middle">
 				<p class="p2">title-or-reference</p>
@@ -126,7 +123,6 @@
 				<p class="p2">The title or reference of the job you wish to find records for</p>
 			</td>
 		</tr>
-
 		<tr>
 			<td class="td1" valign="middle">order</p>
 			</td>
@@ -137,7 +133,6 @@
 				<p class="p2">date-asc or date-desc options available</p>
 			</td>
 		</tr>
-
 		<tr>
 			<td class="td1" valign="middle">format</p>
 			</td>
@@ -147,23 +142,14 @@
 			<td class="td3" valign="middle">
 				<p class="p2">possible value: count-jobs - shows just the number of the jobs matching query criteria without any additional tags</p>
 			</td>
-		</tr>	
-		
+		</tr>
 	</tbody>
 </table>
-<h1>
-	Example</h1>
-<h2>
-	Request</h2>
-<pre>
-<code>
-http://ws.idibu.com/ws/rest/v1/adverts/live/?hash=<your hash>&sender=529&offset=10&count=1&from_date=2011-09-14&to_date=2011-10-22&sender=529
-</code></pre>
-<h2>
-	Response</h2>
-<pre>
-<code type="xml">
-&lt;idibu generator=&quot;idibu&quot; version=&quot;1.0&quot;&gt;
+<h1>Example</h1>
+<h2>Request</h2>
+<pre><code>http://ws.idibu.com/ws/rest/v1/adverts/live/?hash=<your hash>&sender=529&offset=10&count=1&from_date=2011-09-14&to_date=2011-10-22&sender=529</code></pre>
+<h2>Response</h2>
+<pre><code type="xml">&lt;idibu generator=&quot;idibu&quot; version=&quot;1.0&quot;&gt;
     &lt;response&gt;
         &lt;adverts&gt;
             &lt;advert&gt;
