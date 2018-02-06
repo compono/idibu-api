@@ -35,7 +35,7 @@
 				<p class="p2">No</p>
 			</td>
 			<td class="td3" valign="middle">
-				<p class="p2">number of users to return in response, default is 10</p>
+				<p class="p2">number of users to return in response, default is 5</p>
 			</td>
 		</tr>
 		<tr>
