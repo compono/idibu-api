@@ -1,6 +1,5 @@
 <p>Method returns detailed advert information for given advert id</p>
-<h1>
-	Parameters</h1>
+<h1>Parameters</h1>
 <table cellpadding="2" cellspacing="0" class="t1" width="1099.0">
 	<thead>
 		<tr>
@@ -29,18 +28,11 @@
 		</tr>
 	</tbody>
 </table>
-<h1>
-	Example</h1>
-<h2>
-	Request</h2>
-<pre>
-<code>
-http://ws.idibu.com/ws/rest/v1/adverts/123?hash=<your hash>
-</code></pre>
-<h2>
-	Response</h2>
-<pre>
-&lt;code type=&quot;xml&quot;&gt;
+<h1>Example</h1>
+<h2>Request</h2>
+<pre><code>http://ws.idibu.com/ws/rest/v1/adverts/123?hash=<your hash></code></pre>
+<h2>Response</h2>
+<pre><code type="xml">
 &lt;idibu generator=&quot;idibu&quot; version=&quot;1.0&quot;&gt;
     &lt;response&gt;
         &lt;advert&gt;
