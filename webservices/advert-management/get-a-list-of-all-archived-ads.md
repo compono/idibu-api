@@ -163,7 +163,7 @@
                     &lt;email&gt;mail@example.com&lt;/email&gt;
                 &lt;/sender&gt;
                 &lt;job&gt;
-                    &lt;id&gt;&lt;/id&gt;&lt;id&gt;&lt;/id&gt;&lt;id&gt;33029844&lt;/id&gt;&lt;title&gt;&lt;/title&gt;&lt;title&gt;&lt;/title&gt;&lt;title&gt;&lt;/title&gt;
+                   &lt;id&gt;33029844&lt;/id&gt;
                     &lt;reference&gt;IJHW020897&lt;/reference&gt;
                 &lt;/job&gt;
                 &lt;aptrack&gt;
