@@ -39,6 +39,17 @@
 				<p class="p2">number of office quotas to return in response, default is 10</p>
 			</td>
 		</tr>
+		<tr>
+			<td class="td1" valign="middle">
+				<p class="p2">hideEmpty</p>
+			</td>
+			<td class="td2" valign="middle">
+				<p class="p2">No</p>
+			</td>
+			<td class="td3" valign="middle">
+				<p class="p2">If true, users, teams and offices with no quotas will not be displayed in the response.</p>
+			</td>
+		</tr>
 	</tbody>
 </table>
 <h1>Show office quotas</h1>
