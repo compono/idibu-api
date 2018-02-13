@@ -2,6 +2,7 @@
 	<code>quota</code> is the amount of quotas.<br/>
 	<code>limit</code> is the amount to which the quotas reset after the specified period (see <a href="https://github.com/oneworldmarket/idibu-api/blob/master/webservices/quota-management/add-quota-to-portal.md" target="_blank">add-quota-to-portal<a/>).<br/>
 	<code>remaining</code> is the amount of quota currently remaining.</p>
+<p>You can use an additional <code>hideEmpty=true</code> parameter in the request - the response will then not display any users, teams or offices that have no quotas setup.</p>
 <h3>Request</h3>
 <pre><code>http://www.idibu.com/ws/rest/v1/quotas/(board id)/all?hash=YOUR_HASH</code></pre>
 <h3>Response</h3>
