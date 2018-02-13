@@ -47,7 +47,7 @@
 				<p class="p2">No</p>
 			</td>
 			<td class="td3" valign="middle">
-				<p class="p2">If true, users, teams and offices with no quotas will not be displayed in the response.</p>
+				<p class="p2">If <code>true</code>, users, teams and offices that have no quotas setup will not be displayed in the response.</p>
 			</td>
 		</tr>
 	</tbody>
