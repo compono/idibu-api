@@ -51,6 +51,17 @@
 				<p class="p2">filter team quotas by office</p>
 			</td>
 		</tr>
+		<tr>
+			<td class="td1" valign="middle">
+				<p class="p2">hideEmpty</p>
+			</td>
+			<td class="td2" valign="middle">
+				<p class="p2">No</p>
+			</td>
+			<td class="td3" valign="middle">
+				<p class="p2">If <code>true</code>, users, teams and offices that have no quotas setup will not be displayed in the response.</p>
+			</td>
+		</tr>
 	</tbody>
 </table>
 <h1>Example</h1>
