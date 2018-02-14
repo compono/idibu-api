@@ -1,6 +1,5 @@
 <p>Method returns all live adverts for an account</p>
-<h1>
-	Parameters</h1>
+<h1>Parameters</h1>
 <table cellpadding="2" cellspacing="0" class="t1" width="1099.0">
 	<thead>
 		<tr>
@@ -101,7 +100,6 @@
 				<p class="p2">reference of the job in question</p>
 			</td>
 		</tr>
-		
 		<tr>
 			<td class="td1" valign="middle">
 				<p class="p2">title</p>
@@ -113,7 +111,6 @@
 				<p class="p2">The title of the job you wish to find records for</p>
 			</td>
 		</tr>
-
 		<tr>
 			<td class="td1" valign="middle">
 				<p class="p2">title-or-reference</p>
@@ -125,7 +122,6 @@
 				<p class="p2">The title or reference of the job you wish to find records for</p>
 			</td>
 		</tr>
-
 		<tr>
 			<td class="td1" valign="middle">order</p>
 			</td>
@@ -136,7 +132,6 @@
 				<p class="p2">date-asc or date-desc options available</p>
 			</td>
 		</tr>
-
 		<tr>
 			<td class="td1" valign="middle">format</p>
 			</td>
@@ -149,10 +144,8 @@
 		</tr>
 	</tbody>
 </table>
-<h1>
-	Example</h1>
-<h2>
-	Request</h2>
+<h1>Example</h1>
+<h2>Request</h2>
 <pre>
 <code>
 http://ws.idibu.com/ws/rest/v1/adverts/live/?hash=<your hash>&sender=529&offset=10&count=1&from_date=2011-09-14&to_date=2011-10-22&sender=529
