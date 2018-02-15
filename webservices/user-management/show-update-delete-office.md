@@ -7,7 +7,7 @@
 <h1>Parameters</h1>
 <p>No additional parameters</p>
 <h1>Getting office information</h1>
-<p>Returns the office's data.</p>
+<p>Returns selected office's data.</p>
 <h2>Example</h2>
 <h3>Request</h3>
 <pre><code>GET http://ws.idibu.com/ws/rest/v1/offices/33000171?hash=YOUR_HASH</code></pre>
