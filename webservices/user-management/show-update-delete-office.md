@@ -68,7 +68,7 @@
 	&lt;status&gt;success&lt;/status&gt;
 &lt;/idibu&gt;
 </code></pre>
-<h1>Deleting office</h1>
+<h1>Deleting an office</h1>
 <p>To delete an office, use a DELETE request (office 1234567 in the example)</p>
 <h2>Example</h2>
 <h3>Request</h3>
