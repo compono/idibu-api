@@ -30,7 +30,8 @@
 &lt;status&gt;Rejected&lt;/status&gt;
 &lt;files&gt;
 	&lt;file&gt;
-		&lt;name&gt;121784969.doc&lt;/name&gt;&lt;link /&gt;http://ws.idibu.com/down.php?id=1001481&amp;amp;file=28B63807593EABD603343432A1C6922D.doc
+		&lt;name&gt;121784969.doc&lt;/name&gt;
+		&lt;link&gt;http://ws.idibu.com/down.php?id=1001481&amp;amp;file=28B63807593EABD603343432A1C6922D.doc&lt;/link&gt;
 		&lt;/file&gt;
 	&lt;/files&gt;
 &lt;/message&gt;&lt;/response&gt;
