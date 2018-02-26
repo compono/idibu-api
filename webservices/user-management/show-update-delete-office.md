@@ -28,9 +28,9 @@
 			&lt;phone&gt;123 456 789&lt;/phone&gt;
 			&lt;fax/&gt;
 			&lt;www&gt;www.idibu.com&lt;/www&gt;
+			&lt;company-name&gt;Test Company&lt;/company-name&gt;
+			&lt;need-authorization&gt;No&lt;/need-authorization&gt;
 		&lt;/contacts&gt;
-		&lt;company-name&gt;Test Company&lt;/company-name&gt;
-		&lt;need-authorization&gt;No&lt;/need-authorization&gt;
 	&lt;/response&gt;
 	&lt;status&gt;success&lt;/status&gt;
 &lt;/idibu&gt;
@@ -54,9 +54,9 @@
 		&lt;phone&gt;123 456 789&lt;/phone&gt;
 		&lt;fax/&gt;
 		&lt;www&gt;www.idibu.com&lt;/www&gt;
+		&lt;company-name&gt;Test Company&lt;/company-name&gt;
+		&lt;need-authorization&gt;No&lt;/need-authorization&gt;
 	&lt;/contacts&gt;
-	&lt;company-name&gt;Test Company&lt;/company-name&gt;
-	&lt;need-authorization&gt;No&lt;/need-authorization&gt;
 &lt;/idibu&gt;
 </code></pre>
 <h3>Response</h3>
