@@ -1,6 +1,60 @@
 <h1>
 	Sectors</h1>
-<p>The sectors for idibu are fixed to this current list - <a href="http://www.idibu.com/clients/api/idibu_sector_list.xls">download the idibu sector list in XLS format</a>.</p>
+<p>The sectors for idibu are fixed to this current list:</p>
+<table>
+<thead><tr><th>ID</th><th>Sector</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>Accountancy</td></tr>
+<tr><td>2</td><td>Accountancy (Qualified)</td></tr>
+<tr><td>3</td><td>Admin & Secretarial</td></tr>
+<tr><td>2778</td><td>Advertising & PR</td></tr>
+<tr><td>2776</td><td>Aerospace</td></tr>
+<tr><td>2780</td><td>Agriculture Fishing & Forestry</td></tr>
+<tr><td>2782</td><td>Arts</td></tr>
+<tr><td>4</td><td>Automotive</td></tr>
+<tr><td>5</td><td>Banking</td></tr>
+<tr><td>7</td><td>Building & Construction</td></tr>
+<tr><td>8</td><td>Call Centre & Customer Service</td></tr>
+<tr><td>6</td><td>Charity & Voluntary</td></tr>
+<tr><td>2784</td><td>Consultancy</td></tr>
+<tr><td>2786</td><td>Defence & Military</td></tr>
+<tr><td>2788</td><td>Design & Creative</td></tr>
+<tr><td>9</td><td>Education & Training</td></tr>
+<tr><td>2790</td><td>Electronics</td></tr>
+<tr><td>10</td><td>Engineering</td></tr>
+<tr><td>2816</td><td>Executive and Management</td></tr>
+<tr><td>2792</td><td>Fashion</td></tr>
+<tr><td>11</td><td>Financial Services</td></tr>
+<tr><td>12</td><td>FMCG</td></tr>
+<tr><td>14</td><td>Graduate Roles</td></tr>
+<tr><td>15</td><td>Health & Safety</td></tr>
+<tr><td>16</td><td>Hospitality & Catering</td></tr>
+<tr><td>17</td><td>HR & Personnel</td></tr>
+<tr><td>13</td><td>Insurance</td></tr>
+<tr><td>2802</td><td>Internet & New Media</td></tr>
+<tr><td>18</td><td>IT</td></tr>
+<tr><td>19</td><td>Legal</td></tr>
+<tr><td>20</td><td>Leisure & Sport</td></tr>
+<tr><td>2794</td><td>Logistics Distribution & Supply Chain</td></tr>
+<tr><td>2808</td><td>Manufacturing & Production</td></tr>
+<tr><td>21</td><td>Marketing</td></tr>
+<tr><td>22</td><td>Media</td></tr>
+<tr><td>2796</td><td>Medical & Nursing</td></tr>
+<tr><td>2804</td><td>Pharmaceuticals</td></tr>
+<tr><td>2806</td><td>Property & Housing</td></tr>
+<tr><td>23</td><td>Public Sector & Government</td></tr>
+<tr><td>24</td><td>Purchasing & Procurement</td></tr>
+<tr><td>25</td><td>Recruitment Consultancy</td></tr>
+<tr><td>26</td><td>Retail</td></tr>
+<tr><td>27</td><td>Sales</td></tr>
+<tr><td>28</td><td>Science & Research</td></tr>
+<tr><td>29</td><td>Social Care</td></tr>
+<tr><td>2798</td><td>Telecommunications</td></tr>
+<tr><td>30</td><td>Transport & Rail</td></tr>
+<tr><td>2810</td><td>Travel & Tourism</td></tr>
+<tr><td>2812</td><td>Utilities</td></tr>
+</tbody></table>
+<p><a href="http://www.idibu.com/clients/api/idibu_sector_list.xls">Download the idibu sector list in XLS format</a>.</p>
 <h1>
 	Locations</h1>
 <p>idibu now has a global location system which means the amount of location possibilities are huge.</p>
