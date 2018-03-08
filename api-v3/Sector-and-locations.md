@@ -40,6 +40,7 @@
 <tr><td>21</td><td>Marketing</td></tr>
 <tr><td>22</td><td>Media</td></tr>
 <tr><td>2796</td><td>Medical & Nursing</td></tr>
+<tr><td>31</td><td>Other</td></tr>
 <tr><td>2804</td><td>Pharmaceuticals</td></tr>
 <tr><td>2806</td><td>Property & Housing</td></tr>
 <tr><td>23</td><td>Public Sector & Government</td></tr>
