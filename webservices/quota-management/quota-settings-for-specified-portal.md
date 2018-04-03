@@ -18,6 +18,8 @@
         &lt;month-renewal&gt;01&lt;/month-renewal&gt;
         &lt;year-renewal&gt;22-11&lt;/year-renewal&gt;
         &lt;reset&gt;Ignore&lt;/reset&gt;
+	&lt;budget-type&gt;payperpost&lt;/budget-type&gt;
+	&lt;budget-amount&gt;1.12&lt;/budget-amount&gt;
     &lt;/response&gt;
     &lt;status&gt;success&lt;/status&gt;
 &lt;/idibu&gt;
