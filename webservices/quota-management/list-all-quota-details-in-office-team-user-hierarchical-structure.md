@@ -15,6 +15,7 @@
 				&lt;quota&gt;808&lt;/quota&gt;
 				&lt;limit&gt;808&lt;/limit&gt;
 				&lt;remaining&gt;808&lt;/remaining&gt;
+				&lt;posted&gt;0&lt;/posted&gt;
 				&lt;name&gt;Example office&lt;/name&gt;
 				&lt;teams&gt;
 					&lt;team&gt;
@@ -22,6 +23,7 @@
 						&lt;quota&gt;5&lt;/quota&gt;
 						&lt;limit&gt;5&lt;/limit&gt;
 						&lt;remaining&gt;5&lt;/remaining&gt;
+						&lt;posted&gt;0&lt;/posted&gt;
 						&lt;name&gt;Example team&lt;/name&gt;
 						&lt;users&gt;
 							&lt;user&gt;
@@ -29,6 +31,7 @@
 								&lt;quota&gt;200&lt;/quota&gt;
 								&lt;limit/&gt;
 								&lt;remaining&gt;200&lt;/remaining&gt;
+								&lt;posted&gt;0&lt;/posted&gt;
 								&lt;name&gt;Example user1&lt;/name&gt;
 							&lt;/user&gt;
 							&lt;user&gt;
@@ -36,6 +39,7 @@
 								&lt;quota/&gt;
 								&lt;limit/&gt;
 								&lt;remaining/&gt;
+								&lt;posted/&gt;
 								&lt;name&gt;Example user2&lt;/name&gt;
 							&lt;/user&gt;
 						&lt;/users&gt;
@@ -50,13 +54,15 @@
 					&lt;quota/&gt;
 					&lt;limit/&gt;
 					&lt;remaining/&gt;
+					&lt;posted/&gt;
 					&lt;name&gt;no team/office user1&lt;/name&gt;
 				&lt;/user&gt;
 				&lt;user&gt;
 					&lt;user-id&gt;153&lt;/user-id&gt;
 					&lt;quota&gt;12&lt;/quota&gt;
 					&lt;limit/&gt;
-					&lt;remaining&gt;12&lt;/remaining&gt;
+					&lt;remaining&gt;5&lt;/remaining&gt;
+					&lt;posted&gt;7&lt;/posted&gt;
 					&lt;name&gt;no team/office user2&lt;/name&gt;
 				&lt;/user&gt;
 			&lt;/users&gt;
