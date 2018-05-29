@@ -74,8 +74,9 @@
 		</tr>
 	</tbody>
 </table>
-<h1>Example</h1>
-<h2>Request</h2>
+<h1>Show user quotas</h1>
+<h2>Example</h2>
+<h3>Request</h3>
 <pre><code>http://ws.idibu.com/ws/rest/v1/quotas/517/users?hash=YOUR_HASH</code></pre>
 <h2>Response</h2>
 <pre><code type="xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf8&quot;?&gt;
@@ -131,8 +132,8 @@
 <h1>Set user quotas</h1>
 <p>To set quotas, please provide <code>data</code> parameter containig an xml as shown in the example below.</p>
 <p>For *slots* type of quotas, <code>limit</code> parameter in xml can be omitted.</p>
-<h1>Example</h1>
-<h2>Data posted</h2>
+<h2>Example</h2>
+<h3>Data posted</h3>
 <pre><code>POST http://ws.idibu.com/ws/rest/v1/quotas/517/users?hash=YOUR_HASH</code></pre>
 <pre><code type="xml">&lt;?xml version=&quot;1.0&quot;?&gt;
 &lt;idibu&gt;
