@@ -1,6 +1,6 @@
 <p>Method allows to delete all instances of a particular applicant (or set of applicants) either by their ID or e-mail address.</p>
 <p>Candidate records are queued for deletion which, in case of large amount of requests, may not be processed immediately. Due to this, the method also doesn't check for the amount or validity of the requested records, and will therefore always return successful response, even if there is nothing to remove.</p>
-<p><strong>Please note that once you action the removal of the candidate's data, this process cannot be reversed in any circumstances.</strong> This is because the data removal process fulfils our obligations as a data processor as outlined in the European Data legislation introduced in May 2018. Once removed via this process, we therefore have no means of identification or retrieval of your candidate's data.</p>
+<p><strong>Please note that once you action the removal of the candidate's data, this process cannot be reversed in any circumstances.</strong> This is because the data removal process fulfills our obligations as a data processor as outlined in the European Data legislation introduced in May 2018. Once removed via this process, we therefore have no means of identification or retrieval of your candidate's data.</p>
 <h1>Parameters</h1>
 <p>No additional parameters</p>
 <h1>Deleting by id</h1>
