@@ -45,6 +45,12 @@
 					<li><code>year</code> - every year of using the job board costs as much as <strong><code>budget-amount</code></strong> indicates.</li>
 				</ul>
 			</li>
+			<li><strong><code>budget-amount</code></strong> - optional; if, for the particular portal, there exists an Extra Field with different types of credits, the cost can be set for each <code>option</code>:
+				<ul>
+					<li><code>label</code> - name of the credit type - obtainable via <a href="https://github.com/oneworldmarket/idibu-api/blob/master/webservices/quota-management/quota-settings-for-specified-portal.md" target="_blank">quota-settings-for-specified-portal.</a></li>
+					<li><code>value</code> - the actual cost for this credit type.</li>
+				</ul>
+			</li>
 		</ul>
 	</li>
 </ul>
@@ -55,13 +61,27 @@
 <pre><code>POST http://ws.idibu.com/ws/rest/v1/quotas/517/new?hash=YOUR_HASH</code></pre>
 <pre><code type="xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf8&quot;?&gt;
 &lt;idibu&gt;
-    &lt;type&gt;period&lt;/type&gt;
-    &lt;period&gt;Year&lt;/period&gt;
-    &lt;year-renewal&gt;20-03&lt;/year-renewal&gt;
-    &lt;base&gt;Post&lt;/base&gt;
-    &lt;reset&gt;Ignore&lt;/reset&gt;
-    &lt;budget-type&gt;payperpost&lt;/budget-type&gt;
-    &lt;budget-amount&gt;1.12&lt;/budget-amount&gt;
+	&lt;type&gt;period&lt;/type&gt;
+	&lt;period&gt;Month&lt;/period&gt;
+	&lt;base&gt;Post&lt;/base&gt;
+	&lt;month-renewal&gt;05&lt;/month-renewal&gt;
+	&lt;year-renewal/&gt;
+	&lt;reset&gt;Carry&lt;/reset&gt;
+	&lt;budget-type&gt;payperpost&lt;/budget-type&gt;
+	&lt;budget-amount&gt;
+		&lt;option&gt;
+			&lt;label&gt;Standard job&lt;/label&gt;
+			&lt;value&gt;2700&lt;/value&gt;
+		&lt;/option&gt;
+		&lt;option&gt;
+			&lt;label&gt;Premium job&lt;/label&gt;
+			&lt;value&gt;13&lt;/value&gt;
+		&lt;/option&gt;
+		&lt;option&gt;
+			&lt;label&gt;Default ad&lt;/label&gt;
+			&lt;value&gt;2.20&lt;/value&gt;
+		&lt;/option&gt;
+	&lt;/budget-amount&gt;
 &lt;/idibu&gt;
 </code></pre>
 <h2>Response</h2>
