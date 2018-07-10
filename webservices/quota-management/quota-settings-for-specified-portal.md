@@ -27,6 +27,22 @@
 				&lt;label&gt;Default ad&lt;/label&gt;
 				&lt;value&gt;2.20&lt;/value&gt;
 			&lt;/option&gt;
+			&lt;/option&gt;
+				&lt;label>Featured job</label>
+				&lt;value/>
+			&lt;/option&gt;
+			&lt;option>
+				&lt;label>Premium+ job</label>
+				&lt;value/>
+			&lt;/option&gt;
+			&lt;option&gt;
+				&lt;label>IT job</label>
+				&lt;value/>
+			&lt;/option&gt;
+			&lt;option&gt;
+				&lt;label>Free job</label>
+				&lt;value/>
+			&lt;/option>
 		&lt;/budget-amount&gt;
 	&lt;/response&gt;
 	&lt;status&gt;success&lt;/status&gt;
