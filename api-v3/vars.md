@@ -20,7 +20,7 @@
 				<td>
 					No</td>
 				<td>
-					text (Values: Yes / No - Defaults to &quot;Yes&quot;)</td>
+					text (Values: yes / no - Defaults to &quot;Yes&quot;)</td>
 				<td>
 					Controls whether the posting duration fields appear by the job board logo&#39;s</td>
 			</tr>
@@ -50,9 +50,9 @@
 				<td>
 					No</td>
 				<td>
-					text (Values: Yes / No)</td>
+					text (Values: yes / no)</td>
 				<td>
-					Indicated if you are sending data in the UTF-8 encoding. <b>Recommended to set to "yes"</b></td>
+					Indicated if you are sending data in the UTF-8 encoding. <b>Always set to "yes"! Non-UTF-8 posting is deprecated.</b></td>
 			</tr>
 			<tr valign="TOP">
 				<td>
@@ -60,9 +60,9 @@
 				<td>
 					No</td>
 				<td>
-					text (Values: Yes / No / &#39;yes_pcp - Defaults to &quot;No&quot;)</td>
+					text (Values: yes / no / yes_pcp - Defaults to &quot;no&quot;)</td>
 				<td>
-					Controls whether the user is able to select and unselect boards on the Post Completion Page.<br/><strong>Yes</strong> - blocks the board selection<br/><strong>No</strong> - allows to select and deselect boards<br/><strong>yes_pcp</strong> - blocks the board selection, but prevents direct posting when all required fields are present in the payload. The PCP page will therefore always be generated.</td>
+					Controls whether the user is able to select and unselect boards on the Post Completion Page.<br/><strong>yes</strong> - blocks the board selection<br/><strong>no</strong> - allows to select and deselect boards<br/><strong>yes_pcp</strong> - blocks the board selection, but prevents direct posting when all required fields are present in the payload. The PCP page will therefore always be generated.</td>
 			</tr>
 			<tr valign="TOP">
 				<td>
@@ -90,9 +90,9 @@
 				<td>
 					No</td>
 				<td>
-					text (Values: Warning / Fail - Defaults to &quot;Warning&quot;)</td>
+					text (Values: warning / fail - Defaults to &quot;warning&quot;)</td>
 				<td>
-					Determines whether the system will fail with warnings or not<br />
+					Determines whether the system will fail in case of non-crtitical warnings.<br />
 					&nbsp;</td>
 			</tr>
 			<tr valign="TOP">
