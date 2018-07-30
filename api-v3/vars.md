@@ -20,7 +20,7 @@
 				<td>
 					No</td>
 				<td>
-					text (Values: yes / no - Defaults to &quot;Yes&quot;)</td>
+					text (Values: yes / no - Defaults to &quot;yes&quot;)</td>
 				<td>
 					Controls whether the posting duration fields appear by the job board logo&#39;s</td>
 			</tr>
