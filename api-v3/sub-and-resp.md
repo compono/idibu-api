@@ -98,7 +98,7 @@ __posts__&lt;/JOB&gt;
 &nbsp;&lt;/warnings&gt;
 &nbsp;&lt;/log&gt;
 &lt;/idibu&gt;
-&lt;/code&gt;</pre>
+</code></pre>
 <p>We offer a great deal of configuration in this area:</p>
 <ul>
 	<li>
