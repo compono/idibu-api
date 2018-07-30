@@ -1,13 +1,15 @@
 <p>A request is submitted using an HTTP POST to the address:</p>
-<pre>
-<code>
-http://ws.idibu.com/clients/api/REMOTE/V3/[INSERT LOGIN HASH HERE]
-</code></pre>
-<p class="p1">The client hash is part of the the url used to post the information to, and it is mandatory that the request uses the POST HTTP method. GET request will fail with an error indicating that the payload is missing.&nbsp;</p>
-<p class="p1">The xml data should be sent in a variable called:<br><br>
-<b>&ldquo;xml_text&rdquo;</b><br><br>and must URL encoded. Make sure your application, that will link up with idibu, does not post the jobs as text/xml with ascii encoding, but is of application/x-www-form-urlencoded type. Please use the iso-8859-1 coding when URL encoding. Alternatively - and preferably! - you can use the utf-8 encoding provided you indicate the encoding in the configuration tag (utf8_enable sub-tag.)). As the encoding rules might differ between multiple job sites, please use HTML entities (like &quot;&amp;pound;&quot;, &quot;&amp;euro;&quot;) instead of standard ISO-8859-1 symbols (&quot;&pound;&quot;, &quot;&euro;&quot;) - this shouldn't be an issue when using UTF-8 though. You can see an XML with special characters and their correct encoding in the <a href="https://github.com/oneworldmarket/idibu-api/tree/master/api-v3/examples">XML3 examples section</a>.</p>
-<h1 class="p1">
-	Response Messages</h1>
+<pre><code>http://ws.idibu.com/clients/api/REMOTE/V3/[INSERT LOGIN HASH HERE]</code></pre>
+<p class="p1">The client hash is part of the the url used to post the information to, and it is mandatory that the request uses the POST method. GET request will fail with an error indicating that the payload is missing.&nbsp;</p>
+<p class="p1"><strong>The xml data should be sent in a variable called:<br><br><code>xml_text</code><br><br>and must URL encoded.</strong></p>
+<h1>Encoding guidelines</h1>	
+<ul>
+	<li>Make sure you post the data as <code>application/x-www-form-urlencoded</code> type.</lie>
+	<li>Please use the UTF-8 encoding and always set the appropriate configuration tag (<code>&lt;utf8_enable&gt;yes&lt;/utf8_enable&gt;</code> sub-tag, <a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/vars.md" target="_blank">as per the documentation</a>).</li>
+	<li>Preferably, please use HTML formatting and, even if you don't support it, please always send <code>&lt;br/&gt;</code> tags instead of plain-text newlines</li>
+	<li>You can see an XML with special characters and their correct encoding in the <a href="https://github.com/oneworldmarket/idibu-api/tree/master/api-v3/examples">XML3 examples section</a>.</li>
+</ul>
+<h1 class="p1">Response Messages</h1>
 <p class="p1">All messages are sent back as XML, and for succesful postings the system outputs significant logging information.</p>
 <h2>
 	Response Messages for Successful Postings</h2>
