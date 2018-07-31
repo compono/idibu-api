@@ -7,6 +7,7 @@
 	<li>Make sure you post the data as <code>application/x-www-form-urlencoded</code> type.</lie>
 	<li>Please use the UTF-8 encoding and always set the appropriate configuration tag (<code>&lt;utf8_enable&gt;yes&lt;/utf8_enable&gt;</code> sub-tag, <a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/vars.md" target="_blank">as per the documentation</a>).</li>
 	<li>Preferably, please use HTML formatting and, even if you don't support it, please always send <code>&lt;br/&gt;</code> tags instead of plain-text newlines</li>
+	<li>For any free-text fields, use CDATA.</li>
 	<li>You can see an XML with special characters and their correct encoding in the <a href="https://github.com/oneworldmarket/idibu-api/tree/master/api-v3/examples">XML3 examples section</a>.</li>
 </ul>
 <h1 class="p1">Response Messages</h1>
