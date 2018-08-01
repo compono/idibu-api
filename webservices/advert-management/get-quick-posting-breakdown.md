@@ -1,4 +1,4 @@
-<p>Method returns all adverts for a client, which gives you brief information on what jobs were posted, which boards (with their current status) and when does they have the final expired</p>
+<p>Method returns all adverts for a client, which gives you brief information on what jobs were posted, which boards (with their current status) and what is their final expiry date.
 <h1 class="p1">
 	Parameters</h1>
 <table cellpadding="2" cellspacing="0" class="t1" width="1099.0">
