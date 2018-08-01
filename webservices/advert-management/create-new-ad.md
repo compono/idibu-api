@@ -1,4 +1,4 @@
-This method creates a dummy advert. This advert is not going to be posted anywhere, it will just lay in idibu.</p>
+This method creates a dummy advert. This advert is not going to be posted anywhere, it will just stay in idibu.</p>
 Method is useful when you want to import CVs from your hard-drive to idibu. Simply create a new dummy advert using this method and use the returned job ID for upload CVs method (<a href="/docs/add-cv-wsrestv1aptrackadd-cv">/ws/rest/v1/aptrack/add-cv</a>).</p>
 </div>
 <div>
