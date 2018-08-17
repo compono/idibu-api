@@ -147,7 +147,7 @@
 </table>
 <h1>Example</h1>
 <h2>Request</h2>
-<pre><code>http://ws.idibu.com/ws/rest/v1/adverts/live/?hash=<your hash>&sender=529&offset=10&count=1&from_date=2011-09-14&to_date=2011-10-22&sender=529</code></pre>
+<pre><code>http://ws.idibu.com/ws/rest/v1/adverts/archived/?hash=<your hash>&sender=529&offset=10&count=1&from_date=2011-09-14&to_date=2011-10-22&sender=529</code></pre>
 <h2>Response</h2>
 <pre><code type="xml">&lt;idibu generator=&quot;idibu&quot; version=&quot;1.0&quot;&gt;
     &lt;response&gt;
