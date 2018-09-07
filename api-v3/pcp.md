@@ -1,5 +1,6 @@
 <p>The post completion page simplifies multi-posting so that a user, after sending core job data to the system, can complete additional field information, choose additional boards to post to, set durations etc - all from one page with no multi-step process.</p>
 <p>It means this page can be brought back and embeed inside the third-party system allowing much tighter system integration and user workflow.</p>
+<img src="http://idibu.com/images/PCP.png"/>
 <h1>
 	Posting Completion Page (PCP) configuration Tags</h1>
 <p>To control how the PCP works, there is a complete set of tags. Right below is the list of tags and what they are for, and we have <a href="/docs/xml-api-v3-examples">several examples</a> of their usage.</p>
