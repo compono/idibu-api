@@ -76,6 +76,17 @@
 		</tr>
 		<tr>
 			<td class="td1" valign="middle">
+				<p class="p2">email</p>
+			</td>
+			<td class="td2" valign="middle">
+				<p class="p2">No</p>
+			</td>
+			<td class="td3" valign="middle">
+				<p class="p2">filter applicants by their email adddress</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="td1" valign="middle">
 				<p class="p2">reference</p>
 			</td>
 			<td class="td2" valign="middle">
