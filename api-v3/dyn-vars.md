@@ -31,14 +31,6 @@
 		</tr>
 		<tr valign="top">
 			<td>
-				PostCode</td>
-			<td>
-				text</td>
-			<td>
-				Post Code</td>
-		</tr>
-		<tr valign="top">
-			<td>
 				app_url</td>
 			<td>
 				text</td>
