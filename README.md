@@ -9,9 +9,9 @@ Before you choose the prefered integration type, make sure to read <a href="http
 
 The documentation is divided in the following options:
 
-1. [idibu API](https://github.com/oneworldmarket/idibu-api/tree/master/api-v3) - where you can learn all about how to post jobs using idibu.
-2. [idibu webservices](https://github.com/oneworldmarket/idibu-api/tree/master/webservices) - where you are welcome to try to get all the info you need about applicants, posted jobs, users, quotas... Basically build your own multiposting system!
-3. [UPP](https://github.com/oneworldmarket/idibu-api/blob/master/UPP) - Universal Partner Page integration - basically a "plug and play" multiposting system.
-4. [idibu whitelabel](https://github.com/oneworldmarket/idibu-api/tree/master/whitelabel) - Provide your clients with multiposting services with no developement what so ever!
+1. [idibu API](https://github.com/oneworldmarket/idibu-api/tree/master/api-v3) - where you can learn all about posting jobs with our API.
+2. [idibu webservices](https://github.com/oneworldmarket/idibu-api/tree/master/webservices) - where you can read how to get the information about your applicants, jobs, users, posting quotas - and many more.
+3. [UPP](https://github.com/oneworldmarket/idibu-api/blob/master/UPP) - Universal Partner Page - a "plug and play" multiposting integration.
+4. [idibu whitelabel](https://github.com/oneworldmarket/idibu-api/tree/master/whitelabel) - using idibu as a whitelabel platform.
 
-Please note that these applets are designed for the clasic idibu platform (often refered as "idibu V2"). The newest idibu version (also known as "idibu V3") is compatible in some instances with those APIs. However the newest platform's API docs can be found [here](https://github.com/oneworldmarket/idibu-v3-api).
+Please note that these applets are designed for the classic idibu platform (often refered as "idibu V2"). The newer version of our product (also known as "idibu V3") is compatible with classic API to some extent, but it uses a separate API - documentation for which can be found [here](https://github.com/oneworldmarket/idibu-v3-api).
