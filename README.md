@@ -1,4 +1,4 @@
-idibu integration's APIs
+idibu integration APIs
 =========
 
 idibu provides you with means of using our funtionality precisely how you would like it to run with your software! One can choose from a variety of integration options. Those can either quickly introduce multiposting for you clients (our current record holder took 2 days to roll-out a working integration!) or you can rebuild almost the whole of idibu inside your product.
