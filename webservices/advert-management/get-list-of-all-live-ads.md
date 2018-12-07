@@ -139,7 +139,7 @@
 				<p class="p2">No</p>
 			</td>
 			<td class="td3" valign="middle">
-				<p class="p2">possible value: count-jobs - shows just the number of the jobs matching query criteria without any additional tags</p>
+	<p class="p2">Possible values:<ul><li><code>count-jobs</code> - shows just the number of the jobs matching query criteria without any additional tags</li><li><code>details-live</code> - displays detailed info about each job's parameters</p>
 			</td>
 		</tr>
 	</tbody>
