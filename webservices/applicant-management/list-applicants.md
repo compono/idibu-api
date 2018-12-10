@@ -27,7 +27,7 @@
 				<p class="p2">No</p>
 			</td>
 			<td class="td3" valign="middle">
-				<p class="p2">numeric offset from where to fetch applicants, default is 0</p>
+				<p class="p2">Numeric offset from which to fetch applicants; default is 0.</p>
 			</td>
 		</tr>
 		<tr>
@@ -38,7 +38,7 @@
 				<p class="p2">No</p>
 			</td>
 			<td class="td3" valign="middle">
-				<p class="p2">number of applicants to return in response, default is 10</p>
+				<p class="p2">Number of applicants to return in the response; default is 10, maximum is 100 (use multiple requests with <code>offset</code> to obtain higher amounts).</p>
 			</td>
 		</tr>
 		<tr>
@@ -49,7 +49,7 @@
 				<p class="p2">No</p>
 			</td>
 			<td class="td3" valign="middle">
-				<p class="p2">filter applicants by board, multiple allowed, comma separated&nbsp;</p>
+				<p class="p2">Filter applicants by board; multiple allowed, comma separated.</p>
 			</td>
 		</tr>
 		<tr>
@@ -60,7 +60,7 @@
 				<p class="p2">No</p>
 			</td>
 			<td class="td3" valign="middle">
-				<p class="p2">filter applicants by user, who posted adverts, multiple allowed, comma separated&nbsp;</p>
+				<p class="p2">Filter applicants by user who posted adverts; multiple allowed, comma separated.</p>
 			</td>
 		</tr>
 		<tr>
@@ -71,7 +71,7 @@
 				<p class="p2">No</p>
 			</td>
 			<td class="td3" valign="middle">
-				<p class="p2">filter applicants by job, multiple allowed, comma separated&nbsp;</p>
+				<p class="p2">Filter applicants by job; multiple allowed, comma separated.</p>
 			</td>
 		</tr>
 		<tr>
@@ -82,7 +82,7 @@
 				<p class="p2">No</p>
 			</td>
 			<td class="td3" valign="middle">
-				<p class="p2">filter applicants by their email adddress</p>
+				<p class="p2">Filter applicants by their email adddress.</p>
 			</td>
 		</tr>
 		<tr>
@@ -93,7 +93,7 @@
 				<p class="p2">No</p>
 			</td>
 			<td class="td3" valign="middle">
-				<p class="p2">filter applicants by job reference</p>
+				<p class="p2">Filter applicants by Job Reference.</p>
 			</td>
 		</tr>
 		<tr>
@@ -104,7 +104,7 @@
 				<p class="p2">No</p>
 			</td>
 			<td class="td3" valign="middle">
-				<p class="p2">filter applicants by status name (note that you can get list of available statuses from settings service)</p>
+				<p class="p2">Filter applicants by status name (note that you can get list of available statuses using <a href="https://github.com/oneworldmarket/idibu-api/blob/master/webservices/settings-management/aptrack-settings.md" target="_blank">aptrack-settings</a>).</p>
 			</td>
 		</tr>
 		<tr>
@@ -115,7 +115,7 @@
 				<p class="p2">No</p>
 			</td>
 			<td class="td3" valign="middle">
-				<p class="p2">filter applicants by Adverts live since at least X days. For example if you select 7, then you will get a list of all applicants for jobs currently live and jobs that expired no longer then 7 days ago. Additional filters will also be considered.</p>
+				<p class="p2">Filter applicants by adverts that have been live until at least X days ago. For example if you select 7, then you will get a list of all applicants for jobs currently live and jobs that expired no sooner than 7 days ago. Additional filters will also be considered.</p>
 			</td>
 		</tr>
 		<tr>
@@ -126,7 +126,7 @@
 				<p class="p2">No</p>
 			</td>
 			<td class="td3" valign="middle">
-				<p class="p2">to filter webservice to show applicants that appied after specified date. Please use YYYY-MM-DD format.</p>
+				<p class="p2">Show applicants that appied after specified date. Please use YYYY-MM-DD format.</p>
 			</td>
 		</tr>
 		<tr>
@@ -137,7 +137,7 @@
 				<p class="p2">No</p>
 			</td>
 			<td class="td3" valign="middle">
-				<p class="p2">to filter webservice to show applicants that appied before specified date. Please use YYYY-MM-DD format.</p>
+				<p class="p2">Show applicants that appied before specified date. Please use YYYY-MM-DD format.</p>
 			</td>
 		</tr>
 	</tbody>
