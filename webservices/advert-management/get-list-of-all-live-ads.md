@@ -23,7 +23,7 @@
 				<p class="p2">No</p>
 			</td>
 			<td class="td3" valign="middle">
-				<p class="p2">numeric offset from where to fetch adverts, default is 0</p>
+				<p class="p2">Numeric offset from where to fetch adverts; default is 0.</p>
 			</td>
 		</tr>
 		<tr>
@@ -34,7 +34,7 @@
 				<p class="p2">No</p>
 			</td>
 			<td class="td3" valign="middle">
-				<p class="p2">number of adverts to return in response, default is 10</p>
+				<p class="p2">Number of adverts to return in the response; default is 10, maximum is 100 (use multiple requests with offset to obtain higher amounts).</p>
 			</td>
 		</tr>
 		<tr>
@@ -45,7 +45,7 @@
 				<p class="p2">No</p>
 			</td>
 			<td class="td3" valign="middle">
-				<p class="p2">date from where to return adverts, format: yyyy-mm-dd OR yyyy-mm-dd HH:MM:SS. By default date is not taken into account</p>
+				<p class="p2">Date at or after which adverts were posted; format: yyyy-mm-dd OR yyyy-mm-dd HH:MM:SS.</p>
 			</td>
 		</tr>
 		<tr>
@@ -56,7 +56,7 @@
 				<p class="p2">No</p>
 			</td>
 			<td class="td3" valign="middle">
-				<p class="p2">maximum advert date. Format: yyyy-mm-dd OR yyyy-mm-dd HH:MM:SS</p>
+				<p class="p2">Date at or before which adverts were posted; format: yyyy-mm-dd OR yyyy-mm-dd HH:MM:SS</p>
 			</td>
 		</tr>
 		<tr>
@@ -67,7 +67,7 @@
 				<p class="p2">No</p>
 			</td>
 			<td class="td3" valign="middle">
-				<p class="p2">numeric (sender id). filter adverts by sender. By default return adverts of all senders</p>
+				<p class="p2">Filter by sender id.</p>
 			</td>
 		</tr>
 		<tr>
@@ -78,7 +78,7 @@
 				<p class="p2">No</p>
 			</td>
 			<td class="td3" valign="middle">
-				<p class="p2">numeric (board id). filter adverts by board id</p>
+				<p class="p2">Filter by job board id.</p>
 			</td>
 		</tr>
 		<tr>
@@ -87,7 +87,8 @@
 			<td class="td2" valign="middle">
 				No</td>
 			<td class="td3" valign="middle">
-				numeric (job id). filter adverts by job id</td>
+				<p>Filter by job id; multiple allowed, comma separated.</p>
+			</td>
 		</tr>
 		<tr>
 			<td class="td1" valign="middle">
@@ -97,7 +98,7 @@
 				<p class="p2">No</p>
 			</td>
 			<td class="td3" valign="middle">
-				<p class="p2">reference of the job in question</p>
+				<p class="p2">Filter by Job Reference.</p>
 			</td>
 		</tr>
 		<tr>
@@ -108,7 +109,7 @@
 				<p class="p2">No</p>
 			</td>
 			<td class="td3" valign="middle">
-				<p class="p2">The title of the job you wish to find records for</p>
+				<p class="p2">TFilter by Job Title.</p>
 			</td>
 		</tr>
 		<tr>
@@ -119,7 +120,7 @@
 				<p class="p2">No</p>
 			</td>
 			<td class="td3" valign="middle">
-				<p class="p2">The title or reference of the job you wish to find records for</p>
+				<p class="p2">Filter by Job Title or Job Reference (the string can match either).</p>
 			</td>
 		</tr>
 		<tr>
@@ -129,7 +130,7 @@
 				<p class="p2">No</p>
 			</td>
 			<td class="td3" valign="middle">
-				<p class="p2">date-asc or date-desc options available</p>
+	<p class="p2"><code>date-asc</code> or <code>date-desc</code> options available</p>
 			</td>
 		</tr>
 		<tr>
