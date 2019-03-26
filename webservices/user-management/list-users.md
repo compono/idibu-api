@@ -72,7 +72,7 @@ http://ws.idibu.com/ws/rest/v1/users?hash=<your hash>&count=100
 </code></pre>
 <h2>
 	Response</h2>
-<pre>
+	
 ```xml
 <?xml version="1.0" encoding="utf8"?>
 <idibu generator="idibu" version="1.0">
