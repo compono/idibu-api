@@ -50,69 +50,74 @@ http://ws.idibu.com/ws/rest/v1/offices?hash=<your hash>&count=100
 </code></pre>
 <h2>
 	Response</h2>
-<pre>
-<code type="xml">
-&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf8&quot;?&gt;
-&lt;idibu generator=&quot;idibu&quot; version=&quot;1.0&quot;&gt;
-    &lt;response&gt;
-        &lt;offices&gt;
-            &lt;office&gt;
-                &lt;id&gt;33000170&lt;/id&gt;
-                &lt;name&gt;moldova&lt;/name&gt;
-                &lt;contacts&gt;&lt;address&gt;xxx
-xx
-xxx, xxx
-xxxxx&lt;/address&gt;
-                    &lt;address-line1&gt;xxx&lt;/address-line1&gt;
-                    &lt;address-line2&gt;xx&lt;/address-line2&gt;
-                    &lt;address-line3&gt;xxx&lt;/address-line3&gt;
-                    &lt;country&gt;xxx&lt;/country&gt;
-                    &lt;postcode&gt;xxxxx&lt;/postcode&gt;
-                    &lt;email&gt;x@x.pl&lt;/email&gt;
-                    &lt;phone&gt;345678&lt;/phone&gt;
-                    &lt;fax&gt;456789&lt;/fax&gt;
-                    &lt;www&gt;www.w.ww&lt;/www&gt;
-                &lt;/contacts&gt;
-            &lt;/office&gt;
-            &lt;office&gt;
-                &lt;id&gt;33000178&lt;/id&gt;
-                &lt;name&gt;Big office&lt;/name&gt;
-                &lt;contacts&gt;&lt;address&gt;somewhere street 12
 
-, Poland
-83-333&lt;/address&gt;
-                    &lt;address-line1&gt;somewhere street 12&lt;/address-line1&gt;
-                    &lt;address-line2&gt;&lt;/address-line2&gt;
-                    &lt;address-line3&gt;&lt;/address-line3&gt;
-                    &lt;country&gt;Poland&lt;/country&gt;
-                    &lt;postcode&gt;83-333&lt;/postcode&gt;
-                    &lt;email&gt;bro.tru@gmail.com&lt;/email&gt;
-                    &lt;phone&gt;234234&lt;/phone&gt;
-                    &lt;fax&gt;&lt;/fax&gt;
-                    &lt;www&gt;www.www.www&lt;/www&gt;
-                &lt;/contacts&gt;
-            &lt;/office&gt;
-            &lt;office&gt;
-                &lt;id&gt;33000182&lt;/id&gt;
-                &lt;name&gt;test&lt;/name&gt;
-                &lt;contacts&gt;&lt;address&gt;testes
-tsetse
-tsetset, stset
-set&lt;/address&gt;
-                    &lt;address-line1&gt;testes&lt;/address-line1&gt;
-                    &lt;address-line2&gt;tsetse&lt;/address-line2&gt;
-                    &lt;address-line3&gt;tsetset&lt;/address-line3&gt;
-                    &lt;country&gt;stset&lt;/country&gt;
-                    &lt;postcode&gt;set&lt;/postcode&gt;
-                    &lt;email&gt;tse@pl.pl&lt;/email&gt;
-                    &lt;phone&gt;987564231&lt;/phone&gt;
-                    &lt;fax&gt;&lt;/fax&gt;
-                    &lt;www&gt;46654654&lt;/www&gt;
-                &lt;/contacts&gt;
-            &lt;/office&gt;
-        &lt;/offices&gt;
-        &lt;total&gt;3&lt;/total&gt;
-    &lt;/response&gt;
-    &lt;status&gt;success&lt;/status&gt;
-&lt;/idibu&gt;
-</code></pre>
+```xml
+<?xml version="1.0" encoding="utf8"?>
+<idibu generator="idibu" version="1.0">
+    <response>
+        <offices>
+            <office>
+                <id>33000170</id>
+                <name>moldova</name>
+                <contacts>
+                    <address>xxx
+                        xx
+                        xxx, xxx
+                        xxxxx
+                    </address>
+                    <address-line1>xxx</address-line1>
+                    <address-line2>xx</address-line2>
+                    <address-line3>xxx</address-line3>
+                    <country>xxx</country>
+                    <postcode>xxxxx</postcode>
+                    <email>x@x.pl</email>
+                    <phone>345678</phone>
+                    <fax>456789</fax>
+                    <www>www.w.ww</www>
+                </contacts>
+            </office>
+            <office>
+                <id>33000178</id>
+                <name>Big office</name>
+                <contacts>
+                    <address>somewhere street 12
+                        , Poland
+                        83-333
+                    </address>
+                    <address-line1>somewhere street 12</address-line1>
+                    <address-line2></address-line2>
+                    <address-line3></address-line3>
+                    <country>Poland</country>
+                    <postcode>83-333</postcode>
+                    <email>bro.tru@gmail.com</email>
+                    <phone>234234</phone>
+                    <fax></fax>
+                    <www>www.www.www</www>
+                </contacts>
+            </office>
+            <office>
+                <id>33000182</id>
+                <name>test</name>
+                <contacts>
+                    <address>testes
+                        tsetse
+                        tsetset, stset
+                        set
+                    </address>
+                    <address-line1>testes</address-line1>
+                    <address-line2>tsetse</address-line2>
+                    <address-line3>tsetset</address-line3>
+                    <country>stset</country>
+                    <postcode>set</postcode>
+                    <email>tse@pl.pl</email>
+                    <phone>987564231</phone>
+                    <fax></fax>
+                    <www>46654654</www>
+                </contacts>
+            </office>
+        </offices>
+        <total>3</total>
+    </response>
+    <status>success</status>
+</idibu>
+```
