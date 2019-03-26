@@ -73,138 +73,152 @@ http://ws.idibu.com/ws/rest/v1/users?hash=<your hash>&count=100
 <h2>
 	Response</h2>
 <pre>
-<code type="xml">
-&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf8&quot;?&gt;
-&lt;idibu generator=&quot;idibu&quot; version=&quot;1.0&quot;&gt;
-    &lt;response&gt;
-        &lt;users&gt;
-            &lt;user&gt;
-                &lt;id&gt;485&lt;/id&gt;&lt;title&gt;&lt;/title&gt;
-                &lt;firstname&gt;vit&lt;/firstname&gt;
-                &lt;lastname&gt;Dyatlov&lt;/lastname&gt;
-                &lt;company&gt;Idibu&lt;/company&gt;
-                &lt;team-id&gt;33000183&lt;/team-id&gt;
-                &lt;contacts&gt;&lt;address&gt;Tiraspol
-
-, Moldova
-3357&lt;/address&gt;
-                    &lt;address-line1&gt;Tiraspol&lt;/address-line1&gt;
-                    &lt;address-line2&gt;&lt;/address-line2&gt;
-                    &lt;address-line3&gt;&lt;/address-line3&gt;
-                    &lt;country&gt;Moldova&lt;/country&gt;
-                    &lt;postcode&gt;3357&lt;/postcode&gt;
-                    &lt;email&gt;vitaly@idibu.com&lt;/email&gt;
-                    &lt;phone&gt;+373 0 777 15818&lt;/phone&gt;
-                    &lt;fax&gt;&lt;/fax&gt;
-                    &lt;www&gt;idibu.com&lt;/www&gt;
-                &lt;/contacts&gt;
-            &lt;/user&gt;
-            &lt;user&gt;
-                &lt;id&gt;1058&lt;/id&gt;&lt;title&gt;&lt;/title&gt;
-                &lt;firstname&gt;Bart&lt;/firstname&gt;
-                &lt;lastname&gt;Jaworski&lt;/lastname&gt;
-                &lt;company&gt;Idibu&lt;/company&gt;
-                &lt;team-id&gt;33000171&lt;/team-id&gt;
-                &lt;contacts&gt;&lt;address&gt;Tiraspol
-Strixton
-, Moldova
-3357&lt;/address&gt;
-                    &lt;address-line1&gt;Tiraspol&lt;/address-line1&gt;
-                    &lt;address-line2&gt;Strixton&lt;/address-line2&gt;
-                    &lt;address-line3&gt;&lt;/address-line3&gt;
-                    &lt;country&gt;Moldova&lt;/country&gt;
-                    &lt;postcode&gt;3357&lt;/postcode&gt;
-                    &lt;email&gt;vitaly@idibu.com&lt;/email&gt;
-                    &lt;phone&gt;+373 0 777 15818&lt;/phone&gt;
-                    &lt;fax&gt;01933665943&lt;/fax&gt;
-                    &lt;www&gt;idibu.com&lt;/www&gt;
-                &lt;/contacts&gt;
-            &lt;/user&gt;
-            &lt;user&gt;
-                &lt;id&gt;1066&lt;/id&gt;&lt;title&gt;&lt;/title&gt;
-                &lt;firstname&gt;tt&lt;/firstname&gt;
-                &lt;lastname&gt;O\&amp;#39;Hanlon (Birmingham)&lt;/lastname&gt;
-                &lt;company&gt;set&lt;/company&gt;
-                &lt;team-id&gt;33000183&lt;/team-id&gt;
-                &lt;contacts&gt;&lt;address&gt;testes
-tsetse
-tsetset, stset
-set&lt;/address&gt;
-                    &lt;address-line1&gt;testes&lt;/address-line1&gt;
-                    &lt;address-line2&gt;tsetse&lt;/address-line2&gt;
-                    &lt;address-line3&gt;tsetset&lt;/address-line3&gt;
-                    &lt;country&gt;stset&lt;/country&gt;
-                    &lt;postcode&gt;set&lt;/postcode&gt;
-                    &lt;email&gt;bro.tru@gmail.com&lt;/email&gt;
-                    &lt;phone&gt;987564231&lt;/phone&gt;
-                    &lt;fax&gt;&lt;/fax&gt;
-                    &lt;www&gt;46654654&lt;/www&gt;
-                &lt;/contacts&gt;
-            &lt;/user&gt;
-            &lt;user&gt;
-                &lt;id&gt;1101&lt;/id&gt;&lt;title&gt;&lt;/title&gt;
-                &lt;firstname&gt;steve&lt;/firstname&gt;
-                &lt;lastname&gt;walker&lt;/lastname&gt;
-                &lt;company&gt;set&lt;/company&gt;
-                &lt;team-id&gt;33000183&lt;/team-id&gt;
-                &lt;contacts&gt;&lt;address&gt;testes
-tsetse
-tsetset, stset
-set&lt;/address&gt;
-                    &lt;address-line1&gt;testes&lt;/address-line1&gt;
-                    &lt;address-line2&gt;tsetse&lt;/address-line2&gt;
-                    &lt;address-line3&gt;tsetset&lt;/address-line3&gt;
-                    &lt;country&gt;stset&lt;/country&gt;
-                    &lt;postcode&gt;set&lt;/postcode&gt;
-                    &lt;email&gt;steve@idibu.com&lt;/email&gt;
-                    &lt;phone&gt;987564231&lt;/phone&gt;
-                    &lt;fax&gt;&lt;/fax&gt;
-                    &lt;www&gt;46654654&lt;/www&gt;
-                &lt;/contacts&gt;
-            &lt;/user&gt;
-            &lt;user&gt;
-                &lt;id&gt;1168&lt;/id&gt;&lt;title&gt;&lt;/title&gt;
-                &lt;firstname&gt;Erico&lt;/firstname&gt;
-                &lt;lastname&gt;Lendzian&lt;/lastname&gt;
-                &lt;company&gt;xxx&lt;/company&gt;
-                &lt;team-id&gt;33000183&lt;/team-id&gt;
-                &lt;contacts&gt;&lt;address&gt;xxx
-xx
-xxx, xxx
-xxxxx&lt;/address&gt;
-                    &lt;address-line1&gt;xxx&lt;/address-line1&gt;
-                    &lt;address-line2&gt;xx&lt;/address-line2&gt;
-                    &lt;address-line3&gt;xxx&lt;/address-line3&gt;
-                    &lt;country&gt;xxx&lt;/country&gt;
-                    &lt;postcode&gt;xxxxx&lt;/postcode&gt;
-                    &lt;email&gt;erico.idibu@gmail.com&lt;/email&gt;
-                    &lt;phone&gt;345678&lt;/phone&gt;
-                    &lt;fax&gt;456789&lt;/fax&gt;
-                    &lt;www&gt;www.w.ww&lt;/www&gt;
-                &lt;/contacts&gt;
-            &lt;/user&gt;
-            &lt;user&gt;
-                &lt;id&gt;1197&lt;/id&gt;&lt;title&gt;&lt;/title&gt;
-                &lt;firstname&gt;new-user&lt;/firstname&gt;
-                &lt;lastname&gt;&lt;/lastname&gt;
-                &lt;company&gt;&lt;/company&gt;
-                &lt;team-id&gt;0&lt;/team-id&gt;
-                &lt;contacts&gt;
-                    
-                    &lt;address-line1&gt;&lt;/address-line1&gt;
-                    &lt;address-line2&gt;&lt;/address-line2&gt;
-                    &lt;address-line3&gt;&lt;/address-line3&gt;
-                    &lt;country&gt;&lt;/country&gt;
-                    &lt;postcode&gt;&lt;/postcode&gt;
-                    &lt;email&gt;&lt;/email&gt;
-                    &lt;phone&gt;&lt;/phone&gt;
-                    &lt;fax&gt;&lt;/fax&gt;
-                    &lt;www&gt;&lt;/www&gt;
-                &lt;/contacts&gt;
-            &lt;/user&gt;
-        &lt;/users&gt;
-        &lt;total&gt;8&lt;/total&gt;
-    &lt;/response&gt;
-    &lt;status&gt;success&lt;/status&gt;
-&lt;/idibu&gt;
-</code></pre>
+```xml
+<?xml version="1.0" encoding="utf8"?>
+<idibu generator="idibu" version="1.0">
+    <response>
+        <users>
+            <user>
+                <id>485</id>
+                <title></title>
+                <firstname>vit</firstname>
+                <lastname>Dyatlov</lastname>
+                <company>Idibu</company>
+                <team-id>33000183</team-id>
+                <contacts>
+                    <address>Tiraspol
+                        , Moldova
+                        3357
+                    </address>
+                    <address-line1>Tiraspol</address-line1>
+                    <address-line2></address-line2>
+                    <address-line3></address-line3>
+                    <country>Moldova</country>
+                    <postcode>3357</postcode>
+                    <email>vitaly@idibu.com</email>
+                    <phone>+373 0 777 15818</phone>
+                    <fax></fax>
+                    <www>idibu.com</www>
+                </contacts>
+            </user>
+            <user>
+                <id>1058</id>
+                <title></title>
+                <firstname>Bart</firstname>
+                <lastname>Jaworski</lastname>
+                <company>Idibu</company>
+                <team-id>33000171</team-id>
+                <contacts>
+                    <address>Tiraspol
+                        Strixton
+                        , Moldova
+                        3357
+                    </address>
+                    <address-line1>Tiraspol</address-line1>
+                    <address-line2>Strixton</address-line2>
+                    <address-line3></address-line3>
+                    <country>Moldova</country>
+                    <postcode>3357</postcode>
+                    <email>vitaly@idibu.com</email>
+                    <phone>+373 0 777 15818</phone>
+                    <fax>01933665943</fax>
+                    <www>idibu.com</www>
+                </contacts>
+            </user>
+            <user>
+                <id>1066</id>
+                <title></title>
+                <firstname>tt</firstname>
+                <lastname>O&amp;#39;Hanlon (Birmingham)</lastname>
+                <company>set</company>
+                <team-id>33000183</team-id>
+                <contacts>
+                    <address>testes
+                        tsetse
+                        tsetset, stset
+                        set
+                    </address>
+                    <address-line1>testes</address-line1>
+                    <address-line2>tsetse</address-line2>
+                    <address-line3>tsetset</address-line3>
+                    <country>stset</country>
+                    <postcode>set</postcode>
+                    <email>bro.tru@gmail.com</email>
+                    <phone>987564231</phone>
+                    <fax></fax>
+                    <www>46654654</www>
+                </contacts>
+            </user>
+            <user>
+                <id>1101</id>
+                <title></title>
+                <firstname>steve</firstname>
+                <lastname>walker</lastname>
+                <company>set</company>
+                <team-id>33000183</team-id>
+                <contacts>
+                    <address>testes
+                        tsetse
+                        tsetset, stset
+                        set
+                    </address>
+                    <address-line1>testes</address-line1>
+                    <address-line2>tsetse</address-line2>
+                    <address-line3>tsetset</address-line3>
+                    <country>stset</country>
+                    <postcode>set</postcode>
+                    <email>steve@idibu.com</email>
+                    <phone>987564231</phone>
+                    <fax></fax>
+                    <www>46654654</www>
+                </contacts>
+            </user>
+            <user>
+                <id>1168</id>
+                <title></title>
+                <firstname>Erico</firstname>
+                <lastname>Lendzian</lastname>
+                <company>xxx</company>
+                <team-id>33000183</team-id>
+                <contacts>
+                    <address>xxx
+                        xx
+                        xxx, xxx
+                        xxxxx
+                    </address>
+                    <address-line1>xxx</address-line1>
+                    <address-line2>xx</address-line2>
+                    <address-line3>xxx</address-line3>
+                    <country>xxx</country>
+                    <postcode>xxxxx</postcode>
+                    <email>erico.idibu@gmail.com</email>
+                    <phone>345678</phone>
+                    <fax>456789</fax>
+                    <www>www.w.ww</www>
+                </contacts>
+            </user>
+            <user>
+                <id>1197</id>
+                <title></title>
+                <firstname>new-user</firstname>
+                <lastname></lastname>
+                <company></company>
+                <team-id>0</team-id>
+                <contacts>
+                    <address-line1></address-line1>
+                    <address-line2></address-line2>
+                    <address-line3></address-line3>
+                    <country></country>
+                    <postcode></postcode>
+                    <email></email>
+                    <phone></phone>
+                    <fax></fax>
+                    <www></www>
+                </contacts>
+            </user>
+        </users>
+        <total>8</total>
+    </response>
+    <status>success</status>
+</idibu>
+```
