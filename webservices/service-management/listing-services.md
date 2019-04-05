@@ -22,17 +22,17 @@ POST http://ws.idibu.com/ws/rest/v1/service/list?idibupartner=yes
 </pre>
 <h2>
 	Response</h2>
-<pre>
-<code type="xml">
-&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf8&quot;?&gt;
-&lt;idibu generator=&quot;idibu&quot; version=&quot;1.0&quot;&gt;
-  &lt;response&gt;
-    &lt;services&gt;
-      &lt;service&gt;aptrack&lt;/service&gt;
-      &lt;service&gt;apsearch&lt;/service&gt;
-    &lt;/services&gt;
-  &lt;/response&gt;
-  &lt;status&gt;success&lt;/status&gt;
-&lt;/idibu&gt;
-</code>
-</pre>
+
+```xml
+<?xml version="1.0" encoding="utf8"?>
+<idibu generator="idibu" version="1.0">
+  <response>
+    <services>
+      <service>aptrack</service>
+      <service>apsearch</service>
+    </services>
+  </response>
+  <status>success</status>
+</idibu>
+
+```
