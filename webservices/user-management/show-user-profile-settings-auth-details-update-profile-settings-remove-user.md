@@ -24,50 +24,54 @@ http://ws.idibu.com/ws/rest/v1/users/485?hash=<your hash>
 </code></pre>
 <h2>
 	Response</h2>
-<pre>
-<code type="xml">
-&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf8&quot;?&gt;
-&lt;idibu generator=&quot;idibu&quot; version=&quot;1.0&quot;&gt;
-    &lt;response&gt;
-        &lt;profile&gt;
-            &lt;id&gt;485&lt;/id&gt;&lt;title&gt;&lt;/title&gt;
-            &lt;firstname&gt;vit&lt;/firstname&gt;
-            &lt;lastname&gt;Dyatlov&lt;/lastname&gt;
-            &lt;company&gt;Idibu&lt;/company&gt;
-            &lt;team-id&gt;33000183&lt;/team-id&gt;
-            &lt;contacts&gt;&lt;address&gt;Tiraspol, Moldova 3357&lt;/address&gt;
-                &lt;address-line1&gt;Tiraspol&lt;/address-line1&gt;
-                &lt;address-line2&gt;&lt;/address-line2&gt;
-                &lt;address-line3&gt;&lt;/address-line3&gt;
-                &lt;country&gt;Moldova&lt;/country&gt;
-                &lt;postcode&gt;3357&lt;/postcode&gt;
-                &lt;email&gt;vitaly@idibu.com&lt;/email&gt;
-                &lt;phone&gt;+373 0 777 15818&lt;/phone&gt;
-                &lt;fax&gt;&lt;/fax&gt;
-                &lt;www&gt;idibu.com&lt;/www&gt;
-            &lt;/contacts&gt;
-        &lt;/profile&gt;
-        &lt;settings&gt;
-            &lt;alerts&gt;
-                &lt;job-expiry&gt;Off&lt;/job-expiry&gt;
-                &lt;new-applicant&gt;Off&lt;/new-applicant&gt;
-            &lt;/alerts&gt;
-            &lt;apsearch&gt;
-                &lt;enable&gt;Yes&lt;/enable&gt;
-                &lt;results&gt;email&lt;/results&gt;
-                &lt;step1&gt;Yes&lt;/step1&gt;
-            &lt;/apsearch&gt;
-            &lt;access-report&gt;No&lt;/access-report&gt;
-        &lt;/settings&gt;
-        &lt;auth&gt;
-            &lt;disabled&gt;No&lt;/disabled&gt;
-            &lt;login&gt;myPrivatelogin&lt;/login&gt;
-            &lt;password&gt;somep4ssword&lt;/password&gt;
-        &lt;/auth&gt;
-    &lt;/response&gt;
-    &lt;status&gt;success&lt;/status&gt;
-&lt;/idibu&gt;
-</code></pre>
+	
+```xml
+
+<?xml version="1.0" encoding="utf8"?>
+<idibu generator="idibu" version="1.0">
+    <response>
+        <profile>
+            <id>485</id>
+            <title></title>
+            <firstname>vit</firstname>
+            <lastname>Dyatlov</lastname>
+            <company>Idibu</company>
+            <team-id>33000183</team-id>
+            <contacts>
+                <address>Tiraspol, Moldova 3357</address>
+                <address-line1>Tiraspol</address-line1>
+                <address-line2></address-line2>
+                <address-line3></address-line3>
+                <country>Moldova</country>
+                <postcode>3357</postcode>
+                <email>vitaly@idibu.com</email>
+                <phone>+373 0 777 15818</phone>
+                <fax></fax>
+                <www>idibu.com</www>
+            </contacts>
+        </profile>
+        <settings>
+            <alerts>
+                <job-expiry>Off</job-expiry>
+                <new-applicant>Off</new-applicant>
+            </alerts>
+            <apsearch>
+                <enable>Yes</enable>
+                <results>email</results>
+                <step1>Yes</step1>
+            </apsearch>
+            <access-report>No</access-report>
+        </settings>
+        <auth>
+            <disabled>No</disabled>
+            <login>myPrivatelogin</login>
+            <password>somep4ssword</password>
+        </auth>
+    </response>
+    <status>success</status>
+</idibu>
+```
+
 <h1>
 	Updating user information</h1>
 <p>To update user information need to pass xml of the same format as in response to the GET request in data parameter. Any field or block can be omited, pass in the xml only those fields which you need update.</p>
