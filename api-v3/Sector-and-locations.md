@@ -178,12 +178,4 @@ GET http://ws.idibu.com/ws/rest/v1/locations/GB/find?hash=<CLIENT HASH HERE>&fil
 <status>success</status>
 </idibu>
 ```
-
-Worst case scenario, you can use a fixed list locations for specific country. We have prepared list for:<br />
-<br />
-<a href = "http://www.idibu.com/images/stories/Portal_logos/GB.rar">UK - United Kingdom</a><br />
-<a href = "http://www.idibu.com/images/stories/Portal_logos/AU.rar">AU - Australia</a><br />
-<br />
-that should speed up your developement, but we stress that dynamic location webservice usage is the best way to go!
-<br /><br />
 <a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/spec-data.md"> Click here to find about board specific tags</a>
