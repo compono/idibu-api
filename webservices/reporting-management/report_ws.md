@@ -182,16 +182,16 @@ BASIC:</b>
 </p>
 <h2>
 	Response</h2>
-<pre>
+	
+	
+```xml
 
+<?xml version="1.0" encoding="UTF-8"?>
+<idibu generator="idibu" version="1.0">
+  <response>
+    <message>Report queued for processing</message>
+  </response>
+  <status>success</status>
+</idibu>
 
-<code type="xml">
-&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;idibu generator=&quot;idibu&quot; version=&quot;1.0&quot;&gt;
-  &lt;response&gt;
-    &lt;message&gt;Report queued for processing&lt;/message&gt;
-  &lt;/response&gt;
-  &lt;status&gt;success&lt;/status&gt;
-&lt;/idibu&gt;
-
-</code></pre>
+```
