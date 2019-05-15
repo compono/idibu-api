@@ -1,8 +1,9 @@
 This service allows you to view all available reports.
-<pre>
-<code>
+
+```bash
 GET: ws.idibu.com/ws/rest/v1/reports?hash=CLIENTS_HASH
-</code></pre>
+```
+
 <h2>
 	Response</h2>
 
