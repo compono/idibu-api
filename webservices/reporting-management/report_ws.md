@@ -124,26 +124,30 @@
 	Example</h1>
 <h2>
 	Request</h2>
-<pre>
-<code>
-<code type="xml">
-<b>POST http://ws.idibu.com/ws/rest/v1/reports/(REPORT_NAME)?hash=
 
-BASIC:</b>
+```bash
+POST http://ws.idibu.com/ws/rest/v1/reports/(REPORT_NAME)?hash=
+```
 
-&lt;idibu&gt;
-    &lt;date-range&gt;
-        &lt;from&gt;2015-05-01&lt;/from&gt;
-        &lt;to&gt;2015-05-28&lt;/to&gt;
-    &lt;/date-range&gt;
-    &lt;profiles&gt;
-        &lt;offices /&gt;
-        &lt;teams /&gt;
-        &lt;profiles /&gt;
-    &lt;/profiles&gt;
-    &lt;boards /&gt;
-    &lt;email&gt;yourclient@hisserver.com&lt;/email&gt;
-&lt;/idibu&gt;
+<h2>BASIC:</h2>
+
+```xml
+
+<idibu>
+    <date-range>
+        <from>2015-05-01</from>
+        <to>2015-05-28</to>
+    </date-range>
+    <profiles>
+        <offices />
+        <teams />
+        <profiles />
+    </profiles>
+    <boards />
+    <email>yourclient@hisserver.com</email>
+</idibu>
+
+```
 
 <h2>WITH MORE PARAMETERS:</h2>
 
