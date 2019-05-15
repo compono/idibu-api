@@ -145,41 +145,44 @@ BASIC:</b>
     &lt;email&gt;yourclient@hisserver.com&lt;/email&gt;
 &lt;/idibu&gt;
 
-<b>WITH MORE PARAMETERS:</b>
+<h2>WITH MORE PARAMETERS:</h2>
 
-&lt;idibu&gt;
-    &lt;date-range&gt;
-        &lt;from&gt;2015-05-01&lt;/from&gt;
-        &lt;to&gt;2015-05-28&lt;/to&gt;
-    &lt;/date-range&gt;
-    &lt;profiles&gt;
-        &lt;offices&gt;
-			&lt;office&gt;1000&lt;/office&gt;	
-		&lt;/offices&gt;
-        &lt;teams&gt;
-			&lt;team&gt;1001&lt;/team&gt;
-			&lt;team&gt;1002&lt;/team&gt;
-			&lt;team&gt;1003&lt;/team&gt;	
-		&lt;/teams&gt;
-        &lt;profiles&gt;
-			&lt;profile&gt;1004&lt;/profile&gt;
-			&lt;profile&gt;1005&lt;/profile&gt;
-			&lt;profile&gt;1006&lt;/profile&gt;
-		&lt;/profiles&gt;
-        &lt;include-inactive&gt;no&lt;/include-inactive&gt;
-    &lt;/profiles&gt;
-    &lt;boards&gt;
-        &lt;board&gt;1599&lt;/board&gt;
-    &lt;/boards&gt;
-    &lt;email&gt;yourclient@hisserver.com&lt;/email&gt;
-    &lt;watchdog&gt;
-         &lt;name&gt;new_watchdog&lt;/name&gt;
-         &lt;frequency&gt;monthly&lt;/frequency&gt;
-         &lt;range&gt;month&lt;/range&gt;
-    &lt;/watchdog&gt;
-&lt;/idibu&gt;
-</code></pre>
-</p>
+```xml
+
+<idibu>
+    <date-range>
+        <from>2015-05-01</from>
+        <to>2015-05-28</to>
+    </date-range>
+    <profiles>
+        <offices>
+            <office>1000</office>
+        </offices>
+        <teams>
+            <team>1001</team>
+            <team>1002</team>
+            <team>1003</team>
+        </teams>
+        <profiles>
+            <profile>1004</profile>
+            <profile>1005</profile>
+            <profile>1006</profile>
+        </profiles>
+        <include-inactive>no</include-inactive>
+    </profiles>
+    <boards>
+        <board>1599</board>
+    </boards>
+    <email>yourclient@hisserver.com</email>
+    <watchdog>
+        <name>new_watchdog</name>
+        <frequency>monthly</frequency>
+        <range>month</range>
+    </watchdog>
+</idibu>
+
+```
+
 <h2>
 	Response</h2>
 	
