@@ -1,6 +1,4 @@
-
-
-<p>Method allows you to return an excel report, filtered by data you have specified.</p>
+<p>Method allows you to return an excel report, filtered by data you have specified. You can obtain reports' IDs using <a href="https://github.com/oneworldmarket/idibu-api/blob/master/webservices/reporting-management/report_list.md" target="_blank">this webservice</a>.</p>
 <h1>
 	Filtering options</h1>
 <table cellpadding="2" cellspacing="0" class="t1" width="1084.0">
@@ -126,7 +124,7 @@
 	Request</h2>
 
 ```bash
-POST http://ws.idibu.com/ws/rest/v1/reports/(REPORT_NAME)?hash=
+POST http://ws.idibu.com/ws/rest/v1/reports/(REPORT_ID)?hash=
 ```
 
 <h2>BASIC:</h2>
@@ -142,6 +140,7 @@ POST http://ws.idibu.com/ws/rest/v1/reports/(REPORT_NAME)?hash=
         <offices />
         <teams />
         <profiles />
+	<include-inactive>no</include-inactive>
     </profiles>
     <boards />
     <email>yourclient@hisserver.com</email>
