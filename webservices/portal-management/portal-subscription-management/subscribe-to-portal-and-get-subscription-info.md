@@ -101,12 +101,12 @@ POST http://ws.idibu.com/ws/rest/v1/portals/123/subscribe?hash=<your hash>
 &lt;/field&gt;
 &lt;/fields&gt;
 &lt;/request&gt;
-&lt;/code&gt;
-&lt;/pre&gt;
-&lt;h2&gt;
-	Response:&lt;/h2&gt;
-&lt;pre&gt;
-&lt;code type=&quot;xml&quot;&gt;
+</code>
+</pre>
+<h2>
+	Response:</h2>
+<pre>
+<code type="xml">
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf8&quot;?&gt;
 &lt;idibu generator=&quot;idibu&quot; version=&quot;1.0&quot;&gt;
     &lt;response&gt;
