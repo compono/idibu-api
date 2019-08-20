@@ -3,38 +3,42 @@
 	<code>GET: ws.idibu.com/ws/rest/v1/applicants/1234?hash=YOUR_HASH</code>
 </p>
 <h2>Response</h2>
-<pre><code type="xml">&lt;idibu generator=&quot;idibu&quot; version=&quot;1.0&quot;&gt;
-&lt;response&gt;&lt;id&gt;39078652&lt;/id&gt;
-&lt;email&gt;f_emore@yahoo.co.uk&lt;/email&gt;
-&lt;name&gt;Fola Emore&lt;/name&gt;
-&lt;job&gt;
-	&lt;id&gt;37003486&lt;/id&gt;
-	&lt;reference&gt;J712&lt;/reference&gt;
-&lt;/job&gt;
-&lt;date&gt;2013-02-19 15:08:13&lt;/date&gt;
-&lt;message&gt;
-&lt;subject&gt;CityJobs Application 219930-J712 (People Change Project Manager) (South West London)&lt;/subject&gt;
-&lt;message&gt;
-	&lt;text&gt;
-	Please find an application for the following CityJobs vacancy :-
-	219930-J712 (People Change Project Manager) (South West London)
-	COVERING LETTER
-	Having seen details of vacancy 219930-J712 (People Change Project Manager) advertised by CityJobs, I would like to apply for the position.
-	Please find a copy of my CV attached.
-	&lt;/text&gt;
-&lt;/message&gt;
-&lt;portal&gt;
-&lt;id&gt;57&lt;/id&gt;
-&lt;name&gt;City Jobs&lt;/name&gt;
-&lt;/portal&gt;
-&lt;status&gt;Rejected&lt;/status&gt;
-&lt;files&gt;
-	&lt;file&gt;
-		&lt;name&gt;121784969.doc&lt;/name&gt;
-		&lt;link&gt;http://ws.idibu.com/down.php?id=1001481&amp;amp;file=28B63807593EABD603343432A1C6922D.doc&lt;/link&gt;
-		&lt;/file&gt;
-	&lt;/files&gt;
-&lt;/message&gt;&lt;/response&gt;
-&lt;status&gt;success&lt;/status&gt;
-&lt;/idibu&gt;
-</code></pre>
+
+```xml
+
+<idibu generator="idibu" version="1.0">
+    <response><id>39078652</id>
+        <email>f_emore@yahoo.co.uk</email>
+        <name>Fola Emore</name>
+        <job>
+            <id>37003486</id>
+            <reference>J712</reference>
+        </job>
+        <date>2013-02-19 15:08:13</date>
+        <message>
+            <subject>CityJobs Application 219930-J712 (People Change Project Manager) (South West London)</subject>
+            <message>
+                <text>
+                    Please find an application for the following CityJobs vacancy :-
+                    219930-J712 (People Change Project Manager) (South West London)
+                    COVERING LETTER
+                    Having seen details of vacancy 219930-J712 (People Change Project Manager) advertised by CityJobs, I would like to apply for the position.
+                    Please find a copy of my CV attached.
+                </text>
+            </message>
+            <portal>
+                <id>57</id>
+                <name>City Jobs</name>
+            </portal>
+            <status>Rejected</status>
+            <files>
+                <file>
+                    <name>121784969.doc</name>
+                    <link>http://ws.idibu.com/down.php?id=1001481&amp;file=28B63807593EABD603343432A1C6922D.doc</link>
+                </file>
+            </files>
+        </message></response>
+    <status>success</status>
+</idibu>
+
+```
