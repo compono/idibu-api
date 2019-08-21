@@ -1,4 +1,4 @@
-### **Overview of the Adpost XML v3 API**
+### **Overview of the Adpost XML posting API**
 
 idibu API allows third parties to access the idibu posting engine by posting XML to our system.
 That allows not only for a complete management of your job posting, but also allows excellent flexibility when it comes to the XML data package that you send.
