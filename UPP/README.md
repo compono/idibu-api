@@ -228,7 +228,7 @@ ZZ - Rest of the World<br />
 4 – Temporary<br />
 <br />
 <b>Salary currency:</b><br />
-USD - US Dollars <br />
+US - US Dollars <br />
 EU – Euro<br />
 GBP – British Pound<br />
 <br />
