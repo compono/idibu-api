@@ -249,9 +249,9 @@
 			<td>
 				Yes</td>
 			<td>
-				Select List (values: GBP, US, EU Default: GBP)</td>
+				Select List (obtain values using the <a href="https://github.com/oneworldmarket/idibu-api/blob/master/webservices/settings-management/custom-currencies.md" target="_blank">currencies/available</a> GET call)</td>
 			<td>
-				The currency, currently only supports Pounds, US Dollars and Euro (we can add currencies on request).</td>
+				The ISO-3 currency code. Use <a href="https://github.com/oneworldmarket/idibu-api/blob/master/webservices/settings-management/custom-currencies.md" target="_blank">custom-currencies</a> webservice to control and obtain the available ones.</td>
 		</tr>
 		<tr valign="TOP">
 			<td>
