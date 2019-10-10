@@ -16,6 +16,9 @@ POST http://ws.idibu.com/ws/rest/v1/service/add?idibupartner=yes
       &lt;partner-password&gt;123456&lt;/partner-password&gt;
       &lt;username&gt;john_tester&lt;/username&gt;
       &lt;password&gt;test123&lt;/password&gt;
+      &lt;services&gt;
+            &lt;service&gt;aptrack&lt;/service&gt;
+      &lt;/services&gt; 
 &lt;/idibu&gt;
 </code>
 </pre>
