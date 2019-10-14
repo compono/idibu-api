@@ -2,8 +2,7 @@
 <h1>
 	Parameters</h1>
 <p>No additional parameters for this request</p>
-<h2>
-	Request</h2>
+<h2>Request</h2>
 <pre>
 <code>
 POST http://ws.idibu.com/ws/rest/v1/service/add?idibupartner=yes
@@ -22,17 +21,13 @@ POST http://ws.idibu.com/ws/rest/v1/service/add?idibupartner=yes
 &lt;/idibu&gt;
 </code>
 </pre>
-<h2>
-	Response</h2>
+<h2>Response</h2>
 <pre>
 <code type="xml">
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;idibu generator=&quot;idibu&quot; version=&quot;1.0&quot;&gt;
+&lt;idibu&gt;
 &lt;response&gt;
-   &lt;message&gt;Client successfully updated&lt;/message&gt;
-   &lt;client-hash&gt;[NEW HASH]&lt;/client-hash&gt;
-   &lt;client-id&gt;1004339&lt;/client-id&gt;
-   &lt;member-id&gt;4924&lt;/member-id&gt;
+   &lt;message&gt;Service added!&lt;/message&gt;
 &lt;/response&gt;
 &lt;status&gt;success&lt;/status&gt;
 &lt;/idibu&gt;
