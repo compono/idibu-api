@@ -179,7 +179,7 @@
 			<td>
 				Yes</td>
 			<td>
-				text</td>
+				text (min. 4 characters)</td>
 			<td>
 				Job Reference. Editable (see below)</td>
 		</tr>
