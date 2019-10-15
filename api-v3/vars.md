@@ -177,9 +177,9 @@
 			<td>
 				reference</td>
 			<td>
-				Yes</td>
+				Yes - minimum 4 characters</td>
 			<td>
-				text (min. 4 characters)</td>
+				text</td>
 			<td>
 				Job Reference. Editable (see below)</td>
 		</tr>
