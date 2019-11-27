@@ -24,7 +24,7 @@
 				<p class="p2">No</p>
 			</td>
 			<td class="td3" valign="middle">
-				<p class="p2">numeric offset from where to fetch adverts, default is 0</p>
+				<p class="p2">numeric offset from where to fetch portals, default is 0</p>
 			</td>
 		</tr>
 		<tr>
@@ -35,7 +35,7 @@
 				<p class="p2">No</p>
 			</td>
 			<td class="td3" valign="middle">
-				<p class="p2">number of adverts to return in response, default is 10</p>
+				<p class="p2">number of portals to return, default is 10</p>
 			</td>
 		</tr>
 		<tr>
