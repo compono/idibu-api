@@ -1,4 +1,4 @@
-API v3 allows for six different methods of posting: ADD, UPDATE, QUICK REPOST, DELETE and CANCEL.
+API v3 allows for six different methods of posting: ADD, UPDATE, QUICKREPOST, REPOST, DELETE and CANCEL.
 
 CANCEL, DELETE and QUICKREPOST have all different XML formats, suited to meet the needs of the information passed along.
 ADD, UPDATE and REPOST all share the same XML payload.
