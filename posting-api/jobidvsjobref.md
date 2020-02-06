@@ -10,4 +10,4 @@ It is possible to use the API referencing jobs only with the client reference in
 
 It's the entirely responsibility of the posting party to manage and administer the client references used.
 
-<a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/pcp.md">Click here to continue reading about Post Completion Page - the PCP.</a>
+<a href="https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/pcp.md">Click here to continue reading about Post Completion Page - the PCP.</a>
