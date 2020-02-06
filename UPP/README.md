@@ -1,6 +1,6 @@
 <h1>What is UPP?</h1>
 <p>UPP stands for Universal Posting Page. Essentially it's all ready PHP page with idibu multiposting functionality giving you all the options you need to use with your system. All needed to be done here is to style up the page, so it looks like it was developed by you, but you can have posting working in your system within minutes! We try to make it as easy and as functional as possible by including our <a href="http://support.idibu.com/default_import/Knowledgebase/Article/View/24/0/quotas-set-up---period-based">quota</a> and <a href="http://support.idibu.com/default_import/Knowledgebase/Article/View/15/0/force-posting">force posting</a> functionalities in the provided posting page.<br><br>
-Once the field in UPP page will be filled, the user will be asked to complete the posting by providing fields specific to chosen boards using <a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/pcp.md" target="_blank" >post completion page.</a></p>
+Once the field in UPP page will be filled, the user will be asked to complete the posting by providing fields specific to chosen boards using <a href="https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/pcp.md" target="_blank" >post completion page.</a></p>
 <h1>How to use it?</h1></p>
 <p>Simply make a call to a link below with required parameters. To make it super smooth you will need to map a few idibu parameters with your own variables.</p>
 <h1>Posting URL</h1>
@@ -72,7 +72,7 @@ Just <a href="mailto:good@idibu.com">contact us</a> to become a partner and we'l
 <li>allowNewUsers - set to true if you like UPP to create a new idibu user if an unknown email appears in the email field. Set true as default.</li>
 </ul>
 <h1>Providing board specific field values</h1><br />
-The posting process is split into two steps. On step 1 you provide basic job fields, While on step 2 you provide board specific values. Those are unique, job portal specific fields, that can not be mapped by data from step1. However you can provide values for those fields if you need to do so via the UPP. To do that, you need to call the page with an additional "extrafields" parameter. It's content needs to be different for different boards and fields. You can find more info on how to obtain fields name, type and value and board data <a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/board-specific-fields.md" target="_blank">here<a>.
+The posting process is split into two steps. On step 1 you provide basic job fields, While on step 2 you provide board specific values. Those are unique, job portal specific fields, that can not be mapped by data from step1. However you can provide values for those fields if you need to do so via the UPP. To do that, you need to call the page with an additional "extrafields" parameter. It's content needs to be different for different boards and fields. You can find more info on how to obtain fields name, type and value and board data <a href="https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/board-specific-fields.md" target="_blank">here<a>.
 
 So, for text and single select fields please use the following format:
 <ul>
