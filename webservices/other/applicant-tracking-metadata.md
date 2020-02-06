@@ -18,7 +18,7 @@ X-iTrackID-Type: 2 Permanent
 <p>where the data types are:</p>
 <ul>
 	<li>
-		X-iTrackID-ClientReference: Unique external (customer) reference for this job (<a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/jobidvsjobref.md">Details on this are here</a>)</li>
+		X-iTrackID-ClientReference: Unique external (customer) reference for this job (<a href="https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/jobidvsjobref.md">Details on this are here</a>)</li>
 	<li>
 		X-iTrackID: Unique internal idibu reference for this applicant</li>
 	<li>
