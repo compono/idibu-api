@@ -23,18 +23,18 @@ The xml payload used to post to idibu split into 5 blocks of data, where 3 of th
 
 The description and usage of each group and its tags are explained below, with special emphasis in those tags that we consider more important for the posting process. You can view working examples here.
 
-<a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/methods.md">1. Available methods.</a><br>
-<a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/vars.md">2. API Variables.</a><br>
-<a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/Sector-and-locations.md">2a. Sectors & Locations.</a><br>
-<a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/spec-data.md">2b. Posting Destination Specific Data.</a><br>
-<a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/dyn-vars.md">2c. Dynamic Variables.</a><br>
-<a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/sender-tags.md">2d. Sender Tags.</a><br>
-<a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/jobidvsjobref.md">3. Job ID Vs. Client Ref.</a><br>
-<a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/pcp.md">4. Post Completion Page.</a><br>
-<a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/sub-and-resp.md">5. Submitting, Encoding and Responses.</a><br>
-<a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/quick-rep-job.md">6. Quick Re-posting Data.</a><br>
-<a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/canceling-pend-posts.md">7. Cancelling Pending Posts.</a><br>
-<a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/delet-jobs.md">8. Deleting Posts.</a><br>
-<a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/ref-based-delete.md">8a. Reference based delete.</a><br>
-<a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/first-test-posting.md">9. First Posting.</a><br>
+<a href="https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/methods.md">1. Available methods.</a><br>
+<a href="https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/vars.md">2. API Variables.</a><br>
+<a href="https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/Sector-and-locations.md">2a. Sectors & Locations.</a><br>
+<a href="https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/spec-data.md">2b. Posting Destination Specific Data.</a><br>
+<a href="https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/dyn-vars.md">2c. Dynamic Variables.</a><br>
+<a href="https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/sender-tags.md">2d. Sender Tags.</a><br>
+<a href="https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/jobidvsjobref.md">3. Job ID Vs. Client Ref.</a><br>
+<a href="https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/pcp.md">4. Post Completion Page.</a><br>
+<a href="https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/sub-and-resp.md">5. Submitting, Encoding and Responses.</a><br>
+<a href="https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/quick-rep-job.md">6. Quick Re-posting Data.</a><br>
+<a href="https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/canceling-pend-posts.md">7. Cancelling Pending Posts.</a><br>
+<a href="https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/delet-jobs.md">8. Deleting Posts.</a><br>
+<a href="https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/ref-based-delete.md">8a. Reference based delete.</a><br>
+<a href="https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/first-test-posting.md">9. First Posting.</a><br>
 <a href="https://github.com/oneworldmarket/idibu-api/blob/master/webservices/code-library/.net-basic-interaction.md" target="_blank">10. Code library.</a><br>
