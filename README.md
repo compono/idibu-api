@@ -9,7 +9,7 @@ Before you choose the prefered integration type, make sure to read <a href="http
 
 The documentation is divided in the following options:
 
-1. [idibu API](https://github.com/oneworldmarket/idibu-api/tree/master/api-v3) - where you can learn all about posting jobs with our API.
+1. [idibu API](https://github.com/oneworldmarket/idibu-api/tree/master/posting-api) - where you can learn all about posting jobs with our API.
 2. [idibu webservices](https://github.com/oneworldmarket/idibu-api/tree/master/webservices) - where you can read how to get the information about your applicants, jobs, users, posting quotas - and many more.
 3. [UPP](https://github.com/oneworldmarket/idibu-api/blob/master/UPP) - Universal Partner Page - a "plug and play" multiposting integration.
 4. [idibu whitelabel](https://github.com/oneworldmarket/idibu-api/tree/master/whitelabel) - using idibu as a whitelabel platform.
