@@ -59,7 +59,7 @@
 <h1>
 	Locations</h1>
 <p>idibu now has a global location system which means the amount of location possibilities are huge.</p>
-<p>This is a method to call details on specific location. The data returned can be fed up to idibu&#39;s posting API v3, to identify the proper location you wish to post to.</p>
+<p>This is a method to call details on specific location. The data returned can be fed up to idibu&#39;s posting API, to identify the proper location you wish to post to.</p>
 <h1>
 	<strong>Parameters</strong></h1>
 <p>filter_name - Name or part of the of the location you are looking for<br />
@@ -178,4 +178,4 @@ GET http://ws.idibu.com/ws/rest/v1/locations/GB/find?hash=<CLIENT HASH HERE>&fil
 <status>success</status>
 </idibu>
 ```
-<a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/spec-data.md"> Click here to find about board specific tags</a>
+<a href="https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/spec-data.md"> Click here to find about board specific tags</a>
