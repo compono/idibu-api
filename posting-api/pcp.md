@@ -2,7 +2,7 @@
 <p>It means this page can be brought back and embedded inside the third-party system allowing much tighter system integration and user workflow.</p>
 <img src="http://idibu.com/images/PCP.png"/>
 <h1>Posting Completion Page (PCP) configuration Tags</h1>
-<p>See <a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/vars.md" target="_blank">Configuration field variables</a> to check how you can adjust PCP's behavior.</p>
+<p>See <a href="https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/vars.md" target="_blank">Configuration field variables</a> to check how you can adjust PCP's behavior.</p>
 <h2>idibu returns a PCP, or you force it</h2>
 <p>If our system founds what is considered a non critical error (i.e., there&#39;s a missing required field for one of the boards, or no suitable boards are found - either the provided board ids are incorrect or no board tag was provided directly) or the configuration tags forces the system to return a PCP - more on this later - the message returned by idibu will contain a url pointing to a PCP, that contains the data from the account (i.e., the boards the client is subscribed to) for the board extracted from the request (i.e., the extra fields).</p>
 <p>If we find a non critical error, idibu will return a PCP. The full set of reasons for returning a PCP are:</p>
@@ -22,4 +22,4 @@
 		</ul>
 	</li>
 </ul>
-Time to submit <a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/sub-and-resp.md">our first job!</a>...
+Time to submit <a href="https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/sub-and-resp.md">our first job!</a>...
