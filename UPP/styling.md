@@ -1,7 +1,7 @@
 To style your PCP, you will need to provide us with CSS files for the following posting stages:
 <ul>
-<li>1st step posting - the main UPP page. Styled with a single CSS file.</li>
-<li>2 step of posting - the extra fields step. Styled with a single CSS file.</li>
+<li>1st step posting - the main UPP. Styled with a single CSS file.</li>
+<li>2 step of posting - the extra fields step (a <a href="https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/pcp.md" target="_blank">PCP</a>). Styled with a single CSS file.</li>
 <li>success message - static HTML page. By default it will display: Thank you for finishing the posting. We will send you an email if any of the postings encountered any issue.</li>
 </ul>
 You can easily achieve various results, below is an example of a differently styled page:
