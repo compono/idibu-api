@@ -1,5 +1,5 @@
 <p><strong>Different posting destinations require unique data to be sent through to them, for example their own specific sector list or qualification levels.</strong></p>
-<p>API v3 works to understand what extra field data you have sent through, and if anything is missing it will request it via the <a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/pcp.md">PCP</a>.</p>
+<p>Our posting API works to understand what extra field data you have sent through, and if anything is missing it will request it via the <a href="https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/pcp.md">PCP</a>.</p>
 
 <p>When using the XML API you may need to be sending job board extra field data depending on how you plan to integrate. These two services provide a listing of job boards your account is subscribed to as well as individual board listings showing extra field items and their values.</p>
 <h1>
@@ -88,5 +88,5 @@ Most of your boards will have an additional, duration field, among other extra f
 <pre>
 &lt;duration days=&quot;7&quot; /&gt;
 </pre>
-<a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/dyn-vars.md">Continue reading here to learn about dynamic core fields</a>
+<a href="https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/dyn-vars.md">Continue reading here to learn about dynamic core fields</a>
 
