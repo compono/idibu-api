@@ -5,10 +5,10 @@
 <h1>Encoding guidelines</h1>	
 <ul>
 	<li>Make sure you post the data as <code>application/x-www-form-urlencoded</code> type.</lie>
-	<li>Please use the UTF-8 encoding and always set the appropriate configuration tag (<code>&lt;utf8_enable&gt;yes&lt;/utf8_enable&gt;</code> sub-tag, <a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/vars.md" target="_blank">as per the documentation</a>).</li>
+	<li>Please use the UTF-8 encoding and always set the appropriate configuration tag (<code>&lt;utf8_enable&gt;yes&lt;/utf8_enable&gt;</code> sub-tag, <a href="https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/vars.md" target="_blank">as per the documentation</a>).</li>
 	<li>Preferably, please use HTML formatting and, even if you don't support it, please always send <code>&lt;br/&gt;</code> tags instead of plain-text newlines</li>
 	<li>For any free-text fields, use CDATA.</li>
-	<li>You can see an XML with special characters and their correct encoding in the <a href="https://github.com/oneworldmarket/idibu-api/tree/master/api-v3/examples">XML3 examples section</a>.</li>
+	<li>You can see an XML with special characters and their correct encoding in the <a href="https://github.com/oneworldmarket/idibu-api/tree/master/posting-api/examples">XML examples section</a>.</li>
 </ul>
 <h1 class="p1">Response Messages</h1>
 <p class="p1">All messages are sent back as XML, and for succesful postings the system outputs significant logging information.</p>
@@ -82,4 +82,4 @@ __posts__&lt;/JOB&gt;
 	<li>The system can be configured to use any SMTP email account to provide seamless branding.</li>
 	<li>The system can send out a branded confirmation email to let users know the post was successful.</li>
 </ul>
-Click <a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/quick-rep-job.md">here</a> to learn about quick reposting.
+Click <a href="https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/quick-rep-job.md">here</a> to learn about quick reposting.
