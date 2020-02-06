@@ -147,7 +147,7 @@
 			<td>
 				client_reference</td>
 			<td>
-				<a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/jobidvsjobref.md">Depends</a></td>
+				<a href="https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/jobidvsjobref.md">Depends</a></td>
 			<td>
 				text</td>
 			<td>
@@ -279,7 +279,7 @@
 			<td>
 				Yes</td>
 			<td>
-				<a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/Sector-and-locations.md">Get sector list values here</a></td>
+				<a href="https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/Sector-and-locations.md">Get sector list values here</a></td>
 			<td>
 				Lookup for Sector - this should be a root sector from the sector list.</td>
 		</tr>
@@ -289,7 +289,7 @@
 			<td>
 				Yes</td>
 			<td>
-				<a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/Sector-and-locations.md">Get location list values here</a></td>
+				<a href="https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/Sector-and-locations.md">Get location list values here</a></td>
 			<td>
 				<p>Lookup for Locations - this should be a root location from the location list. Please prove an ID to use location parent ID for idibu&#39;s older location list and proper country code to use the most recent one.</p>
 			</td>
@@ -300,7 +300,7 @@
 			<td>
 				Yes</td>
 			<td>
-				<a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/Sector-and-locations.md">Get location list values here</a></td>
+				<a href="https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/Sector-and-locations.md">Get location list values here</a></td>
 			<td>
 				<p>Lookup for Locations - this should be a child location from the location list. Please mind the IDs for sublocations for idibu&#39;s older and most recent location list differ for the same locations.</p>
 			</td>
@@ -326,4 +326,4 @@
 <p>Some of the core fields (title, reference &amp; description) are editable.</p>
 <p>When marked as such in the request by using the edit parameter (check the examples) all the fields that are marked as &#39;editables&#39; will have a corresponding text box or text area in the PCP, with the contents sent in the request, and the consultant can change this content prior to completing the post. Take into account that setting any of these fields to editable will force the PCP to always be returned .</p>
 
-<a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/Sector-and-locations.md">Continue reading</a>...
+<a href="https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/Sector-and-locations.md">Continue reading</a>...
