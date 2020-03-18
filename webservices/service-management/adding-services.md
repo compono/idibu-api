@@ -4,10 +4,8 @@
 <p>No additional parameters for this request</p>
 <h2>Request</h2>
 <pre>
-<code>
-POST http://ws.idibu.com/ws/rest/v1/service/add?idibupartner=yes
-</code>
-&lt;code type=&quot;xml&quot;&gt;
+<code>POST http://ws.idibu.com/ws/rest/v1/service/add?idibupartner=yes</code>
+<code type="xml">
 &lt;?xml version=&quot;1.0&quot;?&gt;
 &lt;idibu&gt;
       &lt;client-hash&gt;d7e573...&lt;/client-hash&gt;
