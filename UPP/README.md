@@ -104,8 +104,6 @@ which translates to:
 </ul>
 <br />
 
-Click <a href="http://www.idibu.com/clients/upp/index.php?hash=1c6ce766d9d7c297ca77dda753f7e2a2&email=bart@idibu.com&jobTitle=test%20title&boards=517;253&extrafields=517%7Cidibudts_cat%7C6%3B253%7CMonster2_CatOpp%2C5623%7C11775%2C;" target="_blank" >here</a> to see a working example of posting to idibu developer board and monster test with extra fields preselected.
-
 <h1>Field values</h1><br />
 <b>Category:</b><br />
 2 - Accountancy (Qualified)<br />
