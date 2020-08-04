@@ -40,7 +40,7 @@ Returns jobs that will expire in `[n]` days or sooner (`[n]` can be negative for
 
 ### Query parameters
 <details>
-  <summary>Click to expand</summary>
+ <summary><i>Click to expand</i></summary>
  
 Parameter Name | Type restrictions | Required? | Notes
 -- | -- | -- | --
@@ -56,7 +56,7 @@ Parameter Name | Type restrictions | Required? | Notes
 
 ### Response format
 <details>
-  <summary>Click to expand</summary>
+  <summary><i>Click to expand</i></summary>
  
 ```xml
 <job>
@@ -132,7 +132,7 @@ Returns the detailed view of the job with the provided `[id]`.
 
 ### Query parameters
 <details>
-  <summary>Click to expand</summary>
+  <summary><i>Click to expand</i></summary>
  
 Parameter Name | Type restrictions | Required? | Notes
 -- | -- | -- | --
@@ -141,7 +141,7 @@ Parameter Name | Type restrictions | Required? | Notes
 
 ### Response format
 <details>
-  <summary>Click to expand</summary>
+  <summary><i>Click to expand</i></summary>
  
 ```xml
 <job>
