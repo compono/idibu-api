@@ -5,7 +5,7 @@
     + [Query parameters](#query-parameters)
     + [Response format](#response-format)
 
-  * **[Job's detailed view](#job-s-detailed-view)**
+  * **[Job's detailed view](#jobs-detailed-view)**
     + [Endpoint](#endpoint-1)
     + [Available methods](#available-methods-1)
     + [Query parameters](#query-parameters-1)
