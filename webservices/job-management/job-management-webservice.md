@@ -39,7 +39,9 @@ Returns Jobs that are not live anymore - with Adverts either automatically expir
 Returns jobs that will expire in `[n]` days or sooner (`[n]` can be negative for jobs that have already expired up to `[n]` days ago).
 
 ### Query parameters
-
+<details>
+  <summary>Click to expand</summary>
+ 
 Parameter Name | Type restrictions | Required? | Notes
 -- | -- | -- | --
 `hash` | **String** | **Yes** | Hash of the idibu account.
@@ -50,8 +52,12 @@ Parameter Name | Type restrictions | Required? | Notes
 `sender` | **Integer** | No | Returns only jobs belonging to the given user.
 `title` | **String** | No | Returns only jobs with Title containing the provided string.
 `title-or-reference` | **String** | No | Returns only jobs with Reference or Title containing the provided string.
+</details>
 
 ### Response format
+<details>
+  <summary>Click to expand</summary>
+ 
 ```xml
 <job>
   <id>[integer]</id> <!-- job id -->
@@ -110,6 +116,7 @@ Parameter Name | Type restrictions | Required? | Notes
   </postings>
 </job>
 ```
+</details>
 
 ---
 
@@ -124,12 +131,18 @@ This method allows to obtain more detailed information about a particular job. T
 Returns the detailed view of the job with the provided `[id]`.
 
 ### Query parameters
-
+<details>
+  <summary>Click to expand</summary>
+ 
 Parameter Name | Type restrictions | Required? | Notes
 -- | -- | -- | --
 `hash` | **String** | **Yes** | Hash of the idibu account.
+</details>
 
 ### Response format
+<details>
+  <summary>Click to expand</summary>
+ 
 ```xml
 <job>
   <id>[integer]</id> <!-- job id -->
@@ -201,3 +214,4 @@ Parameter Name | Type restrictions | Required? | Notes
   </postings>
 </job>
 ```
+</details>
