@@ -13,11 +13,11 @@
 
 ## 
 
-This webservice allows to obtain data relating to Job objects of a given account. It can be used to list jobs same as <a href="https://v3-docs.idibu.com/article/776-ad-manager-2-0-intro-and-overview" target="_blank">Ad Manager</a> in idibu.
+This webservice allows to obtain data relating to Job objects of a given account. It can be used to list jobs same as [Ad Manager](https://v3-docs.idibu.com/article/776-ad-manager-2-0-intro-and-overview) in idibu.
 
-A single Job object can consist of multiple <a href="https://github.com/oneworldmarket/idibu-api/tree/master/webservices/advert-management" target="_blank">Adverts</a>, where each Advert indicates any single interaction between idibu and a posting destination (job board, website, or social media portal).
+A single Job object can consist of multiple [Adverts](https://github.com/oneworldmarket/idibu-api/tree/master/webservices/advert-management), where each Advert indicates any single interaction between idibu and a posting destination (job board, website, or social media portal).
 
-Creating Jobs and posting them as Adverts is handled through the <a href="https://github.com/oneworldmarket/idibu-api/tree/master/posting-api" target="_blank">Posting API</a> or <a href="https://github.com/oneworldmarket/idibu-api/tree/master/UPP" target="_blank">Universal Posting Pages</a>.
+Creating Jobs and posting them as Adverts is handled through the [Posting API](https://github.com/oneworldmarket/idibu-api/tree/master/posting-api) or [Universal Posting Pages](https://github.com/oneworldmarket/idibu-api/tree/master/UPP).
 
 ## Listing Jobs
 This method allows to list appropriately filtered and ordered Jobs for a given account.
@@ -47,7 +47,7 @@ Parameter Name | Type restrictions | Required? | Notes
 `hash` | **String** | **Yes** | Hash of the idibu account.
 `count` | **Integer**<br/><br/>Min: 1<br/>Max: 100<br/>Default: 10 | No | Number of jobs to return.
 `offset` | **Integer**<br/><br/>Min: 0<br/>Default: 0 | No | Numeric offset from where to start fetching jobs.
-`order` | **String (enum)**<br/><br/>Default: `update-desc`<br/><br/>Accepted values:<br/><code>update-desc</code> - Last Posted<br/><code>update-desc</code> - First Posted<br/><code>date-desc</code> - Date Added (desc)<br/><code>date-asc</code> - Date Added (asc)<br/><code>title-asc</code> - By Title (asc)<br/><code>title-desc</code> - By Title (desc) | No | How the jobs should be ordered in the response.<br/>Consult <a href="https://v2-docs.idibu.com/article/106-admanager-view-order-options" target="_blank">this article</a> for more info.
+`order` | **String (enum)**<br/><br/>Default: `update-desc`<br/><br/>Accepted values:<br/><code>update-desc</code> - Last Posted<br/><code>update-desc</code> - First Posted<br/><code>date-desc</code> - Date Added (desc)<br/><code>date-asc</code> - Date Added (asc)<br/><code>title-asc</code> - By Title (asc)<br/><code>title-desc</code> - By Title (desc) | No | How the jobs should be ordered in the response.<br/>Consult [this article](https://v2-docs.idibu.com/article/106-admanager-view-order-options) for more info.
 `reference` | **String** | No | Returns only jobs with Reference containing the provided string.
 `sender` | **Integer** | No | Returns only jobs belonging to the given user.
 `title` | **String** | No | Returns only jobs with Title containing the provided string.
