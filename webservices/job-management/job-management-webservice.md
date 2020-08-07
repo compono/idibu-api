@@ -35,7 +35,7 @@ Returns all currently live Jobs - with Adverts still present on their respective
 #### `GET /archived`
 Returns Jobs that are not live anymore - with Adverts either automatically expired or manually deleted from their respective posting destinations.
 
-#### `GET /ws/rest/v1/jobs/[n]/days-expiring`
+#### `GET /[n]/days-expiring`
 Returns jobs that will expire in `[n]` days or sooner (`[n]` can be negative for jobs that have already expired up to `[n]` days ago).
 
 ### Query parameters
