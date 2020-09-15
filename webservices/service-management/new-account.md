@@ -20,7 +20,6 @@ POST http://ws.idibu.com/ws/rest/v1/service/newaccount?idibupartner=yes
   &lt;password&gt;pas123&lt;/password&gt;
   &lt;company-name&gt;company&lt;/company-name&gt;
   &lt;phone&gt;123465&lt;/phone&gt;
-  &lt;referred-by&gt;n/a&lt;/referred-by&gt;
   &lt;partner-password&gt;S0meP4rtn3rP4ssw0rd1sH3r3&lt;/partner-password&gt;
   &lt;user-number&gt;5&lt;/user-number&gt;
   &lt;renewal-date&gt;2012-05-05&lt;/renewal-date&gt;
