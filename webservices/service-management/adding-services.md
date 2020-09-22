@@ -1,3 +1,8 @@
+_**This documentation is outdated. Please refer to the new version [HERE](https://github.com/oneworldmarket/idibu-api/blob/master/webservices/service-management/service-management-webservice.md).**_
+
+<details>
+ <summary><i>Show me anyway</i></summary>
+
 <p>Method adds new idibu services to the specified account (specified by hash). <b>Available only for idibu partners</b></p>
 <h1>
 	Parameters</h1>
@@ -31,3 +36,4 @@
 &lt;/idibu&gt;
 </code>
 </pre>
+</details>
