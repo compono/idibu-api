@@ -44,7 +44,7 @@ Returns jobs that will expire in `[n]` days or sooner (`[n]` can be negative for
  
 Parameter Name | Type restrictions | Required? | Notes
 -- | -- | -- | --
-`hash` | **String** | **Yes** | Hash of the idibu account.
+`hash` | **String** | **Yes** | Hash of the idibu account to which the request pertains.
 `count` | **Integer**<br/><br/>Min: 1<br/>Max: 100<br/>Default: 10 | No | Number of jobs to return.
 `offset` | **Integer**<br/><br/>Min: 0<br/>Default: 0 | No | Numeric offset from where to start fetching jobs.
 `order` | **String (enum)**<br/><br/>Default: `update-desc`<br/><br/>Accepted values:<br/><code>update-desc</code> - Last Posted<br/><code>update-desc</code> - First Posted<br/><code>date-desc</code> - Date Added (desc)<br/><code>date-asc</code> - Date Added (asc)<br/><code>title-asc</code> - By Title (asc)<br/><code>title-desc</code> - By Title (desc) | No | How the jobs should be ordered in the response.<br/>Consult [this article](https://v2-docs.idibu.com/article/106-admanager-view-order-options) for more info.
@@ -136,7 +136,7 @@ Returns the detailed view of the job with the provided `[id]`.
  
 Parameter Name | Type restrictions | Required? | Notes
 -- | -- | -- | --
-`hash` | **String** | **Yes** | Hash of the idibu account.
+`hash` | **String** | **Yes** | Hash of the idibu account to which the request pertains.
 </details>
 
 ### Response format
