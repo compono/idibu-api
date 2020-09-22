@@ -50,19 +50,12 @@ This method allows to create a new idibu account.
 Creates a new account.
 
 ### Query parameters
-<details>
- <summary><i>Click to expand</i></summary>
- 
 Parameter Name | Type restrictions | Required? | Notes
 -- | -- | -- | --
 `idibupartner` | **String** | **Yes** | Must be set to `yes`.
 `data` | **String** | **Yes** | The full query XML (see the [Query format](#query-format) below).
-</details>
 
 ### Query format
-<details>
-  <summary><i>Click to expand</i></summary>
- 
 ```xml
 <idibu>
   <partner-password>[string]</partner-password> <!-- partner password provided to you by idibu -->
@@ -78,12 +71,8 @@ Parameter Name | Type restrictions | Required? | Notes
   <renewal-date>[string:date]</renewal-date> <!-- deprecated, please default to 20 years in the future; format: YYYY-MM-DD -->
 </idibu>
 ```
-</details>
 
 ### Response format
-<details>
-  <summary><i>Click to expand</i></summary>
- 
 ```xml
 <idibu generator="idibu" version="1.0">
   <response>
@@ -95,7 +84,6 @@ Parameter Name | Type restrictions | Required? | Notes
   <status>["success"|"failed"]</status> <!-- whether the request succeeded or not -->
 </idibu>
 ```
-</details>
 
 ---
 
@@ -110,19 +98,12 @@ This method allows to change an existing account's password.
 Updates the account's password.
 
 ### Query parameters
-<details>
- <summary><i>Click to expand</i></summary>
- 
 Parameter Name | Type restrictions | Required? | Notes
 -- | -- | -- | --
 `idibupartner` | **String** | **Yes** | Must be set to `yes`.
 `data` | **String** | **Yes** | The full query XML (see the [Query format](#query-format-1) below).
-</details>
 
 ### Query format
-<details>
-  <summary><i>Click to expand</i></summary>
- 
 ```xml
 <idibu>
   <partner-password>[string]</partner-password> <!-- partner password provided to you by idibu -->
@@ -131,12 +112,8 @@ Parameter Name | Type restrictions | Required? | Notes
   <password>[string]</password> <!-- new login password; max 32 characters -->
 </idibu>
 ```
-</details>
 
 ### Response format
-<details>
-  <summary><i>Click to expand</i></summary>
- 
 ```xml
 <idibu generator="idibu" version="1.0">
   <response>
@@ -148,7 +125,6 @@ Parameter Name | Type restrictions | Required? | Notes
   <status>["success"|"failed"]</status> <!-- whether the request succeeded or not -->
 </idibu>
 ```
-</details>
 
 ---
 
@@ -165,19 +141,12 @@ Available services are tied to your license agreement. **Please discuss with you
 Lists all services currently enabled on an account.
 
 ### Query parameters
-<details>
-  <summary><i>Click to expand</i></summary>
- 
 Parameter Name | Type restrictions | Required? | Notes
 -- | -- | -- | --
 `idibupartner` | **String** | **Yes** | Must be set to `yes`.
 `data` | **String** | **Yes** | The full query XML (see the [Query format](#query-format-2) below).
-</details>
 
 ### Query format
-<details>
-  <summary><i>Click to expand</i></summary>
- 
 ```xml
 <idibu>
   <partner-password>[string]</partner-password> <!-- partner password provided to you by idibu -->
@@ -185,12 +154,8 @@ Parameter Name | Type restrictions | Required? | Notes
   <client-hash>[string]</client-hash> <!-- hash of the idibu account to which the request pertains -->
 </idibu>
 ```
-</details>
 
 ### Response format
-<details>
-  <summary><i>Click to expand</i></summary>
- 
 ```xml
 <idibugenerator="idibu" version="1.0">
   <response>
@@ -199,7 +164,6 @@ Parameter Name | Type restrictions | Required? | Notes
   <status>["success"|"failed"]</status> <!-- whether the request succeeded or not -->
 </idibu>
 ```
-</details>
 
 ---
 
@@ -219,19 +183,12 @@ Adds specified services to an account.
 Removes specified services from an account.
 
 ### Query parameters
-<details>
-  <summary><i>Click to expand</i></summary>
- 
 Parameter Name | Type restrictions | Required? | Notes
 -- | -- | -- | --
 `idibupartner` | **String** | **Yes** | Must be set to `yes`.
 `data` | **String** | **Yes** | The full query XML (see the [Query format](#query-format-3) below).
-</details>
 
 ### Query format
-<details>
-  <summary><i>Click to expand</i></summary>
- 
 ```xml
 <idibu>
   <partner-password>[string]</partner-password> <!-- partner password provided to you by idibu -->
@@ -242,12 +199,8 @@ Parameter Name | Type restrictions | Required? | Notes
   </services> 
 </idibu>
 ```
-</details>
 
 ### Response format
-<details>
-  <summary><i>Click to expand</i></summary>
- 
 ```xml
 <idibugenerator="idibu" version="1.0">
   <response>
@@ -256,7 +209,6 @@ Parameter Name | Type restrictions | Required? | Notes
   <status>["success"|"failed"]</status> <!-- whether the request succeeded or not -->
 </idibu>
 ```
-</details>
 
 ---
 
@@ -273,19 +225,12 @@ The URL can only be set on a per-account basis and the format of the data that i
 Sets up or removes the URL to ping for the account.
 
 ### Query parameters
-<details>
-  <summary><i>Click to expand</i></summary>
- 
 Parameter Name | Type restrictions | Required? | Notes
 -- | -- | -- | --
 `idibupartner` | **String** | **Yes** | Must be set to `yes`.
 `data` | **String** | **Yes** | The full query XML (see the [Query format](#query-format-4) below).
-</details>
 
 ### Query format
-<details>
-  <summary><i>Click to expand</i></summary>
- 
 ```xml
 <idibu>
   <partner-password>[string]</partner-password> <!-- partner password provided to you by idibu -->
@@ -294,12 +239,8 @@ Parameter Name | Type restrictions | Required? | Notes
   <aptrack-ping-url>[string:url]</aptrack-ping-url> <!-- URL to which the data will be sent; send empty to remove -->
 </idibu>
 ```
-</details>
 
 ### Response format
-<details>
-  <summary><i>Click to expand</i></summary>
- 
 ```xml
 <idibugenerator="idibu" version="1.0">
   <response>
@@ -308,7 +249,6 @@ Parameter Name | Type restrictions | Required? | Notes
   <status>["success"|"failed"]</status> <!-- whether the request succeeded or not -->
 </idibu>
 ```
-</details>
 
 ### Webhook data
 Every time a candidate arrives on the account, a POST request will be performed to the account's `aptrack-ping-url`. The following parameters will be passed in the body of the request:
