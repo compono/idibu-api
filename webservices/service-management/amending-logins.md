@@ -1,3 +1,8 @@
+_**This document is outdated. Please refer to the new version [HERE](https://github.com/oneworldmarket/idibu-api/blob/master/webservices/service-management/service-management-webservice.md).**_
+
+<details>
+ <summary><i>Show me anyway</i></summary>
+	
 <p>Method allows one to change account`s login details. This is for administrator login only. Mind that changing account logins will also change the login hash.<b>Available only for idibu partners</b></p>
 <h2>
 	Request</h2>
@@ -30,3 +35,4 @@ POST http://ws.idibu.com/ws/rest/v1/service/updateaccount?idibupartner=yes
 &lt;/idibu&gt;
 </code>
 </pre>
+</details>
