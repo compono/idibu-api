@@ -1,3 +1,8 @@
+_**This document is outdated. Please refer to the new version [HERE](https://github.com/oneworldmarket/idibu-api/blob/master/webservices/service-management/service-management-webservice.md).**_
+
+<details>
+ <summary><i>Show me anyway</i></summary>
+	
 <p>Method creates new client account in idibu system. <b>Available only for idibu partners</b></p>
 <h1>
 	Parameters</h1>
@@ -43,3 +48,4 @@ POST http://ws.idibu.com/ws/rest/v1/service/newaccount?idibupartner=yes
 &lt;/idibu&gt;
 </code>
 </pre>
+</details>
