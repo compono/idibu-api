@@ -77,8 +77,8 @@ Parameter Name | Type restrictions | Required? | Notes
 <idibu generator="idibu" version="1.0">
   <response>
     <message>[string]</message> <!-- 'New client successfully created' or an error message -->
-    <client-hash>[string]</client-hash> <!-- hash of the created account; please keep for any future interaction with the system -->
-    <client-id>[integer]</client-id> <!-- id of the created account; please keep for any future interaction with the system -->
+    <client-hash>[string]</client-hash> <!-- hash of the created account; please keep this! -->
+    <client-id>[integer]</client-id> <!-- id of the created account; please keep this! -->
     <member-id>[integer]</member-id> <!-- deprecated, please ignore -->
   </response>
   <status>["success"|"failed"]</status> <!-- whether the request succeeded or not -->
