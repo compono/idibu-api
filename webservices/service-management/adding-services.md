@@ -1,4 +1,4 @@
-_**This documentation is outdated. Please refer to the new version [HERE](https://github.com/oneworldmarket/idibu-api/blob/master/webservices/service-management/service-management-webservice.md).**_
+_**This document is outdated. Please refer to the new version [HERE](https://github.com/oneworldmarket/idibu-api/blob/master/webservices/service-management/service-management-webservice.md).**_
 
 <details>
  <summary><i>Show me anyway</i></summary>
