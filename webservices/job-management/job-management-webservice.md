@@ -142,7 +142,7 @@ Parameter Name | Type restrictions | Required? | Notes
       <id>[integer]</id> <!-- job id -->
       <reference>[string]</reference> <!-- job reference -->
       <title>[string]</title> <!-- job title -->
-      <description>[string]</description><!-- job description (detail view only) -->
+      <description>[string]</description><!-- job description -->
       <sender> <!-- refer to https://github.com/oneworldmarket/idibu-api/tree/master/webservices/user-management -->
         <id>[integer]</id> <!-- sender's profile id -->
         <firstname>[string]</firstname> <!-- sender's first name -->
