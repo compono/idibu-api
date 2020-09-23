@@ -59,7 +59,7 @@ Parameter Name | Type restrictions | Required? | Notes
         <id>[integer]</id> <!-- job id -->
         <reference>[string]</reference> <!-- job reference -->
         <title>[string]</title> <!-- job title -->
-        <sender> <!-- refer to https://github.com/oneworldmarket/idibu-api/tree/master/webservices/user-management -->
+        <sender> <!-- user that posted the job; refer to https://github.com/oneworldmarket/idibu-api/tree/master/webservices/user-management -->
           <id>[integer]</id> <!-- sender's profile id -->
           <firstname>[string]</firstname> <!-- sender's first name -->
           <lastname>[string]</lastname> <!-- sender's last name -->
@@ -93,7 +93,7 @@ Parameter Name | Type restrictions | Required? | Notes
           <id>[integer]</id> <!-- advert id -->
           <creation_date>[string:date]</creation_date> <!-- advert's creation date; YYYY-MM-DD HH:mm:ss -->
         </latest_advert>
-        <portals>
+        <portals> <!-- portals to which the job was posted; refer to https://github.com/oneworldmarket/idibu-api/tree/master/webservices/portal-management -->
           <!-- job status on each portal -->
           <portal> <!-- the posting destination -->
             <id>[integer]</id> <!-- portal id -->
@@ -143,7 +143,7 @@ Parameter Name | Type restrictions | Required? | Notes
       <reference>[string]</reference> <!-- job reference -->
       <title>[string]</title> <!-- job title -->
       <description>[string]</description><!-- job description -->
-      <sender> <!-- refer to https://github.com/oneworldmarket/idibu-api/tree/master/webservices/user-management -->
+      <sender> <!-- user that posted the job; refer to https://github.com/oneworldmarket/idibu-api/tree/master/webservices/user-management -->
         <id>[integer]</id> <!-- sender's profile id -->
         <firstname>[string]</firstname> <!-- sender's first name -->
         <lastname>[string]</lastname> <!-- sender's last name -->
@@ -177,7 +177,7 @@ Parameter Name | Type restrictions | Required? | Notes
           <id>[integer]</id> <!-- advert id -->
           <creation_date>[string:date]</creation_date> <!-- advert's creation date; YYYY-MM-DD HH:mm:ss -->
         </latest_advert>
-      <portals>
+      <portals> <!-- portals to which the job was posted; refer to https://github.com/oneworldmarket/idibu-api/tree/master/webservices/portal-management -->
         <!-- job status on each portal -->
         <portal> <!-- the posting destination -->
           <id>[integer]</id> <!-- portal id -->
