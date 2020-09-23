@@ -80,7 +80,7 @@ Parameter Name | Type restrictions | Required? | Notes
           <extras>[string]</extras> <!-- additional benefits -->
           <override>[string]</override> <!-- if present, usually replaces all other salary information -->
         </salary>
-        <application_url>[string]</application_url> <!-- external application url -->
+        <application_url>[string:url]</application_url> <!-- external application url -->
         <creation_date>[string:date]</creation_date> <!-- job's creation date; YYYY-MM-DD HH:mm:ss -->
         <update_date>[string:date]</update_date> <!-- last posting date; YYYY-MM-DD HH:mm:ss -->
         <start_date>[string:date]</start_date> <!-- first posting date; YYYY-MM-DD HH:mm:ss -->
@@ -164,7 +164,7 @@ Parameter Name | Type restrictions | Required? | Notes
         <extras>[string]</extras> <!-- additional benefits -->
         <override>[string]</override> <!-- if present, usually replaces all other salary information -->
       </salary>
-      <application_url>[string]</application_url> <!-- external application url -->
+      <application_url>[string:url]</application_url> <!-- external application url -->
       <creation_date>[string:date]</creation_date> <!-- job's creation date; YYYY-MM-DD HH:mm:ss -->
       <update_date>[string:date]</update_date> <!-- last posting date; YYYY-MM-DD HH:mm:ss -->
       <start_date>[string:date]</start_date> <!-- first posting date; YYYY-MM-DD HH:mm:ss -->
@@ -202,7 +202,7 @@ Parameter Name | Type restrictions | Required? | Notes
           <start_post>2019-04-18 16:11:08</start_post> <!-- posting date; YYYY-MM-DD HH:mm:ss -->
           <stop_post>2019-05-16 23:59:00</stop_post> <!-- intended expiry date; YYYY-MM-DD HH:mm:ss -->
           <status>["posted"|"updated"|"deleted"|"failed"]</status> <!-- posting status -->
-          <link>[string]</link> <!-- URL of the posting on the portal (if supported by the portal) -->
+          <link>[string:url]</link> <!-- URL of the posting on the portal (if supported by the portal) -->
         </posting>
       </postings>
     </job>
