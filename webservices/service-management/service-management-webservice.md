@@ -257,9 +257,9 @@ Every time a candidate arrives on the account, a POST request will be performed 
 Parameter Name | Type restrictions | Notes
 -- | -- | --
 `client_id` | **Integer** | ID of the idibu account.
-`sender_id` | **Integer** | ID of the account's user.<br/>Refer to the [User Management Webservice](https://github.com/oneworldmarket/idibu-api/tree/master/webservices/user-management).
-`job_id` | **Integer** | ID of the job for which the candidate applied.<br/>Refer to the [Job Management Webservice](https://github.com/oneworldmarket/idibu-api/blob/master/webservices/job-management/job-management-webservice.md).
-`portal_id` | **Integer** | ID of the portal from which the application arrived.<br/>Refer to the [Portal Management Webservice](https://github.com/oneworldmarket/idibu-api/tree/master/webservices/portal-management).
+`sender_id` | **Integer** | ID of the account's User.<br/>Refer to the [User Management Webservice](https://github.com/oneworldmarket/idibu-api/tree/master/webservices/user-management).
+`job_id` | **Integer** | ID of the Job for which the candidate applied.<br/>Refer to the [Job Management Webservice](https://github.com/oneworldmarket/idibu-api/blob/master/webservices/job-management/job-management-webservice.md).
+`portal_id` | **Integer** | ID of the Portal from which the application arrived.<br/>Refer to the [Portal Management Webservice](https://github.com/oneworldmarket/idibu-api/tree/master/webservices/portal-management).
 `aptrack_id` | **Integer** | ID of the candidate.<br/>Refer to the [Applicant Management Webservice](https://github.com/oneworldmarket/idibu-api/tree/master/webservices/applicant-management).
 `from` | **String (email)** | Candidate's email address.
 `date` | **Date and time**<br/><br/>Format: `YYYY-MM-DD HH:mm:ss` | The moment of the candidate reaching idibu system.
