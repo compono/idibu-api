@@ -245,6 +245,7 @@ Parameter Name | Type restrictions | Required? | Notes
 <idibugenerator="idibu" version="1.0">
   <response>
     <message>[string]</message> <!-- 'Client's aptrack ping URL set' or 'Client's aptrack ping URL removed' or an error message -->
+    <aptrack-ping-url>[string:url]</aptrack-ping-url> <!-- the newly set URL, if present -->
   </response>
   <status>["success"|"failed"]</status> <!-- whether the request succeeded or not -->
 </idibu>
