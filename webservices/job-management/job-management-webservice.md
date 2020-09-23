@@ -52,62 +52,67 @@ Parameter Name | Type restrictions | Required? | Notes
 
 ### Response format
 ```xml
-<job>
-  <id>[integer]</id> <!-- job id -->
-  <reference>[string]</reference> <!-- job reference -->
-  <title>[string]</title> <!-- job title -->
-  <sender>
-    <id>[integer]</id> <!-- sender's profile id -->
-    <firstname>[string]</firstname> <!-- sender's first name -->
-    <lastname>[string]</lastname> <!-- sender's last name -->
-    <email>[string:email]</email> <!-- sender's email -->
-  </sender>
-  <sector id="[integer]">[string]</sector> <!-- sector id and name -->
-  <location id="[integer]" code="[string]">[string]</location> <!-- country id, code and name -->
-  <sub_location id="[integer]">[string]</sub_location> <!-- location id and place_name -->
-  <!-- For the three above, refer to https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/Sector-and-locations.md -->
-  <type id="[1|2|4]">[Contract|Permanent|Temporary]</type> <!-- job type -->
-  <working_hours>[Full Time|Part Time]</working_hours> <!-- working hours -->
-  <duration>[string]</duration> <!-- duration of the job (how long the candidate would work) -->
-  <salary> <!-- salary info -->
-    <minimum>[string]</minimum> <!-- can contain decimal points -->
-    <maximum>[string]</maximum>
-    <currency>[string]</currency> <!-- three-letter ISO code -->
-    <per>[string]</per>
-    <extras>[string]</extras>
-    <override>[string]</override> <!-- if present, usually replaces all other salary information -->
-  </salary>
-  <application_url>[string]</application_url> <!-- external application url -->
-  <creation_date>[string:date]</creation_date> <!-- job's creation date -->
-  <update_date>[string:date]</update_date> <!-- last posting date -->
-  <start_date>[string:date]</start_date> <!-- first posting date -->
-  <expiry_date>[string:date]</expiry_date> <!-- date the job expires or was deleted -->
-  <aptrack>
-    <total>[integer]</total> <!-- total applications for the job -->
-    <unread>[integer]</unread> <!-- total unread applications for the job -->
-  </aptrack>
-  <latest_advert> <!-- data on the last ws/rest/v1/adverts object -->
-    <id>[integer]</id>
-    <creation_date>[string:date]</creation_date>
-  </latest_advert>
-  <portals>
-    <!-- job status on each portal (similar to adverts/live view) -->
-    <portal> <!-- the posting destination -->
-      <id>[integer]</id> <!-- portal id -->
-      <name>[string]</name> <!-- portal name -->
-      <status>["live"|"expired"|"failed"|"deleted"|"pending"]</status> <!-- status on the portal -->
-      <deletable>["true"|"false"]</deletable> <!-- whether the post can be deleted -->
-      <pending>["true"|"false"]</pending> <!-- whether there are pending posts on the portal -->
-      <error>["true"|"false"]</error> <!-- whether the last posting attempt resulted in error -->
-      <warning>["true"|"false"]</warning> <!-- whether the last posting attempt had warnings -->
-      <expiry>[string:date]</expiry> <!-- current expiry or deletion date on the portal -->
-      <last_update>[string:date]</last_update> <!-- date of last posting on the portal -->
-      <last_posting_id>[integer]</last_posting_id> <!-- last posting (PostLog) id -->
-      <applicants>[integer]</applicants> <!-- applicant count on the portal -->
-    </portal>
-  </portals>
-  </postings>
-</job>
+<idibu generator="idibu" version="1.0">
+  <response>
+    <jobs>
+      <job>
+        <id>[integer]</id> <!-- job id -->
+        <reference>[string]</reference> <!-- job reference -->
+        <title>[string]</title> <!-- job title -->
+        <sender>
+          <id>[integer]</id> <!-- sender's profile id -->
+          <firstname>[string]</firstname> <!-- sender's first name -->
+          <lastname>[string]</lastname> <!-- sender's last name -->
+          <email>[string:email]</email> <!-- sender's email -->
+        </sender>
+        <sector id="[integer]">[string]</sector> <!-- sector id and name -->
+        <location id="[integer]" code="[string]">[string]</location> <!-- country id, code and name -->
+        <sub_location id="[integer]">[string]</sub_location> <!-- location id and place_name -->
+        <!-- For the three above, refer to https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/Sector-and-locations.md -->
+        <type id="[1|2|4]">[Contract|Permanent|Temporary]</type> <!-- job type -->
+        <working_hours>[Full Time|Part Time]</working_hours> <!-- working hours -->
+        <duration>[string]</duration> <!-- duration of the job (how long the candidate would work) -->
+        <salary> <!-- salary info -->
+          <minimum>[string]</minimum> <!-- can contain decimal points -->
+          <maximum>[string]</maximum>
+          <currency>[string]</currency> <!-- three-letter ISO code -->
+          <per>[string]</per>
+          <extras>[string]</extras>
+          <override>[string]</override> <!-- if present, usually replaces all other salary information -->
+        </salary>
+        <application_url>[string]</application_url> <!-- external application url -->
+        <creation_date>[string:date]</creation_date> <!-- job's creation date -->
+        <update_date>[string:date]</update_date> <!-- last posting date -->
+        <start_date>[string:date]</start_date> <!-- first posting date -->
+        <expiry_date>[string:date]</expiry_date> <!-- date the job expires or was deleted -->
+        <aptrack>
+          <total>[integer]</total> <!-- total applications for the job -->
+          <unread>[integer]</unread> <!-- total unread applications for the job -->
+        </aptrack>
+        <latest_advert> <!-- data on the last ws/rest/v1/adverts object -->
+          <id>[integer]</id>
+          <creation_date>[string:date]</creation_date>
+        </latest_advert>
+        <portals>
+          <!-- job status on each portal -->
+          <portal> <!-- the posting destination -->
+            <id>[integer]</id> <!-- portal id -->
+            <name>[string]</name> <!-- portal name -->
+            <status>["live"|"expired"|"failed"|"deleted"|"pending"]</status> <!-- status on the portal -->
+            <deletable>["true"|"false"]</deletable> <!-- whether the post can be deleted -->
+            <pending>["true"|"false"]</pending> <!-- whether there are pending posts on the portal -->
+            <error>["true"|"false"]</error> <!-- whether the last posting attempt resulted in error -->
+            <warning>["true"|"false"]</warning> <!-- whether the last posting attempt had warnings -->
+            <expiry>[string:date]</expiry> <!-- current expiry or deletion date on the portal -->
+            <last_update>[string:date]</last_update> <!-- date of last posting on the portal -->
+            <last_posting_id>[integer]</last_posting_id> <!-- last posting (PostLog) id -->
+            <applicants>[integer]</applicants> <!-- applicant count on the portal -->
+          </portal>
+        </portals>
+      </postings>
+    </job>
+  </jobs>
+</response>
 ```
 
 ---
@@ -129,73 +134,75 @@ Parameter Name | Type restrictions | Required? | Notes
 
 ### Response format
 ```xml
-<job>
-  <id>[integer]</id> <!-- job id -->
-  <reference>[string]</reference> <!-- job reference -->
-  <title>[string]</title> <!-- job title -->
-  <description>[string]</description><!-- job description (detail view only) -->
-  <sender>
-    <id>[integer]</id> <!-- sender's profile id -->
-    <firstname>[string]</firstname> <!-- sender's first name -->
-    <lastname>[string]</lastname> <!-- sender's last name -->
-    <email>[string:email]</email> <!-- sender's email -->
-  </sender>
-  <sector id="[integer]">[string]</sector> <!-- sector id and name -->
-  <location id="[integer]" code="[string]">[string]</location> <!-- country id, code and name -->
-  <sub_location id="[integer]">[string]</sub_location> <!-- location id and place_name -->
-  <!-- For the three above, refer to https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/Sector-and-locations.md -->
-  <type id="[1|2|4]">[Contract|Permanent|Temporary]</type> <!-- job type -->
-  <working_hours>[Full Time|Part Time]</working_hours> <!-- working hours -->
-  <duration>[string]</duration> <!-- duration of the job (how long the candidate would work) -->
-  <salary> <!-- salary info -->
-    <minimum>[string]</minimum> <!-- can contain decimal points -->
-    <maximum>[string]</maximum>
-    <currency>[string]</currency> <!-- three-letter ISO code -->
-    <per>[string]</per>
-    <extras>[string]</extras>
-    <override>[string]</override> <!-- if present, usually replaces all other salary information -->
-  </salary>
-  <application_url>[string]</application_url> <!-- external application url -->
-  <creation_date>[string:date]</creation_date> <!-- job's creation date -->
-  <update_date>[string:date]</update_date> <!-- last posting date -->
-  <start_date>[string:date]</start_date> <!-- first posting date -->
-  <expiry_date>[string:date]</expiry_date> <!-- date the job expires or was deleted -->
-  <aptrack>
-    <total>[integer]</total> <!-- total applications for the job -->
-    <unread>[integer]</unread> <!-- total unread applications for the job -->
-  </aptrack>
-  <latest_advert> <!-- data on the last ws/rest/v1/adverts object -->
-    <id>[integer]</id>
-    <creation_date>[string:date]</creation_date>
-  </latest_advert>
-  <portals>
-    <!-- job status on each portal (similar to adverts/live view) -->
-    <portal> <!-- the posting destination -->
-      <id>[integer]</id> <!-- portal id -->
-      <name>[string]</name> <!-- portal name -->
-      <status>["live"|"expired"|"failed"|"deleted"|"pending"]</status> <!-- status on the portal -->
-      <deletable>["true"|"false"]</deletable> <!-- whether the post can be deleted -->
-      <pending>["true"|"false"]</pending> <!-- whether there are pending posts on the portal -->
-      <error>["true"|"false"]</error> <!-- whether the last posting attempt resulted in error -->
-      <warning>["true"|"false"]</warning> <!-- whether the last posting attempt had warnings -->
-      <expiry>[string:date]</expiry> <!-- current expiry or deletion date on the portal -->
-      <last_update>[string:date]</last_update> <!-- date of last posting on the portal -->
-      <last_posting_id>[integer]</last_posting_id> <!-- last posting (PostLog) id -->
-      <applicants>[integer]</applicants> <!-- applicant count on the portal -->
-    </portal>
-  </portals>
-  <postings>
-    <!-- detailed list of postings (PostLogs) - only in detail view -->
-    <posting>
-      <id>[integer]</id> <!-- PostLog id -->
-      <date>[string:date]</date> <!-- posting date -->
-      <portal>[integer]</portal> <!-- portal id -->
-      <start_post>2019-04-18 16:11:08</start_post> <!-- posting date -->
-      <stop_post>2019-05-16 23:59:00</stop_post> <!-- intended expiry date -->
-      <status>["posted"|"updated"|"deleted"|"failed"]</status> <!-- posting status -->
-      <link>[string]</link> <!-- URL of the posting on the portal (if supported by the portal) -->
-    </posting>
-  </postings>
-  </postings>
-</job>
+<idibu generator="idibu" version="1.0">
+  <response>
+    <job>
+      <id>[integer]</id> <!-- job id -->
+      <reference>[string]</reference> <!-- job reference -->
+      <title>[string]</title> <!-- job title -->
+      <description>[string]</description><!-- job description (detail view only) -->
+      <sender>
+        <id>[integer]</id> <!-- sender's profile id -->
+        <firstname>[string]</firstname> <!-- sender's first name -->
+        <lastname>[string]</lastname> <!-- sender's last name -->
+        <email>[string:email]</email> <!-- sender's email -->
+      </sender>
+      <sector id="[integer]">[string]</sector> <!-- sector id and name -->
+      <location id="[integer]" code="[string]">[string]</location> <!-- country id, code and name -->
+      <sub_location id="[integer]">[string]</sub_location> <!-- location id and place_name -->
+      <!-- For the three above, refer to https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/Sector-and-locations.md -->
+      <type id="[1|2|4]">[Contract|Permanent|Temporary]</type> <!-- job type -->
+      <working_hours>[Full Time|Part Time]</working_hours> <!-- working hours -->
+      <duration>[string]</duration> <!-- duration of the job (how long the candidate would work) -->
+      <salary> <!-- salary info -->
+        <minimum>[string]</minimum> <!-- can contain decimal points -->
+        <maximum>[string]</maximum>
+        <currency>[string]</currency> <!-- three-letter ISO code -->
+        <per>[string]</per>
+        <extras>[string]</extras>
+        <override>[string]</override> <!-- if present, usually replaces all other salary information -->
+      </salary>
+      <application_url>[string]</application_url> <!-- external application url -->
+      <creation_date>[string:date]</creation_date> <!-- job's creation date -->
+      <update_date>[string:date]</update_date> <!-- last posting date -->
+      <start_date>[string:date]</start_date> <!-- first posting date -->
+      <expiry_date>[string:date]</expiry_date> <!-- date the job expires or was deleted -->
+      <aptrack>
+        <total>[integer]</total> <!-- total applications for the job -->
+        <unread>[integer]</unread> <!-- total unread applications for the job -->
+      </aptrack>
+      <latest_advert> <!-- data on the last ws/rest/v1/adverts object -->
+        <id>[integer]</id>
+        <creation_date>[string:date]</creation_date>
+      </latest_advert>
+      <portals>
+        <!-- job status on each portal -->
+        <portal> <!-- the posting destination -->
+          <id>[integer]</id> <!-- portal id -->
+          <name>[string]</name> <!-- portal name -->
+          <status>["live"|"expired"|"failed"|"deleted"|"pending"]</status> <!-- status on the portal -->
+          <deletable>["true"|"false"]</deletable> <!-- whether the post can be deleted -->
+          <pending>["true"|"false"]</pending> <!-- whether there are pending posts on the portal -->
+          <error>["true"|"false"]</error> <!-- whether the last posting attempt resulted in error -->
+          <warning>["true"|"false"]</warning> <!-- whether the last posting attempt had warnings -->
+          <expiry>[string:date]</expiry> <!-- current expiry or deletion date on the portal -->
+          <last_update>[string:date]</last_update> <!-- date of last posting on the portal -->
+          <last_posting_id>[integer]</last_posting_id> <!-- last posting (PostLog) id -->
+          <applicants>[integer]</applicants> <!-- applicant count on the portal -->
+        </portal>
+      </portals>
+      <postings>
+        <!-- detailed list of postings (PostLogs) - only in detail view -->
+        <posting>
+          <id>[integer]</id> <!-- PostLog id -->
+          <date>[string:date]</date> <!-- posting date -->
+          <portal>[integer]</portal> <!-- portal id -->
+          <start_post>2019-04-18 16:11:08</start_post> <!-- posting date -->
+          <stop_post>2019-05-16 23:59:00</stop_post> <!-- intended expiry date -->
+          <status>["posted"|"updated"|"deleted"|"failed"]</status> <!-- posting status -->
+          <link>[string]</link> <!-- URL of the posting on the portal (if supported by the portal) -->
+        </posting>
+      </postings>
+    </job>
+  </response>
 ```
