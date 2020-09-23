@@ -113,6 +113,7 @@ Parameter Name | Type restrictions | Required? | Notes
     </jobs>
   </response>
   <status>["success"|"failed"]</status> <!-- whether the request succeeded or not -->
+</idibu>
 ```
 
 ---
@@ -206,4 +207,5 @@ Parameter Name | Type restrictions | Required? | Notes
     </job>
   </response>
   <status>["success"|"failed"]</status> <!-- whether the request succeeded or not -->
+</idibu>
 ```
