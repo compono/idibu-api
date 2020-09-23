@@ -83,7 +83,7 @@ Parameter Name | Type restrictions | Required? | Notes
         <application_url>[string:url]</application_url> <!-- external application url -->
         <creation_date>[string:date]</creation_date> <!-- job's creation date; YYYY-MM-DD HH:mm:ss -->
         <update_date>[string:date]</update_date> <!-- last posting date; YYYY-MM-DD HH:mm:ss -->
-        <start_date>[string:date]</start_date> <!-- first posting date; YYYY-MM-DD HH:mm:ss -->
+        <start_date>[string:date]</start_date> <!-- when the candidate would start working; YYYY-MM-DD HH:mm:ss -->
         <expiry_date>[string:date]</expiry_date> <!-- date the job expires or was deleted; YYYY-MM-DD HH:mm:ss -->
         <aptrack> <!-- refer to https://github.com/oneworldmarket/idibu-api/tree/master/webservices/applicant-management -->
           <total>[integer]</total> <!-- total applications for the job -->
@@ -167,7 +167,7 @@ Parameter Name | Type restrictions | Required? | Notes
       <application_url>[string:url]</application_url> <!-- external application url -->
       <creation_date>[string:date]</creation_date> <!-- job's creation date; YYYY-MM-DD HH:mm:ss -->
       <update_date>[string:date]</update_date> <!-- last posting date; YYYY-MM-DD HH:mm:ss -->
-      <start_date>[string:date]</start_date> <!-- first posting date; YYYY-MM-DD HH:mm:ss -->
+      <start_date>[string:date]</start_date> <!-- when the candidate would start working; YYYY-MM-DD HH:mm:ss -->
       <expiry_date>[string:date]</expiry_date> <!-- date the job expires or was deleted; YYYY-MM-DD HH:mm:ss -->
       <aptrack> <!-- refer to https://github.com/oneworldmarket/idibu-api/tree/master/webservices/applicant-management -->
         <total>[integer]</total> <!-- total applications for the job -->
