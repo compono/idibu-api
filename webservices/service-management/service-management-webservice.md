@@ -33,7 +33,7 @@
 
 ## 
 
-This webservice allows to create a new idibu account, amend its password and control the available services. It also allows setting up a simple webhook for whenever a new candidate arrives on the account. 
+This webservice allows to create a new idibu account, amend its password, as well as list and control the available services. It also allows setting up a simple webhook for whenever a new candidate arrives on the account.
 
 **The webservice applies to full client (admin) accounts only**. If you wish to manage users under a certain account, please use the [User Management Webservice](https://github.com/oneworldmarket/idibu-api/tree/master/webservices/user-management).
 
