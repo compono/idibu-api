@@ -39,25 +39,18 @@ Returns Jobs that are not live anymore - with Adverts either automatically expir
 Returns Jobs that will expire in `[n]` days or sooner (`[n]` can be negative for Jobs that have already expired up to `[n]` days ago).
 
 ### Query parameters
-<details>
- <summary><i>Click to expand</i></summary>
- 
 Parameter Name | Type restrictions | Required? | Notes
 -- | -- | -- | --
 `hash` | **String** | **Yes** | Hash of the idibu account to which the request pertains.
-`count` | **Integer**<br/><br/>Min: 1<br/>Max: 100<br/>Default: 10 | No | Number of jobs to return.
-`offset` | **Integer**<br/><br/>Min: 0<br/>Default: 0 | No | Numeric offset from where to start fetching jobs.
-`order` | **String (enum)**<br/><br/>Default: `update-desc`<br/><br/>Accepted values:<br/><code>update-desc</code> - Last Posted<br/><code>update-desc</code> - First Posted<br/><code>date-desc</code> - Date Added (desc)<br/><code>date-asc</code> - Date Added (asc)<br/><code>title-asc</code> - By Title (asc)<br/><code>title-desc</code> - By Title (desc) | No | How the jobs should be ordered in the response.<br/>Consult [this article](https://v2-docs.idibu.com/article/106-admanager-view-order-options) for more info.
-`reference` | **String** | No | Returns only jobs with Reference containing the provided string.
-`sender` | **Integer** | No | Returns only jobs belonging to the given user.
-`title` | **String** | No | Returns only jobs with Title containing the provided string.
-`title-or-reference` | **String** | No | Returns only jobs with Reference or Title containing the provided string.
-</details>
+`count` | **Integer**<br/><br/>Min: 1<br/>Max: 100<br/>Default: 10 | No | Number of Jobs to return.
+`offset` | **Integer**<br/><br/>Min: 0<br/>Default: 0 | No | Numeric offset from where to start fetching Jobs.
+`order` | **String (enum)**<br/><br/>Default: `update-desc`<br/><br/>Accepted values:<br/><code>update-desc</code> - Last Posted<br/><code>update-desc</code> - First Posted<br/><code>date-desc</code> - Date Added (desc)<br/><code>date-asc</code> - Date Added (asc)<br/><code>title-asc</code> - By Title (asc)<br/><code>title-desc</code> - By Title (desc) | No | How the Jobs should be ordered in the response.<br/>Consult [this article](https://v2-docs.idibu.com/article/106-admanager-view-order-options) for more info.
+`reference` | **String** | No | Returns only Jobs with Reference containing the provided string.
+`sender` | **Integer** | No | Returns only Jobs belonging to the user with the provided ID.<br/>Refer to the [User Management Webservice](https://github.com/oneworldmarket/idibu-api/tree/master/webservices/user-management).
+`title` | **String** | No | Returns only Jobs with Title containing the provided string.
+`title-or-reference` | **String** | No | Returns only Jobs with Reference or Title containing the provided string.
 
 ### Response format
-<details>
-  <summary><i>Click to expand</i></summary>
- 
 ```xml
 <job>
   <id>[integer]</id> <!-- job id -->
@@ -116,33 +109,25 @@ Parameter Name | Type restrictions | Required? | Notes
   </postings>
 </job>
 ```
-</details>
 
 ---
 
 ## Job's detailed view
-This method allows to obtain more detailed information about a particular job. The response format is the same as for [Listing Jobs](#listing-jobs) but `description` and a list of `postings` are added.
+This method allows to obtain more detailed information about a particular Job. The response format is the same as for [Listing Jobs](#listing-jobs) but `description` and a list of `postings` are added.
 
 ### Endpoint
 #### `https://ws.idibu.com/ws/rest/v1/jobs`
 
 ### Available methods
 #### `GET /[id]`
-Returns the detailed view of the job with the provided `[id]`.
+Returns the detailed view of the Job with the provided `[id]`.
 
 ### Query parameters
-<details>
-  <summary><i>Click to expand</i></summary>
- 
 Parameter Name | Type restrictions | Required? | Notes
 -- | -- | -- | --
 `hash` | **String** | **Yes** | Hash of the idibu account to which the request pertains.
-</details>
 
 ### Response format
-<details>
-  <summary><i>Click to expand</i></summary>
- 
 ```xml
 <job>
   <id>[integer]</id> <!-- job id -->
@@ -214,4 +199,3 @@ Parameter Name | Type restrictions | Required? | Notes
   </postings>
 </job>
 ```
-</details>
