@@ -36,7 +36,7 @@ Returns all currently live Jobs - with Adverts still present on their respective
 Returns Jobs that are not live anymore - with Adverts either automatically expired or manually deleted from their respective posting destinations.
 
 #### `GET /[n]/days-expiring`
-Returns jobs that will expire in `[n]` days or sooner (`[n]` can be negative for jobs that have already expired up to `[n]` days ago).
+Returns Jobs that will expire in `[n]` days or sooner (`[n]` can be negative for Jobs that have already expired up to `[n]` days ago).
 
 ### Query parameters
 <details>
