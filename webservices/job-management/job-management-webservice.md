@@ -111,6 +111,7 @@ Parameter Name | Type restrictions | Required? | Notes
         </portals>
       </job>
     </jobs>
+    <total>[integer]</total> <!-- total number of jobs matching the current criteria (excluding count and offset) -->
   </response>
   <status>["success"|"failed"]</status> <!-- whether the request succeeded or not -->
 </idibu>
