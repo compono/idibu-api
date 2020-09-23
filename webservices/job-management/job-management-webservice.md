@@ -194,13 +194,12 @@ Parameter Name | Type restrictions | Required? | Notes
         </portal>
       </portals>
       <postings>
-        <!-- detailed list of postings (PostLogs) - only in detail view -->
+        <!-- detailed list of postings (PostLogs) -->
         <posting>
           <id>[integer]</id> <!-- PostLog id -->
-          <date>[string:date]</date> <!-- posting date; YYYY-MM-DD HH:mm:ss -->
           <portal>[integer]</portal> <!-- portal id -->
-          <start_post>2019-04-18 16:11:08</start_post> <!-- posting date; YYYY-MM-DD HH:mm:ss -->
-          <stop_post>2019-05-16 23:59:00</stop_post> <!-- intended expiry date; YYYY-MM-DD HH:mm:ss -->
+          <start_post>[string:date]</start_post> <!-- posting date; YYYY-MM-DD HH:mm:ss -->
+          <stop_post>[string:date]</stop_post> <!-- intended expiry date; YYYY-MM-DD HH:mm:ss -->
           <status>["posted"|"updated"|"deleted"|"failed"]</status> <!-- posting status -->
           <link>[string:url]</link> <!-- URL of the posting on the portal (if supported by the portal) -->
         </posting>
