@@ -109,10 +109,10 @@ Parameter Name | Type restrictions | Required? | Notes
             <applicants>[integer]</applicants> <!-- applicant count on the portal -->
           </portal>
         </portals>
-      </postings>
-    </job>
-  </jobs>
-</response>
+      </job>
+    </jobs>
+  </response>
+  <status>["success"|"failed"]</status> <!-- whether the request succeeded or not -->
 ```
 
 ---
@@ -205,4 +205,5 @@ Parameter Name | Type restrictions | Required? | Notes
       </postings>
     </job>
   </response>
+  <status>["success"|"failed"]</status> <!-- whether the request succeeded or not -->
 ```
