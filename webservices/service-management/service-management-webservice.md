@@ -67,7 +67,7 @@ Parameter Name | Type restrictions | Required? | Notes
   <email>[string:email]</email> <!-- admin user's email address -->
   <phone>[string:phone]</phone> <!-- admin user's phone number -->
   <company-name>[string]</company-name> <!-- account's company name -->
-  <user-number>[integer]</user-number> <!-- deprecated, please default to 100 -->
+  <user-number>[integer]</user-number> <!-- deprecated, please default to 0 -->
   <renewal-date>[string:date]</renewal-date> <!-- deprecated, please default to 20 years in the future; format: YYYY-MM-DD -->
 </idibu>
 ```
