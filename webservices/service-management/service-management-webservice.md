@@ -60,12 +60,12 @@ Parameter Name | Type restrictions | Required? | Notes
 <idibu>
   <partner-password>[string]</partner-password> <!-- partner password provided to you by idibu -->
   <exempt-id>[integer]</exempt-id> <!-- partner id provided to you by idibu -->
+  <username>[string]</username> <!-- login username; max 32 characters -->
+  <password>[string]</password> <!-- login password; max 32 characters -->
   <firstname>[string]</firstname> <!-- admin user's first name -->
   <lastname>[string]</lastname> <!-- admin user's last name -->
   <email>[string:email]</email> <!-- admin user's email address -->
   <phone>[string:phone]</phone> <!-- admin user's phone number -->
-  <username>[string]</username> <!-- login username; max 32 characters -->
-  <password>[string]</password> <!-- login password; max 32 characters -->
   <company-name>[string]</company-name> <!-- account's company name -->
   <user-number>[integer]</user-number> <!-- deprecated, please default to 100 -->
   <renewal-date>[string:date]</renewal-date> <!-- deprecated, please default to 20 years in the future; format: YYYY-MM-DD -->
