@@ -131,7 +131,7 @@ Parameter Name | Type restrictions | Required? | Notes
 ## Listing services
 This method allows to list services currently enabled on an account.
 
-Available services are tied to your license agreement. **Please discuss with your idibu representative to find out which you should enable for your accounts.**
+Available services are tied to your license agreement. **Please discuss with your idibu representative to find out which you can enable for your accounts.**
 
 ### Endpoint
 #### `https://ws.idibu.com/ws/rest/v1/service`
