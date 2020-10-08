@@ -74,7 +74,7 @@ http://ws.idibu.com/ws/rest/v1/users/485?hash=<your hash>
 
 <h1>
 	Updating user information</h1>
-<p>To update user information need to pass xml of the same format as in response to the GET request in data parameter. Any field or block can be omited, pass in the xml only those fields which you need update.</p>
+<p>To update user information need to pass xml of the same format as in response to the GET request in data parameter. Any field or block can be omited, pass in the xml only those fields which you need update. You can send both login and password fields empty to remove the user's login.</p>
 <h2>
 	Example</h2>
 <h3>
