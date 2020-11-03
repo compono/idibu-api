@@ -92,8 +92,8 @@
 				<td>
 					text (Values: warning / fail - Defaults to &quot;warning&quot;)</td>
 				<td>
-					Determines whether the system will fail in case of non-crtitical warnings.<br />
-					&nbsp;</td>
+					Determines whether the system rejects the posting if validators are violated (fail) or if only warnings are returned (warning).<br />
+					Refer to the <code>&lt;validators&gt;</code> section of <a href="https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/spec-data.md" target="_blank">Posting Destinations Specific Data</a></td>
 			</tr>
 			<tr valign="TOP">
 				<td>
