@@ -1,3 +1,8 @@
+_**This document is outdated. Please refer to the new version [HERE](https://github.com/oneworldmarket/idibu-api/blob/master/webservices/advert-management/advert-management-webservice.md).**_
+
+<details>
+ <summary><i>Show me anyway</i></summary>
+
 <p>Method returns detailed advert posting logs information for given post id. The information is not unified and is unique per job board. Post Id can be obtained via <a href="https://github.com/oneworldmarket/idibu-api/blob/master/webservices/advert-management/get-individual-ad-details.md" target="_blank">ad details ws</a>.</p>
 <h2>
 	Request</h2>
@@ -93,3 +98,5 @@ JobID=1234567
 
 
 </code></pre>
+
+</details>
