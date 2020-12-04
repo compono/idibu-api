@@ -1,3 +1,8 @@
+_**This document is outdated. Please refer to the new version [HERE](https://github.com/oneworldmarket/idibu-api/blob/master/webservices/advert-management/advert-management-webservice.md).**_
+
+<details>
+ <summary><i>Show me anyway</i></summary>
+
 <p>When you post advert using Adpost service - it returns response like this:</p>
 <p>&nbsp;</p>
 <pre wrap="">
@@ -79,3 +84,5 @@
 	&lt;status&gt;success&lt;/status&gt;
 &lt;/idibu&gt;
 </code></pre>
+
+</details>
