@@ -1,3 +1,8 @@
+_**This document is outdated. Please refer to the new version [HERE](https://github.com/oneworldmarket/idibu-api/blob/master/webservices/advert-management/advert-management-webservice.md).**_
+
+<details>
+ <summary><i>Show me anyway</i></summary>
+	
 <p>Method returns all archived/deleted adverts for client</p>
 <h1>
 	Parameters</h1>
@@ -419,3 +424,5 @@
     &lt;status&gt;success&lt;/status&gt;
 &lt;/idibu&gt;
 </code></pre>
+
+</details>
