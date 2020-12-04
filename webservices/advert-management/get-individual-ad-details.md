@@ -1,3 +1,8 @@
+_**This document is outdated. Please refer to the new version [HERE](https://github.com/oneworldmarket/idibu-api/blob/master/webservices/advert-management/advert-management-webservice.md).**_
+
+<details>
+ <summary><i>Show me anyway</i></summary>
+
 <p>Method returns detailed advert information for given advert id</p>
 <h1>Parameters</h1>
 <table cellpadding="2" cellspacing="0" class="t1" width="1099.0">
@@ -237,3 +242,4 @@ http://ws.idibu.com/ws/rest/v1/adverts/123?hash=<your hash>&format=live
 &lt;status&gt;success&lt;/status&gt;
 &lt;/idibu&gt;
 </code></pre>
+<details>
