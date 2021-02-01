@@ -6,7 +6,14 @@
 <ul>
 	<li>Make sure you post the data as <code>application/x-www-form-urlencoded</code> type.</lie>
 	<li>Please use the UTF-8 encoding and always set the appropriate configuration tag (<code>&lt;utf8_enable&gt;yes&lt;/utf8_enable&gt;</code> sub-tag, <a href="https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/vars.md" target="_blank">as per the documentation</a>).</li>
-	<li>Preferably, please use HTML formatting and, even if you don't support it, please always send <code>&lt;br/&gt;</code> tags instead of plain-text newlines</li>
+	<li>Preferably, please use HTML formatting and, even if you don't support it, please always send <code>&lt;br/&gt;</code> tags instead of plain-text newlines.<br/>Although our system will pass whatever is provided over to the job boards, it is suggested to only use basic HTML as many websites won't accept more detailed formatting. Preferably, when sending the data, please stick to the following tags and avoid additional styling parameters:
+	<ul><li><code>br</code></li>
+	<li><code>p</code></li>
+	<li><code>strong</code></li>
+	<li><code>i</code></li>
+	<li><code>ul</code></li>
+	<li><code>ol</code></li>
+	<li><code>li</code></li></ul></li>
 	<li>For any free-text fields, use CDATA.</li>
 	<li>You can see an XML with special characters and their correct encoding in the <a href="https://github.com/oneworldmarket/idibu-api/tree/master/posting-api/examples">XML examples section</a>.</li>
 </ul>
