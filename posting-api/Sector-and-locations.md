@@ -75,7 +75,7 @@
 <img src = "http://www.idibu.com/images/stories/Portal_logos/lookup_graphic.png" /><br /><br />
 The top dropdown is a static country list, whereas the other field is a look-up field that queries idibu location API as the text is typed in.</p>
 <h1><strong>Country codes</strong></h1>
-To make a correct call, you will have to call a location within a country represented by one of the following country codes:
+To make a correct call, you will have to call a location within a country represented by one of the following country codes:<br/>
 
 | code | Country name |
 |---|---|
