@@ -55,8 +55,7 @@
 <tr><td>2812</td><td>Utilities</td></tr>
 </tbody></table>
 <p><a href="http://www.idibu.com/clients/api/idibu_sector_list.xls">Download the idibu sector list in XLS format</a>.</p>
-<h1>
-	Locations</h1>
+<h1>Locations</h1>
 <p>idibu now has a global location system which means the amount of location possibilities are huge.</p>
 <p>This is a method to call details on specific location. The data returned can be fed up to idibu&#39;s posting API, to identify the proper location you wish to post to.</p>
 <h1>
@@ -75,7 +74,7 @@
 <img src = "http://www.idibu.com/images/stories/Portal_logos/lookup_graphic.png" /><br /><br />
 The top dropdown is a static country list, whereas the other field is a look-up field that queries idibu location API as the text is typed in.</p>
 <h1><strong>Country codes</strong></h1>
-To make a correct call, you will have to call a location within a country represented by one of the following country codes:<br/>
+<p>To make a correct call, you will have to call a location within a country represented by one of the following country codes:</p>
 
 | code | Country name |
 |---|---|
