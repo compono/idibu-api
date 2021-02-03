@@ -1,5 +1,4 @@
-<h1>
-	Sectors</h1>
+<h1>Sectors</h1>
 <p>The sectors for idibu are fixed to this current list:</p>
 <table>
 <thead><tr><th>ID</th><th>Sector</th></tr></thead>
@@ -62,19 +61,19 @@
 <p>This is a method to call details on specific location. The data returned can be fed up to idibu&#39;s posting API, to identify the proper location you wish to post to.</p>
 <h1>
 	<strong>Parameters</strong></h1>
-<p>filter_name - Name or part of the of the location you are looking for<br />
-	count - maximal number of results</p>
+<p><code>filter_name</code> - Name or part of the name of the location you are looking for<br />
+<code>count>/code> - maximum number of results</p>
 <h1>
 	<strong>Considerations</strong></h1>
 <p>When building code that will call location webservice, please take into account the following:<br />
 	<br />
-	- Your location program should call the webservice with a location string and return a list of locations to choose from before posting. <strong>The country code will be your location id </strong>and <strong>the id returned by the web-service should be used as sublocation id</strong>. The list of county codes can be found below.<br />
-	- One location can have duplicate entries in the same county/state due to different post codes. It is worth to display only one entry for specific county/state<br />
-	- To correctly identify duplicates that are different locations (towns) please take the state/county tag for consideration. County tag can be found in UK and Ireland, while state is an additional tag for USA.<br />
-	- Some locations may have up to 15 legitimate duplicates all over the country. Make sure your program is ready for that.<br />
+	- Your software should call the webservice with a location string and return a list of locations to choose from before posting. <strong>The country code will be your location id</strong> and <strong>the id returned by the web-service should be used as sublocation id</strong>. The list of county codes can be found below.<br />
+	- One location can have duplicate entries in the same county/state due to different post codes.<br />
+	- To correctly identify duplicates that are different locations (towns), please take the state/county tag into consideration. County tag can be found in UK and Ireland, while state is an additional tag for USA.<br />
+	- Some locations may have up to 15 legitimate duplicates all over the country. Make sure your software is ready to handle that.<br />
 	- We suggest you build a location look-up field in your application that emulates idibu's behaviour: <br><br>
 <img src = "http://www.idibu.com/images/stories/Portal_logos/lookup_graphic.png" /><br /><br />
-The top dropdown is a static country list, whereas the other field is a look-up field that queries idibu location API after each typed in letter.</p><br /><br />
+The top dropdown is a static country list, whereas the other field is a look-up field that queries idibu location API as the text is typed in.</p><br /><br />
 <h1>
 	<strong>Country codes</strong></h1>
 <h3>To make a correct call, you will have to call a location within a country represented by one of the following country codes:</h3>
@@ -151,6 +150,7 @@ GET http://ws.idibu.com/ws/rest/v1/locations/<COUNTRY CODE HERE>/find?hash=<CLIE
 ```
 
 <h3><strong>Example</strong></h3>
+
 ```
 GET http://ws.idibu.com/ws/rest/v1/locations/GB/find?hash=<CLIENT HASH HERE>&filter_name=london&count=1
 ```
@@ -178,4 +178,4 @@ GET http://ws.idibu.com/ws/rest/v1/locations/GB/find?hash=<CLIENT HASH HERE>&fil
 <status>success</status>
 </idibu>
 ```
-<a href="https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/spec-data.md"> Click here to find about board specific tags</a>
+<a href="https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/spec-data.md">Click here to explore board specific tags</a>
