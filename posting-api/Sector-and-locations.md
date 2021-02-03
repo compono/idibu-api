@@ -61,8 +61,8 @@
 <p>This is a method to call details on specific location. The data returned can be fed up to idibu&#39;s posting API, to identify the proper location you wish to post to.</p>
 <h1>
 	<strong>Parameters</strong></h1>
-<p><code>filter_name</code> - Name or part of the name of the location you are looking for<br />
-<code>count</code> - maximum number of results</p>
+<p><code>filter_name</code> - Name or part of the name of the location you are looking for. This will search for the <code>place_name</code> and <code>postal_code</code> (see the example response below).<br />
+<code>count</code> - Maximum number of results.</p>
 <h1>
 	<strong>Considerations</strong></h1>
 <p>When building code that will call location webservice, please take into account the following:<br />
@@ -73,9 +73,8 @@
 	- Some locations may have up to 15 legitimate duplicates all over the country. Make sure your software is ready to handle that.<br />
 	- We suggest you build a location look-up field in your application that emulates idibu's behaviour: <br><br>
 <img src = "http://www.idibu.com/images/stories/Portal_logos/lookup_graphic.png" /><br /><br />
-The top dropdown is a static country list, whereas the other field is a look-up field that queries idibu location API as the text is typed in.</p><br /><br />
-<h1>
-	<strong>Country codes</strong></h1>
+The top dropdown is a static country list, whereas the other field is a look-up field that queries idibu location API as the text is typed in.</p>
+<h1><strong>Country codes</strong></h1>
 <h3>To make a correct call, you will have to call a location within a country represented by one of the following country codes:</h3>
 
 | code | Country name |
