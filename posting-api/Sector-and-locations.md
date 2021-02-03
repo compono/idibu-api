@@ -62,7 +62,7 @@
 <h1>
 	<strong>Parameters</strong></h1>
 <p><code>filter_name</code> - Name or part of the name of the location you are looking for<br />
-<code>count>/code> - maximum number of results</p>
+<code>count</code> - maximum number of results</p>
 <h1>
 	<strong>Considerations</strong></h1>
 <p>When building code that will call location webservice, please take into account the following:<br />
