@@ -130,6 +130,7 @@ The top dropdown is a static country list, whereas the other field is a look-up 
 | PR | Puerto Rico |
 | PT | Portugal |
 | QA | Qatar |
+| SA | Saudi Arabia |
 | SI | Singapore |
 | SM | San Marino |
 | TH | Thailand |
