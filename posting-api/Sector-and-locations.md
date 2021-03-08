@@ -125,6 +125,7 @@ The top dropdown is a static country list, whereas the other field is a look-up 
 | NL | Netherlands |
 | NO | Norway |
 | NZ | New Zealand |
+| OM | Oman |
 | PK | Pakistan |
 | PM | St. Pierre and Miquelon |
 | PR | Puerto Rico |
@@ -133,6 +134,7 @@ The top dropdown is a static country list, whereas the other field is a look-up 
 | SA | Saudi Arabia |
 | SI | Singapore |
 | SM | San Marino |
+| SE | Sweden |
 | TH | Thailand |
 | TR | Turkey |
 | UE | United Arab Emirates |
