@@ -78,71 +78,100 @@ The top dropdown is a static country list, whereas the other field is a look-up 
 
 | code | Country name |
 |---|---|
-| GB | United Kingdom |
-| US | United States |
 | AD | Andorra |
 | AN | Angola |
 | AR | Argentina |
-| AT | Austria |
 | AU | Australia |
+| AT | Austria |
+| BD | Bangladesh |
 | BB | Barbados |
 | BE | Belgium |
-| BG | Bulgaria |
+| BM | Bermuda |
 | BR | Brazil |
+| BN | Brunei |
+| BG | Bulgaria |
 | CA | Canada |
-| CH | Switzerland |
+| GG | Channel Islands |
 | CN | China |
-| DE | Germany |
+| CO | Colombia |
+| HR | Croatia |
+| CZ | Czech Republic |
 | DM | Denmark |
 | EG | Egypt |
-| ES | Spain |
+| GQ | Equatorial Guinea |
 | FO | Faroe Islands |
 | FR | France |
-| GG | Channel Islands |
+| GA | Gabon |
+| DE | Germany |
+| GH | Ghana |
+| GR | Greece |
 | GP | Guadeloupe |
 | GU | Guam |
 | HK | Hong Kong |
-| HR | Croatia |
+| HU | Hungary |
+| IN | India |
 | ID | Indonesia |
+| IQ | Iraq |
 | IE | Ireland |
 | IM | Isle of Man |
-| IN | India |
 | IT | Italy |
-| JE | Jersey |
 | JP | Japan |
+| JE | Jersey |
+| JO | Jordan |
+| LY | Libya |
 | LI | Liechtenstein |
-| LK | Sri Lanka |
 | LU | Luxembourg |
-| MA | Malta |
-| MC | Monaco |
-| MD | Moldova |
-| MH | Marshall Islands |
 | MK | Macedonia |
-| MP | Northern Mariana Islands |
-| MQ | Martinique |
-| MX | Mexico |
 | MY | Malaysia |
+| MA | Malta |
+| MH | Marshall Islands |
+| MQ | Martinique |
+| YT | Mayotte |
+| MX | Mexico |
+| MD | Moldova |
+| MC | Monaco |
+| MZ | Mozambique |
+| MM | Myanmar |
+| NA | Namibia |
 | NL | Netherlands |
-| NO | Norway |
 | NZ | New Zealand |
+| NG | Nigeria |
+| MP | Northern Mariana Islands |
+| NO | Norway |
 | OM | Oman |
 | PK | Pakistan |
-| PM | St. Pierre and Miquelon |
-| PR | Puerto Rico |
+| PE | Peru |
+| PL | Poland |
 | PT | Portugal |
+| PR | Puerto Rico |
 | QA | Qatar |
-| SA | Saudi Arabia |
-| SI | Singapore |
+| RE | Reunion |
+| RO | Romania |
+| RU | Russia |
 | SM | San Marino |
+| SA | Saudi Arabia |
+| RU | Serbia |
+| SI | Singapore |
+| ZA | South Africa |
+| KR | South Korea |
+| ES | Spain |
+| LK | Sri Lanka |
+| PM | St. Pierre and Miquelon |
 | SE | Sweden |
+| CH | Switzerland |
+| TW | Taiwan |
+| TZ | Tanzania |
 | TH | Thailand |
+| TN | Tunisia |
 | TR | Turkey |
 | UE | United Arab Emirates |
-| VA | Vatican City |
+| GB | United Kingdom |
+| US | United States |
+| VA | Vatican City (Holy See) |
+| VE | Venezuela |
+| VN | Vietnam |
 | VI | Virgin Islands (U.S.) |
-| YT | Mayotte |
-| ZA | South Africa |
-| ZZ | Rest of the world (Other countries) |
+| ZZ | Rest of the world (other countries) |
 
 <h2><strong>Request</strong></h2>
 
