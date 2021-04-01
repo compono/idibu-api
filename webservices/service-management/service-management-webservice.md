@@ -233,8 +233,6 @@ Parameter Name | Type restrictions | Required? | Notes
 ### Query format
 ```xml
 <idibu>
-  <partner-password>[string]</partner-password> <!-- partner password provided to you by idibu -->
-  <exempt-id>[integer]</exempt-id> <!-- partner id provided to you by idibu -->
   <client-hash>[string]</client-hash> <!-- hash of the idibu account to which the request pertains -->
   <aptrack-ping-url>[string:url]</aptrack-ping-url> <!-- URL to which the data will be sent; send empty to remove -->
 </idibu>
