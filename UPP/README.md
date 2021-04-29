@@ -38,7 +38,7 @@ Just <a href="mailto:good@idibu.com">contact us</a> to become a partner and we'l
 <ul>
 <li>boards - list of board ID's to publish to, separated by semicolons (e.g. 37;151;123)</li>
 <li>jobTitle - job title (e.g. A%20test%20title)</li>
-<li>jobRef - job reference (e.g. REF123)</li>
+<li>jobRef - job reference (e.g. REF123) - minimum 4 characters</li>
 <li>startDate &ndash; job start date in yyyy-mm-dd format with leading zeroes (e.g. 2013-06-25)</li>
 <li>category - ID of selected category (available options listed below, e.g. 13)</li>
 <li>location - ID of selected location (available options listed below, e.g. GB)</li>
