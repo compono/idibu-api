@@ -77,7 +77,7 @@ Parameter Name | Type restrictions | Required? | Notes
         <delete_log>[integer]</delete_log> <!-- indicates if the advert has been deleted (1) or not (0) -->
         <creation_date>[string:date]</creation_date> <!-- advert's creation date; YYYY-MM-DD HH:mm:ss -->
         <expiry_date>[string:date]</expiry_date> <!-- date the advert expires or was deleted; YYYY-MM-DD HH:mm:ss -->
-        <sender> <!-- refer to https://github.com/oneworldmarket/idibu-api/tree/master/webservices/user-management -->
+      <sender> <!-- refer to https://github.com/oneworldmarket/idibu-api/tree/master/webservices/user-management -->
         <id>[integer]</id> <!-- sender's profile id -->
         <firstname>[string]</firstname> <!-- sender's first name -->
         <lastname>[string]</lastname> <!-- sender's last name -->
