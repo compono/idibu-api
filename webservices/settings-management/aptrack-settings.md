@@ -1,164 +1,158 @@
-<p>Method gets or sets aptrack settings for an account</p>
-<h1>
-	Parameters</h1>
-<p>No additional parameters for this request</p>
-<h1>
-	Example of getting settings</h1>
-<h2>
-	Request</h2>
-<pre>
-<code>
-http://ws.idibu.com/ws/rest/v1/settings/aptrack?hash=<your hash>
-</code></pre>
-<h2>
-	Response</h2>
-<pre>
-<code type="xml">
-&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf8&quot;?&gt;
-&lt;idibu generator=&quot;idibu&quot; version=&quot;1.0&quot;&gt;
-  &lt;response&gt;
-    &lt;users-can-see-aptrack&gt;yes&lt;/users-can-see-aptrack&gt;
-    &lt;statuses&gt;
-      &lt;status&gt;
-        &lt;extra-id&gt;&lt;/extra-id&gt;
-        &lt;order&gt;&lt;/order&gt;
-        &lt;name&gt;Rejected&lt;/name&gt;
-        &lt;label&gt;Declined&lt;/label&gt;
-        &lt;enabled&gt;no&lt;/enabled&gt;
-        &lt;group&gt;general&lt;/group&gt;
-        &lt;forward-cv&gt;no&lt;/forward-cv&gt;
-        &lt;has-responder&gt;no&lt;/has-responder&gt;
-        &lt;responder&gt;
-          &lt;subject&gt;&lt;/subject&gt;
-        &lt;/responder&gt;
-      &lt;/status&gt;
-      &lt;status&gt;
-        &lt;label&gt;Declined&lt;/label&gt;
-      &lt;/status&gt;
-      &lt;status&gt;
-        &lt;extra-id&gt;15&lt;/extra-id&gt;
-        &lt;order&gt;1&lt;/order&gt;
-        &lt;name&gt;Keep on File&lt;/name&gt;
-        &lt;label&gt;Keep on File&lt;/label&gt;
-        &lt;enabled&gt;yes&lt;/enabled&gt;
-        &lt;group&gt;star&lt;/group&gt;
-        &lt;forward-cv&gt;yes&lt;/forward-cv&gt;
-        &lt;has-responder&gt;no&lt;/has-responder&gt;
-        &lt;responder&gt;
-          &lt;subject&gt;&lt;/subject&gt;
-        &lt;/responder&gt;
-      &lt;/status&gt;
-      &lt;status&gt;
-        &lt;extra-id&gt;14&lt;/extra-id&gt;
-        &lt;order&gt;1&lt;/order&gt;
-        &lt;name&gt;Invite in for Interview&lt;/name&gt;
-        &lt;label&gt;Invite in for Interview&lt;/label&gt;
-        &lt;enabled&gt;yes&lt;/enabled&gt;
-        &lt;group&gt;green&lt;/group&gt;
-        &lt;forward-cv&gt;yes&lt;/forward-cv&gt;
-        &lt;has-responder&gt;yes&lt;/has-responder&gt;
-        &lt;responder&gt;
-          &lt;subject&gt;Please come in for an interview&lt;/subject&gt;&amp;lt;p&amp;gt;Some stuff here&amp;amp;nbsp;[JOB_TITLE]&amp;lt;/p&amp;gt;
-        &lt;/responder&gt;
-      &lt;/status&gt;
-      &lt;status&gt;
-        &lt;extra-id&gt;16&lt;/extra-id&gt;
-        &lt;order&gt;1&lt;/order&gt;
-        &lt;name&gt;test&lt;/name&gt;
-        &lt;label&gt;test&lt;/label&gt;
-        &lt;enabled&gt;no&lt;/enabled&gt;
-        &lt;group&gt;green&lt;/group&gt;
-        &lt;forward-cv&gt;yes&lt;/forward-cv&gt;
-        &lt;has-responder&gt;no&lt;/has-responder&gt;
-        &lt;responder&gt;
-          &lt;subject&gt;&lt;/subject&gt;
-        &lt;/responder&gt;
-      &lt;/status&gt;
-      &lt;status&gt;
-        &lt;extra-id&gt;17&lt;/extra-id&gt;
-        &lt;order&gt;1&lt;/order&gt;
-        &lt;name&gt;changed status :)&lt;/name&gt;
-        &lt;label&gt;changed status :)&lt;/label&gt;
-        &lt;enabled&gt;no&lt;/enabled&gt;
-        &lt;group&gt;green&lt;/group&gt;
-        &lt;forward-cv&gt;no&lt;/forward-cv&gt;
-        &lt;has-responder&gt;no&lt;/has-responder&gt;
-        &lt;responder&gt;
-          &lt;subject&gt;&lt;/subject&gt;
-        &lt;/responder&gt;
-      &lt;/status&gt;
-    &lt;/statuses&gt;
-    &lt;disable-duplicate&gt;no&lt;/disable-duplicate&gt;
-    &lt;auto-responders&gt;
-      &lt;receive&gt;
-        &lt;subject&gt;test&lt;/subject&gt;[APPLICANT_NAME]
-      &lt;/receive&gt;
-      &lt;reject&gt;
-        &lt;subject&gt;Sorry, you were rejected&lt;/subject&gt;test2
-      &lt;/reject&gt;
-    &lt;/auto-responders&gt;
-    &lt;forward&gt;
-      &lt;immediately&gt;teams&lt;/immediately&gt;
-      &lt;held-in-aptrack-forward-to&gt;sender&lt;/held-in-aptrack-forward-to&gt;
-      &lt;teams&gt;
-    &lt;/teams&gt;&lt;/forward&gt;
-    &lt;block-extensions&gt;gif,png,jpg,jpeg,tif,tiff,exe,pdf&lt;/block-extensions&gt;
-  &lt;/response&gt;
-  &lt;status&gt;success&lt;/status&gt;
-&lt;/idibu&gt;
-</code></pre>
-<h1>
-	Example of setting settings</h1>
-<p><b>Please note</b>, that for base system statuses (where extra-id is not set, usualy only Rejected) in order to change them you have to provide status name, for extended (custom) statuses in order to change them you have to provide extra-id. Also, for base statuses you can change only label and disable it or enable. For extended statuses by changing their label you&#39;re also changing status name. Value of tag &#39;group&#39; can be one of these values: &#39;green&#39;, &#39;yellow&#39;, &#39;red&#39;, &#39;orange&#39;, &#39;blue&#39;, &#39;star&#39;. To create a new custom status just set extra-id to 0 and fill needed fields.</p>
-<p>For forwarding rules value of tag &#39;immediately&#39; can be one of these values: &#39;yes&#39;, &#39;no&#39;, &#39;teams&#39;.</p>
-<h2>
-	Request</h2>
-<pre>
-<code>
+Method gets or sets aptrack settings for an account.
+
+## Parameters
+No additional parameters for this request
+
+## Example of getting settings
+### Request
+```
+GET http://ws.idibu.com/ws/rest/v1/settings/aptrack?hash=<your hash>
+```
+### Response
+```xml
+<idibu generator="idibu" version="1.0">
+  <response>
+    <users-can-see-aptrack>no</users-can-see-aptrack>
+    <statuses>
+      <status>
+        <extra-id>0</extra-id>
+        <order>0</order>
+        <name>Rejected</name>
+        <label>Rejected</label>
+        <enabled>yes</enabled>
+        <group>general</group>
+        <forward-cv>no</forward-cv>
+        <has-responder>no</has-responder>
+        <responder>
+          <subject/>
+          <body/>
+        </responder>
+      </status>
+      <status>
+        <extra-id>511</extra-id>
+        <order>0</order>
+        <name>Keep on file</name>
+        <label>Keep on file</label>
+        <enabled>no</enabled>
+        <group>blue</group>
+        <forward-cv>no</forward-cv>
+        <has-responder>no</has-responder>
+        <responder>
+          <subject/>
+          <body/>
+        </responder>
+      </status>
+      <status>
+        <extra-id>109</extra-id>
+        <order>1</order>
+        <name>Invite in for Interview</name>
+        <label>Invite in for Interview</label>
+        <enabled>no</enabled>
+        <group>green</group>
+        <forward-cv>yes</forward-cv>
+        <has-responder>no</has-responder>
+        <responder>
+          <subject/>
+          <body/>
+        </responder>
+      </status>
+      <status>
+        <extra-id>399</extra-id>
+        <order>1</order>
+        <name>Progress</name>
+        <label>Progress</label>
+        <enabled>yes</enabled>
+        <group>green</group>
+        <forward-cv>no</forward-cv>
+        <has-responder>yes</has-responder>
+        <responder>
+          <subject>You have been invited for an interview</subject>
+          <body><p><span>[\"Hello APPLICANT_NAME\" OR \"Dear candidate\"],<br /><br />once again, thank you for submitting your application for the position </span><span>[JOB_TITLE]. I am delighted to tell you that you have been selected to participate in the interview for this job!</span><br /> <span><br /> Please call me on&nbsp;[CONSULTANT_PHONE] to discuss further.<br /><br />Best regards,<br /><br />[CONSULTANT_NAME]<br /></span></p></body>
+        </responder>
+      </status>
+    </statuses>
+    <disable-duplicate>no</disable-duplicate>
+    <auto-responders>
+      <receive>
+        <subject>Thank you for applying</subject>
+        <body><p>{if $email.FROM_NAME eq \'No_name\' or $email.FROM_NAME eq $email.FROM_EMAIL}Dear candidate{else}Hi {$email.FROM_NAME}{/if},<br /><br />thank you for submitting your application for the position [JOB_TITLE]<em> (reference: [JOB_REFERENCE])</em>.<br /><br />Kind regards,<br /> <br /> [CONSULTANT_NAME]<br /> [CONSULTANT_EMAIL]<br />[CONSULTANT_PHONE]</p></body>
+      </receive>
+      <reject>
+        <subject>Your application has been rejected</subject>
+        <body>[\"Hi APPLICANT_NAME\" OR \"Dear candidate\"],<br /><br />unfortunately, our consultants decided that you are not suitable for this position.<br /><br />Best regards,<br /><br />[CONSULTANT_NAME]<br />[CONSULTANT_EMAIL]<br />[CONSULTANT_PHONE]</body>
+      </reject>
+    </auto-responders>
+    <forward>
+      <immediately>yes</immediately>
+      <held-in-aptrack-forward-to>test@example.com</held-in-aptrack-forward-to>
+      <teams/>
+    </forward>
+    <block-extensions>gif,jpg,jpeg,png,tif,tiff</block-extensions>
+  </response>
+  <status>success</status>
+</idibu>
+```
+
+## Example of setting settings
+- In order to change base system statuses (where `extra-id` is not set - usualy only `Rejected`), you need to provide the status name; in order to change extended (custom) statuses, you neext to provide the `extra-id`.
+- Also, for base statuses, you can only change the label and disable it or enable the status. For extended statuses, by changing their label you're also changing the status name. 
+- Value of `group` can be one of: `green`,`yellow`,`red`, `orange`, `blue`, `star`.
+- To create a new custom status, just set `extra-id` to 0 and fill in all the appropriate fields.
+- For forwarding rules, value of `immediately`; can be one of: `yes`, `no`, `teams`.
+
+### Request
+```
 POST http://ws.idibu.com/ws/rest/v1/settings/system?hash=<your hash>
-</code>
-<code type="xml">
-&lt;?xml version=&quot;1.0&quot;?&gt;
-&lt;idibu&gt;
-  &lt;users-can-see-aptrack&gt;yes&lt;/users-can-see-aptrack&gt;
-  &lt;disable-duplicate&gt;no&lt;/disable-duplicate&gt;
-  &lt;block-extensions&gt;gif,png,tif,tiff,jpg,exe,pdf&lt;/block-extensions&gt;
-  &lt;forward&gt;
-    &lt;immediately&gt;teams&lt;/immediately&gt;
-    &lt;held-in-aptrack-forward-to&gt;sender&lt;/held-in-aptrack-forward-to&gt;
-    &lt;teams&gt;&lt;/teams&gt;
-  &lt;/forward&gt;
-  &lt;auto-responders&gt;
-    &lt;receive&gt;
-      &lt;subject&gt;test&lt;/subject&gt;[APPLICANT_NAME]
-    &lt;/receive&gt;
-    &lt;reject&gt;test2
-    &lt;/reject&gt;
-  &lt;/auto-responders&gt;
-  &lt;statuses&gt;
-    &lt;status&gt;
-      &lt;extra-id&gt;17&lt;/extra-id&gt;
-      &lt;name&gt;changed status :)&lt;/name&gt;
-    &lt;/status&gt;
-    &lt;status&gt;
-      &lt;name&gt;Rejected&lt;/name&gt;
-      &lt;label&gt;Declined&lt;/label&gt;
-      &lt;enabled&gt;no&lt;/enabled&gt;
-    &lt;/status&gt;
-  &lt;/statuses&gt;
-&lt;/idibu&gt;
-&lt;/code&gt;
-&lt;/pre&gt;
-&lt;h2&gt;
-	Response&lt;/h2&gt;
-&lt;pre&gt;
-&lt;code type=&quot;xml&quot;&gt;
-&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf8&quot;?&gt;
-&lt;idibu generator=&quot;idibu&quot; version=&quot;1.0&quot;&gt;
-  &lt;response&gt;
-    &lt;message&gt;Settings updated&lt;/message&gt;
-  &lt;/response&gt;
-  &lt;status&gt;success&lt;/status&gt;
-&lt;/idibu&gt;
-</code>
-</pre>
+```
+```xml
+<?xml version="1.0" encoding="utf8"?>
+  <idibu>
+    <users-can-see-aptrack>no</users-can-see-aptrack>
+    <statuses>
+      <status>
+        <order>0</order>
+        <name>Rejected</name>
+        <label>Rejected</label>
+        <enabled>yes</enabled>
+        <group>general</group>
+        <forward-cv>no</forward-cv>
+        <has-responder>no</has-responder>
+        <responder>
+          <subject/>
+          <body/>
+        </responder>
+      </status>
+      <status>
+        <extra-id>511</extra-id>
+        <order>0</order>
+        <name>Keep on file</name>
+        <label>Keep on file</label>
+        <enabled>no</enabled>
+        <group>blue</group>
+        <forward-cv>no</forward-cv>
+        <has-responder>no</has-responder>
+        <responder>
+          <subject/>
+          <body/>
+        </responder>
+      </status>
+    </statuses>
+    <disable-duplicate>no</disable-duplicate>
+    <forward>
+      <immediately>yes</immediately>
+      <held-in-aptrack-forward-to>sender</held-in-aptrack-forward-to>
+      <teams/>
+    </forward>
+    <block-extensions>gif,jpg,jpeg,png,tif,tiff</block-extensions>
+</idibu>
+```
+### Response
+```xml
+<?xml version="1.0" encoding="utf8"?>
+<idibu generator="idibu" version="1.0">
+  <response>
+    <message>Settings updated</message>
+  </response>
+  <status>success</status>
+</idibu>
+```
