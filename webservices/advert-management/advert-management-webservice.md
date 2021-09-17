@@ -218,7 +218,7 @@ Parameter Name | Type restrictions | Required? | Notes
 ### Response format
 ```xml
 <idibu generator="idibu" version="1.0">
-  <response>
+  <response> <!-- empty response indicates no posts for the given pq-id; this can happen if the postings have been canceled before leaving the queue -->
     <portal> <!-- portal to which the advert was posted; refer to https://github.com/oneworldmarket/idibu-api/tree/master/webservices/portal-management -->
       <id>[integer]</id> <!-- portal id -->
       <url>[string:url]</url> <!-- website's URL -->
