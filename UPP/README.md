@@ -1,5 +1,5 @@
 <h1>What is UPP?</h1>
-<p>UPP stands for Universal Posting Page. Essentially it's a ready-to-go PHP page that provides you with all the tools you need to add idibu's posting engine to your own platform. All you need to do here is to style the page, but you can have posting working in your system within minutes!<br><br>
+<p>UPP stands for Universal Posting Page. Essentially it's a ready-to-go page that provides you with all the tools you need to add idibu's posting engine to your own platform. All you need to do here is to style the page, but you can have posting working in your system within minutes!<br><br>
 Once the UPP form is all filled and sent, the user will be asked to complete the posting by providing fields specific to chosen boards using <a href="https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/pcp.md" target="_blank" >post completion page.</a></p>
 <h1>How to use it?</h1></p>
 <p>Simply make a call to a link below with required parameters. To make it super smooth you will need to map a few idibu parameters with your own variables.</p>
