@@ -56,10 +56,10 @@ Parameter Name | Type restrictions | Required? | Notes
 -- | -- | -- | --
 `hash` | **String** | **Yes** | Hash of the idibu account to which the request pertains.
 `board` | **Integer** | No | Returns only Adverts posted to the Portal with the provided ID.<br/>Refer to the [Portal Management Webservice](https://github.com/oneworldmarket/idibu-api/tree/master/webservices/portal-management).
-`from_date` | **Date and time**<br/><br/>Format: `YYYY-MM-DD` or `YYYY-MM-DD HH:mm:ss` | No | Returns only Adverts posted at or after the specified time.
 `count` | **Integer**<br/><br/>Min: 1<br/>Max: 100<br/>Default: 10 | No | Number of Adverts to return.
+`from_date` | **Date and time**<br/><br/>Format: `YYYY-MM-DD` or `YYYY-MM-DD HH:mm:ss` | No | Returns only Adverts posted at or after the specified time.
 `job-id` | **Integer**<br/><br/>Multiple allowed, comma-separated | No | Returns only Adverts posted under Job(s) with the provided ID(s).<br/>Refer to the [Job Management Webservice](https://github.com/oneworldmarket/idibu-api/blob/master/webservices/job-management/job-management-webservice.md).
-`offset` | **Integer**<br/><br/>Min: 0<br/>Default: 0 | No | Numeric offset from where to start fetching Adverts.
+`offset` | **Integer**<br/><br/>Min: 0<br/>Default: 0 | No | Numeric offset from where to start fetching Adverts (pagination).
 `order` | **String (enum)**<br/><br/>Default: `date-desc`<br/><br/>Accepted values:<br/><code>date-desc</code> - Date Posted (desc)<br/><code>date-asc</code> - Date Posted (asc)<br/><code>title-asc</code> - By Title (asc)<br/><code>title-desc</code> - By Title (desc) | No | How the Adverts should be ordered in the response.
 `reference` | **String** | No | Returns only Adverts with Reference containing the provided string.
 `sender` | **Integer**<br/><br/>Multiple allowed, comma-separated | No | Returns only Adverts belonging to User(s) with the provided ID(s).<br/>Refer to the [User Management Webservice](https://github.com/oneworldmarket/idibu-api/tree/master/webservices/user-management).
