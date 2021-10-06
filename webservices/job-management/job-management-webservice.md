@@ -47,7 +47,7 @@ Parameter Name | Type restrictions | Required? | Notes
 `order` | **String (enum)**<br/><br/>Default: `update-desc`<br/><br/>Accepted values:<br/><code>update-desc</code> - Last Posted<br/><code>update-asc</code> - First Posted<br/><code>date-desc</code> - Date Added (desc)<br/><code>date-asc</code> - Date Added (asc)<br/><code>title-asc</code> - By Title (asc)<br/><code>title-desc</code> - By Title (desc) | No | How the Jobs should be ordered in the response.<br/>Consult [this article](https://v2-docs.idibu.com/article/106-admanager-view-order-options) for more info.
 `job-id` | **Integer**<br/><br/>Multiple allowed, comma-separated | No | Returns only Job(s) with the provided ID(s).<br/>You can also [get more details](#jobs-detailed-view) using that ID.
 `reference` | **String** | No | Returns only Jobs with Reference containing the provided string.
-`sender` | **Integer** | No | Returns only Jobs belonging to the User with the provided ID.<br/>Refer to the [User Management Webservice](https://github.com/oneworldmarket/idibu-api/tree/master/webservices/user-management).
+`sender` | **Integer**<br/><br/>Multiple allowed, comma-separated | No | Returns only Jobs belonging to User(s) with the provided ID(s).<br/>Refer to the [User Management Webservice](https://github.com/oneworldmarket/idibu-api/tree/master/webservices/user-management).
 `title` | **String** | No | Returns only Jobs with Title containing the provided string.
 `title-or-reference` | **String** | No | Returns only Jobs with Reference or Title containing the provided string.
 
