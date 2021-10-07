@@ -53,7 +53,7 @@ Creates a new account.
 Parameter Name | Type restrictions | Required? | Notes
 -- | -- | -- | --
 `idibupartner` | **String** | **Yes** | Must be set to `yes`.
-`data` | **String** | **Yes** | The full query XML (see the [Query format](#query-format) below).
+`data` | **String** | **Yes** | The full query XML (see the [Query format](#query-format) below), URL-encoded within the parameter.
 
 ### Query format
 ```xml
@@ -101,7 +101,7 @@ Updates the account's password.
 Parameter Name | Type restrictions | Required? | Notes
 -- | -- | -- | --
 `idibupartner` | **String** | **Yes** | Must be set to `yes`.
-`data` | **String** | **Yes** | The full query XML (see the [Query format](#query-format-1) below).
+`data` | **String** | **Yes** | The full query XML (see the [Query format](#query-format-1) below), URL-encoded within the parameter.
 
 ### Query format
 ```xml
@@ -144,7 +144,7 @@ Lists all services currently enabled on an account.
 Parameter Name | Type restrictions | Required? | Notes
 -- | -- | -- | --
 `idibupartner` | **String** | **Yes** | Must be set to `yes`.
-`data` | **String** | **Yes** | The full query XML (see the [Query format](#query-format-2) below).
+`data` | **String** | **Yes** | The full query XML (see the [Query format](#query-format-2) below), URL-encoded within the parameter.
 
 ### Query format
 ```xml
@@ -186,7 +186,7 @@ Removes specified services from an account.
 Parameter Name | Type restrictions | Required? | Notes
 -- | -- | -- | --
 `idibupartner` | **String** | **Yes** | Must be set to `yes`.
-`data` | **String** | **Yes** | The full query XML (see the [Query format](#query-format-3) below).
+`data` | **String** | **Yes** | The full query XML (see the [Query format](#query-format-3) below), URL-encoded within the parameter.
 
 ### Query format
 ```xml
@@ -228,7 +228,7 @@ Sets up or removes the URL to ping for the account.
 Parameter Name | Type restrictions | Required? | Notes
 -- | -- | -- | --
 `idibupartner` | **String** | **Yes** | Must be set to `yes`.
-`data` | **String** | **Yes** | The full query XML (see the [Query format](#query-format-4) below).
+`data` | **String** | **Yes** | The full query XML (see the [Query format](#query-format-4) below), URL-encoded within the parameter.
 
 ### Query format
 ```xml
