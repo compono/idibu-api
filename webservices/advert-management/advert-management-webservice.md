@@ -178,11 +178,11 @@ Parameter Name | Type restrictions | Required? | Notes
               <name>[string]</name> <!-- portal name -->
             </portal>
             <post>
-              <id>[integer]</id> <!-- PostLog id -->
+              <id>[integer]</id> <!-- PostQueue id if the status is still "pending"; PostLog id for already posted ads ("success" or "failed" status) -->
               <start>[string:date]</start> <!-- posting date; YYYY-MM-DD HH:mm:ss -->
               <stop>[string:date]</stop> <!-- intended expiry date; YYYY-MM-DD HH:mm:ss -->
               <type>["post"|"update"|"delete"]</type> <!-- whether the posting was a new post, an update of an existing job, or a delete request -->
-              <status>["success"|"failed"]</status> <!-- whether the posting succeeded or not -->
+              <status>["success"|"failed"|"pending"]</status> <!-- whether the posting is still in the queue (pending) or, if already posted, whether it succeeded or not -->
               <deletable>["yes"|"no"]</deletable> <!-- whether the post can be deleted -->
             </post>
             <expired>["yes"|"no"]</expired> <!-- whether the post is already expired -->
@@ -213,7 +213,7 @@ Returns the status of the posting.
 Parameter Name | Type restrictions | Required? | Notes
 -- | -- | -- | --
 `hash` | **String** | **Yes** | Hash of the idibu account to which the request pertains.
-`pq-id` | **Integer** | **Yes** | `QUEUEID` of the posting.<br/>Refer to the [Response Messages](https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/sub-and-resp.md#response-messages) section of the Posting API.
+`pq-id` | **Integer** | **Yes** | `QUEUEID` of the posting.<br/>Refer to the [Response Messages](https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/sub-and-resp.md#response-messages) section of the Posting API.<br/>This ID is also obtainable from the [Advert's detailed view](#adverts-detailed-view) as `post/id` (only for `post`s that are `<status>pending</status>`).
 
 ### Response format
 ```xml
@@ -257,8 +257,8 @@ Allows to obtain the Advert's posting log - technical information about the post
 
 ### Available methods
 #### `GET /[id]`
-Returns the detailed view of the PostLog with the provided `[id]`.
-PostLog's `[id]` is obtainable from the [Advert's detailed view](#adverts-detailed-view) as `post/id`. 
+Returns the detailed view of the PostLog with the provided `[id]`.<br/>
+PostLog's `[id]` is obtainable from the [Advert's detailed view](#adverts-detailed-view) as `post/id` (only for posts that are _not_ `<status>pending</status>` anymore). 
 
 ### Query parameters
 Parameter Name | Type restrictions | Required? | Notes
