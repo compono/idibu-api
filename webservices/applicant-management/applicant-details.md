@@ -1,3 +1,8 @@
+_**This document is outdated. Please refer to the new version [HERE](https://github.com/oneworldmarket/idibu-api/blob/master/webservices/applicant-management/applicant-management-webservice.md).**_
+
+<details>
+ <summary><i>Show me anyway</i></summary>
+
 <p>Method returns applicant details. If client has CV parsing enabled on his account, the parsed data will be included in the &quot;parsed&quot; tag. Mind that there is an extra charge for the client if the parsed data would be used in an external system.<br />
 	<br />
 	<code>GET: ws.idibu.com/ws/rest/v1/applicants/1234?hash=YOUR_HASH</code>
@@ -40,5 +45,5 @@
         </message></response>
     <status>success</status>
 </idibu>
-
 ```
+</details>
