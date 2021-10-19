@@ -1,3 +1,8 @@
+_**This document is outdated. Please refer to the new version [HERE](https://github.com/oneworldmarket/idibu-api/blob/master/webservices/applicant-management/applicant-management-webservice.md).**_
+
+<details>
+ <summary><i>Show me anyway</i></summary>
+
 You can upload applicant data into idibu.
 
 This is useful if you want legacy applicant data to be available via our local search, or you have arranged to have fully parsed data handed back to you.
@@ -46,3 +51,4 @@ https://github.com/oneworldmarket/idibu-api/blob/master/webservices/code-library
 
 </div>
 <p>&nbsp;</p>
+</details>
