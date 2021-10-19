@@ -11,6 +11,12 @@
     + [Query parameters](#query-parameters-1)
     + [Response format](#response-format-1)
 
+  * **[Obtaining Extra Field values](#obtaining-extra-field-values)**
+    + [Endpoint](#endpoint-2)
+    + [Available methods](#available-methods-2)
+    + [Query parameters](#query-parameters-2)
+    + [Response format](#response-format-2)
+
 ## 
 
 This webservice allows to obtain data relating to Job objects of a given account. It can be used to list jobs same as [Ad Manager](https://v3-docs.idibu.com/article/776-ad-manager-2-0-intro-and-overview) in idibu.
@@ -206,6 +212,40 @@ Parameter Name | Type restrictions | Required? | Notes
         </posting>
       </postings>
     </job>
+  </response>
+  <status>["success"|"failed"]</status> <!-- whether the request succeeded or not -->
+</idibu>
+```
+
+---
+
+## Obtaining Extra Field values
+This method allows to obain all previously-set Extra Field values for a given Job.
+The values can then be pre-populated, for example when reposting the Job in the external system.
+
+### Endpoint
+#### `https://ws.idibu.com/ws/rest/v1/values`
+
+### Available methods
+#### `GET /[job-id]`
+Returns the most recent Extra Field values for the provided `[job-id]`, for all the Portals  to which the Job was posted.
+
+### Query parameters
+Parameter Name | Type restrictions | Required? | Notes
+-- | -- | -- | --
+`hash` | **String** | **Yes** | Hash of the idibu account to which the request pertains.
+
+### Response format
+```xml
+<idibu generator="idibu" version="1.0">
+  <response>
+    <portals> <!-- portals to which the job was posted; refer to https://github.com/oneworldmarket/idibu-api/tree/master/webservices/portal-management -->
+      <portal id="[integer]"> <!-- portal id -->
+        <values>
+          <value name="[string]">[string]</value> <-- the 'name' attribute indicates the name of the extra field; the content of the element indicates its latest value -->
+        </values>
+      </portal>
+    </portals>
   </response>
   <status>["success"|"failed"]</status> <!-- whether the request succeeded or not -->
 </idibu>
