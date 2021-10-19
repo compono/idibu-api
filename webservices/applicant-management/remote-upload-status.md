@@ -1,3 +1,8 @@
+_**This document is outdated. Please refer to the new version [HERE](https://github.com/oneworldmarket/idibu-api/blob/master/webservices/applicant-management/applicant-management-webservice.md).**_
+
+<details>
+ <summary><i>Show me anyway</i></summary>
+
 Upon processing a candidate the external system should send an HTTP POST request to the following endpoint:<br><br>
 <code>
 http://ws.idibu.com/ws/rest/v1/applicant-status/:applicant-id?hash=:hash
@@ -158,3 +163,4 @@ Returns all client applicants' statuses (as in all WSes limited to 10 by default
 <code>GET /ws/rest/v1/applicant-status?hash=:hash&remote-id=:remote-id</code>
 <br><br>
 Returns applicants' statuses matching the :remote-id provided. Wildcard * can be used.
+</details>
