@@ -1,3 +1,8 @@
+_**This document is outdated. Please refer to the new version [HERE](https://github.com/oneworldmarket/idibu-api/blob/master/webservices/applicant-management/applicant-management-webservice.md).**_
+
+<details>
+ <summary><i>Show me anyway</i></summary>
+	
 <p>Method returns applicant list</p>
 <h1>
 	Parameters</h1>
@@ -61,3 +66,4 @@ http://ws.idibu.com/ws/rest/v1/applicants/123/set-status?hash=<your hash>&status
   &lt;status&gt;success&lt;/status&gt;
 &lt;/idibu&gt;
 </code></pre>
+</deprecating>
