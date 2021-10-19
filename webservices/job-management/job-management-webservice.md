@@ -242,7 +242,7 @@ Parameter Name | Type restrictions | Required? | Notes
     <portals> <!-- portals to which the job was posted; refer to https://github.com/oneworldmarket/idibu-api/tree/master/webservices/portal-management -->
       <portal id="[integer]"> <!-- portal id -->
         <values>
-          <value name="[string]">[string]</value> <-- the 'name' attribute indicates the name of the extra field; the content of the element indicates its latest value -->
+          <value name="[string]">[string]</value> <!-- the 'name' attribute indicates the name of the extra field; the content of the element indicates its latest value -->
         </values>
       </portal>
     </portals>
