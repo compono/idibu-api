@@ -34,7 +34,7 @@
   * **[Applicant's remote upload status](#applicants-remote-upload-status)**
     + [Endpoint](#endpoint-5)
     + [Available methods](#available-methods-5)
-    + [Query parameters](#query-parameters-4)
+    + [Query parameters](#query-parameters-5)
 	+ [Query format](#query-format-1)
     + [Response formats](#response-formats)
 
