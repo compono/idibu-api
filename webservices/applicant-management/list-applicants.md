@@ -1,3 +1,8 @@
+_**This document is outdated. Please refer to the new version [HERE](https://github.com/oneworldmarket/idibu-api/blob/master/webservices/applicant-management/applicant-management-webservice.md).**_
+
+<details>
+ <summary><i>Show me anyway</i></summary>
+
 <p>Method returns applicant lists. There are two versions:<br />
 	<br />
 	<b>GET</b> - http://ws.idibu.com/ws/rest/v1/applicants/? - for quick manual testing<br />
@@ -294,3 +299,4 @@ http://ws.idibu.com/ws/rest/v1/applicants/list?hash=<your hash>&count=10&status=
   &lt;status&gt;success&lt;/status&gt;
 &lt;/idibu&gt;
 </code></pre>
+</details>
