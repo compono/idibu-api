@@ -15,14 +15,14 @@
     + [Endpoint](#endpoint-2)
     + [Available methods](#available-methods-2)
     + [Query parameters](#query-parameters-2)
-	+ [Query format](#query-format)
+    + [Query format](#query-format)
     + [Response format](#response-format-2)
 
   * **[Removing an Applicant](#removing-an-applicant)**
     + [Endpoint](#endpoint-3)
     + [Available methods](#available-methods-3)
     + [Query parameters](#query-parameters-3)
-	+ [Query formats](#query-formats)
+    + [Query formats](#query-formats)
     + [Response format](#response-format-3)
 
   * **[Changing an Applicant's Status](#changing-an-applicants-status)**
@@ -35,8 +35,10 @@
     + [Endpoint](#endpoint-5)
     + [Available methods](#available-methods-5)
     + [Query parameters](#query-parameters-5)
-	+ [Query format](#query-format-1)
+    + [Query format](#query-format-1)
     + [Response formats](#response-formats)
+
+  * **[New Applicant webhook](#new-applicant-webhook)**
 
 ## 
 
@@ -369,3 +371,10 @@ Parameter Name | Type restrictions | Required? | Notes
   <status>["success"|"failed"]</status> <!-- whether the request succeeded or not -->
 </idibu>
 ```
+
+---
+
+## New Applicant webhook
+For each account, it is possible to set up a webhook which will automatically ping a pre-defined URL whenever a new candidate arrives in the system.
+
+The method is available as part of the [Service Management Webservice](https://github.com/oneworldmarket/idibu-api/blob/master/webservices/service-management/service-management-webservice.md#setting-up-an-aptrack-webhook).
