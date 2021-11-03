@@ -51,7 +51,7 @@ Parameter Name | Type restrictions | Required? | Notes
 `boardID` | **Integer** | **Yes** | ID of the Portal to show.
 `class` | **String** | **Yes** | Must be set to `Portal`.
 `format` | **String** | **Yes** | Must be set to `XML`.
-`location` | **String** | No | Location to look up the extra fields with.<br>While this parameter is not required and will not affect most Portals, **it is strongly recommended to always include** as some Portals require a Location string to be specified in order to populate their Location Extra Fields with matching options. If no Location is provided (or the name matches no available options), the fields may not populate and therefore prevent the posting.
+`location` | **String** | No | Location to look up the Extra Fields with.<br>While this parameter is not required and will not affect most Portals, **it is strongly recommended to always include** as some Portals require a Location string to be specified in order to populate their location Extra Fields with matching options. If no Location is provided (or the name matches no available options), the fields may not populate and therefore prevent the posting.
 `profileID` |  **Integer** | No | ID of the person posting the job.<br>While this parameter is not required, **it is strongly recommended to always include** as some Extra Field values may depend on each particular user's setup.<br/>Refer to the [User Management Webservice](https://github.com/oneworldmarket/idibu-api/tree/master/webservices/user-management).
 
 ### Response format
