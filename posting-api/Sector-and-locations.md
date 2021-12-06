@@ -20,6 +20,7 @@
 <tr><td>2788</td><td>Design & Creative</td></tr>
 <tr><td>9</td><td>Education & Training</td></tr>
 <tr><td>2790</td><td>Electronics</td></tr>
+<tr><td>2818</td><td>Energy & Renewables</td></tr>
 <tr><td>10</td><td>Engineering</td></tr>
 <tr><td>2816</td><td>Executive and Management</td></tr>
 <tr><td>2792</td><td>Fashion</td></tr>
