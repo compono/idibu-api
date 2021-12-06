@@ -215,7 +215,7 @@ Parameter Name | Type restrictions | Required? | Notes
 ## Setting up an Aptrack webhook
 This method allows to specify a URL which idibu will automatically ping whenever a new candidate arrives on the account.
 
-The URL can only be set on a per-account basis and the format of the data that idibu sends never changes. It is up to you to receive, process and understand that data - most usually by [obtaining the new candidate's details](https://github.com/oneworldmarket/idibu-api/blob/master/webservices/applicant-management/applicant-details.md).
+The URL can only be set on a per-account basis and the format of the data that idibu sends never changes. It is up to you to receive, process and understand that data - most usually by [obtaining the new candidate's details](https://github.com/oneworldmarket/idibu-api/blob/master/webservices/applicant-management/applicant-management-webservice.md#applicants-detailed-view).
 
 ### Endpoint
 #### `https://ws.idibu.com/ws/rest/v1/service`
