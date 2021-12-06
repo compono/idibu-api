@@ -22,7 +22,7 @@
 <tr><td>2790</td><td>Electronics</td></tr>
 <tr><td>2818</td><td>Energy & Renewables</td></tr>
 <tr><td>10</td><td>Engineering</td></tr>
-<tr><td>2816</td><td>Executive and Management</td></tr>
+<tr><td>2816</td><td>Executive & Management</td></tr>
 <tr><td>2792</td><td>Fashion</td></tr>
 <tr><td>11</td><td>Financial Services</td></tr>
 <tr><td>12</td><td>FMCG</td></tr>
