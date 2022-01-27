@@ -43,6 +43,6 @@ You can use the [Advert Management Webservice](https://github.com/oneworldmarket
 
 It's even easier with [UPP](https://github.com/oneworldmarket/idibu-api/tree/master/UPP) - simply by inserting it as the `ins` parameter. For example:
 
-`https://www.idibu.com/clients/pam/index.php?h=ACCOUNT_HASH&ref=JOB_REFERENCE&ins=https%3A%2F%2Fwww.idibu.com%2Fclients%2Fupp%2Findex.php%3Fhash%3DACCOUNT_HASH%26jobRef%3DJOB_REFERENCE%26useOriginalSender%3Dtrue%26findJob%3Dtrue%26%`
+`https://www.idibu.com/clients/pam/index.php?h=ACCOUNT_HASH&ref=JOB_REFERENCE&ins=https%3A%2F%2Fwww.idibu.com%2Fclients%2Fupp%2Findex.php%3Fhash%3DACCOUNT_HASH%26jobRef%3DJOB_REFERENCE%26useOriginalSender%3Dtrue%26findJob%3Dtrue`
 
 This would generate an AdManager with a repost-ready UPP under the "Full Repost" button, with all the original details of the posting already pre-filled.
