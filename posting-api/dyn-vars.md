@@ -40,6 +40,5 @@
 		</tr>
 	</tbody>
 </table>
-Please make sure the boards you are posting to have their <a href="http://support.idibu.com/default_import/Knowledgebase/Article/View/7/0/how-to-ensure-your-users-are-completing-non-required-fields">application URL fields set to non-required (rather then "hidden")</a>. Otherwise this dynamic core field will be ignored. 
 
 Now click <a href="https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/sender-tags.md">here</a> to learn how to specify your ad's sender.
