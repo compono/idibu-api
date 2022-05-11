@@ -1,106 +1,94 @@
-<p>Method gets or sets system settings for an account</p>
-<h1>
-	Parameters</h1>
-<p>No additional parameters for this request</p>
-<h1>
-	Example of getting settings</h1>
-<h2>
-	Request</h2>
-<pre>
-<code>
-http://ws.idibu.com/ws/rest/v1/settings/system?hash=<your hash>
-</code></pre>
-<h2>
-	Response</h2>
-<pre>
-<code type="xml">
-&lt;idibu generator=&quot;idibu&quot; version=&quot;1.0&quot;&gt;
-  &lt;response&gt;
-    &lt;general&gt;
-      &lt;description&gt;
-There are a number of system settings that can be changed to customise your idibu system. Please be sure to contact support if you aren&amp;#39;t completely sure of what you are doing.
-&lt;/description&gt;
-      &lt;cv-search-enabled&gt;yes&lt;/cv-search-enabled&gt;
-      &lt;delete-enabled&gt;yes&lt;/delete-enabled&gt;
-      &lt;force-check-spelling&gt;no&lt;/force-check-spelling&gt;
-      &lt;show-advert-cost&gt;no&lt;/show-advert-cost&gt;
-    &lt;/general&gt;
-    &lt;user-access&gt;
-      &lt;description&gt;
-Change settings to provide non-admin users different levels of access to the system.
-&lt;/description&gt;
-      &lt;filter-profile-jobs&gt;yes&lt;/filter-profile-jobs&gt;
-      &lt;disable-default-post-profile&gt;no&lt;/disable-default-post-profile&gt;
-      &lt;strip-phone-numbers&gt;yes&lt;/strip-phone-numbers&gt;
-      &lt;disable-normal-repost&gt;no&lt;/disable-normal-repost&gt;
-      &lt;disable-quick-repost&gt;no&lt;/disable-quick-repost&gt;
-      &lt;disable-job-template&gt;no&lt;/disable-job-template&gt;
-    &lt;/user-access&gt;
-    &lt;adverts&gt;
-      &lt;description&gt;
-Define advert authorisation policies for the account, and the email template informing senders if their advert was rejected.
-&lt;/description&gt;
-      &lt;adv-auth-policy&gt;yes&lt;/adv-auth-policy&gt;
-      &lt;adv-auth-send-email-if-rejected&gt;yes&lt;/adv-auth-send-email-if-rejected&gt;
-      &lt;email-template-reject&gt;
-        &lt;subject&gt;subject of auth message&lt;/subject&gt;&amp;lt;body&amp;gt;Body of auth message&amp;lt;/body&amp;gt;
-      &lt;/email-template-reject&gt;
-      &lt;email-template-auth&gt;
-        &lt;subject&gt;&lt;/subject&gt;&amp;lt;body&amp;gt;&amp;lt;/body&amp;gt;&lt;/email-template-auth&gt;
-    &lt;/adverts&gt;
-    &lt;alerts&gt;
-      &lt;description&gt;
-idibu provides important alerts by email - for posting errors and for when adverts are expiring on the job boards. You can set these alerts to be sent the sender of the advert, the administrator of this account, or both.
-&lt;/description&gt;
-      &lt;auto-error-mode&gt;Both&lt;/auto-error-mode&gt;
-      &lt;auto-expiry-emails&gt;Both&lt;/auto-expiry-emails&gt;
-    &lt;/alerts&gt;
-    &lt;country&gt;
-      &lt;description&gt;
-Set the default country to be used by locations in the system.
-&lt;/description&gt;
-      &lt;location-country&gt;GB&lt;/location-country&gt;
-    &lt;/country&gt;&lt;footer&gt;
-      &lt;description&gt;
-Add text to be appended to all job descriptions sent out by the system (Note, this can increase likelihood of boards rejecting adverts for description length).
-&lt;/description&gt;
-      &lt;jobdisclaimer&gt;
-    &lt;/jobdisclaimer&gt;&lt;/footer&gt;
-  &lt;/response&gt;
-  &lt;status&gt;success&lt;/status&gt;
-&lt;/idibu&gt;
-</code></pre>
-<h1>
-	Example of setting settings</h1>
-<h2>
-	Request</h2>
-<pre>
-<code>
+Method gets or sets system settings for an account
+
+# Parameters
+No additional parameters for this request
+
+# Example of getting settings
+## Request
+```
+GET http://ws.idibu.com/ws/rest/v1/settings/system?hash=<your hash>
+```
+
+## Response
+```xml
+<idibu generator="idibu" version="1.0">
+  <response>
+    <general>
+      <description>There are a number of system settings that can be changed to customise your idibu system. Please be sure to contact support if you aren't completely sure of what you are doing.</description>
+      <cv-search-enabled>no</cv-search-enabled>
+      <delete-enabled>yes</delete-enabled>
+      <force-check-spelling>no</force-check-spelling>
+      <show-advert-cost>no</show-advert-cost>
+      <enable-appurls>yes</enable-appurls>
+      <enable-tracking>yes</enable-tracking>
+    </general>
+    <user-access>
+      <description>Change settings to provide non-admin users different levels of access to the system.</description>
+      <filter-profile-jobs>no</filter-profile-jobs>
+      <disable-default-post-profile>no</disable-default-post-profile>
+      <strip-phone-numbers>yes</strip-phone-numbers>
+      <disable-normal-repost>no</disable-normal-repost>
+      <disable-quick-repost>no</disable-quick-repost>
+      <disable-job-template>no</disable-job-template>
+    </user-access>
+    <adverts>
+      <description>Define advert authorisation policies for the account, and the email template informing senders if their advert was rejected.</description>
+      <adv-auth-policy>yes</adv-auth-policy>
+      <adv-auth-send-email-if-rejected>yes</adv-auth-send-email-if-rejected>
+      <email-template-reject>
+        <subject>Advert has not been authorised - [JOB_TITLE] ([JOB_REFERENCE])</subject>
+        <body>Thank you for submitting your CV for the position [JOB_TITLE].<br />
+          <br />Kind regards<br />
+          <br />[CONSULTANT_NAME]</body>
+      </email-template-reject>
+      <email-template-auth>
+        <subject>Advert has been authorised - [JOB_TITLE] ([JOB_REFERENCE])</subject>
+        <body>
+          <p style=\"margin-bottom: 0cm;\">Dear [CONSULTANT_NAME],</p>
+          <p style=\"margin-bottom: 0cm;\">Your advert &ldquo;[JOB_TITLE] ([JOB_REFERENCE])&rdquo; has been authorised by [ADVERT_AUTHORISER].</p>
+        </body>
+      </email-template-auth>
+    </adverts>
+    <alerts>
+      <description>idibu provides important alerts by email - for posting errors and for when adverts are expiring on the job boards. You can set these alerts to be sent the sender of the advert, the administrator of this account, or both.</description>
+      <auto-error-mode>Admin</auto-error-mode>
+      <auto-expiry-emails>Sender</auto-expiry-emails>
+    </alerts>
+    <country>
+      <description>Set the default country to be used by locations in the system.</description>
+      <location-country>GB</location-country>
+    </country>
+    <footer>
+      <description>Add text to be appended to all job descriptions sent out by idibu (Please refrain from entering e-mail addresses, phone numbers or URLs, as this can increase likelihood of boards rejecting your adverts).</description>
+      <jobDisclaimer>
+        <ul>
+          <li>
+            <strong>plain text footer</strong>
+          </li>
+          <li>
+            <em>plain footer</em>
+          </li>
+          <li>footer</li>
+        </ul> Idibu &pound; $ &amp; % @ ! ? . , = &euro; Ą ą Ć &Uuml; &uuml; &szlig; x y z</jobDisclaimer>
+    </footer>
+  </response>
+  <status>success</status>
+</idibu>
+```
+# Example of setting settings
+## Request
+```
 POST http://ws.idibu.com/ws/rest/v1/settings/system?hash=<your hash>
-</code>
-<code type="xml">
-&lt;?xml version=&quot;1.0&quot;?&gt;
-&lt;idibu&gt;
-  &lt;cv-search-enabled&gt;yes&lt;/cv-search-enabled&gt;
-  &lt;email-template-auth&gt;
-    &lt;subject&gt;subject of auth message&lt;/subject&gt;&amp;lt;body&amp;gt;Body of auth message&amp;lt;/body&amp;gt;
-  &lt;/email-template-auth&gt;
-&lt;/idibu&gt;
-</code>
-</pre>
-<h2>
-	Response</h2>
-<pre>
-<code type="xml">
-&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf8&quot;?&gt;
-&lt;idibu generator=&quot;idibu&quot; version=&quot;1.0&quot;&gt;
-  &lt;response&gt;
-    &lt;message&gt;Settings updated&lt;/message&gt;
-  &lt;/response&gt;
-  &lt;status&gt;success&lt;/status&gt;
-&lt;/idibu&gt;
-</code>
-</pre>
-<h1>
-	idibu interface reference</h1>
-<p><img alt="" src="http://uk.idibu.com/images/stories/Portal_logos/idibu_set_ref.jpg" /></p>
+```
+```xml
+<?xml version="1.0"?>
+<idibu>
+  <cv-search-enabled>yes</cv-search-enabled>
+  <email-template-auth>
+    <subject>subject of auth message</subject>
+    <body>Body of auth message</body>
+  </email-template-auth>
+</idibu>
+```
+# idibu interface reference
+![image](https://user-images.githubusercontent.com/2776439/167879899-c65f063b-2cc1-445d-b0a6-eb6342ee7fcb.png)
