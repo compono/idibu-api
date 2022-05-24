@@ -1,4 +1,4 @@
-<p>You have 2 options when it comes to sending the profile details - find the unique sender id of the profile stored in idibu and send that, or send the full user profile details in the post.</p>
+<p>You have 2 options when it comes to sending the profile details - find the unique sender id of the profile stored in idibu and send that, or send the full user profile details in the post. Refer to the <a href="https://github.com/oneworldmarket/idibu-api/tree/master/webservices/user-management">User Management Webservice</a> for more info.</p>
 <h1>
 	Send the sender id as defined inside idibu</h1>
 <table align="center" border="1" cellpadding="2" cellspacing="2" style="font-size: 13px; color: black; background-color: white; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 5px;">
