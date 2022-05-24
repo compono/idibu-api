@@ -16,4 +16,4 @@ This method by default has a failsafe that will throw down an error in case a pa
 &nbsp;&nbsp;&lt;job ref=&quot;job_reference&quot; all=&quot;yes&quot;&gt;&lt;/job&gt;<br>
 &lt;/idibu&gt;
 
-Now, it's about time to try your <a href="https://github.com/oneworldmarket/idibu-api/blob/master/api-v3/first-test-posting.md">first post</a>.
+Now, it's about time to try your <a href="https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/first-test-posting.md">first post</a>.
