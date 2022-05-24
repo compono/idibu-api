@@ -309,7 +309,7 @@
 			<td>
 				publish</td>
 			<td>
-				Yes</td>
+				No</td>
 			<td>
 				datetime YYYY-MM-DD HH:MM</td>
 			<td>
