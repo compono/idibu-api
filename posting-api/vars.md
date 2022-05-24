@@ -327,4 +327,4 @@
 <h1>Dynamic core fields</h1>
 <p>Please refer to <a href="https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/dyn-vars.md">this article</a> for more info</p>
 
-<a href="https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/Sector-and-locations.md">Continue reading</a>...
+<a href="https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/Sector-and-locations.md">Continue reading</a> to find out more about Sectors and Locations!
