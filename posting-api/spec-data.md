@@ -5,13 +5,14 @@
 
 <p><strong>Before reading further, please consult <a href="https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/board-specific-fields.md" target="_blank">the following article</a> for information about obtaining the data.</strong></p>
 
-<p>A simple extra field section for a job board would look like this:</p>
+<p>Job board-specific data is provided in the <code>posts</code> section of the XML; each job board's data then goes under the <code>board</code> tag. A simple extra field section for a job board would look like this:</p>
 <pre>
-
-&lt;board id=&quot;77&quot;&gt;
-&nbsp;&nbsp;&lt;duration days=&quot;7&quot; /&gt;
-&nbsp;&nbsp;&lt;extrafield name=&quot;auto_StartDate&quot;&gt;13 feb 2009&lt;/extrafield&gt;
-&lt;/board&gt;
+&lt;posts&gt;
+&nbsp;&nbsp;&lt;board id=&quot;77&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;duration days=&quot;7&quot; /&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;extrafield name=&quot;auto_StartDate&quot;&gt;13 feb 2009&lt;/extrafield&gt;
+&nbsp;&nbsp;&lt;/board&gt;
+&lt;/posts&gt;
 
 </pre>
 <p>Notice the duration tag - it is non required, however possible values will be shown when you access board&#39;s details using the discovery services. If no duration is provided, user will be prompted to add it via PCP link of a delayed posting.</p>
