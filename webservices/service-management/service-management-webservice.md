@@ -5,30 +5,42 @@
     + [Query parameters](#query-parameters)
     + [Query format](#query-format)
     + [Response format](#response-format)
-  * **[Changing password](#changing-password)**
+  * **[Listing accounts](#listing-accounts)**
     + [Endpoint](#endpoint-1)
     + [Available methods](#available-methods-1)
     + [Query parameters](#query-parameters-1)
     + [Query format](#query-format-1)
     + [Response format](#response-format-1)
-  * **[Listing services](#listing-services)**
+  * **[Account's details](#accounts-details)**
     + [Endpoint](#endpoint-2)
     + [Available methods](#available-methods-2)
     + [Query parameters](#query-parameters-2)
     + [Query format](#query-format-2)
     + [Response format](#response-format-2)
-  * **[Managing services](#managing-services)**
+  * **[Changing password](#changing-password)**
     + [Endpoint](#endpoint-3)
     + [Available methods](#available-methods-3)
     + [Query parameters](#query-parameters-3)
     + [Query format](#query-format-3)
     + [Response format](#response-format-3)
-  * **[Setting up an Aptrack webhook](#setting-up-an-aptrack-webhook)**
+  * **[Listing services](#listing-services)**
     + [Endpoint](#endpoint-4)
     + [Available methods](#available-methods-4)
     + [Query parameters](#query-parameters-4)
     + [Query format](#query-format-4)
     + [Response format](#response-format-4)
+  * **[Managing services](#managing-services)**
+    + [Endpoint](#endpoint-5)
+    + [Available methods](#available-methods-5)
+    + [Query parameters](#query-parameters-5)
+    + [Query format](#query-format-5)
+    + [Response format](#response-format-5)
+  * **[Setting up an Aptrack webhook](#setting-up-an-aptrack-webhook)**
+    + [Endpoint](#endpoint-6)
+    + [Available methods](#available-methods-6)
+    + [Query parameters](#query-parameters-6)
+    + [Query format](#query-format-6)
+    + [Response format](#response-format-6)
     + [Webhook data](#webhook-data)
 
 ## 
@@ -87,6 +99,96 @@ Parameter Name | Type restrictions | Required? | Notes
 
 ---
 
+## Listing Accounts
+This method allows viewing existing idibu accounts' details for the given Partner.
+
+### Endpoint
+#### `https://ws.idibu.com/ws/rest/v1/service`
+
+### Available methods
+#### `POST /accounts`
+Returns the full list of accounts.
+
+### Query parameters
+Parameter Name | Type restrictions | Required? | Notes
+-- | -- | -- | --
+`idibupartner` | **String** | **Yes** | Must be set to `yes`.
+`data` | **String** | **Yes** | The full query XML (see the [Query format](#query-format-1) below).
+`count` | **Integer**<br/><br/>Min: 1<br/>Max: 100<br/>Default: 10 | No | Number of accounts to return.
+`offset` | **Integer**<br/><br/>Min: 0<br/>Default: 0 | No | Numeric offset from where to start fetching accounts (pagination).
+
+### Query format
+```xml
+<idibu>
+  <partner-password>[string]</partner-password> <!-- partner password provided to you by idibu -->
+  <exempt-id>[integer]</exempt-id> <!-- partner id provided to you by idibu -->
+</idibu>
+```
+
+### Response format
+```xml
+<idibu generator="idibu" version="1.0">
+  <response>
+    <clients>
+      <client>
+        <client-hash>[string]</client-hash> <!-- hash of the account -->
+        <client-id>[integer]</client-id> <!-- id of the account -->
+        <username>[integer]</username> <!-- account's username -->
+      </client>
+    </clients>
+  </response>
+  <status>["success"|"failed"]</status> <!-- whether the request succeeded or not -->
+</idibu>
+```
+
+---
+
+## Account's details
+This method allows obtaining more info about a particular account.
+
+### Endpoint
+#### `https://ws.idibu.com/ws/rest/v1/service`
+
+### Available methods
+#### `POST /accountdetails`
+Returns the detailed info for the account with the provided `<client-id/>`.
+
+### Query parameters
+Parameter Name | Type restrictions | Required? | Notes
+-- | -- | -- | --
+`idibupartner` | **String** | **Yes** | Must be set to `yes`.
+`data` | **String** | **Yes** | The full query XML (see the [Query format](#query-format-2) below).
+
+### Query format
+```xml
+<idibu>
+  <partner-password>[string]</partner-password> <!-- partner password provided to you by idibu -->
+  <exempt-id>[integer]</exempt-id> <!-- partner id provided to you by idibu -->
+  <client-id>[integer]</client-id> <!-- id of the account -->
+</idibu>
+```
+
+### Response format
+```xml
+<idibu generator="idibu" version="1.0">
+  <response>
+    <client>
+      <client-hash>[string]</client-hash> <!-- hash of the account -->
+      <client-id>[integer]</client-id> <!-- id of the account -->
+      <username>[integer]</username> <!-- account's username -->
+      <firstname>[string]</firstname> <!-- admin user's first name -->
+      <lastname>[string]</lastname> <!-- admin user's last name -->
+      <email>[string:email]</email> <!-- admin user's email address -->
+      <phone>[string:phone]</phone> <!-- admin user's phone number -->
+      <company-name>[string]</company-name> <!-- account's company name -->
+    </client>
+  </response>
+  <status>["success"|"failed"]</status> <!-- whether the request succeeded or not -->
+</idibu>
+```
+
+---
+
 ## Changing password
 This method allows to change an existing account's password.
 
@@ -101,7 +203,7 @@ Updates the account's password.
 Parameter Name | Type restrictions | Required? | Notes
 -- | -- | -- | --
 `idibupartner` | **String** | **Yes** | Must be set to `yes`.
-`data` | **String** | **Yes** | The full query XML (see the [Query format](#query-format-1) below), URL-encoded within the parameter.
+`data` | **String** | **Yes** | The full query XML (see the [Query format](#query-format-3) below), URL-encoded within the parameter.
 
 ### Query format
 ```xml
@@ -144,7 +246,7 @@ Lists all services currently enabled on an account.
 Parameter Name | Type restrictions | Required? | Notes
 -- | -- | -- | --
 `idibupartner` | **String** | **Yes** | Must be set to `yes`.
-`data` | **String** | **Yes** | The full query XML (see the [Query format](#query-format-2) below), URL-encoded within the parameter.
+`data` | **String** | **Yes** | The full query XML (see the [Query format](#query-format-4) below), URL-encoded within the parameter.
 
 ### Query format
 ```xml
@@ -186,7 +288,7 @@ Removes specified services from an account.
 Parameter Name | Type restrictions | Required? | Notes
 -- | -- | -- | --
 `idibupartner` | **String** | **Yes** | Must be set to `yes`.
-`data` | **String** | **Yes** | The full query XML (see the [Query format](#query-format-3) below), URL-encoded within the parameter.
+`data` | **String** | **Yes** | The full query XML (see the [Query format](#query-format-5) below), URL-encoded within the parameter.
 
 ### Query format
 ```xml
@@ -228,7 +330,7 @@ Sets up or removes the URL to ping for the account.
 Parameter Name | Type restrictions | Required? | Notes
 -- | -- | -- | --
 `idibupartner` | **String** | **Yes** | Must be set to `yes`.
-`data` | **String** | **Yes** | The full query XML (see the [Query format](#query-format-4) below), URL-encoded within the parameter.
+`data` | **String** | **Yes** | The full query XML (see the [Query format](#query-format-6) below), URL-encoded within the parameter.
 
 ### Query format
 ```xml
