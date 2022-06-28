@@ -36,7 +36,7 @@ https://www.idibu.com/clients/pam/index.php
    - `M` - will take value of `R` which stands for "REPOST" (see [API methods](https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/methods.md) for more info)
 - **`noRepostParameters`** - _(optional)_ - if set to `true`, no `J` and `M=R` parameters will be appended to the `ins` URL on full repost
 - **`sameWindow`** - _(optional)_ - if set to `true`, the Full Repost action will open a page in the current window instead of a new tab
-- **`partnerid`** - _(optional)_ - your partner ID if you wish to utilize custom styling
+- **`s`** - _(optional)_ - your partner ID if you wish to utilize custom styling
 
 ## Managing and Reposting the ads
 You can use the [Advert Management Webservice](https://github.com/oneworldmarket/idibu-api/blob/master/webservices/advert-management/advert-management-webservice.md) and [Job Management Webservice](https://github.com/oneworldmarket/idibu-api/blob/master/webservices/job-management/job-management-webservice.md) to obtain all the posting's details (like title, description, etc.) and fill in more data inside your software based on that.
