@@ -25,7 +25,7 @@
 
 ## 
 
-This webservice allows to create, list, and delete webhook subscriptions for various types of events that occur in the system.
+This webservice allows you to create, list, and delete webhook subscriptions for various types of events that occur in the system.
 
 For any account, any number of subscriptions, for any combination of events can be created, and different URLs specified for the callbacks, with an option to sign the payload for authorization.
 
@@ -34,7 +34,7 @@ The format of the data that idibu sends as part of the events is standardized an
 All requests are queued and, depending on current traffic, may not arrive immediately.
 
 ## Creating or updating a webhook subscription
-This method allows to subscribe to any type of webhooks available in the system.
+This method allows you to subscribe to any type of webhooks available in the system.
 
 The `url` specified as part of the subscription is the one that the system will send HTTP requests to whenever the specified event types occur. It also uniquely identifies the webhook - performing the call with the same `url` will update an existing subscription.
 
@@ -108,7 +108,7 @@ Parameter Name | Type restrictions | Required? | Notes
 ---
 
 ## Deleting a webhook subscription
-This method allows to remove an existing webhook subscription.
+This method allows you to remove an existing webhook subscription.
 
 ### Endpoint
 #### `https://ws.idibu.com/ws/rest/v1/webhooks`
@@ -156,7 +156,7 @@ Parameter Name | Type restrictions | Notes
 `date` | **Date and time**<br/><br/>Format: `YYYY-MM-DD HH:mm:ss` | The moment of the candidate reaching idibu system.
 
 ### `JobCreated`
-Triggered whenever a new Job is created on the account.
+Triggered whenever a new Job is created on the account. Please note that a 'job' object is not the same as a 'vacancy' used in the idibu V3 system. See [here] (https://github.com/oneworldmarket/idibu-api/tree/master/webservices/job-management) for more details.
 
 The following parameters will be passed in the body of the request:
 
@@ -174,7 +174,7 @@ Parameter Name | Type restrictions | Notes
 ### `PostAdded`
 Triggered whenever a _successful posting_ leaves the posting queue.
 
-Plaease keep in mind that whether the Post is a _succcessful posting_, _successful update_, or _unsuccessful posting_ is not pre-defined and depends on the response that idibu receives from the given Portal (posting destination) after the posting attempt.
+Please keep in mind that whether the Post is a _succcessful posting_, _successful update_, or _unsuccessful posting_ is not pre-defined and depends on the response that idibu receives from the given Portal (posting destination) after the posting attempt.
 
 The following parameters will be passed in the body of the request:
 
@@ -195,7 +195,7 @@ Parameter Name | Type restrictions | Notes
 ### `PostDeleted`
 Triggered whenever a _successful deletion_ leaves the posting queue.
 
-Plaease keep in mind that whether the Post is a _succcessful deletion_ or _unsuccessful deletion_ is not pre-defined and depends on the response that idibu receives from the given Portal (posting destination) after the deletion attempt.
+Please keep in mind that whether the Post is a _succcessful deletion_ or _unsuccessful deletion_ is not pre-defined and depends on the response that idibu receives from the given Portal (posting destination) after the deletion attempt.
 
 The following parameters will be passed in the body of the request:
 
@@ -216,7 +216,7 @@ Parameter Name | Type restrictions | Notes
 ### `PostFailed`
 Triggered whenever an _unsuccessful posting or deletion_ leaves the posting queue.
 
-Plaease keep in mind that whether the Post is a _succcessful posting_, _successful update_, _successful deletion_, or _unsuccessful posting or deletion_ is not pre-defined and depends on the response that idibu receives from the given Portal (posting destination) after the posting or deletion attempt.
+Please keep in mind that whether the Post is a _succcessful posting_, _successful update_, _successful deletion_, or _unsuccessful posting or deletion_ is not pre-defined and depends on the response that idibu receives from the given Portal (posting destination) after the posting or deletion attempt.
 
 The following parameters will be passed in the body of the request:
 
@@ -237,7 +237,7 @@ Parameter Name | Type restrictions | Notes
 ### `PostUpdated`
 Triggered whenever a _successful update_ leaves the posting queue.
 
-Plaease keep in mind that whether the Post is a _succcessful posting_, _successful update_, or _unsuccessful posting_ is not pre-defined and depends on the response that idibu receives from the given Portal (posting destination) after the posting attempt.
+Please keep in mind that whether the Post is a _succcessful posting_, _successful update_, or _unsuccessful posting_ is not pre-defined and depends on the response that idibu receives from the given Portal (posting destination) after the posting attempt.
 
 The following parameters will be passed in the body of the request:
 
