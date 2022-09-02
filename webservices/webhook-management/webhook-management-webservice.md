@@ -156,7 +156,7 @@ Parameter Name | Type restrictions | Notes
 `date` | **Date and time**<br/><br/>Format: `YYYY-MM-DD HH:mm:ss` | The moment of the candidate reaching idibu system.
 
 ### `JobCreated`
-Triggered whenever a new Job is created on the account. Please note that a 'job' object is not the same as a 'vacancy' used in the idibu V3 system. See [here] (https://github.com/oneworldmarket/idibu-api/tree/master/webservices/job-management) for more details.
+Triggered whenever a new Job is created on the account. Please note that a 'job' object is not the same as a 'vacancy' used in the idibu V3 system. See [here](https://github.com/oneworldmarket/idibu-api/tree/master/webservices/job-management) for more details.
 
 The following parameters will be passed in the body of the request:
 
