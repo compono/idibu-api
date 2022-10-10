@@ -107,22 +107,22 @@ which translates to:<br/>
 
 ## Available field values
 
-### Category
+#### Category
 See [Sectors](https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/Sector-and-locations.md#sectors).
 
-### Location:
+#### Location:
 See [Country codes](https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/Sector-and-locations.md#country-codes).
 
-### Job type:
+#### Job type:
 `1` – Contract<br/>
 `2` – Permanent<br/>
 `4` – Temporary
 
-### Working hours:
+#### Working hours:
 `1` – Part-time<br/>
 `2` – Full-time
 
-### Salary period:
+#### Salary period:
 `annum` – Annum<br/>
 `month` – Month<br/>
 `week` – Week<br/>
