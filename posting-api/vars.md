@@ -291,7 +291,7 @@
 			<td>
 				<a href="https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/Sector-and-locations.md">Get location list values here</a></td>
 			<td>
-				<p>Lookup for Locations - this should be a root location from the location list. Please prove an ID to use location parent ID for idibu&#39;s older location list and proper country code to use the most recent one.</p>
+				<p>Lookup for Locations - this should be the two-letter country code from the location list.</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -302,7 +302,7 @@
 			<td>
 				<a href="https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/Sector-and-locations.md">Get location list values here</a></td>
 			<td>
-				<p>Lookup for Locations - this should be a child location from the location list. Please mind the IDs for sublocations for idibu&#39;s older and most recent location list differ for the same locations.</p>
+				<p>Lookup for Locations - this should be a child location from the location list. Only locations that belong under the country code specified in the <code>location</code> field will be accepted.</p>
 			</td>
 		</tr>
 		<tr valign="top">
