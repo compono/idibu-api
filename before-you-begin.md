@@ -1,12 +1,15 @@
-Hello there!
+Hi there!
 
-If you are reading this, it's more than possible you wish to add multiposting to your system and idibu seems like a great partner to do that.
-We're more than happy to provide you with multiposting services, however all manuals you can see <a href="https://github.com/oneworldmarket/idibu-api/blob/master/README.md">here</a> are quite techy and are written for your developers to understand.
+If you are reading this then we imagine you are already interested in utlising idibu’s powerful job posting engine (and access to our <a href="https://www.idibu.com/network/">full job board network</a>) within your own recruitment platform.
 
-How about you <a href="mailto:good@idibu.com">contact us</a> first so we can introduce ourselves, hear you out and suggest the integration type that will best match your needs? 
+In order for us to fully understand your long-term goals and advise on the most suitable approach to partnership and integration, <a href="https://ww2.idibu.com/contact-us">contact us here</a> for an initial consultation.
 
-We can then also offer some support, see how you'd like to manage our (future?) common clients and provide you with an idibu test account. With this you can immediately test any work you develop once we find mutually beneficial way of working together.
+Please provide us with the URL of your site/platform, and any other information you feel may be relevant to your current requirements. 
+ 
+Once we have a broader understanding of what you’re looking to achieve, we’ll be able to provide you with more detail around the different types of partnerships and commercial agreements we have in place depending on your business model.
 
-Looking forward to hearing from you!
+Thanks for reading, we’re looking forward to hearing from you!
 
-Bart Jaworski, Quality Control Manager in idibu.
+Speak soon.
+
+The idibu team
