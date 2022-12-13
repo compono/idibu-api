@@ -16,7 +16,7 @@ Other applications, like native desktop or mobile, need to integrate with LiveAu
 
 ## Compatible Portals
 
-Posting destinations that support LiveAuth can be obtained through the <code>liveauth</code> field from the [Get Board Data](https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/spec-data.md#get-board-data) response.
+Posting destinations that support LiveAuth can be obtained through the <code>liveauth</code> field from the [Get Board Data](https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/board-specific-fields.md) response.
 
 # Installation (JavaScript users)
 
