@@ -14,6 +14,10 @@ JavaScript Library provides a simple implementation of common interactions with 
 
 Other applications, like native desktop or mobile, need to integrate with LiveAuth API directly. Please note a runtime used needs an ability to display a web view for the purpose of handling the OAuth flow.
 
+## Compatible Portals
+
+Posting destinations that support LiveAuth can be obtained through the <code>liveauth</code> field from the [Get Board Data](https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/board-specific-fields.md) response.
+
 # Installation (JavaScript users)
 
 Include the following import in the page header:
