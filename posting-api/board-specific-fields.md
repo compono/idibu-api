@@ -70,6 +70,7 @@ Parameter Name | Type restrictions | Required? | Notes
         <tag>[string]</tag>
       </tags>
       <bid>[string]</bid> <!-- default tracking code for the portal; refer to https://github.com/oneworldmarket/idibu-api/blob/master/webservices/settings-management/application_url_tracking.md -->
+      <liveauth>["yes"|"no"]</liveauth> <!-- if set to "yes", the portal supports the LiveAuth feature; refer to https://github.com/oneworldmarket/idibu-api/blob/master/webservices/portal-management/portal-subscription-management/LiveAuth-API.md -->
       <validators> <!-- value limits for the extra fields; refer to https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/board-specific-fields.md#extra-field-validators -->
         <rule type="[string:enum]" control="[integer]"> <!-- type of the validator (see below) ; and a number that defines the limit -->
           <field>[string]</field> <!-- name of the extra field -->
