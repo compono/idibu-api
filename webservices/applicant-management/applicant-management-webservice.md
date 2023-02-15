@@ -38,7 +38,7 @@
     + [Query format](#query-format-1)
     + [Response formats](#response-formats)
 
-  * **[Application Received webhook](#new-applicant-webhook)**
+  * **[Application Received webhook](#application-received-webhook)**
 
 ## 
 
