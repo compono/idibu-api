@@ -38,7 +38,7 @@
     + [Query format](#query-format-1)
     + [Response formats](#response-formats)
 
-  * **[New Applicant webhook](#new-applicant-webhook)**
+  * **[Application Received webhook](#new-applicant-webhook)**
 
 ## 
 
@@ -374,7 +374,7 @@ Parameter Name | Type restrictions | Required? | Notes
 
 ---
 
-## New Applicant webhook
-For each account, it is possible to set up a webhook which will automatically ping a pre-defined URL whenever a new candidate arrives in the system.
+## Application Received webhook
+It is possible to set up a webhook which will automatically ping a pre-defined URL whenever a new candidate arrives in the system.
 
-The method is available as part of the [Service Management Webservice](https://github.com/oneworldmarket/idibu-api/blob/master/webservices/service-management/service-management-webservice.md#setting-up-an-aptrack-webhook).
+It is available as part of the [Webhook Management Webservice](https://github.com/oneworldmarket/idibu-api/blob/master/webservices/webhook-management/webhook-management-webservice.md#applicationreceived).
