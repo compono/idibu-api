@@ -142,6 +142,7 @@ The top dropdown is a static country list, whereas the other field is a look-up 
 | OM | Oman |
 | PK | Pakistan |
 | PE | Peru |
+| PH | Philippines |
 | PL | Poland |
 | PT | Portugal |
 | PR | Puerto Rico |
