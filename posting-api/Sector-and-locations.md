@@ -152,7 +152,7 @@ The top dropdown is a static country list, whereas the other field is a look-up 
 | RU | Russia |
 | SM | San Marino |
 | SA | Saudi Arabia |
-| RU | Serbia |
+| RS | Serbia |
 | SI | Singapore |
 | ZA | South Africa |
 | KR | South Korea |
