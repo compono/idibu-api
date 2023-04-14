@@ -24,7 +24,7 @@
 				<p class="p2">No</p>
 			</td>
 			<td class="td3" valign="middle">
-				<p class="p2">numeric offset from where to fetch adverts, default is 0</p>
+				<p class="p2">numeric offset from where to start fetching job boards (pagination), default is 0</p>
 			</td>
 		</tr>
 		<tr>
@@ -35,7 +35,7 @@
 				<p class="p2">No</p>
 			</td>
 			<td class="td3" valign="middle">
-				<p class="p2">number of job boards to list in response, default is 10</p>
+				<p class="p2">number of job boards to list in response, default is 10, max is 100</p>
 			</td>
 		</tr>
 		<tr>
