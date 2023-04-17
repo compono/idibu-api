@@ -279,7 +279,7 @@ Refer to the [Aptrack Settings Webservice](https://github.com/oneworldmarket/idi
 #### `https://ws.idibu.com/ws/rest/v1/applicants`
 
 ### Available methods
-#### `POST /[id]/set-status`
+#### `GET /[id]/set-status`
 Assigns a status to the Applicant with the provided `[id]`.
 
 ### Query parameters
