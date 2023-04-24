@@ -118,7 +118,7 @@ The top dropdown is a static country list, whereas the other field is a look-up 
 | IT | Italy |
 | JP | Japan |
 | JE | Jersey |
-| JO | Jordan |
+| JD | Jordan |
 | LY | Libya |
 | LI | Liechtenstein |
 | LU | Luxembourg |
