@@ -38,6 +38,9 @@
     + [Query format](#query-format-1)
     + [Response formats](#response-formats)
 
+  * **[Applicant email tracking metadata](#applicant-email-tracking-metadata)**
+    + [Available headers](#available-headers)
+
   * **[Application Received webhook](#application-received-webhook)**
 
 ## 
@@ -371,6 +374,28 @@ Parameter Name | Type restrictions | Required? | Notes
   <status>["success"|"failed"]</status> <!-- whether the request succeeded or not -->
 </idibu>
 ```
+
+---
+
+## Applicant email tracking metadata
+Any candidate email forwarded from idibu contains a set of custom headers with some additional metadata that can be used to to obtain additional info for your own tracking and management.
+
+### Available headers
+Header Name | Type restrictions | Notes
+-- | -- | --
+`X-iTrackID` | **Integer** | ID of the candidate.<br/>Refer to the [Applicant Management Webservice](https://github.com/oneworldmarket/idibu-api/blob/master/webservices/applicant-management/applicant-management-webservice.md).
+`X-iTrackID-ClientID` | **Integer** | ID of the idibu account.
+`X-iTrackID-PortalID` | **Integer** | ID of the Portal from which the candidate arrived.<br/>Refer to the [Portal Management Webservice](https://github.com/oneworldmarket/idibu-api/tree/master/webservices/portal-management).
+`X-iTrackID-Portal-Name` | **String** | Name of the Portal from which the candidate arrived.<br/>Refer to the [Portal Management Webservice](https://github.com/oneworldmarket/idibu-api/tree/master/webservices/portal-management).
+`X-iTrackID-ClientSettingsID` | **Integer** | ID of the account's User for whose advert the candidate applied.<br/>Refer to the [User Management Webservice](https://github.com/oneworldmarket/idibu-api/tree/master/webservices/user-management).
+`X-iTrackID-ClientSettings-Name` | **String** | Name and email address of the account's User for whose advert the candidate applied.<br/>Refer to the [User Management Webservice](https://github.com/oneworldmarket/idibu-api/tree/master/webservices/user-management).
+`X-iTrackID-Office` | **String** | Name of the Office to which the User for whose advert the candidate applied is assigned.<br/>Refer to the [User Management Webservice](https://github.com/oneworldmarket/idibu-api/tree/master/webservices/user-management).
+`X-iTrackID-Team` | **String** | Name of the Team to which the User for whose advert the candidate applied is assigned.<br/>Refer to the [User Management Webservice](https://github.com/oneworldmarket/idibu-api/tree/master/webservices/user-management).
+`X-iTrackID-PostLogID` | **Integer** | ID of the Post for which the candidate applied.<br/>Refer to the [Advert Management Webservice](https://github.com/oneworldmarket/idibu-api/blob/master/webservices/advert-management/advert-management-webservice.md).
+`X-iTrackID-JobID` | **Integer** | ID of the Job for which the candidate applied.<br/>Refer to the [Job Management Webservice](https://github.com/oneworldmarket/idibu-api/blob/master/webservices/job-management/job-management-webservice.md).
+`X-iTrackID-Title` | **String** | Title of the Job for which the candidate applied.<br/>Refer to the [Job Management Webservice](https://github.com/oneworldmarket/idibu-api/blob/master/webservices/job-management/job-management-webservice.md).
+`X-iTrackID-Reference` | **String** | Reference of the Job for which the candidate applied.<br/>Refer to the [Job Management Webservice](https://github.com/oneworldmarket/idibu-api/blob/master/webservices/job-management/job-management-webservice.md).
+`X-iTrackID-Type` | **String**<br/><br/>Possible values:<br/><code>1 Contract</code><br/><code>2 Permanent</code><br/><code>4 Temporary</code> | ID and name of the Job's Type.<br/>Refer to the [Job Management Webservice](https://github.com/oneworldmarket/idibu-api/blob/master/webservices/job-management/job-management-webservice.md).
 
 ---
 
