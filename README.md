@@ -14,6 +14,4 @@ Our API documentation is segmented in the following way for ease of use:
 
 3. [UPP](https://github.com/oneworldmarket/idibu-api/blob/master/UPP) - Universal Posting Page - a "plug and play" multiposting integration.
 
-4. [idibu whitelabel](https://github.com/oneworldmarket/idibu-api/tree/master/whitelabel) - using idibu as a whitelabel platform.
-
 Please note that these applets are designed for the classic idibu platform (often referred as "idibu V2"). The latest release of our product (also known as "idibu V3") is compatible with classic API to some extent, but it uses a separate API - documentation for which can be found [here](https://github.com/oneworldmarket/idibu-v3-api). Please note, integration with ‘idibu V3’ is reserved for commercial CRM’s looking to build a strategic partnership with idibu, as opposed to a ‘fully whitelabled’ (or reseller) solution.
