@@ -1,4 +1,6 @@
 # Applicant Management Webservice
+  * **[Application Received webhook](#application-received-webhook)**
+
   * **[Listing Applicants](#listing-applicants)**
     + [Endpoint](#endpoint)
     + [Available methods](#available-methods)
@@ -41,11 +43,16 @@
   * **[Applicant email tracking metadata](#applicant-email-tracking-metadata)**
     + [Available headers](#available-headers)
 
-  * **[Application Received webhook](#application-received-webhook)**
-
 ## 
 
 This webservice allows to obtain data relating to Applicants on a given account. It can be used to list candidates and display their basic details.
+
+## Application Received webhook
+It is possible (and strongly suggested as the most efficient method of detecting new candidates' arrival) to set up a webhook which will automatically ping a pre-defined URL whenever a new candidate arrives in the system.
+
+It is available as part of the [Webhook Management Webservice](https://github.com/oneworldmarket/idibu-api/blob/master/webservices/webhook-management/webhook-management-webservice.md#applicationreceived).
+
+---
 
 ## Listing Applicants
 This method allows to list appropriately filtered and ordered Applicants for a given account.
@@ -396,10 +403,3 @@ Header Name | Type restrictions | Notes
 `X-iTrackID-Title` | **String** | Title of the Job for which the candidate applied.<br/>Refer to the [Job Management Webservice](https://github.com/oneworldmarket/idibu-api/blob/master/webservices/job-management/job-management-webservice.md).
 `X-iTrackID-Reference` | **String** | Reference of the Job for which the candidate applied.<br/>Refer to the [Job Management Webservice](https://github.com/oneworldmarket/idibu-api/blob/master/webservices/job-management/job-management-webservice.md).
 `X-iTrackID-Type` | **String**<br/><br/>Possible values:<br/><code>1 Contract</code><br/><code>2 Permanent</code><br/><code>4 Temporary</code> | ID and name of the Job's Type.<br/>Refer to the [Job Management Webservice](https://github.com/oneworldmarket/idibu-api/blob/master/webservices/job-management/job-management-webservice.md).
-
----
-
-## Application Received webhook
-It is possible to set up a webhook which will automatically ping a pre-defined URL whenever a new candidate arrives in the system.
-
-It is available as part of the [Webhook Management Webservice](https://github.com/oneworldmarket/idibu-api/blob/master/webservices/webhook-management/webhook-management-webservice.md#applicationreceived).
