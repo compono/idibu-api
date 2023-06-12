@@ -18,7 +18,7 @@ Here is how this can look/could look when styling is applied:
 
 ![image](https://www.evernote.com/shard/s383/sh/282b25e9-2780-49ea-acf7-7575a496a640/1cc19af67c2f681f365f633470598ac8/res/5ba5bfaa-a032-4a40-b5aa-77ca48aa5a5e/skitch.png)
 
-Just [contact us](mailto:good@idibu.com) to become a partner and we'll help you getting this done. To find out more about styling those pages, please find some instructions [here](https://github.com/oneworldmarket/idibu-api/blob/master/UPP/styling.md).
+Just [contact us here](https://ww2.idibu.com/chat-with-us?hsCtaTracking=b61cb2ff-688a-4ab6-8c9e-4a8b6ad2eb5c%7Cc8ba4710-c5f6-48dc-88ae-24ffa9621306)) and we'll talk through your overall requirements in more detail. To find out more about styling those pages, please find some instructions [here](https://github.com/oneworldmarket/idibu-api/blob/master/UPP/styling.md).
 
 ## Available parameters
 Below is the list of available parameters, their description, and usage examples.<br/><strong>*</strong> denotes a parameter that is required.
