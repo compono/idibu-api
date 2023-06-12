@@ -1,5 +1,5 @@
 # Introduction
-Alongside the [Universal Posting Page](https://github.com/oneworldmarket/idibu-api/tree/master/UPP), idibu provides a simple to use 'Admanager' interface which can also be fully styled using CSS to compliment the job posting funtionality and sit nativley within the partner platform.
+Alongside the [Universal Posting Page](https://github.com/oneworldmarket/idibu-api/tree/master/UPP), idibu provides a simple to use 'Admanager' interface which can also be fully styled using CSS to compliment the job posting funtionality and sit natively within the partner platform.
 
 The Admanager is an iframe-ready tool which allows the end-user to efficiently manage an individual job ad across all boards/destinations that it was orginally posted to.
 
