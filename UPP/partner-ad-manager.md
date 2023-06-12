@@ -1,9 +1,15 @@
 # Introduction
-Along with the [Universal Posting Page](https://github.com/oneworldmarket/idibu-api/tree/master/UPP), idibu also provides an AdManager.
+Alongside the [Universal Posting Page](https://github.com/oneworldmarket/idibu-api/tree/master/UPP), idibu provides a simple to use 'Admanager' interface which can also be fully styled using CSS to compliment the job posting funtionality and sit nativley within the partner platform.
+
+The Admanager is an iframe-ready tool which allows the end-user to efficiently manage an individual job ad across all boards/destinations that it was orginally posted to.
+
+Here's an example of the core functionality, which allows for reposting, quick repost (refresh), and deletion of the selected advert:
 
 ![image](https://www.idibu.com/images/stories/Portal_logos/aoadmanager.png)
 
-This is an iframe-ready tool that allows to manage a selected job. It will not show the status of all of the ads - just one selected. To ensure convenient usage, **please make sure to always keep Job Reference unique across all adverts (jobs) on each account**!
+ 
+
+Please note, Admanager does not show the status of **all** of the ads posted by any given customer, just the one selected. In most cases, the Admanager is made accessible to the recruiter alongside the 'Post Jobs' tab in the partner's UI. To ensure correct usage, **please ensure Job References remain unique across all adverts (jobs) on each account**.
 
 # Functionality
 ## Indicators
@@ -24,7 +30,7 @@ This is an iframe-ready tool that allows to manage a selected job. It will not s
 - **Delete Advert** - Removes a particular post from the website (provided the website supports such functionality).
 - **Delete All Adverts** - Same as above, but for all applicable posts (ones that are currently active on websites that support deleting).
 
-# Generating the AdManager
+# Generating the Admanager
 ## Endpoint
 https://www.idibu.com/clients/pam/index.php
 
@@ -39,10 +45,10 @@ https://www.idibu.com/clients/pam/index.php
 - **`s`** - _(optional)_ - your partner ID if you wish to utilize custom styling
 
 ## Managing and Reposting the ads
-You can use the [Advert Management Webservice](https://github.com/oneworldmarket/idibu-api/blob/master/webservices/advert-management/advert-management-webservice.md) and [Job Management Webservice](https://github.com/oneworldmarket/idibu-api/blob/master/webservices/job-management/job-management-webservice.md) to obtain all the posting's details (like title, description, etc.) and fill in more data inside your software based on that.
+You can use the [Advert Management Webservice](https://github.com/oneworldmarket/idibu-api/blob/master/webservices/advert-management/advert-management-webservice.md) and [Job Management Webservice](https://github.com/oneworldmarket/idibu-api/blob/master/webservices/job-management/job-management-webservice.md) to obtain all the posting's details (such as title, description, etc.) and fill in more data inside your software based on that.
 
 It's even easier with [UPP](https://github.com/oneworldmarket/idibu-api/tree/master/UPP) - simply by inserting it as the `ins` parameter. For example:
 
 `https://www.idibu.com/clients/pam/index.php?h=ACCOUNT_HASH&ref=JOB_REFERENCE&ins=https%3A%2F%2Fwww.idibu.com%2Fclients%2Fupp%2Findex.php%3Fhash%3DACCOUNT_HASH%26jobRef%3DJOB_REFERENCE%26useOriginalSender%3Dtrue%26findJob%3Dtrue`
 
-This would generate an AdManager with a repost-ready UPP under the "Full Repost" button, with all the original details of the posting already pre-filled.
+This would generate an Admanager with a repost-ready UPP under the "Full Repost" button, with all the original details of the posting already pre-filled.
