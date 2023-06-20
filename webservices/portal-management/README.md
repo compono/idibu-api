@@ -1,1 +1,4 @@
-Use this section to organize your boards and your user logins.
+These webservices allow full control over job board subscriptions (portals).
+
+Alongside the ability to [subscribe to portals via the API](https://github.com/oneworldmarket/idibu-api/blob/master/webservices/portal-management/portal-subscription-management/subscribe-to-portal-and-get-subscription-info.md), we also provide all the necessary tools to [manage credentials](https://github.com/oneworldmarket/idibu-api/tree/master/webservices/portal-management/portal-login-management), [create a job board network page](https://github.com/oneworldmarket/idibu-api/tree/master/webservices/portal-management/portal-details), and also utilise our [LiveAuth API](https://github.com/oneworldmarket/idibu-api/blob/master/webservices/portal-management/portal-subscription-management/LiveAuth-API.md) - the LiveAuth API enables users to authorise idibu for posting job adverts on destinations that require 'OAuth'. Currently, these destinations include social networks such Facebook, Twitter, and LinkedIn.
+
