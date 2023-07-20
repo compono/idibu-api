@@ -79,7 +79,7 @@ GET http://ws.idibu.com/ws/rest/v1/portals/123/subscribe?hash=<your hash>
 </code></pre>
 <h1>
 	Subscribing to portal</h1>
-<p>To subscribe to portal need to send xml in the `data` variable using POST method.</p>
+<p>To subscribe to a portal you need to send xml in the `data` variable using POST method.</p>
 <h2>
 	Request</h2>
 <pre>
