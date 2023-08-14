@@ -1,34 +1,37 @@
-## What is UPP?
-UPP stands for Universal Posting Page. Essentially it's a ready-to-go page that provides you with all the tools you need to add idibu's posting engine to your own platform. All you need to do here is to style the page, but you can have posting working in your system within minutes!
+## Introducing UPP - Your Universal Posting Page
 
-Once the UPP form is all filled and sent, the user will be asked to complete the posting by providing fields specific to chosen boards using the [Post Completion Page](https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/pcp.md).
+Welcome to the Universal Posting Page, or UPP in short. This is your go-to solution for seamlessly integrating idibu's powerful posting engine into your own platform. Picture it as a ready-made page equipped with all the tools necessary to smoothly incorporate idibu's posting capabilities. The best part? You only need to handle the styling aspect. With just a touch of styling and parameter mapping, you'll have the magic of posting working harmoniously within your system, and it takes just minutes to set up!
 
-## How to use it?
-Simply make a call to the link below with required parameters. To make it super smooth, it is best to map idibu parameters with your own variables.
+**How to Get Started**
 
-## Posting URL
-All parameters can be provided in either a traditional HTTP GET or POST fashion, and must be URL-encoded. POST is recommended to get past any character count limits typical for the GET method. For example, in order to provide the hash, sender ID, and job title when generating the page, you should use the following URL:
+The process is simple. You make a call to the designated link, supplying the required parameters. To make things even smoother, we suggest mapping idibu parameters with your own variables.
 
-https://www.idibu.com/clients/upp/index.php?hash=YOUR_HASH&email=SENDER_EMAIL&jobTitle=test%20title
+**The Posting URL**
 
-In theory, with the link above, you could have an almost _instant_ integration with little development work. Once that is live, you'd just need to work on styling and parameter mapping, and you will have a fully functioning multiposting system in your ATS!
+You have the flexibility to provide parameters either through traditional HTTP GET or POST methods, both URL-encoded. However, POST is recommended due to potential character count limitations in GET. For instance, if you want to include the hash, sender ID, and job title when generating the page, here's how the URL should look:
 
-## Styling
-Here is how this can look/could look when styling is applied:
+`https://www.idibu.com/clients/upp/index.php?hash=YOUR_HASH&email=SENDER_EMAIL&jobTitle=test%20title`
+
+This simple link can initiate a nearly instant integration with minimal development effort. Once it's up and running, you can focus on refining the appearance and fine-tuning parameter mapping. Voila! Your ATS will be equipped with a fully functional multiposting system.
+
+**Customizing the Look**
+
+Check out the image below to visualize the kind of impact styling can have. This is a very basic example, but is also heavily adjustable using custom CSS:
 
 ![image](https://www.evernote.com/shard/s383/sh/282b25e9-2780-49ea-acf7-7575a496a640/1cc19af67c2f681f365f633470598ac8/res/5ba5bfaa-a032-4a40-b5aa-77ca48aa5a5e/skitch.png)
 
-Just [contact us here](https://ww2.idibu.com/chat-with-us?hsCtaTracking=b61cb2ff-688a-4ab6-8c9e-4a8b6ad2eb5c%7Cc8ba4710-c5f6-48dc-88ae-24ffa9621306)) and we'll talk through your overall requirements in more detail. To find out more about styling those pages, please find some instructions [here](https://github.com/oneworldmarket/idibu-api/blob/master/UPP/styling.md).
+Don't hesitate to reach out to us to discuss your specific requirements in detail. If you're keen on learning more about styling these pages, you can find instructions [here](https://github.com/oneworldmarket/idibu-api/blob/master/UPP/styling.md).
 
-## Available parameters
-Below is the list of available parameters, their description, and usage examples.<br/><strong>*</strong> denotes a parameter that is required.
+**Available Parameters**
 
-### Account parameters
-- `method` - please specify as "post" if you are proving parameters using HTTP POST. Otherwise, HTTP GET will be accepted.
-- `hash`* - idibu account's hash
-- `partnerId` - idibu partner ID, used for applying custom CSS and options on posting. Please contact us to obtain one.
+Here's a breakdown of the parameters at your disposal, along with their descriptions and examples of usage. Please note that parameters marked with an asterisk (*) are mandatory.
 
-### Sender parameters:
+**Account Parameters**
+- `method`: Specify "post" for HTTP POST; otherwise, HTTP GET is accepted.
+- `hash`: Your idibu account's unique hash.
+- `partnerId`: For applying custom CSS and options on posting. Reach out to us to obtain one.
+
+## Sender parameters:
 - `senderId`* - idibu account user's ID. You can use the following parameters instead to create a new user (`allowNewUsers`, see below) or auto-identify an existing one (`findUser`, see below):
    - `firstName`* - sender's first name
    - `lastName`* - sender's last name
@@ -39,7 +42,7 @@ Below is the list of available parameters, their description, and usage examples
 - `postcode`* - sender's post code
 - `company`* - sender's company name
 
-### Job parameters:
+## Job parameters:
 - `boards` - list of board IDs to publish to, separated by semicolons (e.g. 37;151;123)
 - `jobTitle` - job title (e.g. A%20test%20title)
 - `jobRef` - job reference (e.g. REF123) - minimum 4 characters
@@ -61,7 +64,7 @@ Below is the list of available parameters, their description, and usage examples
 - `appUrl` - optional URL to use if one wants to apply for the job
 - `jobDesc` - job description (e.g. Here%20is%20a%20test%20description)
 
-### Config paramters:
+## Config parameters:
 - `hideTitle` - Set to true to hide the job title field
 - `hideRef` - Set to true to hide the job reference field
 - `hideStartDate` - Set to true to hide the job start date field
@@ -73,58 +76,71 @@ Below is the list of available parameters, their description, and usage examples
 - `overrideRepost` - Set to true if parameters from URL have higher priority than repost data (if `findJob` is set to true)
 - `allowNewUsers` - set to true if you wish to create a new idibu user if an unknown email appears in the email field. True by default.
 
-## Providing board-specific field values
-The posting process is split into two steps. 
 
-1. First, as part of the UPP interface, you provide all the Available parameters, as per the above. Parameters that haven't been pre-filled (and potentially hidden) when generating the page, can be normally filled by the user within the interface.
-2. The second step - the [Post Completion Page](https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/pcp.md) - allows to fill in all the Extra Fields that are unique and specific to particular posting destinations. Despite these being handled by a separate page, you can provide values for them in advance while generating the UPP.<br/>To do that, you need to call the page with an additional `extrafields` parameter. Its contents need to be different for different boards and fields. You can find more info on how to obtain fields names, types and values, as well as all the other board-specific data [here](https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/board-specific-fields.md).<br/>The formats are explained below:
 
-#### Single-select and text fields
-`extrafields=(numeric board id)|(field name)|(field value)`
+## Customizing Field Values for Specific Job Boards
 
-#### Multi-select fields
-`extrafields=(numeric board id)|(field name)|(field value 1),(field value 2),`<br/>
-notice that this format is always closed with a comma, even if you have provided a single value.
+Here's a simple breakdown of how to tailor your field values for different job boards:
 
-#### Double-select fields
-`extrafields=(numeric board id)|(field name),(parent value)|(child value 1)`
+**Step 1: UPP Interface Parameters**
 
-#### Double-multi-select fields
-`extrafields=(numeric board id)|(field name),(parent value)|(child value 1),(child value 2),`<br/>
-notice that this format is always closed with a comma, even if you have provided a single value.
+First, you provide the core information using the UPP interface. This includes all the available parameters we mentioned earlier. If certain details haven't been automatically filled in (and possibly hidden) during page creation, users can conveniently input them within the interface.
 
-#### Providing multiple fields
-Each field has to be sameparated with non-url encoded semicolon, for example:<br/>
-`extrafields=118%7CLoctest%7C08;118%7Cparam%7Cedit;118%7Creqmultisel%7C1,2,;118%7Creqdmutli,1%7C1,2,;`<br/>
-which translates to:<br/>
+**Step 2: The Post Completion Page - Extra Fields**
+
+Moving on to the second step - the [Post Completion Page](https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/pcp.md) (again, heavily adjustable using CSS). This is where you add Extra Fields that are distinct to specific job boards. Though these fields are managed on a separate page, there's a clever shortcut. You can actually input values for them ahead of time while generating the UPP.
+
+How to go about it: Make sure to include an extrafields parameter when calling the page. The content of this parameter will differ depending on the specific boards and fields you're dealing with. Further details about field names, types, values, and other board-specific data are available in our resources.
+
+**Formats to Use**
+
+Here's a clear explanation of the formats you'll work with:
+
+- **Single-Select and Text Fields:**
+  `extrafields=(numeric board id)|(field name)|(field value)`
+
+- **Multi-Select Fields:**
+  `extrafields=(numeric board id)|(field name)|(field value 1),(field value 2),`
+  (Note: Always close this format with a comma, even for a single value.)
+
+- **Double-Select Fields:**
+  `extrafields=(numeric board id)|(field name),(parent value)|(child value 1)`
+
+- **Double-Multi-Select Fields:**
+  `extrafields=(numeric board id)|(field name),(parent value)|(child value 1),(child value 2),`
+  (Again, close this format with a comma, even with one value.)
+
+**Handling Multiple Fields**
+
+Suppose you're dealing with multiple fields. Each field should be separated by a non-URL encoded semicolon. For example:
+
+`extrafields=118%7CLoctest%7C08;118%7Cparam%7Cedit;118%7Creqmultisel%7C1,2,;118%7Creqdmutli,1%7C1,2,;`
+
+This translates to:
+
 `extrafields=118|Loctest|08;118|param|edit;118|reqmultisel|1,2,;118|reqdmutli,1|1,2,;`
 
-#### Escaping the comma
-If you need to provide the comma (`,`) character as part of any extra field, please use `CDATA` to enclose the value, for example:<br/>
-`118%7Creqtest%7C%3C!%5BCDATA%5BComma%2C%20separated%2C%20text%5D%5D%3E`<br/>
-which translates to:<br/>
+**Addressing Commas**
+
+If you need to include a comma (,) within an extra field, here's what you do: Enclose the value with CDATA. For instance:
+
+`118%7Creqtest%7C%3C!%5BCDATA%5BComma%2C%20separated%2C%20text%5D%5D%3E`
+
+Which translates to:
+
 `extrafields=118|reqtest|<![CDATA[Comma, separated, text]]>;`
 
-## Available field values
+## Discovering Field Values
 
-#### Category
-See [Sectors](https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/Sector-and-locations.md#sectors).
+Certain fields have specific values to choose from:
 
-#### Location:
-See [Country codes](https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/Sector-and-locations.md#country-codes).
+- **Category**: Check out the [Sectors](https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/Sector-and-locations.md#sectors).
+- **Location**: Find the [Country codes](https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/Sector-and-locations.md#country-codes).
+- **Job Type**: Options include `Contract` (1), `Permanent` (2), and `Temporary` (4).
+- **Working Hours**: Choose from `Part-time` (1) and `Full-time` (2).
+- **Salary Period**: Select from `Annum`, `Month`, `Week`, `Day`, and `Hour`.
 
-#### Job type:
-`1` – Contract<br/>
-`2` – Permanent<br/>
-`4` – Temporary
+---
+  
 
-#### Working hours:
-`1` – Part-time<br/>
-`2` – Full-time
-
-#### Salary period:
-`annum` – Annum<br/>
-`month` – Month<br/>
-`week` – Week<br/>
-`day` – Day<br/>
-`hour` - Hour
+#### Take charge of your ATS with a fully functional multiposting system and simplify the implemenation using UPP. Offer more to your customers, boost retention and attract new users! 
