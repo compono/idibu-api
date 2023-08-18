@@ -69,7 +69,7 @@ The idibu platform has introduced a robust global location system, offering an e
 #### `GET /[country]/find`
 Returns all matching locations for a given 2-letter ISO `[country]` code.
 
-See below for the available list of countries.
+[See below](https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/Sector-and-locations.md#country-codes) for the available list of countries.
 
 #### Query parameters
 Parameter Name | Type restrictions | Required? | Notes
