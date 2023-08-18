@@ -1,8 +1,5 @@
-## Sectors and Locations
-
-**Sectors**
-
-The idibu platform classifies job postings into specific sectors that encompass various industries and fields. This list provides a clear overview of the available sectors:
+## Sectors
+The idibu platform classifies job postings into sectors encompassing various industries and fields. This list provides a clear overview of the available sectors:
 
 | ID   | Sector                            |
 | ---- | --------------------------------- |
@@ -58,35 +55,65 @@ The idibu platform classifies job postings into specific sectors that encompass 
 | 2810 | Travel & Tourism                  |
 | 2812 | Utilities                         |
 
-<p><a href="http://www.idibu.com/clients/api/idibu_sector_list.xls">Download the idibu sector list in XLS format</a>.</p>
+[Download the idibu sector list in XLS format](http://www.idibu.com/clients/api/idibu_sector_list.xls).
 
 ---
 
-**Locations**
+## Locations
+The idibu platform has introduced a robust global location system, offering an extensive range of potential job posting locations. This system facilitates the retrieval of specific location details, which can be seamlessly integrated with idibu's posting API to identify the desired job posting location precisely.
 
-The idibu platform has introduced a robust global location system, offering an extensive range of potential job posting locations. This system facilitates the retrieval of specific location details, which can be seamlessly integrated with idibu's posting API to precisely identify the desired job posting location.
+### Endpoint
+#### `http://ws.idibu.com/ws/rest/v1/locations/`
 
-**Parameters**
+### Available methods
+#### `GET /[country]/find`
+Returns all matching locations for a given 2-letter ISO `[country]` code.
 
-- `filter_name`: Enter a full or partial location name for searching. This query will encompass both the place name and postal code.
-- `count`: Specify the maximum number of results desired.
+See below for the available list of countries.
 
-**Considerations**
+#### Query parameters
+Parameter Name | Type restrictions | Required? | Notes
+-- | -- | -- | --
+`hash` | **String** | **Yes** | Hash of the idibu account to which the request pertains.
+`filter_name` | **String** | **Yes** | A full or partial location name for searching. This query will encompass both the place name and postal code.
+`count` | **Integer**<br/><br/>Min: 1<br/>Max: 100<br/>Default: 10 | No | Number of matching locations to return.
 
+#### Response format
+
+```xml
+<idibu generator="idibu" version="1.0">
+  <response>
+    <locations>
+      <location>
+        <id>[integer]</id> <!-- sublocation id -->
+        <place_name>[string]</place_name> <!-- location name -->
+        <country_code>[string]</country_code> <!-- 2-letter ISO code -->
+        <postal_code>[string]</postal_code> <!-- postal code -->
+        <latitude>[double]</latitude> <!-- latitude; might be approximate or not present, especially for bigger cities or areas -->
+        <longitude>[double]</longitude> <!-- longitude; might be approximate or not present, especially for bigger cities or areas -->
+        <county>[string]</county> <!-- county or state under which the location belongs; might be empty for some locations -->
+        <region>[string]</region> <!-- region under which the location belongs; might be empty for some locations -->
+        <country>[string]</country> <!-- country name -->
+      </location>
+    </locations>
+  </response>
+  <status>["success"|"failed"]</status> <!-- whether the request succeeded or not -->
+</idibu>
+```
+
+### Considerations
 When developing code to leverage the location webservice, keep the following key points in mind:
-
-- Your software should utilise the webservice to fetch a list of potential locations based on the provided location string. This list can then be presented for selection in your platform prior to job posting.
+- Your software should utilise the webservice to fetch a list of potential locations based on the provided location string. This list can then be presented for selection in your platform prior to the job posting.
 - The country code will function as the location identifier, while the ID returned by the webservice should serve as the sublocation ID.
 - To account for varying postal codes, remember that a single location might have multiple entries within the same county or state. To distinguish these instances, incorporate the state/county tag, applicable to the UK, Ireland, and the USA.
-- Certain locations could have multiple legitimate duplicates throughout the country, sometimes up to 15 instances. Ensure your software can accommodate such scenarios.
-- Consider implementing a location look-up field in your application that mirrors idibu's functionality: <br><br>
+- Certain locations could have multiple legitimate duplicates throughout the country, sometimes up to 15 instances, usually varying by postal code. Ensure your software can accommodate such scenarios.
+- Consider implementing a location look-up field in your application that mirrors idibu's functionality:
 
-<img src = "http://www.idibu.com/images/stories/Portal_logos/lookup_graphic.png" /><br /><br />
+![location lookup](https://www.idibu.com/images/stories/Portal_logos/lookup_graphic.png)
 
-The upper dropdown offers a fixed list of countries, while the subsequent field dynamically queries idibu's location API as text is entered.
+The upper dropdown offers a fixed list of countries, while the subsequent field dynamically queries idibu's location API as the text is entered.
 
-**Country Codes**
-
+### Country Codes
 For accurate calls, use one of the following country codes to specify the country:
 
 | code | Country name |
@@ -187,33 +214,4 @@ For accurate calls, use one of the following country codes to specify the countr
 | VI | Virgin Islands (U.S.) |
 | ZZ | Rest of the world (other countries) |
 
-**Request Example**
-
-```http
-GET http://ws.idibu.com/ws/rest/v1/locations/<COUNTRY CODE HERE>/find?hash=<CLIENT HASH HERE>&filter_name=<LOCATION STRING YOU ARE LOOKING FOR>&count=<MAXIMUM NUMBER OF RESULTS>
-```
-
-**Response Example**
-
-```xml
-<idibu generator="idibu" version="1.0">
-  <response>
-    <locations>
-      <location>
-        <id>1024195</id>
-        <place_name>London</place_name>
-        <country_code>GB</country_code>
-        <postal_code>EC1A</postal_code>
-        <latitude>51.51</latitude>
-        <longitude>-0.13</longitude>
-        <county>Greater London</county>
-        <region>SouthEast</region>
-        <country>England</country>
-      </location>
-    </locations>
-  </response>
-  <status>success</status>
-</idibu>
-```
-
-<a href="https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/spec-data.md">Click here to explore board specific tags</a>
+[Click here to explore board specific tags](https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/spec-data.md)
