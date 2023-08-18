@@ -55,7 +55,7 @@ The idibu platform classifies job postings into sectors encompassing various ind
 | 2810 | Travel & Tourism                  |
 | 2812 | Utilities                         |
 
-[Download the idibu sector list in XLS format](http://www.idibu.com/clients/api/idibu_sector_list.xls).
+[Download the idibu sector list in XLS format](https://www.idibu.com/clients/api/idibu_sector_list.xls).
 
 ---
 
@@ -63,7 +63,7 @@ The idibu platform classifies job postings into sectors encompassing various ind
 The idibu platform has introduced a robust global location system, offering an extensive range of potential job posting locations. This system facilitates the retrieval of specific location details, which can be seamlessly integrated with idibu's posting API to identify the desired job posting location precisely.
 
 ### Endpoint
-#### `http://ws.idibu.com/ws/rest/v1/locations/`
+#### `https://ws.idibu.com/ws/rest/v1/locations/`
 
 ### Available methods
 #### `GET /[country]/find`
