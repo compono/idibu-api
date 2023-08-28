@@ -1,44 +1,25 @@
-<p><strong>The API uses what we call Dynamic Core Fields (DCF). </strong></p>
-<p>These fields are not in the group of core fields, and are not needed in order to successfully post a job, but makes integrating and posting to boards a little easier. These fields are shared among the boards, you can find out which ones by using the <a href="https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/spec-data.md">board discovery service</a>.</p>
-<p>The purpose of these fields is to aggregate data repeated in the boards extra fields, while still allowing for customization on a per board basis when required.</p>
-<p>Whenever a DCF is present in the XML payload, if they are used by the different boards to which the client intends to post, its values are used to fill the corresponding extra fields when those are not present in the request.</p>
-<p>So for example, many boards will accept a text version of the start date - so if you&#39;d like &#39;ASAP&#39; to appear as the start date rather than an actual date, sending this through via the &quot;startDateOverride&quot; field means all boards supporting this have their extra fields auto-propagated. Below is the field list, and you can find examples of its usage in the <a href="https://github.com/oneworldmarket/idibu-api/tree/master/posting-api/examples">examples page</a>.</p>
-<table align="center" border="1" cellpadding="2" cellspacing="2" style="font-size: 13px; color: black; background-color: white; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 5px; " width="90%">
-	<tbody>
-		<tr valign="top">
-			<th scope="col">
-				Field Name</th>
-			<th scope="col">
-				Data Type</th>
-			<th scope="col">
-				Description</th>
-		</tr>
-		<tr valign="top">
-			<td>
-				startDateOverride</td>
-			<td>
-				text</td>
-			<td>
-				Start Date Description/Override</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				salaryOverride</td>
-			<td>
-				text</td>
-			<td>
-				Salary&nbsp;Description/Override. Please provide this tag below the other Salary override tags.</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				app_url</td>
-			<td>
-				text</td>
-			<td>
-				Application URL<br />
-				&nbsp;</td>
-		</tr>
-	</tbody>
-</table>
+## Dynamic Core Fields (DCF)
 
-Now click <a href="https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/sender-tags.md">here</a> to learn how to specify your ad's sender.
+The idibu API incorporates a feature termed as Dynamic Core Fields (DCF) to enhance the integration process and simplify job posting. 
+
+Unlike 'core' fields, DCFs are not mandatory for a successful job posting; however, they facilitate seamless integration and posting. These fields are universally applicable across different job boards and can be identified using the <a href="https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/spec-data.md">board discovery service</a>.</p>
+
+The primary objective of these fields is to aggregate frequently recurring data found in job boards specific 'extra fields', while still permitting customisation on a per-board basis when necessary.
+
+In instances where a DCF is included within the XML payload, and if these fields are utilised by the boards to which the client plans to post, the values provided are employed to populate the corresponding job board 'extra fields' when they are absent from the request.
+
+For instance, numerous job boards accept textual representations of start dates. If the preference is to display 'ASAP' as the start date instead of an explicit date, transmitting this information via the 'startDateOverride' field ensures that all supporting boards have their relative extra fields automatically propogated with the text-override supplied. The list of fields is provided below, and practical usage examples can be found on the <a href="https://github.com/oneworldmarket/idibu-api/tree/master/posting-api/examples">examples page</a>.</p>
+
+**Field List:**
+
+- **Field Name:** startDateOverride
+  - **Data Type:** text
+  - **Description:** Start Date Description/Override
+
+- **Field Name:** salaryOverride
+  - **Data Type:** text
+  - **Description:** Salary Description/Override. Please place this tag below other Salary override tags.
+
+- **Field Name:** app_url
+  - **Data Type:** text
+  - **Description:** Application URL
