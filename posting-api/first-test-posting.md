@@ -1,14 +1,21 @@
-<p>You can use the XML below to provide a proof of concept post. To do this you&#39;ll need to:</p>
+## Test Post Example and Common Issues
 
-- Add these boards to your idibu account: 
-  - a) idibu Developer Board (id 517)
-  - b) Supply Chain Online (id 214)
-  - c) Jobsite (id 41)
-  - d) CV-Library (id 39) - just add test/test login credentials for the boards, if you do post adverts, they will fail to be accepted by the boards, though posts should work for our developer board.
-- You will find an XML test page at <a href="http://www.idibu.com/get_xml_jobs.php" target="_blank">http://www.idibu.com/get_xml_jobs.php</a> - ensure it is in &#39;V3&#39; mode, add your HASH code and the XML to post into the system
-- You will need to find the Team ID of your sender profile, check for the ID inside idibu when you hover over the Team to edit it
-- The XML below posts to four boards - we have added extra fields for Supply Chain Online so you can see how you can optionally send this data through, or alternatively just let your advert posters complete these details on the posting completion page
-- The redirect URL takes you to Google, this can of course be changed to whatever you want
+To perform a preliminary test posting, you can utilise the provided XML below as a proof of concept. The process involves the following steps:
+
+1. Add the specified boards to your idibu account: <br> <br>
+   a) idibu Developer Board (ID 517) <br>
+   b) Supply Chain Online (ID 214) <br>
+   c) Jobsite (ID 41) <br>
+   d) CV-Library (ID 39)
+
+   If you intend to post jobs, simply use test/test login credentials. Please note, actual advert postings to these boards will **not** be accepted or published; however, they should function with our developer board.
+
+2. Access the XML test page at http://www.idibu.com/get_xml_jobs.php. Ensure it's set to 'V3' mode, insert your account HASH key and XML for posting into the system.
+
+
+The provided XML is configured to post to four boards. Notably, extra fields have been included for Supply Chain Online, showcasing how you can optionally transmit this data. Alternatively, you can allow advert posters to complete these details using the [Post Completion Page](https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/pcp.md)
+
+The redirection URL leads to Google, which can be customised to your preference.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -82,16 +89,25 @@
 </idibu>
 ```
 
-## Common issues
-<p>Q: I&#39;m getting errors like &quot;The DESCRIPTION tag is missing from the xml payload&quot;</p>
-<p>A: Make sure you URL encode the XML payload rather than passing it as XML.</p>
-<p>Q: I get a response the board &#39;x&#39; is not in our current subscribed list?</p>
-<p>A: Make sure you have an active subscription to the board you are posting to. In your idibu account, go to job board subscriptions, inactive tab - and subscribe to the board you want to post to.</p>
-<p>Q: Do I need to send the board login details in with the XML?</p>
-<p>A: When you add a job board inside idibu you give the admin details there - when you post a job the system uses these fields to post the job to the board. You can optionally send these extra fields in the XML instead. If you do so they will override the board login details already loaded inside your account for that board.</p>
+Should you encounter any issues during this process, some common queries and resolutions are provided below:
 
-Be sure to check our [XML examples to help you developing](https://github.com/oneworldmarket/idibu-api/tree/master/posting-api/examples).
+## Troubleshooting and Common Queries
 
-Before you begin coding, perhaps worth to check [our code library](https://github.com/oneworldmarket/idibu-api/blob/master/webservices/code-library/.net-basic-interaction.md) in case there's something you can re-use and save time?
+Encountering any issues during this process? Below are some common queries and their resolutions:
 
-Good luck and happy postin!
+**Q: I'm encountering errors like "The DESCRIPTION tag is missing from the XML payload."**
+
+A: To address this, ensure that you URL encode the XML payload rather than passing it as plain XML.
+
+**Q: I receive a response stating that board 'x' is not in our current subscribed list?**
+
+A: To resolve this, verify that you have an active subscription in the idibu instance you're using for the board you're attempting to post to. 
+
+**Q: Is it necessary to include the board login details in the XML?**
+
+A: When you add a job board within idibu, in nearly all cases you will need to provide posting credntials. During the job posting process, the system uses these details by default when posting to the respective job board(s). Optionally, you can incorporate these extra fields within the XML. This will override the board login details already present in your account for that specific board.
+
+---
+
+
+Before commencing your coding [consider exploring our XML examples for guidance](https://github.com/oneworldmarket/idibu-api/tree/master/posting-api/examples). Also [our code library](https://github.com/oneworldmarket/idibu-api/blob/master/webservices/code-library/.net-basic-interaction.md) library might also offer reusable components that can expedite your development process.
