@@ -1,25 +1,23 @@
-## Job Board 'Extra fields' Retrieval through Webservice
+## Portal-specific data retrieval
 
-This webservice facilitates the acquisition of data related to Portal objects, encompassing job boards, websites, and social media platforms suitable for job advertisement placement. Depending how you've chosen to integrate your system with idibu (e.g. full API, and not utilising [Post Completion Pages](https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/pcp.md)), accessing and presenting specific data for individual Portals may be necessary.
+This webservice facilitates the acquisition of data related to Portal objects, encompassing job boards, websites, and social media platforms suitable for job advertisement placement. Depending on how you've chosen to integrate your system with idibu (e.g. full API, and not utilising [Post Completion Pages](https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/pcp.md)), accessing and presenting specific data for individual Portals may be necessary.
 
 ### Listing Portals
-
 This method enables the listing of Portals based on appropriate filtering and ordering criteria for a given account.
 
-**Endpoint:** `https://ws.idibu.com/clients/json.php`
+### Endpoint
+#### `https://ws.idibu.com/clients/json.php`
 
-**Query Parameters:**
+### Query parameters
+Parameter Name | Type restrictions | Required? | Notes
+-- | -- | -- | --
+`hash` | **String** | **Yes** | Hash of the idibu account to which the request pertains.
+`action` | **String** | **Yes** | Must be set to `UserPortal`.
+`class` | **String** | **Yes** | Must be set to `Portal`.
+`format` | **String** | **Yes** | Must be set to `XML`.
+`list` | **String (enum)**<br/><br/>Accepted values:<br/><code>all</code> - All available Portals<br/><code>subscribed</code> - Portals to which the account is subscribed<br/><code>unsubscribed</code> - Portals to which the account is not subscribed | **Yes** | Which Portals to list.
 
-| Parameter Name | Type Restrictions | Required | Notes |
-|----------------|-------------------|----------|-------|
-| `hash`           | String            | Yes      | Hash of the idibu account for the request. |
-| `action`         | String            | Yes      | Must be set to `UserPortal`. |
-| `class`          | String            | Yes      | Must be set to `Portal`. |
-| `format`         | String            | Yes      | Must be set to `XML`. |
-| `list`           | String (enum)     | Yes      | Accepted values:<br/> `all` - All available Portals<br/> `subscribed` - Portals subscribed to by the account<br/> `unsubscribed` - Portals not subscribed to by the account. |
-
-**Response Format:**
-
+### Response format
 ```xml
 <idibu>
   <boards>
@@ -39,26 +37,26 @@ This method enables the listing of Portals based on appropriate filtering and or
 </idibu>
 ```
 
+---
 
-### Portal's Detailed Information
+### Portal's detailed information
+This method allows the retrieval of comprehensive details about a specific Portal, encompassing the essential data and extra fields required for successful postings.
 
-This method allows retrieval of comprehensive details about a specific Portal, encompassing the essential data and extra fields required for successful postings.
+### Endpoint
+#### `https://ws.idibu.com/clients/json.php`
 
-**Endpoint:** `https://ws.idibu.com/clients/json.php`
-
-**Query Parameters:**
-
-| Parameter Name | Type Restrictions | Required | Notes |
-|----------------|-------------------|----------|-------|
-| `hash`           | String            | Yes      | Hash of the idibu account for the request. |
-| `action`         | String            | Yes      | Must be set to `showData`. |
-| `boardID`        | Integer           | Yes      | ID of the Portal for detailed information. |
-| `class`          | String            | Yes      | Must be set to `Portal`. |
-| `format`         | String            | Yes      | Must be set to `XML`. |
-| `country`        | 2-letter ISO code | No       | Country code for Extra Field lookup.<br/> While this parameter is not required and will not affect most Portals, **it is strongly recommended to always include** as some Portals use country input in order to populate or filter their location Extra Fields with matching options. |
-| `location`       | String            | No       | Location for Extra Field lookup.<br/> While this parameter is not required and will not affect most Portals, **it is strongly recommended to always include** as some Portals require a Location string to be specified in order to populate their location Extra Fields with matching options. If no Location is provided (or the name matches no available options), the fields may not populate and therefore prevent the posting. |
-| `profileID`      | Integer           | No       | ID of the posting user.<br/> While this parameter is not required, **it is strongly recommended to always include as some Extra Field values may depend on each particular user's setup**. Refer to the [User Management Webservice](https://github.com/oneworldmarket/idibu-api/tree/master/webservices/user-management).|
-| `title`          | String            | No       | Title of the job.<br/> While this parameter is not required, **it is strongly recommended to always include** as some Portals use the job's title to filter or recommend some Extra Field values.|
+### Query parameters
+Parameter Name | Type restrictions | Required? | Notes
+-- | -- | -- | --
+`hash` | **String** | **Yes** | Hash of the idibu account to which the request pertains.
+`action` | **String** | **Yes** | Must be set to `showData`.
+`boardID` | **Integer** | **Yes** | ID of the Portal to show.
+`class` | **String** | **Yes** | Must be set to `Portal`.
+`format` | **String** | **Yes** | Must be set to `XML`.
+`country` | **2-letter ISO code** | No | Country code for Extra Field lookup.<br/>While this parameter is not required and will not affect most Portals, **it is strongly recommended to always include** as some Portals use country input in order to populate or filter their location Extra Fields with matching options.
+`location` | **String** | No | Location for Extra Field lookup.<br/>While this parameter is not required and will not affect most Portals, **it is strongly recommended to always include** as some Portals require a Location string to be specified in order to populate their location Extra Fields with matching options. If no Location is provided (or the name matches no available options), the fields may not populate and therefore prevent the posting.
+`profileID` |  **Integer** | No | ID of the posting user.<br/>While this parameter is not required, **it is strongly recommended to always include as some Extra Field values may depend on each particular user's setup**. Refer to the [User Management Webservice](https://github.com/oneworldmarket/idibu-api/tree/master/webservices/user-management).
+`title` | **String** | No | Title of the job.<br/>While this parameter is not required, **it is strongly recommended to always include** as some Portals use the job's title to filter or recommend some Extra Field values.
 
 ### Response format
 ```xml
@@ -112,40 +110,34 @@ This method allows retrieval of comprehensive details about a specific Portal, e
 </idibu>
 ```
 
-### Extra Field Validators
-
+## Extra Field Validators
 Validators impose constraints on specific Extra Fields, ensuring successful postings. These include limits related to field length, content, numeric values, and data type.
 
-**Field Length Validators:**
+### Field length
+- `fieldMaxLength` - Maximum character count
+- `fieldMinLength` - Minimum character count
+- `fieldMaxWords` - Maximum word count
+- `fieldMinWords` - Minimum word count
+- `listHasMaxChoices` - Maximum choice count (only for `"type=select" multi="true"` fields)
+- `listHasMinChoices` - Minimum choice count (only for `"type=select" multi="true"` fields)
 
-- `fieldMaxLength`: Maximum character count
-- `fieldMinLength`: Minimum character count
-- `fieldMaxWords`: Maximum word count
-- `fieldMinWords`: Minimum word count
-- `listHasMaxChoices`: Maximum choice count (for "type=select" multi="true" fields)
-- `listHasMinChoices`: Minimum choice count (for "type=select" multi="true" fields)
+### Field content
+- `fieldWithoutLinks` - Restricts links in the field
+- `fieldWithoutEmails` - Restricts email addresses in the field
 
-**Field Content Validators:**
+### Numeric fields
+- `intMaxSize` - Maximum allowed number
+- `intMinSize` - Minimum allowed number
 
-- `fieldWithoutLinks`: Restricts links in the field
-- `fieldWithoutEmails`: Restricts email addresses in the field
+### Field data type
+- `onlyNumbers` - Allows only numbers
+- `fieldHasProperLink` - Allows valid URLs
+- `validUKPostCode` - Allows valid UK post codes
 
-**Numeric Field Validators:**
-
-- `intMaxSize`: Maximum allowed number
-- `intMinSize`: Minimum allowed number
-
-**Field Data Type Validators:**
-
-- `onlyNumbers`: Allows only numbers
-- `fieldHasProperLink`: Allows valid URLs
-- `validUKPostCode`: Allows valid UK post codes
-
-### Extra Field Types
-
-- `text`: Standard text field (no newlines)
-- `textarea`: Standard text area (newlines allowed)
-- `select`: Dropdown field (single- or double-select with one or multiple options)
-- `hidden`: Non-visible field without user control
+## Extra Field Types
+- `text` - Standard text field (no newlines)
+- `textarea` - Standard text area (newlines allowed)
+- `select` - Dropdown field (single- or double-select with one or multiple options)
+- `hidden` - Non-visible field without user control
 
 For more details on sending extra field data in the payload, refer to [spec-data documentation](https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/spec-data.md).
