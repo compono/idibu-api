@@ -1,7 +1,9 @@
-This webservice allows to obtain data relating to Portal objects - job boards, websites, social media where job adverts can be posted. Depending on how you're integrating your system with idibu (e.g. not utilizing [Post Completion Pages](https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/pcp.md)), you may need to obtain and present to your users all the data specific to particular Portals.
+## Portal-specific data retrieval
 
-## Listing Portals
-This method allows to list appropriately filtered and ordered Portals available for a given account.
+This webservice facilitates the acquisition of data related to Portal objects, encompassing job boards, websites, and social media platforms suitable for job advertisement placement. Depending on how you've chosen to integrate your system with idibu (e.g. full API, and not utilising [Post Completion Pages](https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/pcp.md)), accessing and presenting specific data for individual Portals may be necessary.
+
+### Listing Portals
+This method enables the listing of Portals based on appropriate filtering and ordering criteria for a given account.
 
 ### Endpoint
 #### `https://ws.idibu.com/clients/json.php`
@@ -37,8 +39,8 @@ Parameter Name | Type restrictions | Required? | Notes
 
 ---
 
-## Portal's detailed info
-This method allows to obtain more detailed information about a particular Portal. This is the main method of obtaining all the extra fields and data specific to the Portal, required to perform a successful posting.
+### Portal's detailed information
+This method allows the retrieval of comprehensive details about a specific Portal, encompassing the essential data and extra fields required for successful postings.
 
 ### Endpoint
 #### `https://ws.idibu.com/clients/json.php`
@@ -51,10 +53,10 @@ Parameter Name | Type restrictions | Required? | Notes
 `boardID` | **Integer** | **Yes** | ID of the Portal to show.
 `class` | **String** | **Yes** | Must be set to `Portal`.
 `format` | **String** | **Yes** | Must be set to `XML`.
-`country` | **2-letter ISO code** | No | Country to look up the Extra Fields with.<br>While this parameter is not required and will not affect most Portals, **it is strongly recommended to always include** as some Portals use country input in order to populate or filter their location Extra Fields with matching options.
-`location` | **String** | No | Location to look up the Extra Fields with.<br>While this parameter is not required and will not affect most Portals, **it is strongly recommended to always include** as some Portals require a Location string to be specified in order to populate their location Extra Fields with matching options. If no Location is provided (or the name matches no available options), the fields may not populate and therefore prevent the posting.
-`profileID` |  **Integer** | No | ID of the person posting the job.<br>While this parameter is not required, **it is strongly recommended to always include** as some Extra Field values may depend on each particular user's setup.<br/>Refer to the [User Management Webservice](https://github.com/oneworldmarket/idibu-api/tree/master/webservices/user-management).
-`title` | **String** | No | Title of the job.<br>While this parameter is not required, **it is strongly recommended to always include** as some Portals use the job's title to filter or recommend some Extra Field values.
+`country` | **2-letter ISO code** | No | Country code for Extra Field lookup.<br/>While this parameter is not required and will not affect most Portals, **it is strongly recommended to always include** as some Portals use country input in order to populate or filter their location Extra Fields with matching options.
+`location` | **String** | No | Location for Extra Field lookup.<br/>While this parameter is not required and will not affect most Portals, **it is strongly recommended to always include** as some Portals require a Location string to be specified in order to populate their location Extra Fields with matching options. If no Location is provided (or the name matches no available options), the fields may not populate and therefore prevent the posting.
+`profileID` |  **Integer** | No | ID of the posting user.<br/>While this parameter is not required, **it is strongly recommended to always include as some Extra Field values may depend on each particular user's setup**. Refer to the [User Management Webservice](https://github.com/oneworldmarket/idibu-api/tree/master/webservices/user-management).
+`title` | **String** | No | Title of the job.<br/>While this parameter is not required, **it is strongly recommended to always include** as some Portals use the job's title to filter or recommend some Extra Field values.
 
 ### Response format
 ```xml
@@ -109,31 +111,33 @@ Parameter Name | Type restrictions | Required? | Notes
 ```
 
 ## Extra Field Validators
-Validators are limits that should be applied to certain Extra Fields; otherwise, the posting will most likely fail.
+Validators impose constraints on specific Extra Fields, ensuring successful postings. These include limits related to field length, content, numeric values, and data type.
 
 ### Field length
-- `fieldMaxLength` - maximum character count
-- `fieldMinLength` - minimum character count
-- `fieldMaxWords` - maximum word count
-- `fieldMinWords` - minimum word count
-- `listHasMaxChoices` - maximum choice count (only for `"type=select" multi="true"` fields)
-- `listHasMinChoices` - minimum choice count (only for `"type=select" multi="true"` fields)
+- `fieldMaxLength` - Maximum character count
+- `fieldMinLength` - Minimum character count
+- `fieldMaxWords` - Maximum word count
+- `fieldMinWords` - Minimum word count
+- `listHasMaxChoices` - Maximum choice count (only for `"type=select" multi="true"` fields)
+- `listHasMinChoices` - Minimum choice count (only for `"type=select" multi="true"` fields)
 
 ### Field content
-- `fieldWithoutLinks` - if set to `1`, the field cannot contain any links
-- `fieldWithoutEmails` - if set to `1`, the field cannot contain any e-mail addresses
+- `fieldWithoutLinks` - Restricts links in the field
+- `fieldWithoutEmails` - Restricts email addresses in the field
 
 ### Numeric fields
-- `intMaxSize` - maximum allowed number
-- `intMinSize` - minimum allowed number
+- `intMaxSize` - Maximum allowed number
+- `intMinSize` - Minimum allowed number
 
 ### Field data type
-- `onlyNumbers` - if set to `1`, only numbers are allowed in the field
-- `fieldHasProperLink` - if set to `1`, only valid URLs are allowed in the field
-- `validUKPostCode` - if set to `1`, only valid UK post codes are allowed in the field
+- `onlyNumbers` - Allows only numbers
+- `fieldHasProperLink` - Allows valid URLs
+- `validUKPostCode` - Allows valid UK post codes
 
 ## Extra Field Types
-- `text` - a standard text field (newlines not allowed)
-- `textarea` - a standard text area (newlines allowed)
-- `select` - a dropdown field (can be single- or double-select with only one or multiple options allowed)
-- `hidden` - the field should not be visible in the interface and the user should have no control over the value
+- `text` - Standard text field (no newlines)
+- `textarea` - Standard text area (newlines allowed)
+- `select` - Dropdown field (single- or double-select with one or multiple options)
+- `hidden` - Non-visible field without user control
+
+For more details on sending extra field data in the payload, refer to [spec-data documentation](https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/spec-data.md).
