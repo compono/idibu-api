@@ -67,7 +67,7 @@ Here's a breakdown of the parameters at your disposal, along with their descript
 ## Customizing the Look
 Check out the image below to visualize the kind of impact styling can have. This is a very basic example, but is also heavily adjustable using custom CSS:
 
-![image](https://www.evernote.com/shard/s383/sh/282b25e9-2780-49ea-acf7-7575a496a640/1cc19af67c2f681f365f633470598ac8/res/5ba5bfaa-a032-4a40-b5aa-77ca48aa5a5e/skitch.png)
+![image](https://www.idibu.com/images/UPP.png)
 
 Don't hesitate to reach out to us to discuss your specific requirements in detail. If you're keen on learning more about styling these pages, you can find instructions [here](https://github.com/oneworldmarket/idibu-api/blob/master/UPP/styling.md).
 
