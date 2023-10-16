@@ -40,7 +40,7 @@ https://www.idibu.com/clients/pam/index.php
 - **`ins`** - _(required)_ - the repost link. You can use this in your software to generate your repost page same as when posting a new ad. By default, two parameters will be added to the provided URL:
    - `J` - job ID
    - `M` - will take value of `R` which stands for "REPOST" (see [API methods](https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/methods.md) for more info)
-- **`noRepostParameters`** - _(optional)_ - if set to `true`, no `J` and `M=R` parameters will be appended to the `ins` URL on full repost
+- **`noRepostParameters`** - _(optional)_ - if set to `true`, no `J` and `M=R` parameters will be appended to the `ins` URL on full repost. **Please set this to `true` if you're redirecting to UPP**.
 - **`sameWindow`** - _(optional)_ - if set to `true`, the Full Repost action will open a page in the current window instead of a new tab
 - **`s`** - _(optional)_ - your partner ID if you wish to utilize custom styling
 
@@ -49,6 +49,6 @@ You can use the [Advert Management Webservice](https://github.com/oneworldmarket
 
 It's even easier with [UPP](https://github.com/oneworldmarket/idibu-api/tree/master/UPP) - simply by inserting it as the `ins` parameter. For example:
 
-`https://www.idibu.com/clients/pam/index.php?h=ACCOUNT_HASH&ref=JOB_REFERENCE&ins=https%3A%2F%2Fwww.idibu.com%2Fclients%2Fupp%2Findex.php%3Fhash%3DACCOUNT_HASH%26jobRef%3DJOB_REFERENCE%26useOriginalSender%3Dtrue%26findJob%3Dtrue`
+`https://www.idibu.com/clients/pam/index.php?h=ACCOUNT_HASH&ref=JOB_REFERENCE&noRepostParameters=true&ins=https%3A%2F%2Fwww.idibu.com%2Fclients%2Fupp%2Findex.php%3Fhash%3DACCOUNT_HASH%26jobRef%3DJOB_REFERENCE%26useOriginalSender%3Dtrue%26findJob%3Dtrue`
 
 This would generate an Admanager with a repost-ready UPP under the "Full Repost" button, with all the original details of the posting already pre-filled.
