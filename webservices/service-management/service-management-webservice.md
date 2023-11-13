@@ -17,7 +17,7 @@
     + [Query parameters](#query-parameters-2)
     + [Query format](#query-format-2)
     + [Response format](#response-format-2)
-  * **[Changing password](#changing-password)**
+  * **[Updating an account](#updating-an-account)**
     + [Endpoint](#endpoint-3)
     + [Available methods](#available-methods-3)
     + [Query parameters](#query-parameters-3)
@@ -70,10 +70,16 @@ Parameter Name | Type restrictions | Required? | Notes
   <firstname>[string]</firstname> <!-- admin user's first name -->
   <lastname>[string]</lastname> <!-- admin user's last name -->
   <email>[string:email]</email> <!-- admin user's email address -->
-  <phone>[string:phone]</phone> <!-- admin user's phone number -->
   <company-name>[string]</company-name> <!-- account's company name -->
-  <user-number>[integer]</user-number> <!-- deprecated, please default to 0 -->
-  <renewal-date>[string:date]</renewal-date> <!-- deprecated, please default to 20 years in the future; format: YYYY-MM-DD -->
+  <address>[string]</address> <!-- account's company address; optional -->
+  <address1>[string]</address1> <!-- address line 1 -->
+  <address2>[string]</address2> <!-- address line 2; optional -->
+  <address3>[string]</address3> <!-- address line 3 (County or State); optional -->
+  <country>[string]</country> <!-- the main country in which the company resides -->
+  <postcode>[string]</postcode> <!-- account's company postal code -->
+  <phone>[string:phone]</phone> <!-- account's primary phone number -->
+  <fax>[string:phone]</fax> <!-- account's primary fax; optional -->
+  <www>[string:url]</www> <!-- the address of the company's website -->
 </idibu>
 ```
 
@@ -174,6 +180,14 @@ Parameter Name | Type restrictions | Required? | Notes
       <email>[string:email]</email> <!-- admin user's email address -->
       <phone>[string:phone]</phone> <!-- admin user's phone number -->
       <company-name>[string]</company-name> <!-- account's company name -->
+      <address>[string]</address> <!-- account's company address -->
+      <address1>[string]</address1> <!-- address line 1 -->
+      <address2>[string]</address2> <!-- address line 2 -->
+      <address3>[string]</address3> <!-- address line 3 (County or State) -->
+      <country>[string]</country> <!-- the main country in which the company resides -->
+      <postcode>[string]</postcode> <!-- account's company postal code -->
+      <fax>[string:phone]</fax> <!-- account's primary fax -->
+      <www>[string:url]</www> <!-- the address of the company's website -->
     </client>
   </response>
   <status>["success"|"failed"]</status> <!-- whether the request succeeded or not -->
@@ -182,8 +196,8 @@ Parameter Name | Type restrictions | Required? | Notes
 
 ---
 
-## Changing password
-This method allows to change an existing account's password.
+## Updating an account
+This method allows to change some of the account's details.
 
 ### Endpoint
 #### `https://ws.idibu.com/ws/rest/v1/service`
@@ -196,7 +210,7 @@ Updates the account's password.
 Parameter Name | Type restrictions | Required? | Notes
 -- | -- | -- | --
 `idibupartner` | **String** | **Yes** | Must be set to `yes`.
-`data` | **String** | **Yes** | The full query XML (see the [Query format](#query-format-3) below), URL-encoded within the parameter.
+`data` | **String** | **Yes** | The full query XML (see the [Query format](#query-format-3) below), URL-encoded within the parameter.<br/>Only fields that need updating can be provided.
 
 ### Query format
 ```xml
@@ -205,6 +219,19 @@ Parameter Name | Type restrictions | Required? | Notes
   <exempt-id>[integer]</exempt-id> <!-- partner id provided to you by idibu -->
   <client-hash>[string]</client-hash> <!-- hash of the idibu account to which the request pertains -->
   <password>[string]</password> <!-- new login password; max 32 characters -->
+  <firstname>[string]</firstname> <!-- new admin user's first name -->
+  <lastname>[string]</lastname> <!-- new admin user's last name -->
+  <email>[string:email]</email> <!-- new admin user's email address -->
+  <company-name>[string]</company-name> <!-- new account's company name -->
+  <address>[string]</address> <!-- new account's company address -->
+  <address1>[string]</address1> <!-- new address line 1 -->
+  <address2>[string]</address2> <!-- new address line 2 -->
+  <address3>[string]</address3> <!-- new address line 3 (County or State) -->
+  <country>[string]</country> <!-- new the main country in which the company resides -->
+  <postcode>[string]</postcode> <!-- new account's company postal code -->
+  <phone>[string:phone]</phone> <!-- new account's primary phone number -->
+  <fax>[string:phone]</fax> <!-- new account's primary fax -->
+  <www>[string:url]</www> <!-- new the address of the company's website -->
 </idibu>
 ```
 
