@@ -57,7 +57,6 @@ Creates a new account.
 ### Query parameters
 Parameter Name | Type restrictions | Required? | Notes
 -- | -- | -- | --
-`idibupartner` | **String** | **Yes** | Must be set to `yes`.
 `data` | **String** | **Yes** | The full query XML (see the [Query format](#query-format) below), URL-encoded within the parameter.
 
 ### Query format
@@ -111,7 +110,6 @@ Returns the full list of accounts.
 ### Query parameters
 Parameter Name | Type restrictions | Required? | Notes
 -- | -- | -- | --
-`idibupartner` | **String** | **Yes** | Must be set to `yes`.
 `data` | **String** | **Yes** | The full query XML (see the [Query format](#query-format-1) below).
 `count` | **Integer**<br/><br/>Min: 1<br/>Max: 100<br/>Default: 10 | No | Number of accounts to return.
 `offset` | **Integer**<br/><br/>Min: 0<br/>Default: 0 | No | Numeric offset from where to start fetching accounts (pagination).
@@ -155,7 +153,6 @@ Returns the detailed info for the account with the provided `<client-id/>`.
 ### Query parameters
 Parameter Name | Type restrictions | Required? | Notes
 -- | -- | -- | --
-`idibupartner` | **String** | **Yes** | Must be set to `yes`.
 `data` | **String** | **Yes** | The full query XML (see the [Query format](#query-format-2) below).
 
 ### Query format
@@ -209,7 +206,6 @@ Updates the account's password.
 ### Query parameters
 Parameter Name | Type restrictions | Required? | Notes
 -- | -- | -- | --
-`idibupartner` | **String** | **Yes** | Must be set to `yes`.
 `data` | **String** | **Yes** | The full query XML (see the [Query format](#query-format-3) below), URL-encoded within the parameter.<br/>Only fields that need updating can be provided.
 
 ### Query format
@@ -265,7 +261,6 @@ Lists all services currently enabled on an account.
 ### Query parameters
 Parameter Name | Type restrictions | Required? | Notes
 -- | -- | -- | --
-`idibupartner` | **String** | **Yes** | Must be set to `yes`.
 `data` | **String** | **Yes** | The full query XML (see the [Query format](#query-format-4) below), URL-encoded within the parameter.
 
 ### Query format
@@ -307,7 +302,6 @@ Removes specified services from an account.
 ### Query parameters
 Parameter Name | Type restrictions | Required? | Notes
 -- | -- | -- | --
-`idibupartner` | **String** | **Yes** | Must be set to `yes`.
 `data` | **String** | **Yes** | The full query XML (see the [Query format](#query-format-5) below), URL-encoded within the parameter.
 
 ### Query format
