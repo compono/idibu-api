@@ -1,5 +1,5 @@
 ### Disclaimer
-Please keep in mind that any requests performed as part of these webservices should be sent as `application/x-www-form-urlencoded`.
+Please keep in mind that any parameters sent as part of POST requests to these webservices should be sent as form parameters (`content-type: application/x-www-form-urlencoded`), not as URL parameters.
 
 ### Contents
 
