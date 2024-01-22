@@ -75,7 +75,7 @@ Returns all matching locations for a given 2-letter ISO `[country]` code.
 Parameter Name | Type restrictions | Required? | Notes
 -- | -- | -- | --
 `hash` | **String** | **Yes** | Hash of the idibu account to which the request pertains.
-`filter_name` | **String** | **Yes** | A full or partial location name for searching. This query will encompass both the place name and postal code.
+`filter_name` | **String** | **Yes** | A full or partial location name for searching. This query will encompass both the place name and postal code.<br/>Additional filters (region, county, state) can be specified after a comma, including two- or three-letter state abbreviations for specific countries.
 `count` | **Integer**<br/><br/>Min: 1<br/>Max: 100<br/>Default: 10 | No | Number of matching locations to return.
 
 #### Response format
