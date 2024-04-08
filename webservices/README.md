@@ -9,7 +9,7 @@ Please keep in mind that any parameters sent as part of POST requests to these w
 4. [Portal management](https://github.com/oneworldmarket/idibu-api/tree/master/webservices/portal-management) - list, subscribe to, and manage job posting destinations.
 5. [Quota management](https://github.com/oneworldmarket/idibu-api/tree/master/webservices/quota-management) - view, change, and apply posting limitations.
 6. [User management](https://github.com/oneworldmarket/idibu-api/tree/master/webservices/user-management) - add, edit and organize users.
-7. [Reporting management](https://github.com/compono/idibu-api/tree/WS-updating-readmes/webservices/reporting-management) - run various reports available in the idibu system.
+7. [Reporting management](https://github.com/compono/idibu-api/tree/master/webservices/reporting-management) - run various reports available in the idibu system.
 8. [Search management](https://github.com/oneworldmarket/idibu-api/tree/master/webservices/search-management) - perform a local search or use an iframe-friendly version of idibu's Apsearch product.
 9. [Service management](https://github.com/oneworldmarket/idibu-api/tree/master/webservices/service-management) - create and manage your idibu accounts and their products.
 10. [Settings management](https://github.com/oneworldmarket/idibu-api/tree/master/webservices/settings-management) - manage various account's settings.
