@@ -1,6 +1,6 @@
 <h1>
 	Configuration field variables</h1>
-<p>Each of this variables are to be sent (if needed) in the configuration block of the XML request, that is enclosed in the config tag.</p>
+<p>Each of these variables is to be sent (if needed) in the configuration block of the XML request, which is enclosed in the config tag.</p>
 <div>
 	<table align="center" border="1" cellpadding="2" cellspacing="2" style="font-size: 13px; color: black; background-color: white; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 5px;" width="90%">
 		<tbody>
