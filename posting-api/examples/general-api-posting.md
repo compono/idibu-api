@@ -17,8 +17,8 @@
 &nbsp;&lt;/log&gt;
 &lt;/idibu&gt;
 </code></pre>
-<p><strong>All the ID's and URL's shown in the example response are for illustrative purposes only, and using them wihin a live environment will likely result in an error.</strong></p>
-<p>As you can see from the result, the job has been posted successfully, and the data for the postings is returned. The system returns as well an warning indicating that either the profile used, the team the profile is assigned to, or the parent office is running out of quota for the board with id 517. If you keep posting to this board without increasing quota, eventually you&#39;ll get a result similar to this one:</p>
+<p><strong>All the IDs and URLs shown in the example response are for illustrative purposes only, and using them within a live environment will likely result in an error.</strong></p>
+<p>As you can see from the result, the job has been posted successfully, and the data for the postings is returned. The system returns as well a warning indicating that either the profile used, the team the profile is assigned to, or the parent office is running out of quota for the board with id 517. If you keep posting to this board without increasing the quota, eventually you&#39;ll get a result similar to this one:</p>
 <pre>
 <code>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
