@@ -355,7 +355,7 @@ Lists the total number of credits, the number of assigned and available credits,
 ### Query parameters
 Parameter Name | Type restrictions | Required? | Notes
 -- | -- | -- | --
-`data` | **String** | **Yes** | The full query XML (see the [Query format](#query-format-4) below), URL-encoded within the parameter.
+`data` | **String** | **Yes** | The full query XML (see the [Query format](#query-format-6) below), URL-encoded within the parameter.
 `count` | **Integer**<br/><br/>Min: 1<br/>Max: 100<br/>Default: 10 | No | Number of accounts to return.
 `offset` | **Integer**<br/><br/>Min: 0<br/>Default: 0 | No | Numeric offset from where to start fetching accounts (pagination).
 
@@ -409,7 +409,7 @@ Increases (or decreases if negative) the account's credits by a specified number
 ### Query parameters
 Parameter Name | Type restrictions | Required? | Notes
 -- | -- | -- | --
-`data` | **String** | **Yes** | The full query XML (see the [Query format](#query-format-5) below), URL-encoded within the parameter.
+`data` | **String** | **Yes** | The full query XML (see the [Query format](#query-format-7) below), URL-encoded within the parameter.
 
 ### Query format
 ```xml
