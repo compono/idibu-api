@@ -36,7 +36,7 @@
 <p>Here we can observe two things:</p>
 <ol>
 	<li>
-		The postings are handled atomically. If for whatever reason the system finds a non critical error (In this case, there&#39;s a problem with the quota fro board 517) all postings are withheld together.</li>
+		The postings are handled atomically. If for whatever reason the system finds a non critical error (In this case, there&#39;s a problem with the quota for board 517) all postings are withheld together.</li>
 	<li>
 		We have the first example of a <a href="/docs/posting-completion-page">Post Completion Page</a> (PCP) &quot;http://adpost.idibu.com/cBzfC.html&quot;</li>
 </ol>
