@@ -46,12 +46,13 @@ This method allows the retrieval of comprehensive details about a specific Porta
 #### `https://ws.idibu.com/clients/json.php`
 
 ### Query parameters
+Please maintain the order in which the parameters are listed!
 Parameter Name | Type restrictions | Required? | Notes
 -- | -- | -- | --
 `hash` | **String** | **Yes** | Hash of the idibu account to which the request pertains.
+`class` | **String** | **Yes** | Must be set to `Portal`.
 `action` | **String** | **Yes** | Must be set to `showData`.
 `boardID` | **Integer** | **Yes** | ID of the Portal to show.
-`class` | **String** | **Yes** | Must be set to `Portal`.
 `format` | **String** | **Yes** | Must be set to `XML`.
 `country` | **2-letter ISO code** | No | Country code for Extra Field lookup.<br/>While this parameter is not required and will not affect most Portals, **it is strongly recommended to always include** as some Portals use country input in order to populate or filter their location Extra Fields with matching options.
 `location` | **String** | No | Location for Extra Field lookup.<br/>While this parameter is not required and will not affect most Portals, **it is strongly recommended to always include** as some Portals require a Location string to be specified in order to populate their location Extra Fields with matching options. If no Location is provided (or the name matches no available options), the fields may not populate and therefore prevent the posting.
