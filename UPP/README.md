@@ -58,7 +58,7 @@ Here's a breakdown of the parameters at your disposal, along with their descript
 - `hideStartDate` - Set to true to hide the job start date field
 - `hideAppUrl` - Set to true to hide the job application URL field
 - `findUser` - Set to true if you want to get a user ID by their e-mail from idibu
-- `findJob` - Set to false if you don't want to fetch job field values from old jobs based on reference
+- `findJob` - Set to true if you wish to update (repost) an existing job and fetch its field values based on `jobRef`
 - `enablePreview` - Setting this to true triggers the preview option on step 2 of the posting process. Please use only with non-default styling.
 - `useOriginalSender` - Comes together with the `findjob` parameter. The system will re-use the original sender of the ad.
 - `overrideRepost` - Set to true if parameters from URL have higher priority than repost data (if `findJob` is set to true)
