@@ -16,7 +16,7 @@
     + [Query parameters](#query-parameters-2)
     + [Response format](#response-format-2)
   * **[Available webhook types](#available-webhook-types)**
-    + [`ApplicationReceived`](#applicationreceived)
+    + [`ApplicationReceivedV2`](#applicationreceivedv2)
     + [`JobCreated`](#jobcreated)
     + [`PostAdded`](#postadded)
     + [`PostDeleted`](#postdeleted)
@@ -135,7 +135,7 @@ Parameter Name | Type restrictions | Required? | Notes
 ## Available webhook types
 Below is the list of all currently available event types, with their descripton and details of the HTTP request they would generate.
 
-### `ApplicationReceived`
+### `ApplicationReceivedV2`
 Triggered whenever a new candidate arrives on the account.
 
 The following parameters will be passed in the body of the request:
