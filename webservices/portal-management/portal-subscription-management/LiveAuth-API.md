@@ -66,7 +66,7 @@ The `auth` property must be an object with the following properties:
 
 |name|type|description|
 |----|----|-----------|
-|`client`|*integer*|hash of the idibu account|
+|`client`|*integer*|ID of the idibu account|
 |`expires`|*integer*|a UNIX timestamp in seconds|
 |`hash`|*string*|a hash created using the method described in [Authentication](https://github.com/oneworldmarket/idibu-api/new/master/webservices/portal-management/portal-subscription-management#authentication) section above|
 
