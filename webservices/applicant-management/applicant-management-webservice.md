@@ -101,7 +101,7 @@ Parameter Name | Type restrictions | Required? | Notes
         <files> <!-- list of all attachments that come with the applicant - most usually just the CV -->
           <file>
             <name>[string]</name> <!-- filename of the attachment -->
-            <link>[string:url]</link> <!-- direct link for the file download -->
+            <link>[string:url]</link> <!-- direct link for the file download; please ensure that your system is able to follow HTTP 302 redirections -->
           </file>
         </files>
       </applicant>
@@ -155,7 +155,7 @@ Parameter Name | Type restrictions | Required? | Notes
     <files> <!-- list of all attachments that come with the applicant - most usually just the CV -->
       <file>
         <name>[string]</name> <!-- filename of the attachment -->
-        <link>[string:url]</link> <!-- direct link for the file download -->
+        <link>[string:url]</link> <!-- direct link for the file download; please ensure that your system is able to follow HTTP 302 redirections -->
       </file>
     </files>
     <parsed> <!-- extra data parsed from the CV; only applicable if CV parsing enabled for the account; not all sections may be successfully parsed -->
