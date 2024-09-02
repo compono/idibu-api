@@ -7,7 +7,7 @@ The process is simple. You make a call to the designated link, supplying the req
 ### The Posting URL
 You have the flexibility to provide parameters either through traditional HTTP GET or POST methods, both URL-encoded. However, POST is recommended due to potential character count limitations in GET. For instance, if you want to include the hash, sender ID, and job title when generating the page, here's how the URL should look:
 
-`https://www.idibu.com/clients/upp/index.php?hash=YOUR_HASH&email=SENDER_EMAIL&jobTitle=test%20title`
+`https://ws.idibu.com/clients/upp/index.php?hash=YOUR_HASH&email=SENDER_EMAIL&jobTitle=test%20title`
 
 This simple link can initiate a nearly instant integration with minimal development effort. Once it's up and running, you can focus on refining the appearance and fine-tuning parameter mapping. Voila! Your ATS will be equipped with a fully functional multiposting system.
 
