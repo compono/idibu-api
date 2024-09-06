@@ -78,7 +78,7 @@
 				<td>
 					redirecturl</td>
 				<td>
-					&nbsp;</td>
+					No</td>
 				<td>
 					text (values: &#39;internal&#39;, or a valid url).</td>
 				<td>
