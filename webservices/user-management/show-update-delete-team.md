@@ -10,7 +10,7 @@
 <p>Returns selected team's data (team 7654321 in the example).</p>
 <h2>Example</h2>
 <h3>Request</h3>
-<pre><code>http://ws.idibu.com/ws/rest/v1/teams/7654321?hash=YOUR_HASH</code></pre>
+<pre><code>https://ws.idibu.com/ws/rest/v1/teams/7654321?hash=YOUR_HASH</code></pre>
 <h3>Response</h3>
 <pre><code type="xml">&lt;idibu generator=&quot;idibu&quot; version=&quot;1.0&quot;&gt;
 	&lt;response&gt;
@@ -28,7 +28,7 @@
 <p>To update team information, pass an xml in the <code>data</code> parameter. Any field or block can be omitted - pass only the fields which need updating (team 7654321 in the example).</p>
 <h2>Example</h2>
 <h3>Posted data</h3>
-<pre><code>POST http://ws.idibu.com/ws/rest/v1/teams/7654321?hash=YOUR_HASH</code></pre>
+<pre><code>POST https://ws.idibu.com/ws/rest/v1/teams/7654321?hash=YOUR_HASH</code></pre>
 <pre><code type="xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;idibu&gt;
 	&lt;name&gt;Test team&lt;/name&gt;
@@ -50,7 +50,7 @@
 <p>To delete a team, use a DELETE request (team 7654321 in the example).</p>
 <h2>Example</h2>
 <h3>Data posted</h3>
-<pre><code>DELETE http://ws.idibu.com/ws/rest/v1/teams/7654321?hash=YOUR_HASH</code></pre>
+<pre><code>DELETE https://ws.idibu.com/ws/rest/v1/teams/7654321?hash=YOUR_HASH</code></pre>
 <h3>Response</h3>
 <pre><code type="xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf8&quot;?&gt;
 &lt;idibu generator=&quot;idibu&quot; version=&quot;1.0&quot;&gt;

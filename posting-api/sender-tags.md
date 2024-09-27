@@ -21,7 +21,7 @@
 			<td>
 				To get a list of the sender profile in your account including the unique ids use:
 
-http://ws.idibu.com/clients/api/enum.php?enum=Sender&source=mine&hash=[INSERT LOGIN HASH HERE]</td>
+https://ws.idibu.com/clients/api/enum.php?enum=Sender&source=mine&hash=[INSERT LOGIN HASH HERE]</td>
 			<td>
 				Identifies the sender profile to be used with this post<br />
 				&nbsp;</td>
@@ -237,7 +237,7 @@ http://ws.idibu.com/clients/api/enum.php?enum=Sender&source=mine&hash=[INSERT LO
 </pre>
 <p>The list of teams, offices and its IDs are available in:
 <code>
-http://ws.idibu.com/clients/api/enum.php?enum=Sender&source=mine&hash=[INSERT LOGIN HASH HERE]
+https://ws.idibu.com/clients/api/enum.php?enum=Sender&source=mine&hash=[INSERT LOGIN HASH HERE]
 <code>
 </p>
 <p>A couple of points when sending sender details.</p>

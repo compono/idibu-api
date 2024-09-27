@@ -57,7 +57,7 @@
 	Request</h2>
 <pre>
 <code>
-http://ws.idibu.com/ws/rest/v1/teams?hash=<your hash>&count=100
+https://ws.idibu.com/ws/rest/v1/teams?hash=<your hash>&count=100
 </code></pre>
 <h2>
 	Response</h2>

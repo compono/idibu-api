@@ -3,7 +3,7 @@
 	<code>limit</code> is the amount to which the quotas reset after the specified period (see <a href="https://github.com/oneworldmarket/idibu-api/blob/master/webservices/quota-management/add-quota-to-portal.md" target="_blank">add-quota-to-portal<a/>).</p>
 <h1>Example</h1>
 <h2>Data posted</h2>
-<pre><code>POST http://ws.idibu.com/ws/rest/v1/quotas/517/all?hash=YOUR_HASH</code></pre>
+<pre><code>POST https://ws.idibu.com/ws/rest/v1/quotas/517/all?hash=YOUR_HASH</code></pre>
 <pre>
 <code type="xml">&lt;?xml version=&quot;1.0&quot;?&gt;
 &lt;idibu&gt;

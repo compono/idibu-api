@@ -8,7 +8,7 @@
 	Request</h2>
 <pre>
 <code>
-http://ws.idibu.com/ws/rest/v1/portals/123/unsubscribe?hash=<your hash>
+https://ws.idibu.com/ws/rest/v1/portals/123/unsubscribe?hash=<your hash>
 </code></pre>
 <h2>
 	Response</h2>
@@ -25,5 +25,5 @@ http://ws.idibu.com/ws/rest/v1/portals/123/unsubscribe?hash=<your hash>
 <p><em><strong>Note</strong>: unsubscribe also can be done by using DELETE request:</em></p>
 <pre>
 <code>
-DELETE http://ws.idibu.com/ws/rest/v1/portals/123?hash=<your hash>
+DELETE https://ws.idibu.com/ws/rest/v1/portals/123?hash=<your hash>
 </code></pre>

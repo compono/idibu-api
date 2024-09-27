@@ -13,14 +13,14 @@
 <h1>
 	Getting user information</h1>
 <p>Return user information, settings and auth credentials.</p>
-<p><b>Note:</b> For editing administrative account details you can use `admin` instead of numeric user id, like: http://ws.idibu.com/ws/rest/v1/users/admin?hash=&lt;your hash&gt; . You can also use admin logins for that: <your hash=""></your>http://ws.idibu.com/ws/rest/v1/users/admin?user=&lt;username&gt;&amp;password=&lt;password&gt;</p>
+<p><b>Note:</b> For editing administrative account details you can use `admin` instead of numeric user id, like: https://ws.idibu.com/ws/rest/v1/users/admin?hash=&lt;your hash&gt; . You can also use admin logins for that: <your hash=""></your>https://ws.idibu.com/ws/rest/v1/users/admin?user=&lt;username&gt;&amp;password=&lt;password&gt;</p>
 <h1>
 	Example</h1>
 <h2>
 	Request</h2>
 <pre>
 <code>
-http://ws.idibu.com/ws/rest/v1/users/485?hash=<your hash>
+https://ws.idibu.com/ws/rest/v1/users/485?hash=<your hash>
 </code></pre>
 <h2>
 	Response</h2>
@@ -81,7 +81,7 @@ http://ws.idibu.com/ws/rest/v1/users/485?hash=<your hash>
 	Data posted</h3>
 <pre>
 <code>
-POST http://ws.idibu.com/ws/rest/v1/users/485?hash=<your hash>
+POST https://ws.idibu.com/ws/rest/v1/users/485?hash=<your hash>
 </code></pre>
 <pre>
 <code type="xml">
@@ -113,7 +113,7 @@ POST http://ws.idibu.com/ws/rest/v1/users/485?hash=<your hash>
 	Request</h2>
 <pre>
 <code>
-DELETE http://ws.idibu.com/ws/rest/v1/users/485?hash=<your hash>
+DELETE https://ws.idibu.com/ws/rest/v1/users/485?hash=<your hash>
 </code></pre>
 <h2>
 	Response</h2>

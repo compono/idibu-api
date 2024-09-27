@@ -6,7 +6,7 @@ No additional parameters for this request
 # Example of getting settings
 ## Request
 ```
-GET http://ws.idibu.com/ws/rest/v1/settings/system?hash=<your hash>
+GET https://ws.idibu.com/ws/rest/v1/settings/system?hash=<your hash>
 ```
 
 ## Response
@@ -78,7 +78,7 @@ GET http://ws.idibu.com/ws/rest/v1/settings/system?hash=<your hash>
 # Example of setting settings
 ## Request
 ```
-POST http://ws.idibu.com/ws/rest/v1/settings/system?hash=<your hash>
+POST https://ws.idibu.com/ws/rest/v1/settings/system?hash=<your hash>
 ```
 ```xml
 <?xml version="1.0"?>

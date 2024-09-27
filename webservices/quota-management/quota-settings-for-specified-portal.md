@@ -3,7 +3,7 @@
 <p>No additional parameters</p>
 <h1>Example</h1>
 <h2>Request</h2>
-<pre><code>http://ws.idibu.com/ws/rest/v1/quotas/517?hash=YOUR_HASH</code></pre>
+<pre><code>https://ws.idibu.com/ws/rest/v1/quotas/517?hash=YOUR_HASH</code></pre>
 <h2>Response</h2>
 <pre><code type="xml">&lt;idibu generator=&quot;idibu&quot; version=&quot;1.0&quot;&gt;
 	&lt;response&gt;

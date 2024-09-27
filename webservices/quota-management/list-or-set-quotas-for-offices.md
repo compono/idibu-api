@@ -55,7 +55,7 @@
 <h1>Show office quotas</h1>
 <h2>Example</h2>
 <h3>Request</h3>
-<pre><code>http://ws.idibu.com/ws/rest/v1/quotas/517/offices?hash=YOUR_HASH</code></pre>
+<pre><code>https://ws.idibu.com/ws/rest/v1/quotas/517/offices?hash=YOUR_HASH</code></pre>
 <h3>Response</h3>
 <pre><code type="xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf8&quot;?&gt;
 &lt;idibu generator=&quot;idibu&quot; version=&quot;1.0&quot;&gt;
@@ -100,7 +100,7 @@
 <p>For *slots* type of quotas, <code>limit</code> parameter in xml can be omitted.</p>
 <h1>Example</h1>
 <h2>Data posted</h2>
-<pre><code>POST http://ws.idibu.com/ws/rest/v1/quotas/517/offices?hash=YOUR_HASH</code></pre>
+<pre><code>POST https://ws.idibu.com/ws/rest/v1/quotas/517/offices?hash=YOUR_HASH</code></pre>
 <pre><code type="xml">&lt;?xml version=&quot;1.0&quot;?&gt;
 &lt;idibu&gt;
 &lt;quota&gt;

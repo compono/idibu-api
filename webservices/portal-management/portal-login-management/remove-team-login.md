@@ -8,7 +8,7 @@
 	Request</h2>
 <pre>
 <code>
-DELETE http://ws.idibu.com/ws/rest/v1/portals/123/remove-team-login?team-id=234&hash=<your hash>
+DELETE https://ws.idibu.com/ws/rest/v1/portals/123/remove-team-login?team-id=234&hash=<your hash>
 </code></pre>
 <h2>
 	Response</h2>

@@ -58,7 +58,7 @@
 <p>No additional parameters</p>
 <h1>Example</h1>
 <h2>Posted data</h2>
-<pre><code>POST http://ws.idibu.com/ws/rest/v1/quotas/517/new?hash=YOUR_HASH</code></pre>
+<pre><code>POST https://ws.idibu.com/ws/rest/v1/quotas/517/new?hash=YOUR_HASH</code></pre>
 <pre><code type="xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf8&quot;?&gt;
 &lt;idibu&gt;
 	&lt;type&gt;period&lt;/type&gt;

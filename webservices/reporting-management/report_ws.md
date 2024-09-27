@@ -124,7 +124,7 @@
 	Request</h2>
 
 ```bash
-POST http://ws.idibu.com/ws/rest/v1/reports/(REPORT_ID)?hash=
+POST https://ws.idibu.com/ws/rest/v1/reports/(REPORT_ID)?hash=
 ```
 
 <h2>BASIC:</h2>
