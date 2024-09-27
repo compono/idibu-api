@@ -1,5 +1,5 @@
 <p>A request is submitted using an HTTP POST to the address:</p>
-<pre><code>http://ws.idibu.com/clients/api/REMOTE/V3/[INSERT LOGIN HASH HERE]</code></pre>
+<pre><code>https://ws.idibu.com/clients/api/REMOTE/V3/[INSERT LOGIN HASH HERE]</code></pre>
 <p class="p1">The client hash is part of the the url used to post the information to, and it is mandatory that the request uses the POST method. GET request will fail with an error indicating that the payload is missing.&nbsp;</p>
 <p class="p1"><strong>The xml data should be sent in a variable called:<br><br><code>xml_text</code><br><br>and must URL encoded.</strong></p>
 <h1>Encoding guidelines</h1>	

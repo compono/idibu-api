@@ -3,7 +3,7 @@
 	Request</h2>
 <pre>
 <code>
-POST http://ws.idibu.com/ws/rest/v1/service/setccemail?idibupartner=yes
+POST https://ws.idibu.com/ws/rest/v1/service/setccemail?idibupartner=yes
 </code>
 <code type="xml">
 &lt;?xml version=&quot;1.0&quot;?&gt;
@@ -34,7 +34,7 @@ POST http://ws.idibu.com/ws/rest/v1/service/setccemail?idibupartner=yes
 	Request</h2>
 <pre>
 <code>
-POST http://ws.idibu.com/ws/rest/v1/service/setccemail?idibupartner=yes
+POST https://ws.idibu.com/ws/rest/v1/service/setccemail?idibupartner=yes
 </code>
 <code type="xml">
 &lt;?xml version=&quot;1.0&quot;?&gt;
@@ -65,7 +65,7 @@ POST http://ws.idibu.com/ws/rest/v1/service/setccemail?idibupartner=yes
 	Request</h2>
 <pre>
 <code>
-POST http://ws.idibu.com/ws/rest/v1/service/getccemail?idibupartner=yes
+POST https://ws.idibu.com/ws/rest/v1/service/getccemail?idibupartner=yes
 </code>
 <code type="xml">
 &lt;?xml version=&quot;1.0&quot;?&gt;

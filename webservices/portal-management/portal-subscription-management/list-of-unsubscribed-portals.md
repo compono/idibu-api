@@ -79,7 +79,7 @@
 	Request</h2>
 <pre>
 <code>
-http://ws.idibu.com/ws/rest/v1/portals/unsubscribed?hash=YOUR_HASH&count=5&filter_country=USA,United+Kingdom&filter_tags=engineering,free
+https://ws.idibu.com/ws/rest/v1/portals/unsubscribed?hash=YOUR_HASH&count=5&filter_country=USA,United+Kingdom&filter_tags=engineering,free
 </code></pre>
 <h2>
 	Response</h2>

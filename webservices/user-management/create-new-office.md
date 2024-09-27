@@ -8,7 +8,7 @@
 	Posted data</h2>
 <pre>
 <code>
-http://ws.idibu.com/ws/rest/v1/offices/new?hash=<your hash>
+https://ws.idibu.com/ws/rest/v1/offices/new?hash=<your hash>
 </code></pre>
 <pre>
 <code type="xml">

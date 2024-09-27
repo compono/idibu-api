@@ -79,7 +79,7 @@
 	Request</h2>
 <pre>
 <code>
-http://ws.idibu.com/ws/rest/v1/portals/subscribed?hash=YOUR_HASH&count=5&filter_country=GBR,United+States&filter_tags=general
+https://ws.idibu.com/ws/rest/v1/portals/subscribed?hash=YOUR_HASH&count=5&filter_country=GBR,United+States&filter_tags=general
 </code></pre>
 <h2>
 	Response</h2>

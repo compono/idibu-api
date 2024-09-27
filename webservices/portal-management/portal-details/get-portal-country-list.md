@@ -8,7 +8,7 @@
 	Request</h2>
 <pre>
 <code>
-http://ws.idibu.com/ws/rest/v1/portals/countries?hash=<your hash>
+https://ws.idibu.com/ws/rest/v1/portals/countries?hash=<your hash>
 </code></pre>
 <h2>
 	Response</h2>

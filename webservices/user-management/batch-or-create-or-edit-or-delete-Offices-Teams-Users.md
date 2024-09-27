@@ -8,7 +8,7 @@ Method that allows you to bulk add, delete, edit offices, teams and users all in
 	Data posted</h2>
 <pre>
 <code>
-http://ws.idibu.com/ws/rest/v1/offices-teams-users?hash=<your hash>
+https://ws.idibu.com/ws/rest/v1/offices-teams-users?hash=<your hash>
 </code></pre>
 <pre>
 <code type="xml">

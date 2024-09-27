@@ -19,7 +19,7 @@
 	Request</h2>
 <pre>
 <code>
-GET http://ws.idibu.com/ws/rest/v1/portals/517/set-office-login?hash=<your hash>
+GET https://ws.idibu.com/ws/rest/v1/portals/517/set-office-login?hash=<your hash>
 </code></pre>
 <h2>
 	Response</h2>
@@ -56,7 +56,7 @@ GET http://ws.idibu.com/ws/rest/v1/portals/517/set-office-login?hash=<your hash>
 	Posted data</h2>
 <pre>
 <code>
-POST http://ws.idibu.com/ws/rest/v1/portals/517/set-office-login?hash=<your hash>
+POST https://ws.idibu.com/ws/rest/v1/portals/517/set-office-login?hash=<your hash>
 </code></pre>
 <pre>
 <code type="xml">

@@ -13,7 +13,7 @@ This corresponds to the <a href="http://support.idibu.com/default_import/Knowled
 	Posted data</h2>
 <pre>
 <code>
-http://ws.idibu.com/ws/rest/v1/users/[user id]/portals-available?hash=<your hash>
+https://ws.idibu.com/ws/rest/v1/users/[user id]/portals-available?hash=<your hash>
 </code></pre>
 <h2>
 	Response</h2>

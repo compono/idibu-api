@@ -98,7 +98,7 @@
 	Request</h2>
 <pre>
 <code>
-POST http://ws.idibu.com/ws/rest/v1/search/local?hash=<your hash>
+POST https://ws.idibu.com/ws/rest/v1/search/local?hash=<your hash>
 </code>
 <code type="xml">
 &lt;?xml version=&quot;1.0&quot;?&gt;
@@ -167,5 +167,5 @@ You can check the total number of candidates in the selected account:
 	Request</h2>
 <pre>
 <code>
-POST http://ws.idibu.com/ws/rest/v1/search/local-cvs-count?hash=<your hash>
+POST https://ws.idibu.com/ws/rest/v1/search/local-cvs-count?hash=<your hash>
 </code>

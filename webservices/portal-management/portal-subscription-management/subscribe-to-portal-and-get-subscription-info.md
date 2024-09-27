@@ -28,7 +28,7 @@
 	Request</h2>
 <pre>
 <code>
-GET http://ws.idibu.com/ws/rest/v1/portals/123/subscribe?hash=<your hash>
+GET https://ws.idibu.com/ws/rest/v1/portals/123/subscribe?hash=<your hash>
 </code></pre>
 <h2>
 	Response</h2>
@@ -84,7 +84,7 @@ GET http://ws.idibu.com/ws/rest/v1/portals/123/subscribe?hash=<your hash>
 	Request</h2>
 <pre>
 <code>
-POST http://ws.idibu.com/ws/rest/v1/portals/123/subscribe?hash=<your hash>
+POST https://ws.idibu.com/ws/rest/v1/portals/123/subscribe?hash=<your hash>
 </code></pre>
 <pre>
 <code type="xml">
