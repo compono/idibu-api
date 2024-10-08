@@ -103,7 +103,7 @@ Parameter Name | Type restrictions | Required? | Notes
 
 ### Considerations
 When developing code to leverage the location webservice, keep the following key points in mind:
-- Your software should utilise the webservice to fetch a list of potential locations based on the provided location string. This list can then be presented for selection in your platform prior to the job posting.
+- Your software should utilize the webservice to fetch a list of potential locations based on the provided location string. This list can then be presented for selection in your platform prior to the job posting.
 - The country code will function as the location identifier, while the ID returned by the webservice should serve as the sublocation ID.
 - To account for varying postal codes, remember that a single location might have multiple entries within the same county or state. To distinguish these instances, incorporate the state/county tag, applicable to the UK, Ireland, and the USA.
 - Certain locations could have multiple legitimate duplicates throughout the country, sometimes up to 15 instances, usually varying by postal code. Ensure your software can accommodate such scenarios.
@@ -114,12 +114,14 @@ When developing code to leverage the location webservice, keep the following key
 The upper dropdown offers a fixed list of countries, while the subsequent field dynamically queries idibu's location API as the text is entered.
 
 ### Country Codes
-For accurate calls, use one of the following country codes to specify the country:
+For accurate calls, use one of the following country ISO-2 codes to specify the country. ISO-3 codes are also accepted.
+
+**Please keep in mind that the list that idibu uses is not a complete list of all the world's countries; if you find any location missing, please try checking the Rest of the World (`ZZ`) group - or get in touch!**
 
 | code | Country name |
 |---|---|
 | AD | Andorra |
-| AN | Angola |
+| AO | Angola |
 | AR | Argentina |
 | AU | Australia |
 | AT | Austria |
@@ -136,7 +138,7 @@ For accurate calls, use one of the following country codes to specify the countr
 | CO | Colombia |
 | HR | Croatia |
 | CZ | Czech Republic |
-| DM | Denmark |
+| DK | Denmark |
 | EG | Egypt |
 | GQ | Equatorial Guinea |
 | FO | Faroe Islands |
@@ -157,13 +159,13 @@ For accurate calls, use one of the following country codes to specify the countr
 | IT | Italy |
 | JP | Japan |
 | JE | Jersey |
-| JD | Jordan |
+| JO | Jordan |
 | LY | Libya |
 | LI | Liechtenstein |
 | LU | Luxembourg |
 | MK | Macedonia |
 | MY | Malaysia |
-| MA | Malta |
+| MT | Malta |
 | MH | Marshall Islands |
 | MQ | Martinique |
 | YT | Mayotte |
@@ -192,7 +194,7 @@ For accurate calls, use one of the following country codes to specify the countr
 | SM | San Marino |
 | SA | Saudi Arabia |
 | RS | Serbia |
-| SI | Singapore |
+| SG | Singapore |
 | ZA | South Africa |
 | KR | South Korea |
 | ES | Spain |
@@ -205,7 +207,7 @@ For accurate calls, use one of the following country codes to specify the countr
 | TH | Thailand |
 | TN | Tunisia |
 | TR | Turkey |
-| UE | United Arab Emirates |
+| AE | United Arab Emirates |
 | GB | United Kingdom |
 | US | United States |
 | VA | Vatican City (Holy See) |
