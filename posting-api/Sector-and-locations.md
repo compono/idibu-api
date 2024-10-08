@@ -114,14 +114,18 @@ When developing code to leverage the location webservice, keep the following key
 The upper dropdown offers a fixed list of countries, while the subsequent field dynamically queries idibu's location API as the text is entered.
 
 ### Country Codes
-For accurate calls, use one of the following country ISO-2 codes to specify the country. ISO-3 codes are also accepted.
+For accurate calls, use one of the following country codes to specify the country.
 
-**Please keep in mind that the list that idibu uses is not a complete list of all the world's countries; if you find any location missing, please try checking the Rest of the World (`ZZ`) group - or get in touch!**
+**Please keep in mind that:**
+- the list that idibu uses is not a complete list of all the world's countries;
+- not all codes are the standard ISO-2 codes - please treat the list as using its own custom values;
+- however, ISO-2 and ISO-3 country codes will also be accepted when posting - but not necessarily reflected in other webservices;
+- if you find any locations missing, please try checking the Rest of the World (`ZZ`) group - or get in touch!
 
 | code | Country name |
 |---|---|
 | AD | Andorra |
-| AO | Angola |
+| AN | Angola |
 | AR | Argentina |
 | AU | Australia |
 | AT | Austria |
@@ -138,7 +142,7 @@ For accurate calls, use one of the following country ISO-2 codes to specify the 
 | CO | Colombia |
 | HR | Croatia |
 | CZ | Czech Republic |
-| DK | Denmark |
+| DM | Denmark |
 | EG | Egypt |
 | GQ | Equatorial Guinea |
 | FO | Faroe Islands |
@@ -159,13 +163,13 @@ For accurate calls, use one of the following country ISO-2 codes to specify the 
 | IT | Italy |
 | JP | Japan |
 | JE | Jersey |
-| JO | Jordan |
+| JD | Jordan |
 | LY | Libya |
 | LI | Liechtenstein |
 | LU | Luxembourg |
 | MK | Macedonia |
 | MY | Malaysia |
-| MT | Malta |
+| MA | Malta |
 | MH | Marshall Islands |
 | MQ | Martinique |
 | YT | Mayotte |
@@ -194,7 +198,7 @@ For accurate calls, use one of the following country ISO-2 codes to specify the 
 | SM | San Marino |
 | SA | Saudi Arabia |
 | RS | Serbia |
-| SG | Singapore |
+| SI | Singapore |
 | ZA | South Africa |
 | KR | South Korea |
 | ES | Spain |
@@ -207,7 +211,7 @@ For accurate calls, use one of the following country ISO-2 codes to specify the 
 | TH | Thailand |
 | TN | Tunisia |
 | TR | Turkey |
-| AE | United Arab Emirates |
+| UE | United Arab Emirates |
 | GB | United Kingdom |
 | US | United States |
 | VA | Vatican City (Holy See) |
