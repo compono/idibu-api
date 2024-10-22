@@ -179,6 +179,7 @@ For accurate calls, use one of the following country codes to specify the countr
 | MZ | Mozambique |
 | MM | Myanmar |
 | NA | Namibia |
+| NP | Nepal |
 | NL | Netherlands |
 | NZ | New Zealand |
 | NG | Nigeria |
