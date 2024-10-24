@@ -8,7 +8,7 @@ The main Universal Posting Page, <a href="https://github.com/oneworldmarket/idib
 The second step of the posting process involves the entry of extra fields into the <a href="https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/pcp.md" target="_blank">PCP</a>. To style this step, you also need to provide us with a single CSS file.
 
 ### 3. Success Message
-After completing the posting process successfully, a static HTML page displays a success message. By default, this message reads: "Thank you for finishing the posting. We will send you an email if any of the postings encounter any issues."
+After completing the posting process successfully, a static HTML page displays a success message. By default this message reads: "Thank you for finishing the posting. We will send you an email if any of the postings encounter any issues."
 
 ### Achieving Various Styling Results
 You have the flexibility to achieve different styling results by customising the CSS files. Below is a very basic example of an alternatively styled page:
