@@ -22,6 +22,7 @@
     + [`PostDeleted`](#postdeleted)
     + [`PostFailed`](#postfailed)
     + [`PostUpdated`](#postupdated)
+* **[Webhook requests](#webhook-requests)**
 
 ## 
 
@@ -29,7 +30,7 @@ This webservice allows you to create, list, and delete webhook subscriptions for
 
 For any account, any number of subscriptions, for any combination of events can be created, and different URLs specified for the callbacks, with an option to sign the payload for authorization.
 
-The format of the data that idibu sends as part of the events is standardized and it is up to you to receive, process and understand that data through further use of other related webservices.
+The format of the data that idibu sends as part of the events is standardized and it is up to you to receive, process, and understand that data through further use of other related webservices.
 
 All requests are queued and, depending on current traffic, may not arrive immediately.
 
@@ -58,7 +59,7 @@ Parameter Name | Type restrictions | Required? | Notes
 <subscription>
   <url>[string:url]</url> <!-- URL to which the data will be sent whenever the event(s) occur(s); uniquely identifies the webhook -->
   <types>[string]</types> <!-- comma-separated list of event types; see "Available webhook types" below -->
-  <secret>[string]</secret> <!-- optional; will be used to sign the webhook HTTP request body using HMAC-SHA256 algorithm with the bytes of the provided 'secret' as a key. The resulting hash is put in the 'Authorization' header of the webhook HTTP request. -->
+  <secret>[string]</secret> <!-- optional; will be used to sign the webhook HTTP request body using HMAC-SHA256 algorithm with the bytes of the provided 'secret' as a key. The resulting hash is put in the 'authorization' header of the webhook HTTP request. -->
 </subscription>
 ```
 
@@ -254,3 +255,12 @@ Parameter Name | Type restrictions | Notes
 `postlog_id` | **Integer** | ID of the Post.<br/>Refer to the [Advert Management Webservice](https://github.com/oneworldmarket/idibu-api/blob/master/webservices/advert-management/advert-management-webservice.md).
 `portal_id` | **Integer** | ID of the Portal to which the Post was sent.<br/>Refer to the [Portal Management Webservice](https://github.com/oneworldmarket/idibu-api/tree/master/webservices/portal-management).
 `date` | **Date and time**<br/><br/>Format: `YYYY-MM-DD HH:mm:ss` | The moment of the Post reaching the Portal.
+
+---
+
+## Webhook requests
+Every webhook, when triggered, will send an HTTP POST request to the URL endpoint defined for that specific subscription.
+
+The request's `content-type` header is always `application/x-www-form-urlencoded`, with all parameters (as defined in the section above) passed as form values.
+
+Additionally, the `authorization` header is provided if the optional `secret` parameter has been defined for the webhook subscription (please check the [Query format](#query-format) for more details).
