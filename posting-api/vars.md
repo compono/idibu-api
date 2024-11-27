@@ -22,12 +22,12 @@ The below variables need to be provided in the `job` tag of the XML request.
 | --- | --- | --- | --- |
 | client\_reference | [Depends](https://github.com/oneworldmarket/idibu-api/blob/master/posting-api/jobidvsjobref.md) | text | Client reference; can be used to replace the job id  (for all the methods that require it: UPDATE, REPOST, QUICKREPOST, DELETE). |
 | title | **Yes** - minimum 5 characters | text | Job Title. Editable (see below) |
-| description | **Yes** - minimum 5 characters | longtext | Job Description. Editable (see below). **It is very imporant, that you provide the text as one block of text and any character returns are encoded as `<br/>`. Otherwise there is a risk that your ads won't be formatted correctly when posted to job boards.**  <br>Please also refrain from using `<p>` and `<div>` tags - they will be accepted but are normally not supported by idibu, and many job boards reject them or lead to incorrect formatting. |
+| description | **Yes** - minimum 5 characters | longtext | Job Description. Editable (see below). **It is very imporant, that you provide the text as one block of text and any character returns are encoded as `<br/>`. Otherwise there is a risk that your ads won't be formatted correctly when posted to job boards.** |
 | reference | **Yes** - minimum 4 characters | text | Job Reference. Editable (see below) |
 | startdate | **Yes** | date YYYY-MM-DD (defaults to today) | The date from which the job begins (only relevant for jobs in the future. |
 | duration | No  | text | How long does the job last? |
 | salarymin | **Yes** | numeric Default: 0 | The minimum salary. |
-| salarymax | **Yes** - must be greater then salary minimum | numeric Default: 0 | The maximum salary. |
+| salarymax | **Yes** - must be equal to or greater than salary minimum | numeric Default: 0 | The maximum salary. |
 | salaryper | **Yes** | Select List (values: annum, month, week, day, hour) | The pay cycle for the remuneration package. |
 | salaryextras | No  | text | Extra benefits. |
 | currency | **Yes** | Select List (obtain values using the [currencies/available](https://github.com/oneworldmarket/idibu-api/blob/master/webservices/settings-management/custom-currencies.md) GET call) | The ISO-3 currency code. Use [custom-currencies](https://github.com/oneworldmarket/idibu-api/blob/master/webservices/settings-management/custom-currencies.md) webservice to control and obtain the available ones. |
