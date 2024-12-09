@@ -356,7 +356,7 @@ Parameter Name | Type restrictions | Required? | Notes
 ### Response formats
 #### `POST`
 ```xml
-<idibugenerator="idibu" version="1.0">
+<idibu generator="idibu" version="1.0">
   <response>[string]</response> <!-- 'Applicant status saved' or an error message -->
   <status>["success"|"failed"]</status> <!-- whether the request succeeded or not -->
 </idibu>
@@ -364,7 +364,7 @@ Parameter Name | Type restrictions | Required? | Notes
 
 #### `GET`
 ```xml
-<idibugenerator="idibu" version="1.0">
+<idibu generator="idibu" version="1.0">
   <response>
     <applicant>
       <id>[integer]</id> <!-- applicant id -->
