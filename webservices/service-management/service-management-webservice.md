@@ -286,7 +286,7 @@ Parameter Name | Type restrictions | Required? | Notes
 
 ### Response format
 ```xml
-<idibugenerator="idibu" version="1.0">
+<idibu generator="idibu" version="1.0">
   <response>
     <services>[string]</services> <!-- service(s) the account has enabled; multiple <service> nodes can be returned -->
   </response>
@@ -330,7 +330,7 @@ Parameter Name | Type restrictions | Required? | Notes
 
 ### Response format
 ```xml
-<idibugenerator="idibu" version="1.0">
+<idibu generator="idibu" version="1.0">
   <response>
     <message>[string]</message> <!-- 'Services added' or 'Services removed' or an error message -->
   </response>
@@ -369,7 +369,7 @@ Parameter Name | Type restrictions | Required? | Notes
 
 ### Response format
 ```xml
-<idibugenerator="idibu" version="1.0">
+<idibu generator="idibu" version="1.0">
   <response>
     <creditsInfo>
       <available>[integer]</available> <!-- number of credits that can be distributed among clients -->
@@ -423,7 +423,7 @@ Parameter Name | Type restrictions | Required? | Notes
 
 ### Response format
 ```xml
-<idibugenerator="idibu" version="1.0">
+<idibu generator="idibu" version="1.0">
   <response>
     <message>[string]</message> <!-- 'Credits updated successfully' or 'Credits incremented successfully' or an error message -->
     <client-id>[string]</client-id> <!-- id of the account -->

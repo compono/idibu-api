@@ -65,7 +65,7 @@ Parameter Name | Type restrictions | Required? | Notes
 
 ### Response format
 ```xml
-<idibugenerator="idibu" version="1.0">
+<idibu generator="idibu" version="1.0">
   <response>[string]</response> <!-- 'Subscription created.' for a new <url> or 'Subscription updated.' for an existing <url>; or an error <message> -->
   <status>["success"|"failed"]</status> <!-- whether the request succeeded or not -->
 </idibu>
@@ -92,7 +92,7 @@ Parameter Name | Type restrictions | Required? | Notes
 
 ### Response format
 ```xml
-<idibugenerator="idibu" version="1.0">
+<idibu generator="idibu" version="1.0">
   <response>
     <subscriptions>
       <subscription> <!-- can be multiple -->
@@ -125,7 +125,7 @@ Parameter Name | Type restrictions | Required? | Notes
 
 ### Response format
 ```xml
-<idibugenerator="idibu" version="1.0">
+<idibu generator="idibu" version="1.0">
   <response>[string]</response> <!-- 'Subscription deleted.' or an error <message> -->
   <status>["success"|"failed"]</status> <!-- whether the request succeeded or not -->
 </idibu>
