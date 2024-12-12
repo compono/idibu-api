@@ -1,6 +1,6 @@
 The Client Reference can be used to link the data in our system to data in the client's system, providing for easier integration.
 
-Using a client reference makes the use of idibu job ids unnecessary, and allows for easier integration between idibus' Aptrack and the client's applicant tracking system by sending the client reference in the Aptrack applicant email metadata (please see the information that is included [here](https://github.com/compono/idibu-api/blob/master/webservices/applicant-management/applicant-management-webservice.md#applicant-email-tracking-metadata)).
+Using a client reference makes the use of idibu job ids unnecessary, and allows for easier integration between idibu's Aptrack and the client's applicant tracking system by sending the client reference in the Aptrack applicant email metadata (please see the information that is included [here](https://github.com/compono/idibu-api/blob/master/webservices/applicant-management/applicant-management-webservice.md#applicant-email-tracking-metadata)).
 
 Providing a client reference
 ============================
