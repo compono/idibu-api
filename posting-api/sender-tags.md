@@ -238,7 +238,7 @@ https://ws.idibu.com/clients/api/enum.php?enum=Sender&source=mine&hash=[INSERT L
 <p>The list of teams, offices and its IDs are available in:
 <code>
 https://ws.idibu.com/clients/api/enum.php?enum=Sender&source=mine&hash=[INSERT LOGIN HASH HERE]
-<code>
+</code>
 </p>
 <p>A couple of points when sending sender details.</p>
 <ul>
