@@ -31,24 +31,6 @@ GET https://ws.idibu.com/ws/rest/v1/settings/system?hash=<your hash>
       <disable-quick-repost>no</disable-quick-repost>
       <disable-job-template>no</disable-job-template>
     </user-access>
-    <adverts>
-      <description>Define advert authorisation policies for the account, and the email template informing senders if their advert was rejected.</description>
-      <adv-auth-policy>yes</adv-auth-policy>
-      <adv-auth-send-email-if-rejected>yes</adv-auth-send-email-if-rejected>
-      <email-template-reject>
-        <subject>Advert has not been authorised - [JOB_TITLE] ([JOB_REFERENCE])</subject>
-        <body>Thank you for submitting your CV for the position [JOB_TITLE].<br />
-          <br />Kind regards<br />
-          <br />[CONSULTANT_NAME]</body>
-      </email-template-reject>
-      <email-template-auth>
-        <subject>Advert has been authorised - [JOB_TITLE] ([JOB_REFERENCE])</subject>
-        <body>
-          <p style=\"margin-bottom: 0cm;\">Dear [CONSULTANT_NAME],</p>
-          <p style=\"margin-bottom: 0cm;\">Your advert &ldquo;[JOB_TITLE] ([JOB_REFERENCE])&rdquo; has been authorised by [ADVERT_AUTHORISER].</p>
-        </body>
-      </email-template-auth>
-    </adverts>
     <alerts>
       <description>idibu provides important alerts by email - for posting errors and for when adverts are expiring on the job boards. You can set these alerts to be sent the sender of the advert, the administrator of this account, or both.</description>
       <auto-error-mode>Admin</auto-error-mode>
