@@ -40,6 +40,7 @@ The idibu platform classifies job postings into sectors encompassing various ind
 | 21   | Marketing                         |
 | 22   | Media                             |
 | 2796 | Medical & Nursing                 |
+| 2820 | Mining                            |
 | 31   | Other                             |
 | 2804 | Pharmaceuticals                   |
 | 2806 | Property & Housing                |
