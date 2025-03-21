@@ -1,59 +1,60 @@
 ## Sectors
 The idibu platform classifies job postings into sectors encompassing various industries and fields. This list provides a clear overview of the available sectors:
 
-| ID   | Sector                            |
-| ---- | --------------------------------- |
-| 1    | Accountancy                       |
-| 2    | Accountancy (Qualified)           |
-| 3    | Admin & Secretarial               |
-| 2778 | Advertising & PR                  |
-| 2776 | Aerospace                         |
-| 2780 | Agriculture Fishing & Forestry    |
-| 2782 | Arts                              |
-| 4    | Automotive                        |
-| 5    | Banking                           |
-| 7    | Building & Construction           |
-| 8    | Call Centre & Customer Service    |
-| 6    | Charity & Voluntary               |
-| 2784 | Consultancy                       |
-| 2786 | Defence & Military                |
-| 2788 | Design & Creative                 |
-| 9    | Education & Training              |
-| 2790 | Electronics                       |
-| 2818 | Energy & Renewables               |
-| 10   | Engineering                       |
-| 2816 | Executive & Management            |
-| 2792 | Fashion                           |
-| 11   | Financial Services                |
-| 12   | FMCG                              |
-| 14   | Graduate Roles                    |
-| 15   | Health & Safety                   |
-| 16   | Hospitality & Catering            |
-| 17   | HR & Personnel                    |
-| 13   | Insurance                         |
-| 2802 | Internet & New Media              |
-| 18   | IT                                |
-| 19   | Legal                             |
-| 20   | Leisure & Sport                   |
+| ID | Sector |
+|---|---|
+| 1 | Accountancy |
+| 2 | Accountancy (Qualified) |
+| 3 | Admin & Secretarial |
+| 2778 | Advertising & PR |
+| 2776 | Aerospace |
+| 2780 | Agriculture Fishing & Forestry |
+| 2782 | Arts |
+| 4 | Automotive |
+| 5 | Banking |
+| 7 | Building & Construction |
+| 8 | Call Centre & Customer Service |
+| 6 | Charity & Voluntary |
+| 2784 | Consultancy |
+| 2786 | Defence & Military |
+| 2788 | Design & Creative |
+| 9 | Education & Training |
+| 2790 | Electronics |
+| 2818 | Energy & Renewables |
+| 10 | Engineering |
+| 2816 | Executive & Management |
+| 2792 | Fashion |
+| 11 | Financial Services |
+| 12 | FMCG |
+| 14 | Graduate Roles |
+| 15 | Health & Safety |
+| 16 | Hospitality & Catering |
+| 17 | HR & Personnel |
+| 13 | Insurance |
+| 2802 | Internet & New Media |
+| 18 | IT |
+| 19 | Legal |
+| 20 | Leisure & Sport |
 | 2794 | Logistics Distribution & Supply Chain |
-| 2808 | Manufacturing & Production        |
-| 21   | Marketing                         |
-| 22   | Media                             |
-| 2796 | Medical & Nursing                 |
-| 31   | Other                             |
-| 2804 | Pharmaceuticals                   |
-| 2806 | Property & Housing                |
-| 23   | Public Sector & Government        |
-| 24   | Purchasing & Procurement          |
-| 25   | Recruitment Consultancy           |
-| 26   | Retail                            |
-| 27   | Sales                             |
-| 28   | Science & Research                |
-| 29   | Social Care                       |
-| 2798 | Telecommunications                |
-| 30   | Transport & Rail                  |
-| 2810 | Travel & Tourism                  |
-| 2812 | Utilities                         |
+| 2808 | Manufacturing & Production |
+| 21 | Marketing |
+| 22 | Media |
+| 2796 | Medical & Nursing |
+| 2820 | Mining |
+| 31 | Other |
+| 2804 | Pharmaceuticals |
+| 2806 | Property & Housing |
+| 23 | Public Sector & Government |
+| 24 | Purchasing & Procurement |
+| 25 | Recruitment Consultancy |
+| 26 | Retail |
+| 27 | Sales |
+| 28 | Science & Research |
+| 29 | Social Care |
+| 2798 | Telecommunications |
+| 30 | Transport & Rail |
+| 2810 | Travel & Tourism |
+| 2812 | Utilities |
 
 [Download the idibu sector list in XLS format](https://www.idibu.com/clients/api/idibu_sector_list.xls).
 
@@ -138,6 +139,7 @@ For accurate calls, use one of the following country codes to specify the countr
 | BG | Bulgaria |
 | CA | Canada |
 | GG | Channel Islands |
+| CL | Chile |
 | CN | China |
 | CO | Colombia |
 | HR | Croatia |
@@ -146,6 +148,7 @@ For accurate calls, use one of the following country codes to specify the countr
 | EG | Egypt |
 | GQ | Equatorial Guinea |
 | FO | Faroe Islands |
+| FI | Finland |
 | FR | France |
 | GA | Gabon |
 | DE | Germany |
